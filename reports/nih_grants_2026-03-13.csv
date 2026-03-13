@@ -1,0 +1,45 @@
+core_number,project_number,pi,title,institute,fiscal_year,award_amount,start_date,end_date,active
+R21AI194167,1R21AI194167-01,Bennett Penn,Identifying the Determinants of Persister Cell Survival in M. tuberculosis.,NIAID,2025,404108,2025-06-23T00:00:00,2027-05-31T00:00:00,True
+R21AI185949,1R21AI185949-01,Bennett Penn,Regulation of antibiotic tolerance in Mycobacterium abscessus by proteolytic signaling,NIAID,2024,241375,2024-06-01T00:00:00,2026-04-30T00:00:00,True
+T32GM144303,5T32GM144303-03,Donald Bers,Training Program in Pharmacology,NIGMS,2024,479169,2022-07-01T00:00:00,2027-06-30T00:00:00,True
+S10OD026918,1S10OD026918-01A1,Brett Phinney,QE-HF-X Mass Spectrometer,OD,2020,600000,2020-09-10T00:00:00,2021-09-09T00:00:00,False
+K01OD026526,5K01OD026526-02,Luke Wittenburg,Defining the role of core binding factor protein interactions in osteosarcoma,OD,2019,135081,2018-09-15T00:00:00,2023-06-30T00:00:00,False
+K01MH116389,1K01MH116389-01A1,Annie Ciernia,Mapping Multi-Omics Networks in Microglia Across Autism Models,NIMH,2018,105790,2018-09-04T00:00:00,2019-06-30T00:00:00,False
+R35GM119574,1R35GM119574-01,Hsin-Yi Ho,Deciphering Wnt-Ror signaling in cytoskeletal regulation and tissue shape control,NIGMS,2016,392500,2016-08-01T00:00:00,2021-07-31T00:00:00,False
+S10OD021801,1S10OD021801-01,Brett Phinney,Phinney - Orbitrap Fusion ETD,OD,2016,600000,2016-04-15T00:00:00,2017-04-14T00:00:00,False
+K99ES024806,1K99ES024806-01,Kin Sing Stephen Lee,Identifying the Receptors of Environmentally Sensitive Epoxy-Eicosanoids with AMS,NIEHS,2015,66780,2015-01-01T00:00:00,2016-12-30T00:00:00,False
+R01GM102225,1R01GM102225-01A1,JOANNA CHIU,The role of DBT and NEMO-dependent phosphoproteome in regulating animal clockwork,NIGMS,2013,278888,2013-09-16T00:00:00,2018-08-31T00:00:00,False
+F32GM103090,1F32GM103090-01A1,Megan Wemmer,Characterization of effectors and ER in Drp1-mediated mitochondrial division,NIGMS,2013,22654,2013-04-01T00:00:00,2013-09-13T00:00:00,False
+P42ES004699,5P42ES004699-23,BRUCE HAMMOCK,Biomarkers of Exposure to Hazardous Substances,NIEHS,2009,2588040,1997-04-01T00:00:00,2010-03-31T00:00:00,False
+P30GM092328,1P30GM092328-01,Peter Cala,Recruitment into the UC Davis School of Medicine Membrane Biology Initiative,NIGMS,2009,329500,2009-09-30T00:00:00,2011-08-31T00:00:00,False
+S10RR023555,1S10RR023555-01A1,Laura Van Winkle,Acquisition of LMD6000 Laser Microdissection Unit,NCRR,2008,243693,2008-05-01T00:00:00,2009-04-30T00:00:00,False
+S10RR023642,1S10RR023642-01A1,Brett Phinney,Applied biosystems Q-trap 4000,NCRR,2008,491160,2008-02-01T00:00:00,2009-07-31T00:00:00,False
+P01AG025532,5P01AG025532-04,Gino Cortopassi,A Mitochondrial Longevity Pathway: P66Shc Mechanisms,NIA,2010,1434113,2007-06-01T00:00:00,2012-03-31T00:00:00,False
+S10RR022650,1S10RR022650-01,BRUCE HAMMOCK,Acquisition of an LC-quadrupole time-of-flight Mass Spectrometer,NCRR,2006,492593,2006-04-01T00:00:00,2007-03-31T00:00:00,False
+P60MD000222,5P60MD000222-05,Kenneth Beckman,Core--Genomics/Proteomics Shared Resources,NIMHD,2007,377798,,,False
+P30CA093373,5P30CA093373-23,Lihong Qi,Biostatistics Shared Resource,NCI,2025,162049,2002-07-01T00:00:00,2026-06-30T00:00:00,True
+P30AG010129,3P30AG010129-27S1,Charles DeCarli,UC Davis Alzheimer's Disease Core Center,NIA,2018,334490,1997-07-15T00:00:00,2021-06-30T00:00:00,False
+T32ES007059,5T32ES007059-45,Laura Van Winkle,Advanced Training in Environmental Health Sciences,NIEHS,2022,346715,1978-07-01T00:00:00,2023-06-30T00:00:00,False
+T32HL007013,5T32HL007013-44,Nicholas KENYON,Training in Comparative Lung Biology and Medicine,NHLBI,2022,527402,1975-07-01T00:00:00,2024-07-31T00:00:00,False
+P50HL085036,5P50HL085036-03,David Rocke,Bioinformatices and Biostatistics Core,NHLBI,2007,109149,,,False
+UM1OD023221,5UM1OD023221-09,KC LLOYD,KOMP2-Phase 2 Production and Phenotyping by the DTCC Consortium,OD,2019,6058702,2011-09-16T00:00:00,2021-07-31T00:00:00,False
+S10RR023558,1S10RR023558-01,JULIE LEARY,Thermo Finnigan LTQ-Orbitrap,NCRR,2007,499009,2007-03-15T00:00:00,2008-03-14T00:00:00,False
+G20RR021338,1G20RR021338-01,PHYLLIS WISE,Animal Research Facility Improvements,NCRR,2005,635000,2005-04-08T00:00:00,2006-04-07T00:00:00,False
+R21CA277171,1R21CA277171-01A1,Chengfei Liu,Targeting intracrine steroidogenesis in anti-androgen resistant prostate cancer,NCI,2023,224400,2023-07-10T00:00:00,2025-06-30T00:00:00,False
+R21NS133564,1R21NS133564-01,Anna La Torre,Coordination of projection neuron fate and position by let-7,NINDS,2023,422449,2023-06-15T00:00:00,2025-05-31T00:00:00,False
+U54NS127758,5U54NS127758-04,HEIKE WULFF,Core A: Analytical and Medicinal Chemistry Core,NINDS,2025,345337,2022-09-01T00:00:00,2027-08-31T00:00:00,True
+R01CA251253,5R01CA251253-02,Chengfei Liu,Modulating HSP70/STUB1 machinery in therapy-resistant prostate cancer,NCI,2022,362398,2021-09-01T00:00:00,2026-08-31T00:00:00,True
+R37CA249108,5R37CA249108-02,Chengfei Liu,Dissecting the Role of Proteostasis in Anti-Androgen Resistant Prostate Cancer,NCI,2022,359138,2021-07-01T00:00:00,2026-06-30T00:00:00,True
+R01HL130261,5R01HL130261-07,Elena Goncharova,HIPPO Signaling in Pulmonary Arterial Hypertension,NHLBI,2021,492779,2020-09-01T00:00:00,2024-04-30T00:00:00,False
+S10OD025271,1S10OD025271-01A1,William Jewell,Acquisition of a Q-Exactive Plus Mass Spectrometer,OD,2019,485813,2019-09-01T00:00:00,2021-02-28T00:00:00,False
+R01NS109176,5R01NS109176-05,Sergi Simo,Regulation of hippocampal morphogenesis and homeostasis by the E3 ubiquitin ligase CRL5,NINDS,2023,343438,2019-05-01T00:00:00,2026-01-31T00:00:00,False
+U2CES030158,5U2CES030158-03,Oliver Fiehn,West Coast Metabolomics Center for Compound Identification,NIEHS,2020,989602,2018-09-01T00:00:00,2022-06-30T00:00:00,False
+F32NS108519,5F32NS108519-02,Nicholas Vierra,Dynamic modulation of ionic and lipid signaling by neuronal Kv2 channels,NINDS,2019,61226,2018-08-09T00:00:00,2020-11-08T00:00:00,False
+P30ES023513,5P30ES023513-08,Deborah Bennett,Exposure Core,NIEHS,2022,84979,2015-05-05T00:00:00,2025-03-31T00:00:00,False
+K99HD079561,5K99HD079561-02,David Dallas,Deciphering the function of naturally occurring peptides in human milk,NICHD,2015,78689,2014-05-01T00:00:00,2016-04-30T00:00:00,False
+U24DK097154,1U24DK097154-01,Oliver Fiehn,West Coast Central Comprehensive Metabolomics Resource Core (WC3MRC),NIDDK,2012,2339908,2012-09-04T00:00:00,2017-08-31T00:00:00,False
+U54NS079202,5U54NS079202-10,BRUCE HAMMOCK,Analytical Chemistry,NINDS,2021,455807,2012-09-01T00:00:00,2023-05-31T00:00:00,False
+R00NS061952,4R00NS061952-03,JOANNA CHIU,The role of clock protein phosphorylation and degradation in circadian biology,NINDS,2010,249000,2008-05-01T00:00:00,2013-04-30T00:00:00,False
+P01AR052354,5P01AR052354-09,ISSAC PESSAH,Mechanisms of dysregulating MH RyR1s and their impact on bioenergetics  ,NIAMS,2015,277009,2006-04-14T00:00:00,2016-05-31T00:00:00,False
+P01ES011269,5P01ES011269-02,BRUCE HAMMOCK,Core--analytical biomarkers (xenobiotics) facility,NIEHS,2002,179091,2002-09-30T00:00:00,2003-08-31T00:00:00,False
+R01GM049077,5R01GM049077-20,CARLITO LEBRILLA,The development of methods to determine cell surface glycosylation with the rapid,NIGMS,2014,272543,1993-05-01T00:00:00,2016-01-31T00:00:00,False

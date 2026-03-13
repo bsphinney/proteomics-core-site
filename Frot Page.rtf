@@ -1,0 +1,495 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww20480\viewh14080\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <style>\
+    /* Scoped Styles for Homepage Content */\
+    .pcf-home-wrapper \{\
+        font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;\
+        color: #2c2c2c;\
+        line-height: 1.6;\
+        width: 100%;\
+        max-width: 100%;\
+    \}\
+\
+    /* Colors */\
+    .pcf-home-wrapper \{\
+        --ucd-blue: #022851;\
+        --ucd-gold: #FFBF00;\
+        --ucd-gold-dark: #DAAA00;\
+        --light-gray: #f4f4f4;\
+        --text-light: #ffffff;\
+    \}\
+\
+    .pcf-home-wrapper a \{\
+        text-decoration: none;\
+        color: var(--ucd-blue);\
+        transition: all 0.3s ease;\
+    \}\
+\
+    .pcf-home-wrapper a:hover \{\
+        color: var(--ucd-gold-dark);\
+    \}\
+\
+    /* Hero Section */\
+    .pcf-hero \{\
+        background: linear-gradient(rgba(2, 40, 81, 0.85), rgba(2, 40, 81, 0.7)), url('https://proteomics.ucdavis.edu/sites/g/files/dgvnsk9281/files/media/images/Screenshot%202026-01-12%20at%202.41.44%E2%80%AFPM.png?h=8528652d&itok=XJ5z6X_');\
+        background-size: cover;\
+        background-position: center;\
+        color: var(--text-light);\
+        padding: 5rem 2rem;\
+        text-align: center;\
+        border-radius: 4px;\
+        margin-bottom: 0;\
+    \}\
+\
+    .pcf-hero h1 \{\
+        font-size: 2.5rem;\
+        margin-bottom: 1rem;\
+        color: var(--text-light);\
+        line-height: 1.2;\
+        font-weight: 700;\
+    \}\
+    \
+    .pcf-hero h1 span \{\
+        color: var(--ucd-gold);\
+    \}\
+\
+    .pcf-hero p \{\
+        font-size: 1.2rem;\
+        max-width: 800px;\
+        margin: 0 auto 2rem auto;\
+        opacity: 0.95;\
+        font-weight: 400;\
+        color: #fff;\
+    \}\
+\
+    /* Buttons */\
+    .pcf-buttons \{\
+        display: flex;\
+        gap: 15px;\
+        justify-content: center;\
+        flex-wrap: wrap;\
+    \}\
+\
+    .pcf-btn \{\
+        display: inline-block;\
+        padding: 12px 24px;\
+        border-radius: 4px;\
+        font-weight: 700;\
+        text-transform: uppercase;\
+        letter-spacing: 0.5px;\
+        cursor: pointer;\
+        text-decoration: none;\
+    \}\
+\
+    .pcf-btn-primary \{\
+        background-color: var(--ucd-gold);\
+        color: var(--ucd-blue) !important;\
+    \}\
+\
+    .pcf-btn-primary:hover \{\
+        background-color: #fff;\
+        color: var(--ucd-blue) !important;\
+    \}\
+\
+    .pcf-btn-outline \{\
+        border: 2px solid var(--text-light);\
+        color: var(--text-light) !important;\
+    \}\
+\
+    .pcf-btn-outline:hover \{\
+        background-color: var(--text-light);\
+        color: var(--ucd-blue) !important;\
+    \}\
+\
+    /* Impact/Stats Bar */\
+    .pcf-impact-bar \{\
+        background-color: var(--ucd-blue);\
+        color: white;\
+        padding: 2rem 0;\
+        margin-top: -5px; /* Pulls it up to touch hero */\
+        border-bottom: 5px solid var(--ucd-gold);\
+    \}\
+\
+    .pcf-impact-container \{\
+        max-width: 1200px;\
+        margin: 0 auto;\
+        display: flex;\
+        justify-content: space-around;\
+        align-items: center;\
+        flex-wrap: wrap;\
+        text-align: center;\
+        gap: 2rem;\
+    \}\
+\
+    .pcf-stat-item \{\
+        flex: 1;\
+        min-width: 200px;\
+    \}\
+\
+    .pcf-stat-number \{\
+        display: block;\
+        font-size: 2.5rem;\
+        font-weight: 800;\
+        color: var(--ucd-gold);\
+        line-height: 1;\
+        margin-bottom: 0.5rem;\
+    \}\
+\
+    .pcf-stat-label \{\
+        font-size: 1rem;\
+        text-transform: uppercase;\
+        letter-spacing: 1px;\
+        font-weight: 600;\
+        opacity: 0.9;\
+    \}\
+\
+    /* Featured Service */\
+    .pcf-featured \{\
+        padding: 4rem 1rem;\
+        max-width: 1200px;\
+        margin: 0 auto;\
+        display: flex;\
+        align-items: center;\
+        gap: 4rem;\
+        flex-wrap: wrap;\
+    \}\
+\
+    .pcf-featured-content \{\
+        flex: 2;\
+        min-width: 300px;\
+    \}\
+\
+    .pcf-tag \{\
+        background-color: var(--ucd-blue);\
+        color: var(--ucd-gold);\
+        padding: 5px 12px;\
+        text-transform: uppercase;\
+        font-size: 0.75rem;\
+        font-weight: bold;\
+        border-radius: 50px;\
+        display: inline-block;\
+        margin-bottom: 1.5rem;\
+        letter-spacing: 0.5px;\
+    \}\
+\
+    .pcf-featured-content h2 \{\
+        font-size: 2.2rem;\
+        color: var(--ucd-blue);\
+        margin-bottom: 1rem;\
+        font-weight: 700;\
+    \}\
+\
+    .pcf-featured-image \{\
+        flex: 1;\
+        min-width: 300px;\
+        background-color: #eee;\
+        height: 280px;\
+        border-radius: 8px;\
+        background: url('https://proteomics.ucdavis.edu/sites/g/files/dgvnsk9281/files/media/images/Screenshot%202026-01-12%20at%202.41.44%E2%80%AFPM.png') center/cover no-repeat;\
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);\
+    \}\
+\
+    /* Services Grid */\
+    .pcf-services \{\
+        background-color: #f9f9f9;\
+        padding: 4rem 1rem;\
+    \}\
+\
+    .pcf-section-title \{\
+        text-align: center;\
+        margin-bottom: 3rem;\
+        color: var(--ucd-blue);\
+        font-size: 2rem;\
+        font-weight: 700;\
+    \}\
+\
+    .pcf-grid \{\
+        display: grid;\
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));\
+        gap: 2rem;\
+        max-width: 1200px;\
+        margin: 0 auto;\
+    \}\
+\
+    .pcf-card \{\
+        background: #fff;\
+        border-radius: 8px;\
+        overflow: hidden;\
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);\
+        transition: transform 0.2s;\
+        display: flex;\
+        flex-direction: column;\
+        border: 1px solid #eee;\
+    \}\
+\
+    .pcf-card:hover \{\
+        transform: translateY(-5px);\
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1);\
+    \}\
+\
+    .pcf-card-header \{\
+        background-color: var(--ucd-blue);\
+        color: #fff;\
+        padding: 1.25rem;\
+        font-size: 1.2rem;\
+        font-weight: bold;\
+    \}\
+\
+    .pcf-card-body \{\
+        padding: 1.25rem;\
+        flex-grow: 1;\
+    \}\
+    \
+    .pcf-card-body p \{\
+        margin-bottom: 0;\
+        color: #555;\
+    \}\
+\
+    .pcf-card-footer \{\
+        padding: 1rem 1.25rem;\
+        border-top: 1px solid #f4f4f4;\
+        text-align: right;\
+        background-color: #fff;\
+    \}\
+\
+    .pcf-link-arrow \{\
+        color: var(--ucd-blue);\
+        font-weight: bold;\
+    \}\
+    .pcf-link-arrow:after \{ content: " \uc0\u8594 "; \}\
+\
+    /* Personnel Section Styles (Added) */\
+    .pcf-team \{\
+        padding: 4rem 1rem;\
+        max-width: 1200px;\
+        margin: 0 auto;\
+        text-align: center;\
+    \}\
+    \
+    .pcf-team-grid \{\
+        display: flex;\
+        justify-content: center;\
+        gap: 2.5rem;\
+        flex-wrap: wrap;\
+        margin-top: 2rem;\
+    \}\
+    \
+    .pcf-team-member \{\
+        flex: 1;\
+        min-width: 200px;\
+        max-width: 250px;\
+        text-align: center;\
+    \}\
+    \
+    .pcf-team-img \{\
+        width: 150px;\
+        height: 150px;\
+        border-radius: 50%;\
+        background-color: #ddd;\
+        margin: 0 auto 1.5rem auto;\
+        background-size: cover;\
+        background-position: center;\
+        border: 4px solid var(--light-gray);\
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);\
+    \}\
+\
+    .pcf-team-name \{\
+        color: var(--ucd-blue);\
+        font-weight: 700;\
+        font-size: 1.2rem;\
+        margin-bottom: 0.25rem;\
+    \}\
+\
+    .pcf-team-title \{\
+        color: #666;\
+        font-size: 0.95rem;\
+        font-style: italic;\
+        margin-bottom: 1rem;\
+    \}\
+\
+    /* Info Grid */\
+    .pcf-info-grid \{\
+        max-width: 1200px;\
+        margin: 4rem auto;\
+        display: grid;\
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\
+        gap: 2rem;\
+        padding: 0 1rem;\
+    \}\
+\
+    .pcf-info-box \{\
+        background-color: #fff;\
+        border-left: 5px solid var(--ucd-gold);\
+        padding: 2rem;\
+        box-shadow: 0 2px 15px rgba(0,0,0,0.08);\
+    \}\
+    \
+    .pcf-info-box h3 \{\
+        margin-top: 0;\
+        color: var(--ucd-blue);\
+        font-weight: 700;\
+        margin-bottom: 1rem;\
+    \}\
+\
+    /* Mobile Adjustment */\
+    @media (max-width: 768px) \{\
+        .pcf-featured \{ flex-direction: column-reverse; gap: 2rem; \}\
+        .pcf-hero h1 \{ font-size: 1.8rem; \}\
+        .pcf-stat-item \{ margin-bottom: 1.5rem; \}\
+    \}\
+</style>\
+\
+<div class="pcf-home-wrapper">\
+\
+    <div class="pcf-hero">\
+        <h1>Comprehensive <span>Proteomics</span> & Mass Spectrometry</h1>\
+        <p>Expert support for biological discovery. Providing state-of-the-art LC-MS/MS analysis, protein identification, and Protein Protein Interactions for the research community.</p>\
+        <div class="pcf-buttons">\
+            <a href="https://proteomics.ucdavis.edu/submissions" class="pcf-btn pcf-btn-primary">Start Submission</a>\
+            <a href="https://ppms.us/ucdavis/areq/?pf=8" class="pcf-btn pcf-btn-outline">New User? Register</a>\
+        </div>\
+    </div>\
+\
+    <div class="pcf-impact-bar">\
+        <div class="pcf-impact-container">\
+            <div class="pcf-stat-item">\
+                <span class="pcf-stat-number">20+</span>\
+                <span class="pcf-stat-label">Years of Expertise</span>\
+            </div>\
+            <div class="pcf-stat-item">\
+                <span class="pcf-stat-number">High-Depth</span>\
+                <span class="pcf-stat-label">Discovery Profiling</span>\
+            </div>\
+            <div class="pcf-stat-item">\
+                <span class="pcf-stat-number">Open</span>\
+                <span class="pcf-stat-label">To All Researchers</span>\
+            </div>\
+        </div>\
+    </div>\
+\
+    <div class="pcf-featured">\
+        <div class="pcf-featured-content">\
+            <span class="pcf-tag">New Capability</span>\
+            <h2>Deep Biofluid Proteomics</h2>\
+            <p>Unlock the deep proteome with our new Ceres Nanotrap\'ae workflow. We identify over <strong>3,000 proteins</strong> from plasma, serum, or CSF\'97enriching low-abundance biomarkers like kinases and cytokines often missed by standard methods.</p>\
+            <br>\
+            <ul style="list-style-position: inside; margin-bottom: 1.5rem; color: #444;">\
+                <li><strong>Species Agnostic:</strong> Validated for Human, Mouse, Rat, and more.</li>\
+                <li><strong>Cost-Effective:</strong> High-depth discovery data for $210/sample.</li>\
+            </ul>\
+            <a href="https://proteomics.ucdavis.edu/biofluid-proteomics-using-ceres-nanotrap" class="pcf-btn pcf-btn-primary">View Details</a>\
+        </div>\
+        <div class="pcf-featured-image">\
+            </div>\
+    </div>\
+\
+    <div class="pcf-services">\
+        <h2 class="pcf-section-title">Core Capabilities</h2>\
+        <div class="pcf-grid">\
+            <div class="pcf-card">\
+                <div class="pcf-card-header">Quantitative Discovery</div>\
+                <div class="pcf-card-body">\
+                    <p>Global profiling for complex biological matrices. Ideal for comparative expression analysis across experimental conditions.</p>\
+                </div>\
+                <div class="pcf-card-footer">\
+                    <a href="https://proteomics.ucdavis.edu/quantitative-protein-discovery-biofluids" class="pcf-link-arrow">Details</a>\
+                </div>\
+            </div>\
+\
+            <div class="pcf-card">\
+                <div class="pcf-card-header">Protein Interactions (PPI)</div>\
+                <div class="pcf-card-body">\
+                    <p>Characterize protein complexes and interactomes using Proximity Labeling (BioID/TurboID) or classic IP-MS workflows.</p>\
+                </div>\
+                <div class="pcf-card-footer">\
+                    <a href="https://proteomics.ucdavis.edu/protein-interactions-bioid" class="pcf-link-arrow">Details</a>\
+                </div>\
+            </div>\
+\
+            <div class="pcf-card">\
+                <div class="pcf-card-header">PTM Analysis</div>\
+                <div class="pcf-card-body">\
+                    <p>Enrichment and characterization of post-translational modifications, including Phosphorylation, Ubiquitination, and Acetylation.</p>\
+                </div>\
+                <div class="pcf-card-footer">\
+                    <a href="https://proteomics.ucdavis.edu/ptm-discovery" class="pcf-link-arrow">Details</a>\
+                </div>\
+            </div>\
+\
+             <div class="pcf-card">\
+                <div class="pcf-card-header">Amino Acid Analysis</div>\
+                <div class="pcf-card-body">\
+                    <p>Compositional analysis for pure proteins, peptides, and free amino acid quantification in physiological fluids.</p>\
+                </div>\
+                <div class="pcf-card-footer">\
+                    <a href="https://msf.ucdavis.edu/" class="pcf-link-arrow">Details</a>\
+                </div>\
+            </div>\
+        </div>\
+    </div>\
+\
+    <div class="pcf-team">\
+        <h2 class="pcf-section-title">Meet Our Experts</h2>\
+        <p style="color: #666; max-width: 700px; margin: 0 auto;">Our facility is staffed by PhD-level scientists with decades of combined experience in mass spectrometry and protein chemistry.</p>\
+        \
+        <div class="pcf-team-grid">\
+            <div class="pcf-team-member">\
+                <div class="pcf-team-img" style="background-image: url('https://proteomics.ucdavis.edu/sites/g/files/dgvnsk9281/files/media/images/brett_ttof_ht.jpg')"></div>\
+                <div class="pcf-team-name">Dr. Brett Phinney</div>\
+                <div class="pcf-team-title">Core Director</div>\
+            </div>\
+\
+            <div class="pcf-team-member">\
+                <div class="pcf-team-img" style="background-image: url('https://proteomics.ucdavis.edu/sites/g/files/dgvnsk9281/files/media/images/IMG_7051%202.jpg')"></div>\
+                <div class="pcf-team-name">Michelle Salemi</div>\
+                <div class="pcf-team-title">Staff Researcher</div>\
+            </div>\
+\
+            <div class="pcf-team-member">\
+                <div class="pcf-team-img" style="background-image: url('https://proteomics.ucdavis.edu/sites/g/files/dgvnsk9281/files/images/person/john-schulze.jpg')"></div>\
+                <div class="pcf-team-name">John Schulze</div>\
+                <div class="pcf-team-title">Staff Researcher</div>\
+            </div>\
+\
+            <div class="pcf-team-member">\
+                <div class="pcf-team-img" style="background-image: url('https://proteomics.ucdavis.edu/sites/g/files/dgvnsk9281/files/media/images/IMG_8745_0.JPG')"></div>\
+                <div class="pcf-team-name">Dr. Gabriela Grigorean</div>\
+                <div class="pcf-team-title">Project Scientist</div>\
+            </div>\
+        </div>\
+\
+        <div style="margin-top: 2.5rem;">\
+            <a href="https://proteomics.ucdavis.edu/personnel-2026" class="pcf-btn pcf-btn-outline" style="border-color: var(--ucd-blue); color: var(--ucd-blue)!important;">View Full Team</a>\
+        </div>\
+    </div>\
+\
+    <div class="pcf-info-grid">\
+        <div class="pcf-info-box">\
+            <h3>\uc0\u55356 \u57235  Educational Resources</h3>\
+            <p style="margin-top: 10px;">We offer an annual <strong>Proteomics Short Course</strong> emphasizing practical skills and data analysis. We also provide open-access virtual training materials.</p>\
+            <ul style="margin-top: 15px; list-style: none; padding-left: 0;">\
+                <li style="margin-bottom: 8px;"><a href="https://proteomics.ucdavis.edu/events/hands-proteomics-short-course" class="pcf-link-arrow">Upcoming Short Course</a></li>\
+                <li><a href="https://www.youtube.com/@UCDavisProteomics" class="pcf-link-arrow">Video Tutorials (YouTube)</a></li>\
+            </ul>\
+        </div>\
+\
+        <div class="pcf-info-box contact-details">\
+            <h3>\uc0\u55357 \u56525  Facility Contact</h3>\
+            <p><strong>Email:</strong> <a href="mailto:proteomics@ucdavis.edu">proteomics@ucdavis.edu</a></p>\
+            <p><strong>Phone:</strong> (530) 754-9474</p>\
+            <p><strong>Text:</strong> (530) 771-7055</p>\
+            <p><strong>Location:</strong><br>\
+            Proteomics Core Facility, Room 1414 GBSF<br>\
+            451 E. Health Sciences Dr.<br>\
+            Davis, CA 95616</p>\
+            <p style="font-size: 0.85rem; color: #666; margin-top:10px;"><em>Please avoid US Mail for biological samples.</em></p>\
+        </div>\
+    </div>\
+\
+</div>\
+}
