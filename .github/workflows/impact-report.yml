@@ -1,0 +1,37 @@
+name: NIH Impact Report
+
+on:
+  schedule:
+    # Run on the 1st of every month at 6am UTC
+    - cron: '0 6 1 * *'
+  workflow_dispatch: # Allow manual triggers
+
+permissions:
+  contents: write
+
+jobs:
+  generate-report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run NIH Impact Report
+        run: python scripts/nih_impact_report.py
+
+      - name: Commit updated reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reports/
+          git diff --staged --quiet || git commit -m "Update NIH impact report $(date +%Y-%m-%d)"
+          git push
