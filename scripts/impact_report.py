@@ -1276,12 +1276,35 @@ def discover_grants_by_submission_pis(submissions, max_pis=200):
         reverse=True,
     )
 
+    # Compute UC Davis vs External funding split
+    ucd_funding = 0
+    ucd_pis = 0
+    ext_funding = 0
+    ext_pis = 0
+    for pi in results["pi_details"]:
+        pi_total = (sum(g["amount"] for g in pi["nih_grants"]) +
+                    sum(a["amount"] for a in pi["nsf_awards"]))
+        inst = normalize_institute(pi.get("institute", ""))
+        if inst == "UC Davis":
+            ucd_funding += pi_total
+            ucd_pis += 1
+        else:
+            ext_funding += pi_total
+            ext_pis += 1
+
+    results["ucd_pis"] = ucd_pis
+    results["ucd_funding"] = ucd_funding
+    results["ext_pis"] = ext_pis
+    results["ext_funding"] = ext_funding
+
     print(f"    Done. {results['pis_with_nih']} PIs with active NIH grants, "
           f"{results['pis_with_nsf']} with active NSF awards")
     print(f"    Total active NIH: {results['total_active_nih_grants']} grants, "
           f"${results['total_active_nih_funding']:,.0f}")
     print(f"    Total active NSF: {results['total_nsf_awards']} awards, "
           f"${results['total_nsf_funding']:,.0f}")
+    print(f"    UC Davis: {ucd_pis} PIs, ${ucd_funding:,.0f} | "
+          f"External: {ext_pis} PIs, ${ext_funding:,.0f}")
 
     return results
 
@@ -1946,6 +1969,16 @@ def generate_comprehensive_report(nih_stats, nsf_stats, pubmed_data, sub_stats, 
             f"| Total active NSF awards | **{pi_grants_data['total_nsf_awards']}** |",
             f"| Total active NSF funding | **${pi_grants_data['total_nsf_funding']:,.0f}** |",
             "",
+            "### UC Davis vs External Funding", "",
+            "| Category | PIs | Active Federal Funding |",
+            "|----------|-----|------------------------|",
+            f"| UC Davis researchers | {pi_grants_data.get('ucd_pis', 0)} | "
+            f"**${pi_grants_data.get('ucd_funding', 0):,.0f}** |",
+            f"| External researchers | {pi_grants_data.get('ext_pis', 0)} | "
+            f"**${pi_grants_data.get('ext_funding', 0):,.0f}** |",
+            f"| **Total** | **{pi_grants_data.get('ucd_pis', 0) + pi_grants_data.get('ext_pis', 0)}** | "
+            f"**${pi_grants_data.get('ucd_funding', 0) + pi_grants_data.get('ext_funding', 0):,.0f}** |",
+            "",
         ])
 
         # Top PIs by funding
@@ -1980,6 +2013,103 @@ def generate_comprehensive_report(nih_stats, nsf_stats, pubmed_data, sub_stats, 
 # ==============================================================================
 # Executive Summary PDF
 # ==============================================================================
+
+GITHUB_REPO_URL = "https://github.com/bsphinney/proteomics-core-site"
+
+
+def generate_data_index_pdf():
+    """Generate a one-page PDF with links to all data files on GitHub."""
+    try:
+        import matplotlib
+        matplotlib.use("Agg")
+        import matplotlib.pyplot as plt
+        from matplotlib.backends.backend_pdf import PdfPages
+    except ImportError:
+        print("  matplotlib not installed — skipping data index PDF")
+        return
+
+    FIGURES_DIR.mkdir(parents=True, exist_ok=True)
+    pdf_path = REPORT_DIR / "data_index.pdf"
+
+    UCD_BLUE = "#022851"
+    UCD_GOLD_DARK = "#DAAA00"
+
+    base = f"{GITHUB_REPO_URL}/blob/main"
+
+    with PdfPages(str(pdf_path)) as pdf:
+        fig = plt.figure(figsize=(8.5, 11))
+        ax = fig.add_axes([0, 0, 1, 1])
+        ax.set_xlim(0, 1)
+        ax.set_ylim(0, 1)
+        ax.axis("off")
+
+        # Title
+        ax.text(0.5, 0.94, "UC Davis Proteomics Core Facility",
+                ha="center", fontsize=20, fontweight="bold", color=UCD_BLUE)
+        ax.text(0.5, 0.905, "Impact Report — Data Index & Downloads",
+                ha="center", fontsize=14, color=UCD_GOLD_DARK)
+        ax.text(0.5, 0.875, f"Generated: {date.today().isoformat()}",
+                ha="center", fontsize=10, color="#666666")
+
+        # Gold line
+        ax.plot([0.1, 0.9], [0.86, 0.86], color=UCD_GOLD_DARK, linewidth=2)
+
+        # Repository link
+        ax.text(0.5, 0.83, f"Repository: {GITHUB_REPO_URL}",
+                ha="center", fontsize=11, color=UCD_BLUE, fontstyle="italic")
+
+        # Data sections
+        y = 0.78
+        sections = [
+            ("Reports", [
+                ("Comprehensive Impact Report (all services)", f"{base}/reports/impact_report_latest.md"),
+                ("Mass Spectrometry Only Report", f"{base}/reports/impact_report_ms_only_latest.md"),
+                ("Amino Acid Analysis Only Report", f"{base}/reports/impact_report_aaa_only_latest.md"),
+                ("Executive Summary (PDF)", f"{base}/reports/executive_summary.pdf"),
+            ]),
+            ("Spreadsheets (CSV)", [
+                ("NIH Grants — 45 grants, $26.2M", f"{base}/reports/nih_grants_2026-03-13.csv"),
+                ("NSF Awards — 73 awards, $34.1M", f"{base}/reports/nsf_awards_2026-03-13.csv"),
+                ("Core User PI Grants — backs the $1.6B claim", f"{base}/reports/core_user_grants_2026-03-13.csv"),
+            ]),
+            ("Charts (PNG)", [
+                ("NIH Funding by Institute", f"{base}/reports/figures/nih_funding_by_institute.png"),
+                ("NIH Funding by Decade", f"{base}/reports/figures/nih_funding_by_decade.png"),
+                ("Revenue & Orders by Year", f"{base}/reports/figures/revenue_by_year.png"),
+                ("Submissions by Month (11 years)", f"{base}/reports/figures/submissions_by_month.png"),
+                ("UC Davis vs External Submissions", f"{base}/reports/figures/ucd_vs_external.png"),
+                ("Top Organisms Analyzed", f"{base}/reports/figures/top_organisms.png"),
+                ("Top PIs by Submissions", f"{base}/reports/figures/top_pis_by_submissions.png"),
+                ("Institutions Served", f"{base}/reports/figures/institutions_served.png"),
+                ("Grants Overview (NIH + NSF)", f"{base}/reports/figures/grants_overview.png"),
+            ]),
+            ("Machine-Readable Data", [
+                ("JSON data (for website integration)", f"{base}/reports/impact_data.json"),
+            ]),
+            ("Source Code", [
+                ("Impact report generator script", f"{base}/scripts/impact_report.py"),
+                ("GitHub Actions workflow (monthly)", f"{base}/.github/workflows/impact-report.yml"),
+            ]),
+        ]
+
+        for section_title, items in sections:
+            ax.text(0.08, y, section_title, fontsize=13, fontweight="bold", color=UCD_BLUE)
+            y -= 0.03
+            for label, url in items:
+                ax.text(0.10, y, f"• {label}", fontsize=9, color="#333333")
+                ax.text(0.10, y - 0.018, url, fontsize=7, color="#0066cc", fontstyle="italic")
+                y -= 0.04
+            y -= 0.01
+
+        # Footer
+        ax.text(0.5, 0.02, "UC Davis Proteomics Core Facility  •  proteomics.ucdavis.edu",
+                ha="center", fontsize=8, color="#999999")
+
+        pdf.savefig(fig)
+        plt.close(fig)
+
+    print(f"  Data Index PDF: {pdf_path}")
+
 
 def generate_executive_summary_pdf(nih_stats, nsf_stats, nih_pubs_data,
                                    sub_stats, order_stats, pi_grants_data):
@@ -2453,6 +2583,10 @@ def main():
             "total_nih_funding": pi_grants_data["total_active_nih_funding"] if pi_grants_data else 0,
             "total_nsf_awards": pi_grants_data["total_nsf_awards"] if pi_grants_data else 0,
             "total_nsf_funding": pi_grants_data["total_nsf_funding"] if pi_grants_data else 0,
+            "ucd_pis": pi_grants_data.get("ucd_pis", 0) if pi_grants_data else 0,
+            "ucd_funding": pi_grants_data.get("ucd_funding", 0) if pi_grants_data else 0,
+            "ext_pis": pi_grants_data.get("ext_pis", 0) if pi_grants_data else 0,
+            "ext_funding": pi_grants_data.get("ext_funding", 0) if pi_grants_data else 0,
         },
         "submissions": {
             "total": sub_stats["total_submissions"] if sub_stats else 0,
@@ -2467,11 +2601,12 @@ def main():
     print(f"  JSON: {json_path}")
 
     # Executive Summary PDF
-    print("\nGenerating executive summary PDF...")
+    print("\nGenerating PDFs...")
     generate_executive_summary_pdf(
         nih_stats, nsf_stats, nih_pubs_data, sub_stats, order_stats,
         pi_grants_data
     )
+    generate_data_index_pdf()
 
     # --- Print Summary ---
     print("\n" + "=" * 70)
