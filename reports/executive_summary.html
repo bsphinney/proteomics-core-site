@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UC Davis Proteomics Core Facility — Impact Summary</title>
+<style>
+  :root {
+    --ucd-blue: #022851;
+    --ucd-gold: #FFBF00;
+    --ucd-dark-gold: #DAAA00;
+    --bg: #f5f6fa;
+    --card-bg: #ffffff;
+    --text: #1a1a2e;
+    --text-light: #555;
+    --border: #e0e0e0;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    background: var(--ucd-blue);
+    color: #fff;
+    padding: 2.5rem 2rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--ucd-gold), var(--ucd-dark-gold), var(--ucd-gold));
+  }
+  header h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.3rem;
+  }
+  header p {
+    font-size: 1rem;
+    opacity: 0.85;
+    margin-bottom: 0.2rem;
+  }
+  header .date-badge {
+    display: inline-block;
+    background: rgba(255,191,0,0.15);
+    border: 1px solid var(--ucd-gold);
+    color: var(--ucd-gold);
+    border-radius: 4px;
+    padding: 0.2rem 0.8rem;
+    font-size: 0.85rem;
+    margin-top: 0.6rem;
+    font-weight: 600;
+  }
+  .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem; }
+  .section-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--ucd-blue);
+    margin: 2.5rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--ucd-gold);
+    display: inline-block;
+  }
+  .section-title:first-of-type { margin-top: 0; }
+
+  /* Metric Cards */
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; margin-bottom: 1.5rem; }
+  .card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-top: 4px solid var(--ucd-blue);
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+  .card.gold-accent { border-top-color: var(--ucd-dark-gold); }
+  .card .metric {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--ucd-blue);
+    line-height: 1.1;
+    margin-bottom: 0.3rem;
+  }
+  .card.gold-accent .metric { color: var(--ucd-dark-gold); }
+  .card .label {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+  }
+  .card .sublabel {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 0.25rem;
+  }
+
+  /* Two-column split */
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem; }
+  @media (max-width: 768px) { .split { grid-template-columns: 1fr; } }
+
+  .panel {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .panel h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ucd-blue);
+    margin-bottom: 1rem;
+  }
+  .panel table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+  .panel th, .panel td { text-align: left; padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--border); }
+  .panel th { font-weight: 700; color: var(--ucd-blue); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.03em; }
+  .panel td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .panel tr:last-child td { border-bottom: none; }
+  .panel .highlight-row { background: rgba(255,191,0,0.08); font-weight: 700; }
+
+  /* Figures */
+  .figure-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 1.5rem; margin-bottom: 1.5rem; }
+  .figure-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .figure-card img { width: 100%; height: auto; display: block; }
+  .figure-card .caption {
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--ucd-blue);
+    border-top: 1px solid var(--border);
+  }
+
+  /* About Section */
+  .about {
+    background: var(--ucd-blue);
+    color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+  .about h2 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--ucd-gold); }
+  .about table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+  .about th, .about td { text-align: left; padding: 0.5rem 0.6rem; border-bottom: 1px solid rgba(255,255,255,0.12); color: #ddd; }
+  .about th { color: var(--ucd-gold); font-weight: 700; font-size: 0.78rem; text-transform: uppercase; }
+  .about a { color: var(--ucd-gold); text-decoration: none; }
+  .about a:hover { text-decoration: underline; }
+  .about tr:last-child td { border-bottom: none; }
+
+  /* Downloads */
+  .downloads { margin-top: 1.5rem; }
+  .downloads ul { list-style: none; columns: 2; column-gap: 2rem; }
+  @media (max-width: 600px) { .downloads ul { columns: 1; } }
+  .downloads li { padding: 0.3rem 0; font-size: 0.88rem; }
+  .downloads li::before { content: "\2193 "; color: var(--ucd-gold); font-weight: 700; }
+  .downloads a { color: var(--ucd-gold); text-decoration: none; }
+  .downloads a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.8rem;
+    color: var(--text-light);
+  }
+  footer a { color: var(--ucd-blue); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  /* Print styles */
+  @media print {
+    body { background: #fff; }
+    header { padding: 1.5rem 1rem; }
+    .card:hover { transform: none; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    .about { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>UC Davis Proteomics Core Facility</h1>
+  <p>Comprehensive Impact Summary</p>
+  <span class="date-badge">Report Date: March 13, 2026</span>
+</header>
+
+<div class="container">
+
+  <!-- ============ CORE USAGE ============ -->
+  <h2 class="section-title">Core Usage &amp; Reach</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="metric">4,311</div>
+      <div class="label">Total Submissions</div>
+      <div class="sublabel">Nov 2014 &ndash; Mar 2026</div>
+    </div>
+    <div class="card">
+      <div class="metric">8,866</div>
+      <div class="label">Samples Processed</div>
+    </div>
+    <div class="card gold-accent">
+      <div class="metric">1,514</div>
+      <div class="label">Principal Investigators</div>
+    </div>
+    <div class="card gold-accent">
+      <div class="metric">643</div>
+      <div class="label">Institutions Served</div>
+    </div>
+  </div>
+
+  <!-- ============ REVENUE ============ -->
+  <h2 class="section-title">Revenue &amp; Services</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="metric">$5.48M</div>
+      <div class="label">Total Revenue</div>
+      <div class="sublabel">2,826 orders</div>
+    </div>
+    <div class="card">
+      <div class="metric">$4.10M</div>
+      <div class="label">Mass Spectrometry</div>
+      <div class="sublabel">1,341 orders</div>
+    </div>
+    <div class="card gold-accent">
+      <div class="metric">$1.15M</div>
+      <div class="label">Amino Acid Analysis</div>
+      <div class="sublabel">1,329 orders</div>
+    </div>
+    <div class="card gold-accent">
+      <div class="metric">$1.03M</div>
+      <div class="label">FY 2025 Revenue</div>
+      <div class="sublabel">Peak year to date</div>
+    </div>
+  </div>
+
+  <!-- ============ GRANT FUNDING ============ -->
+  <h2 class="section-title">Grant Funding Leveraged</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="metric">45</div>
+      <div class="label">NIH Grants</div>
+      <div class="sublabel">$26.2M total funding</div>
+    </div>
+    <div class="card">
+      <div class="metric">7</div>
+      <div class="label">Currently Active NIH</div>
+      <div class="sublabel">$2.35M active funding</div>
+    </div>
+    <div class="card gold-accent">
+      <div class="metric">73</div>
+      <div class="label">NSF Awards</div>
+      <div class="sublabel">$34.1M total funding</div>
+    </div>
+    <div class="card gold-accent">
+      <div class="metric">$1.69M</div>
+      <div class="label">Direct Instrument Grants</div>
+      <div class="sublabel">3 S10/OD awards (PI: Phinney)</div>
+    </div>
+  </div>
+
+  <!-- ============ PI GRANTS ============ -->
+  <h2 class="section-title">PI Grant Discovery</h2>
+  <p style="font-size:0.92rem;color:var(--text-light);margin-bottom:1.25rem;">
+    Active federal grants held by PIs who have submitted samples to the core.
+  </p>
+  <div class="cards">
+    <div class="card">
+      <div class="metric">144</div>
+      <div class="label">PIs with NIH Grants</div>
+    </div>
+    <div class="card">
+      <div class="metric">24</div>
+      <div class="label">PIs with NSF Awards</div>
+    </div>
+    <div class="card gold-accent">
+      <div class="metric">$1.65B</div>
+      <div class="label">Total Active PI Funding</div>
+    </div>
+  </div>
+
+  <div class="split" style="margin-top:1rem;">
+    <div class="panel">
+      <h3>UC Davis PIs</h3>
+      <table>
+        <tr><th>Metric</th><th class="num">Value</th></tr>
+        <tr><td>Principal Investigators</td><td class="num"><strong>64</strong></td></tr>
+        <tr class="highlight-row"><td>Active Funding</td><td class="num"><strong>$604,959,121</strong></td></tr>
+      </table>
+    </div>
+    <div class="panel">
+      <h3>External PIs</h3>
+      <table>
+        <tr><th>Metric</th><th class="num">Value</th></tr>
+        <tr><td>Principal Investigators</td><td class="num"><strong>85</strong></td></tr>
+        <tr class="highlight-row"><td>Active Funding</td><td class="num"><strong>$1,041,130,357</strong></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- ============ PUBLICATIONS ============ -->
+  <h2 class="section-title">Instrument Grant Publications</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="metric">69</div>
+      <div class="label">Publications</div>
+      <div class="sublabel">Citing core instrument grants</div>
+    </div>
+    <div class="card gold-accent">
+      <div class="metric">2,048</div>
+      <div class="label">Total Citations</div>
+    </div>
+  </div>
+
+  <!-- ============ REVENUE TABLE ============ -->
+  <h2 class="section-title">Revenue by Year</h2>
+  <div class="panel" style="max-width:600px;">
+    <table>
+      <tr><th>Year</th><th class="num">Orders</th><th class="num">Revenue</th></tr>
+      <tr><td>2020</td><td class="num">252</td><td class="num">$286,420</td></tr>
+      <tr><td>2021</td><td class="num">498</td><td class="num">$682,216</td></tr>
+      <tr><td>2022</td><td class="num">539</td><td class="num">$935,896</td></tr>
+      <tr><td>2023</td><td class="num">409</td><td class="num">$755,098</td></tr>
+      <tr><td>2024</td><td class="num">506</td><td class="num">$965,154</td></tr>
+      <tr><td>2025</td><td class="num">438</td><td class="num">$1,032,775</td></tr>
+      <tr><td>2026 (partial)</td><td class="num">60</td><td class="num">$139,910</td></tr>
+      <tr class="highlight-row"><td>Total</td><td class="num">2,826</td><td class="num">$5,478,062</td></tr>
+    </table>
+  </div>
+
+  <!-- ============ ACTIVE NIH GRANTS ============ -->
+  <h2 class="section-title">Currently Active NIH Grants</h2>
+  <div class="panel">
+    <table>
+      <tr><th>Grant</th><th>PI</th><th>Title</th><th class="num">Funding</th></tr>
+      <tr><td>T32GM144303</td><td>Donald Bers</td><td>Training Program in Pharmacology</td><td class="num">$479,169</td></tr>
+      <tr><td>R21AI194167</td><td>Bennett Penn</td><td>Identifying the Determinants of Persister Cell Survival</td><td class="num">$404,108</td></tr>
+      <tr><td>R01CA251253</td><td>Chengfei Liu</td><td>Modulating HSP70/STUB1 machinery in therapy-resistant cancer</td><td class="num">$362,398</td></tr>
+      <tr><td>R37CA249108</td><td>Chengfei Liu</td><td>Dissecting the Role of Proteostasis in Anti-Androgen Resistance</td><td class="num">$359,138</td></tr>
+      <tr><td>U54NS127758</td><td>Heike Wulff</td><td>Core A: Analytical and Medicinal Chemistry Core</td><td class="num">$345,337</td></tr>
+      <tr><td>R21AI185949</td><td>Bennett Penn</td><td>Regulation of antibiotic tolerance in Mycobacterium</td><td class="num">$241,375</td></tr>
+      <tr><td>P30CA093373</td><td>Lihong Qi</td><td>Biostatistics Shared Resource</td><td class="num">$162,049</td></tr>
+      <tr class="highlight-row"><td colspan="3">Total Active Funding</td><td class="num">$2,353,574</td></tr>
+    </table>
+  </div>
+
+  <!-- ============ KEY CHARTS ============ -->
+  <h2 class="section-title">Key Charts</h2>
+  <div class="figure-grid">
+    <div class="figure-card">
+      <img src="https://raw.githubusercontent.com/bsphinney/proteomics-core-site/main/reports/figures/grants_overview.png" alt="Grants Overview" loading="lazy">
+      <div class="caption">Grants Overview</div>
+    </div>
+    <div class="figure-card">
+      <img src="https://raw.githubusercontent.com/bsphinney/proteomics-core-site/main/reports/figures/revenue_by_year.png" alt="Revenue by Year" loading="lazy">
+      <div class="caption">Revenue by Year</div>
+    </div>
+    <div class="figure-card">
+      <img src="https://raw.githubusercontent.com/bsphinney/proteomics-core-site/main/reports/figures/submissions_by_month.png" alt="Submissions by Month" loading="lazy">
+      <div class="caption">Submissions by Month</div>
+    </div>
+    <div class="figure-card">
+      <img src="https://raw.githubusercontent.com/bsphinney/proteomics-core-site/main/reports/figures/institutions_served.png" alt="Institutions Served" loading="lazy">
+      <div class="caption">Top Institutions Served</div>
+    </div>
+    <div class="figure-card">
+      <img src="https://raw.githubusercontent.com/bsphinney/proteomics-core-site/main/reports/figures/nih_funding_by_institute.png" alt="NIH Funding by Institute" loading="lazy">
+      <div class="caption">NIH Funding by Institute</div>
+    </div>
+    <div class="figure-card">
+      <img src="https://raw.githubusercontent.com/bsphinney/proteomics-core-site/main/reports/figures/nih_funding_by_decade.png" alt="NIH Funding by Decade" loading="lazy">
+      <div class="caption">NIH Funding by Decade</div>
+    </div>
+    <div class="figure-card">
+      <img src="https://raw.githubusercontent.com/bsphinney/proteomics-core-site/main/reports/figures/ucd_vs_external.png" alt="UC Davis vs External Funding" loading="lazy">
+      <div class="caption">UC Davis vs External PI Funding</div>
+    </div>
+    <div class="figure-card">
+      <img src="https://raw.githubusercontent.com/bsphinney/proteomics-core-site/main/reports/figures/top_organisms.png" alt="Top Organisms" loading="lazy">
+      <div class="caption">Top Organisms Analyzed</div>
+    </div>
+    <div class="figure-card">
+      <img src="https://raw.githubusercontent.com/bsphinney/proteomics-core-site/main/reports/figures/top_pis_by_submissions.png" alt="Top PIs by Submissions" loading="lazy">
+      <div class="caption">Top PIs by Submissions</div>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT & DATA SOURCES ============ -->
+  <div class="about">
+    <h2>About This Report</h2>
+    <p style="margin-bottom:1rem;color:#ccc;font-size:0.92rem;">
+      This report is auto-generated by a Python pipeline that queries 6 independent data sources, cross-references
+      submission PIs against federal grant databases, and produces charts, CSVs, and narrative reports.
+      It runs automatically on the 1st of every month via GitHub Actions.
+    </p>
+    <table>
+      <tr><th>Data Source</th><th>What It Provides</th></tr>
+      <tr><td><a href="https://reporter.nih.gov/">NIH Reporter API</a></td><td>Federal grants referencing the proteomics core</td></tr>
+      <tr><td><a href="https://icite.od.nih.gov/">NIH iCite</a></td><td>Citation counts and bibliometrics for publications</td></tr>
+      <tr><td><a href="https://www.nsf.gov/awardsearch/">NSF Award API</a></td><td>NSF awards at UC Davis related to proteomics</td></tr>
+      <tr><td><a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed E-utilities</a></td><td>Publications by core personnel and grant acknowledgments</td></tr>
+      <tr><td>Stratocore / PPMS</td><td>Submission records and order/invoicing data (private)</td></tr>
+      <tr><td>PI Grant Discovery</td><td>Cross-references each submission PI against NIH/NSF by name</td></tr>
+    </table>
+
+    <div class="downloads">
+      <h2 style="margin-top:1.5rem;">Downloadable Files</h2>
+      <ul>
+        <li><a href="https://github.com/bsphinney/proteomics-core-site/blob/main/reports/impact_report_latest.md">Full Impact Report (Markdown)</a></li>
+        <li><a href="https://github.com/bsphinney/proteomics-core-site/blob/main/reports/executive_summary.pdf">Executive Summary (PDF)</a></li>
+        <li><a href="https://github.com/bsphinney/proteomics-core-site/blob/main/reports/impact_report_ms_only_latest.md">Mass Spectrometry Only Report</a></li>
+        <li><a href="https://github.com/bsphinney/proteomics-core-site/blob/main/reports/impact_report_aaa_only_latest.md">Amino Acid Analysis Only Report</a></li>
+        <li><a href="https://github.com/bsphinney/proteomics-core-site/tree/main/reports">NIH Grants CSV</a></li>
+        <li><a href="https://github.com/bsphinney/proteomics-core-site/tree/main/reports">NSF Awards CSV</a></li>
+        <li><a href="https://github.com/bsphinney/proteomics-core-site/tree/main/reports">Core User Grants CSV</a></li>
+        <li><a href="https://github.com/bsphinney/proteomics-core-site/blob/main/reports/impact_data.json">Machine-Readable Data (JSON)</a></li>
+        <li><a href="https://github.com/bsphinney/proteomics-core-site/tree/main/reports/figures">All Charts (PNG)</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>
+    UC Davis Proteomics Core Facility &middot;
+    <a href="https://proteomics.ucdavis.edu">proteomics.ucdavis.edu</a> &middot;
+    <a href="https://github.com/bsphinney/proteomics-core-site">GitHub Repository</a> &middot;
+    <a href="https://github.com/bsphinney/proteomics-core-site/blob/main/reports/impact_report_latest.md">Full Detailed Report</a>
+  </p>
+  <p style="margin-top:0.5rem;">Auto-generated March 13, 2026</p>
+</footer>
+
+</body>
+</html>
