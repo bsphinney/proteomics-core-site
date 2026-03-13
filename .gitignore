@@ -11,3 +11,10 @@ Thumbs.db
 __pycache__/
 *.pyc
 .venv/
+
+# Private data (submission records — do not push)
+private_data/
+
+# R / misc
+.Rhistory
+matplotlib-*/

@@ -1,4 +1,4 @@
-name: NIH Impact Report
+name: Comprehensive Impact Report
 
 on:
   schedule:
@@ -23,15 +23,18 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install requests matplotlib
 
-      - name: Run NIH Impact Report
-        run: python scripts/nih_impact_report.py
+      - name: Run Comprehensive Impact Report
+        run: python scripts/impact_report.py --skip-submissions
+        # Note: --skip-submissions because private_data/ is not in the repo.
+        # To include submission analytics, run locally:
+        #   python scripts/impact_report.py
 
       - name: Commit updated reports
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add reports/
-          git diff --staged --quiet || git commit -m "Update NIH impact report $(date +%Y-%m-%d)"
+          git diff --staged --quiet || git commit -m "Update impact report $(date +%Y-%m-%d)"
           git push

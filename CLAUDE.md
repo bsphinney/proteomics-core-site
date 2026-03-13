@@ -4,88 +4,88 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This repository is a **full rewrite** of the UC Davis Proteomics Core Facility website (proteomics.ucdavis.edu). The site runs on UC Davis SiteFarm (Drupal-based CMS). Pages are authored as self-contained HTML/CSS files, then the content is copy/pasted into SiteFarm's "Full HTML" text format body field.
+This repository serves two purposes:
+
+1. **Website Rewrite** — Full rewrite of the UC Davis Proteomics Core Facility website (proteomics.ucdavis.edu). Pages are authored as self-contained HTML/CSS files for the UC Davis SiteFarm (Drupal) CMS.
+
+2. **Impact Report Automation** — Automated script that queries NIH, NSF, PubMed, and internal data to generate comprehensive impact reports for administration and granting agencies.
 
 ## Directory Structure
 
 ```
-pages/                    — New HTML files (the deliverables). One file per page.
-                            Each file is self-contained <style> + <div> ready to paste into SiteFarm.
-current_site_content/     — Markdown snapshots of the current live site (01–25).
-                            Used as reference/source material for rewrites.
-Frot Page.rtf             — Original homepage (legacy RTF format, being replaced).
+scripts/
+  impact_report.py        — Main impact report generator (6 data sources, 3 report types)
+  nih_impact_report.py    — Original NIH-only script (superseded by impact_report.py)
+
+reports/                  — Auto-generated output (committed to git)
+  impact_report_latest.md          — Comprehensive report (all services)
+  impact_report_ms_only_latest.md  — Mass spec only (for S10 grants)
+  impact_report_aaa_only_latest.md — Amino acid analysis only
+  executive_summary.pdf            — One-page visual dashboard
+  impact_data.json                 — Machine-readable for website JS
+  figures/*.png                    — Charts (9 total)
+
+private_data/             — NOT in git (see .gitignore)
+  submissions_export_full.csv      — Stratocore submission records
+  orders.csv                       — Stratocore order/invoicing data
+
+pages/                    — New HTML files for SiteFarm (self-contained <style> + <div>)
+current_site_content/     — Markdown snapshots of current live site (reference material)
+
+.github/workflows/
+  impact-report.yml       — Monthly auto-generation via GitHub Actions
 ```
 
-## Workflow: Editing & Publishing
+## Impact Report Script
 
-1. Edit or create `.html` files in `pages/`
-2. Preview locally by opening the `.html` file in a browser
-3. Run the mandatory 4-agent review (see below)
-4. Address review feedback
-5. Copy the full file contents and paste into SiteFarm's body field using "Full HTML" text format
+### Quick Start
+```bash
+pip install requests matplotlib
+python scripts/impact_report.py                    # Full run (~5 min)
+python scripts/impact_report.py --skip-pubmed --skip-pi-lookup  # Fast (~30 sec)
+python scripts/impact_report.py --nih-only         # NIH only (~10 sec)
+```
 
-## Architecture & Conventions
+### Data Sources (6)
+1. **NIH Reporter API** — Grants referencing the proteomics core + Kültz/Phinney grants
+2. **NIH Publications + iCite** — Papers linked to S10 instrument grants + citation metrics
+3. **NSF Award API** — NSF awards at UC Davis related to proteomics/mass spec
+4. **PubMed E-utilities** — Publications by core personnel + grant acknowledgments
+5. **Stratocore Submissions + Orders** — Usage stats, revenue, department breakdown (private)
+6. **PI Grant Discovery** — Looks up each submission PI in NIH/NSF by name
 
-- **No build system, package manager, or tests** — static HTML/CSS only
-- All styles scoped under a wrapper class (e.g., `.pcf-home-wrapper`) to avoid CMS theme conflicts
-- CSS custom properties for UC Davis brand colors: `--ucd-blue: #022851`, `--ucd-gold: #FFBF00`, `--ucd-gold-dark: #DAAA00`
-- All class names use the `pcf-` prefix to namespace within the CMS
-- Images reference `proteomics.ucdavis.edu` hosted assets (uploaded via SiteFarm media)
-- Use proper HTML entities (`&reg;`, `&mdash;`, `&amp;`) — no RTF escape sequences
-- Each page HTML file starts with a comment block identifying the page and paste instructions
+### Key People
+- **Brett Phinney** — Core Director, PI on S10 instrument grants
+- **Dietmar Kültz** — Faculty Advisor (NSF-funded, name has umlaut: Kültz)
+- **Core Staff**: Gabriela Grigorean, Michelle Salemi, John Schulze, Lauren Dixon
 
-## Site Pages (25 total)
+### Private Data
+Files in `private_data/` are exported from Stratocore and must NOT be committed to git. The grant information extracted from them CAN be public (in reports/).
 
-| Page | Source File | Status |
-|------|------------|--------|
-| Homepage | `pages/homepage.html` | In progress |
-| Submissions | — | Not started |
-| Biofluid Proteomics (Ceres Nanotrap) | — | Not started |
-| Quantitative Discovery | — | Not started |
-| Protein Interactions / BioID | — | Not started |
-| PTM Discovery | — | Not started |
-| Personnel 2026 | — | Not started |
-| Short Course | — | Not started |
-| FAQ | — | Not started |
-| Protocols | — | Not started |
-| Prices | — | Not started |
-| Proteomics Overview | — | Not started |
-| Equipment 2026 | — | Not started |
-| Mission and Vision | — | Not started |
-| Posters | — | Not started |
-| Service Agreements | — | Not started |
-| Grant Acknowledgments | — | Not started |
-| Cross-Linking | — | Placeholder (needs writing from scratch) |
-| TMT Profiling | — | Placeholder (needs writing from scratch) |
-| Data Analysis Videos | — | Not started |
-| Example Data & Presentations | — | Not started |
-| Resources & Background | — | Not started |
-| Submissions 2026 | — | Not started |
-| Photo Galleries | — | Not started |
-| Facility Information | — | Not started |
+## Website Pages
 
-## Content Source Files
+### Architecture & Conventions
+- No build system — static HTML/CSS only
+- Styles scoped under wrapper classes (e.g., `.pcf-home-wrapper`)
+- CSS variables for UC Davis brand: `--ucd-blue: #022851`, `--ucd-gold: #FFBF00`, `--ucd-gold-dark: #DAAA00`
+- Class names use `pcf-` prefix to namespace within the CMS
+- Images reference `proteomics.ucdavis.edu` hosted assets
 
-Downloaded page content lives in `current_site_content/` as markdown files (01–25), used as source material for rewriting the site.
+### Workflow
+1. Edit `.html` files in `pages/`
+2. Preview locally in browser
+3. Run mandatory 5-agent review (see below)
+4. Paste into SiteFarm's body field using "Full HTML" text format
 
 ## Agent Usage — ALWAYS PARALLELIZE
 
-Always spawn multiple agents in parallel whenever possible. This applies to:
-- The 4 mandatory review agents (always run simultaneously)
-- Fetching content from multiple URLs
-- Writing multiple independent files
-- Any independent tasks that don't depend on each other
+Always spawn multiple agents in parallel whenever possible.
 
 ## Review Process — MANDATORY
 
-After any revision to page content, **always spawn five review agents in parallel** before presenting the final version. Each agent reviews the revised content from a different perspective:
-
-1. **Proteomics Expert** — Verify all mass spectrometry terminology, instrument names, workflows (DIA, DDA, BioID, etc.), and technical claims are accurate and current. Flag any outdated methods or missing best practices.
-
-2. **Biological Researcher** — Review from the perspective of a potential facility user (PI or grad student). Is the content clear and accessible? Are sample requirements, turnaround times, and submission steps easy to understand? Would a non-specialist know what service to choose?
-
-3. **Industry Expert** — Evaluate positioning, pricing language, and competitive claims (e.g., cost-per-protein comparisons). Ensure the facility's value proposition is compelling and that service descriptions align with current industry standards and vendor terminology.
-
-4. **Statistician** — Check any quantitative claims (protein counts, phospho-site numbers, sensitivity comparisons, cost figures). Verify that numbers are presented with appropriate context and that any comparative statements are fair and defensible.
-
-5. **Web Design Expert** — Evaluate layout, visual hierarchy, typography, color/contrast (WCAG compliance), responsive design, whitespace, interactive elements, modern design patterns, accessibility (semantic HTML, ARIA, focus states), and CSS efficiency. Compare against best-in-class institutional sites.
+After any page content revision, spawn five review agents in parallel:
+1. **Proteomics Expert** — Verify MS terminology, instruments, workflows
+2. **Biological Researcher** — Clarity for potential users (PIs, students)
+3. **Industry Expert** — Positioning, pricing, competitive claims
+4. **Statistician** — Quantitative claims, numbers in context
+5. **Web Design Expert** — Layout, accessibility, WCAG, responsive design
