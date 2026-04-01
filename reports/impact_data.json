@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-13",
+  "generated": "2026-04-01",
   "nih": {
     "total_grants": 45,
     "total_funding": 26237787,
@@ -9,22 +9,22 @@
     "active_funding": 2353574
   },
   "nsf": {
-    "total_awards": 0,
-    "total_funding": 0
+    "total_awards": 73,
+    "total_funding": 34108343
   },
   "publications": {
-    "total": 0,
-    "grants_extracted": 0
+    "total": 163,
+    "grants_extracted": 294
   },
   "instrument_grant_publications": {
-    "total": 0,
-    "total_citations": 0
+    "total": 70,
+    "total_citations": 2076
   },
   "revenue": {
-    "total": 5478061.591059999,
-    "ms_revenue": 4102860.64106,
-    "aaa_revenue": 1145882.0,
-    "total_orders": 2826
+    "total": 0,
+    "ms_revenue": 0,
+    "aaa_revenue": 0,
+    "total_orders": 0
   },
   "core_user_grants": {
     "pis_with_nih": 0,
@@ -39,10 +39,10 @@
     "ext_funding": 0
   },
   "submissions": {
-    "total": 4311,
-    "total_samples": 8866,
-    "unique_pis": 1514,
-    "unique_institutions": 643,
-    "repeat_pi_rate": 38.8
+    "total": 0,
+    "total_samples": 0,
+    "unique_pis": 0,
+    "unique_institutions": 0,
+    "repeat_pi_rate": 0
   }
 }
