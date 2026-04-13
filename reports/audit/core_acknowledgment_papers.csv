@@ -1,0 +1,81 @@
+pmid,pmcid,doi,year,journal,title,citation_count,rcr,ucd_affiliation_detected
+41614447,PMC12856783,10.1002/rcm.70040,2026,Rapid communications in mass spectrometry : RCM,Minimally Destructive Radiocarbon Dating of Bone.,0,,True
+41843626,,10.1371/journal.ppat.1013974,2026,PLoS pathogens,The ubiquitin ligase CBL and Fas-associated factor 2 cooperate to regulate the innate immune response to M. tuberculosis.,0,,True
+41591266,PMC13042555,10.1002/advs.202514970,2026,"Advanced science (Weinheim, Baden-Wurttemberg, Germany)",Chloroplast Stress Signals Orchestrate Epidermis-Specific Remodeling of Mitochondria and ER Under High Light.,0,,True
+41454884,,10.1021/acs.jproteome.5c00749,2025,Journal of proteome research,Correlation of Plasma and Liver Tissue Proteomics for Plasma Biomarkers in Metabolic Dysfunction-Associated Steatotic Liver Disease.,0,,True
+41213346,,10.1016/j.fsi.2025.110992,2025,Fish & shellfish immunology,Use of shotgun immunoproteomics for the development of protein vaccines against Edwardsiella piscicida.,0,,True
+41427283,PMC12714018,10.64898/2025.12.11.693549,2025,bioRxiv : the preprint server for biology,Molecular interactions of Chd8 in mouse brain highlights a role in chromatin-associated RNA processing.,0,,True
+40815262,PMC12690474,10.1093/icb/icaf148,2025,Integrative and comparative biology,Proteomic Signatures of SARS-CoV-2 Susceptibility in Mexican Free-tailed Bats and Their Application to Viral Surveillance.,2,,True
+40923996,PMC12705107,10.1083/jcb.202503166,2025,The Journal of cell biology,ATG16L1 controls mammalian vacuolar proton ATPase.,2,,True
+40249779,PMC12036977,10.1073/pnas.2425523122,2025,Proceedings of the National Academy of Sciences of the United States of America,MFRP is a molecular hub that organizes the apical membrane of RPE cells by engaging in interactions with specific proteins and lipids.,1,,True
+40198388,PMC11978689,10.1007/s00122-025-04882-3,2025,TAG. Theoretical and applied genetics. Theoretische und angewandte Genetik,Deletion of wheat alpha-gliadins from chromosome 6D improves gluten strength and reduces immunodominant celiac disease epitopes.,2,,True
+39745851,PMC11694768,10.1083/jcb.202404047,2025,The Journal of cell biology,ATG9A facilitates the closure of mammalian autophagosomes.,14,6.997672251349079,True
+39773872,PMC11706607,10.7554/eLife.100928,2025,eLife,Noncanonical roles of ATG5 and membrane atg8ylation in retromer assembly and function.,9,4.497787399511771,True
+39304982,PMC11922789,10.1111/jfd.14017,2024,Journal of fish diseases,Temperature-dependent alterations in the proteome of the emergent fish pathogen Edwardsiella piscicida.,5,2.5001691271786024,True
+39533058,PMC11649789,10.1038/s44318-024-00292-1,2024,The EMBO journal,Calcium signaling from damaged lysosomes induces cytoprotective stress granules.,21,3.5589377384111702,True
+39536264,,10.1021/acs.jafc.4c07017,2024,Journal of agricultural and food chemistry,Barley Grain Proteome Assessment Using Multi-Environment Trial Data and Machine Learning.,2,0.8473236217407558,True
+39073724,,10.1002/prca.202300236,2024,Proteomics. Clinical applications,Liver Tissue Proteins Improve the Accuracy of Plasma Proteins as Biomarkers in Diagnosing Metabolic Dysfunction-Associated Steatohepatitis.,6,1.244454548089536,True
+39026874,PMC11257513,10.1101/2024.07.10.602886,2024,bioRxiv : the preprint server for biology,Noncanonical roles of ATG5 and membrane atg8ylation in retromer assembly and function.,0,0.0,True
+39408235,PMC11479043,10.3390/nu16193268,2024,Nutrients,Effect of In Vitro Digestion on Bioactive Peptides Related to Immune and Gut Health in Intact Cow's Milk and Hydrolyzed Protein-Based Infant Formulas.,2,0.6755207518257136,True
+39337294,PMC11432144,10.3390/ijms25189807,2024,International journal of molecular sciences,Hepatic Proteomic Changes Associated with Liver Injury Caused by Alcohol Consumption inMice.,1,0.3165554047863937,True
+37669266,PMC10479908,10.1371/journal.pone.0290778,2023,PloS one,Comparison of the broncoalveolar lavage fluid proteomics between foals and adult horses.,2,0.6923388447349722,True
+37435391,PMC10332336,10.7171/3fc1f5fe.9b78d780,2023,Journal of biomolecular techniques : JBT,2019 Association of Biomolecular Resource Facilities Multi-Laboratory Data-Independent Acquisition Proteomics Study.,1,0.11784061209545534,True
+37054706,PMC10205698,10.1016/j.devcel.2023.03.014,2023,Developmental cell,ATG5 provides host protection acting as a switch in the atg8ylation cascade between autophagy and secretion.,44,4.345672243937999,True
+37139973,PMC10157791,10.1093/jncimonographs/lgad014,2023,Journal of the National Cancer Institute. Monographs,The 'omics of obesity in B-cell acute lymphoblastic leukemia.,6,0.677171926933692,True
+37205413,PMC10187347,10.1101/2023.04.28.23289272,2023,medRxiv : the preprint server for health sciences,Discovery of Novel Digital Biomarkers for Type 2 Diabetic Nephropathy Classification via Integration of Urinary Proteomics and Pathology.,3,0.548990325324007,True
+36731758,,10.1016/j.bbapap.2023.140898,2023,Biochimica et biophysica acta. Proteins and proteomics,Citrus flavanone metabolites significantly modulate global proteomic profile in pancreatic &#x3b2;-cells under high-glucose-induced metabolic stress.,8,1.337451927213188,True
+37000833,PMC10065298,10.1371/journal.pone.0283619,2023,PloS one,Protein profiling of forehead epidermal corneocytes distinguishes frontal fibrosing from androgenetic alopecia.,2,0.4904206921058557,True
+36394332,PMC10262754,10.1080/15548627.2022.2148900,2022,Autophagy,"Membrane Atg8ylation, stress granule formation, and MTOR regulation during lysosomal damage.",20,2.333124318498052,True
+36179369,PMC9533235,10.1083/jcb.202207091,2022,The Journal of cell biology,Stress granules and mTOR are regulated by membrane atg8ylation during lysosomal damage.,65,4.655063746269202,True
+36137411,PMC9494172,10.1016/j.ebiom.2022.104256,2022,EBioMedicine,"Dermal thirdhand smoke exposure induces oxidative damage, initiates skin inflammatory markers, and adversely alters the human plasma proteome.",14,1.755124039244775,True
+35922450,PMC9349260,10.1038/s41598-022-16598-1,2022,Scientific reports,Methods to capture proteomic and metabolomic signatures from cerebrospinal fluid and serum of healthy individuals.,5,0.48091492361500693,True
+34941365,,10.1094/PHYTO-07-21-0302-R,2022,Phytopathology,De Novo Arginine Synthesis Is Required for Full Virulence ofpv.During Walnut Bacterial Blight Disease.,7,0.8829424390794457,True
+34491751,,10.1021/acs.jproteome.1c00209,2021,Journal of proteome research,Alternative LC-MS/MS Platforms and Data Acquisition Strategies for Proteomic Genotyping of Human Hair Shafts.,7,0.6690976375374064,True
+34638715,PMC8508651,10.3390/ijms221910374,2021,International journal of molecular sciences,A Secreted Chorismate Mutase frompv.Attenuates Virulence and Walnut Blight Symptoms.,5,0.40208717570129787,True
+34315035,,10.1016/j.fsigen.2021.102564,2021,Forensic science international. Genetics,Elucidation of familial relationships using hair shaft proteomics.,11,1.1254403582543167,True
+34257406,PMC8276549,10.1038/s41556-021-00706-w,2021,Nature cell biology,ATG9A protects the plasma membrane from programmed and incidental permeabilization.,67,3.3558822473459053,True
+34034859,PMC8154037,10.7554/eLife.67624,2021,eLife,Genome-wide CRISPRi screening identifies OCIAD1 as a prohibitin client and regulatory determinant of mitochondrial Complex III assembly in human cells,33,1.7970138253453698,True
+33969321,PMC8091032,10.1016/j.xcrm.2021.100288,2021,Cell reports. Medicine,Divergent and self-reactive immune responses in the CNS of COVID-19 patients with neurological symptoms.,152,9.545619130528726,True
+32935102,PMC7491516,10.1101/2020.09.11.293464,2020,bioRxiv : the preprint server for biology,Exploratory neuroimmune profiling identifies CNS-specific alterations in COVID-19 patients with neurological involvement.,20,0.8573998282618688,True
+33261033,PMC7760677,10.3390/life10120314,2020,"Life (Basel, Switzerland)",Comparative Proteomic Analysis of Walnut (L.) Pellicle Tissues Reveals the Regulation of Nut Quality Attributes.,10,0.8252789992445677,True
+33050347,PMC7593943,10.3390/ijms21207453,2020,International journal of molecular sciences,Proteome Analysis of Walnut Bacterial Blight Disease.,11,0.8273620414945828,True
+32882865,PMC7565608,10.3390/biology9090261,2020,Biology,Deep Learning Neural Network Prediction Method Improves Proteome Profiling of Vascular Sap of Grapevines during Pierce's Disease Development.,2,0.15648125922990763,True
+32521192,PMC7469593,10.1080/15548627.2020.1779451,2020,Autophagy,"MERIT, a cellular system coordinating lysosomal repair, removal and replacement.",31,1.259787195092269,True
+32505640,,10.1016/j.fsigen.2020.102314,2020,Forensic science international. Genetics,Optimal processing for proteomic genotyping of single human hairs.,21,1.6946292103181857,True
+32485593,PMC7388652,10.1016/j.fsigen.2020.102309,2020,Forensic science international. Genetics,Age-Related Changes in Hair Shaft Protein Profiling and Genetically Variant Peptides.,16,1.1841221325724711,True
+32099006,PMC7042271,10.1038/s41598-020-60053-y,2020,Scientific reports,Gender-specific changes in energy metabolism and protein degradation as major pathways affected in livers of mice treated with ibuprofen.,27,1.850057233833059,True
+31813797,PMC6997950,10.1016/j.devcel.2019.10.025,2019,Developmental cell,Galectin-3 Coordinates a Cellular System for Lysosomal Repair and Removal.,304,13.68704565259507,True
+31591262,PMC6944243,10.1074/mcp.RA119.001677,2019,Molecular & cellular proteomics : MCP,NIST Interlaboratory Study on Glycosylation Analysis of Monoclonal Antibodies: Comparison of Results from Diverse Analytical Methods.,77,5.137578294117124,True
+31266899,PMC6751122,10.1105/tpc.19.00081,2019,The Plant cell,Separating Golgi Proteins fromtoReveals Underlying Properties of Cisternal Localization.,38,1.5881545447934808,True
+30939338,,10.1016/j.fsigen.2019.03.009,2019,Forensic science international. Genetics,Comparison of protein expression levels and proteomically-inferred genotypes using human hair from different body sites.,13,0.8089166418064702,True
+30978464,,10.1016/j.jprot.2019.04.007,2019,Journal of proteomics,Proteomic manifestations of genetic defects in autosomal recessive congenital ichthyosis.,9,0.505744349788276,True
+30952696,PMC6550082,10.1242/bio.037937,2019,Biology open,Physiological profile of undifferentiated bovine blastocyst-derived trophoblasts.,23,1.2670322732833985,True
+30916809,,10.1111/exd.13925,2019,Experimental dermatology,Human stratum corneum proteomics reveals cross-linking of a broad spectrum of proteins in cornified envelopes.,34,2.0208310569714114,True
+30552537,PMC6373260,10.1007/s10495-018-1505-4,2019,Apoptosis : an international journal on programmed cell death,Cornification of nail keratinocytes requires autophagy for bulk degradation of intracellular proteins while sparing components of the cytoskeleton.,22,0.9899373308887788,True
+30699108,PMC6353070,10.1371/journal.pone.0199274,2019,PloS one,Metaproteomics reveals potential mechanisms by which dietary resistant starch supplementation attenuates chronic kidney disease progression in rats.,31,1.5902512272533118,True
+30081722,PMC6287685,10.1080/15548627.2018.1505155,2018,Autophagy,Galectins control MTOR and AMPK in response to lysosomal damage to induce autophagy.,122,5.235405829449846,True
+30033667,PMC6415749,10.1111/exd.13756,2018,Experimental dermatology,Corneocyte proteomics: Applications to skin biology and dermatology.,14,0.6399984535561182,True
+29524673,PMC5899949,10.1016/j.actbio.2018.02.037,2018,Acta biomaterialia,Glaucomatous cell derived matrices differentially modulate non-glaucomatous trabecular meshwork cellular behavior.,73,4.013493028350402,True
+29625033,PMC5911935,10.1016/j.molcel.2018.03.009,2018,Molecular cell,Galectins Control mTOR in Response to Endomembrane Damage.,235,8.094741337305118,True
+29155854,PMC5695823,10.1371/journal.pone.0188105,2017,PloS one,Profiling of proteins secreted in the bovine oviduct reveals diverse functions of this luminal microenvironment.,51,2.6972154084356013,True
+28925267,,10.1021/acs.jproteome.7b00486,2017,Journal of proteome research,Absolute Quantification of Human Milk Caseins and the Whey/Casein Ratio during the First Year of Lactation.,74,3.731072820555475,True
+28951887,PMC5605880,10.1128/mSystems.00027-17,2017,mSystems,Proteomes ofsubsp.LBB.B5 Incubated in Milk at Optimal and Low Temperatures.,10,0.6003136091592752,True
+28648685,PMC5567846,10.1016/j.jprot.2017.06.017,2017,Journal of proteomics,Proteomic profiling of Pachyonychia congenita plantar callus.,12,0.45174685866684144,True
+28544375,PMC5540574,10.1002/pmic.201600462,2017,Proteomics,Proteomic analysis of hair shafts from monozygotic twins: Expression profiles and genetically variant peptides.,29,1.5447854625432345,True
+28049629,PMC5862279,10.1093/carcin/bgw205,2017,Carcinogenesis,Integrated Metabolomics and Proteomics Highlight Altered Nicotinamide- and Polyamine Pathways in Lung Adenocarcinoma.,68,2.4831383497127737,True
+27979737,,10.1016/j.peptides.2016.11.012,2016,Peptides,In vivo digestomics of milk proteins in human milk and infant formula using a suckling rat pup model.,27,1.8673096035464185,True
+27852951,PMC5210739,10.1104/pp.16.01404,2016,Plant physiology,A Cysteine-Rich Protein Kinase Associates with a Membrane Immune Complex and the Cysteine Residues Are Required for Cell Death.,107,4.308249390573039,True
+27784770,PMC5135029,10.1212/WNL.0000000000003391,2016,Neurology,Gram-negative bacterial molecules associate with Alzheimer disease pathology.,400,15.369061343433172,True
+27799870,PMC5084393,10.1186/s12014-016-9132-y,2016,Clinical proteomics,"Proteomic profiling of lung adenocarcinoma indicates heightened DNA repair, antioxidant mechanisms and identifies LASP1 as a potential negative predic",33,1.1379054473311925,True
+27603779,PMC5014411,10.1371/journal.pone.0160653,2016,PloS one,Demonstration of Protein-Based Human Identification Using the Hair Shaft Proteome.,77,3.4630078360180807,True
+26148687,,10.1021/acs.jproteome.5b00387,2015,Journal of proteome research,"Lactobacillus casei Low-Temperature, Dairy-Associated Proteome Promotes Persistence in the Mammalian Digestive Tract.",14,0.6552976391628513,True
+26193921,PMC4509060,10.1167/iovs.15-16739,2015,Investigative ophthalmology & visual science,"Dexamethasone Stiffens Trabecular Meshwork, Trabecular Meshwork Cells, and Matrix.",143,5.816092074481164,True
+30882039,PMC6419775,10.1021/ab500060r,2015,ACS biomaterials science & engineering,Transforming Growth Factor Beta 3 Modifies Mechanics and Composition of Extracellular Matrix Deposited by Human Trabecular Meshwork Cells.,29,1.0808852620183902,True
+25338220,PMC4286167,10.1021/pr500818d,2014,Journal of proteome research,The human colostrum whey proteome is altered in gestational diabetes mellitus.,33,1.5342606228221027,True
+25169930,PMC4245816,10.1093/molbev/msu251,2014,Molecular biology and evolution,Evolutionary origin and diversification of epidermal barrier proteins in amniotes.,114,3.5358901769556423,True
+25086045,PMC4176208,10.1074/jbc.M114.601153,2014,The Journal of biological chemistry,Regulation of Yersinia protein kinase A (YpkA) kinase activity by multisite autophosphorylation and identification of an N-terminal substrate-binding ,10,0.28975534404105424,True
+25165623,PMC4137660,10.7717/peerj.506,2014,PeerJ,"Human hair shaft proteomic profiling: individual differences, site specificity and cuticle analysis.",45,1.7037705801877396,True
+24548633,PMC4075482,10.1016/j.lfs.2014.02.004,2014,Life sciences,Mitochondrial proteome remodeling in ischemic heart failure.,33,0.9981578222053024,True
+22537066,PMC3431436,10.1021/bc300114d,2012,Bioconjugate chemistry,Enhancing peptide ligand binding to vascular endothelial growth factor by covalent bond formation.,12,0.3399621107729718,True
+20808644,PMC2922831,,2010,Journal of biomolecular techniques : JBT,A comparative study of in-gel digestions using microwave and pressure-accelerated technologies.,11,0.27631546307598603,True
+17854217,,10.1021/pr070234i,2007,Journal of proteome research,Shotgun cross-linking analysis for studying quaternary and tertiary protein structures.,52,1.0957095171388984,True

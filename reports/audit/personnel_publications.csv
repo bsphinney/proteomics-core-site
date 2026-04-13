@@ -1,0 +1,7 @@
+person,pubmed_query,pubmed_total,pmids_sampled,total_citations_on_sampled,mean_rcr,note
+Brett Phinney,Phinney BS[Author],110,110,4194,1.65,
+Michelle Salemi,Salemi MR[Author],28,28,683,1.50,
+Gabriela Grigorean,Grigorean G[Author],29,29,648,1.77,
+John Schulze,Schulze J[Author] AND (Davis[Affiliation] OR proteomics OR amino acid analysis OR brewing),12,12,725,4.19,FILTER WARNING: Schulze J is a common name; filter used to reduce false positives but may exclude some of John's papers. Manual review needed.
+Lauren Dixon,Dixon LY[Author] OR (Dixon L[Author] AND UC Davis[Affiliation]),7,7,251,2.71,FILTER WARNING: Very old 1549860 (1992) predates her career and is likely a false match. Need manual verification.
+Dietmar Kültz,Kultz D[Author] OR Kültz D[Author],113,113,6401,1.90,"113 papers returned. Dietmar Kültz is unique surname, high confidence."

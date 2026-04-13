@@ -1,48 +1,48 @@
 {
-  "generated": "2026-04-01",
+  "generated": "2026-04-12",
   "nih": {
-    "total_grants": 45,
-    "total_funding": 26237787,
-    "unique_pis": 34,
+    "total_grants": 46,
+    "total_funding": 26628668,
+    "unique_pis": 35,
     "institutes_count": 14,
-    "active_grants_count": 7,
-    "active_funding": 2353574
+    "active_grants_count": 8,
+    "active_funding": 2744455
   },
   "nsf": {
     "total_awards": 73,
     "total_funding": 34108343
   },
   "publications": {
-    "total": 163,
-    "grants_extracted": 294
+    "total": 165,
+    "grants_extracted": 299
   },
   "instrument_grant_publications": {
     "total": 70,
-    "total_citations": 2076
+    "total_citations": 2098
   },
   "revenue": {
-    "total": 0,
-    "ms_revenue": 0,
-    "aaa_revenue": 0,
-    "total_orders": 0
+    "total": 5478061.591059999,
+    "ms_revenue": 4102860.64106,
+    "aaa_revenue": 1145882.0,
+    "total_orders": 2826
   },
   "core_user_grants": {
-    "pis_with_nih": 0,
-    "pis_with_nsf": 0,
-    "total_nih_grants": 0,
-    "total_nih_funding": 0,
-    "total_nsf_awards": 0,
-    "total_nsf_funding": 0,
-    "ucd_pis": 0,
-    "ucd_funding": 0,
-    "ext_pis": 0,
-    "ext_funding": 0
+    "pis_with_nih": 144,
+    "pis_with_nsf": 24,
+    "total_nih_grants": 3102,
+    "total_nih_funding": 1565501695,
+    "total_nsf_awards": 45,
+    "total_nsf_funding": 86195624,
+    "ucd_pis": 64,
+    "ucd_funding": 610486528,
+    "ext_pis": 85,
+    "ext_funding": 1041210791
   },
   "submissions": {
-    "total": 0,
-    "total_samples": 0,
-    "unique_pis": 0,
-    "unique_institutions": 0,
-    "repeat_pi_rate": 0
+    "total": 4311,
+    "total_samples": 8866,
+    "unique_pis": 1514,
+    "unique_institutions": 643,
+    "repeat_pi_rate": 38.8
   }
 }

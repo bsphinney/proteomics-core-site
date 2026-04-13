@@ -1,0 +1,27 @@
+PMC acknowledgment search — 2026-04-12 16:39:47
+Total unique PMC IDs: 394
+
+[129 hits] "UC Davis Proteomics Core"
+  translation: "UC Davis Proteomics Core"[All Fields]
+[68 hits] "UC Davis Proteomics Core Facility"
+  translation: "UC Davis Proteomics Core Facility"[All Fields]
+[55 hits] "University of California Davis Proteomics Core"
+  translation: "University of California Davis Proteomics Core"[All Fields]
+[18 hits] "UC Davis Genome Center Proteomics Core"
+  translation: "UC Davis Genome Center Proteomics Core"[All Fields]
+[21 hits] "Proteomics Core at UC Davis"
+  translation: "Proteomics Core at UC Davis"[All Fields]
+[10 hits] "Proteomics Core Facility at UC Davis"
+  translation: "Proteomics Core Facility at UC Davis"[All Fields]
+[17 hits] S10OD021801
+  translation: "S10OD021801"[All Fields]
+[9 hits] S10OD026918
+  translation: "S10OD026918"[All Fields]
+[0 hits] S10RR023642
+  translation: S10RR023642
+[61 hits] "Brett Phinney"
+  translation: "Brett Phinney"[All Fields]
+[83 hits] "Brett S. Phinney"
+  translation: phinney, brett s[Author]
+[268 hits] ("Proteomics Core" AND "UC Davis")
+  translation: "Proteomics Core"[All Fields] AND "UC Davis"[All Fields]

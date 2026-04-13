@@ -1,0 +1,15 @@
+pmid,pmcid,doi,year,journal,title,citation_count,rcr,ucd_affiliation_detected,reason
+39797759,PMC11789638,10.1101/gad.352010.124,2025,Genes & development,E3 ligase substrate adaptor SPOP fine-tunes the UPR of pancreatic &#x3b2; cells.,1,,False,no UCD affiliation pattern matched
+39103353,,,,,,,,,no metadata
+38798543,,,,,,,,,no metadata
+38598786,,,,,,,,,no metadata
+38617306,,,,,,,,,no metadata
+38206049,,,,,,,,,no metadata
+37876292,,,,,,,,,no metadata
+37788135,,,,,,,,,no metadata
+37894945,,,,,,,,,no metadata
+37893908,,,,,,,,,no metadata
+37808283,,,,,,,,,no metadata
+29742324,,10.1002/anie.201803540,2018,Angewandte Chemie (International ed. in English),"Effective Assignment of &#x3b1;2,3/&#x3b1;2,6-Sialic Acid Isomers by LC-MS/MS-Based Glycoproteomics.",53,2.9370738818086495,False,no UCD affiliation pattern matched
+28049625,PMC5374296,10.1152/ajpendo.00346.2016,2017,American journal of physiology. Endocrinology and metabolism,Regulation of the macrophage oxytocin receptor in response to inflammation.,73,3.3096696007283737,False,no UCD affiliation pattern matched
+27255301,,10.1021/acs.jafc.6b01829,2016,Journal of agricultural and food chemistry,Using LC-MS Based Methods for Testing the Digestibility of a Nonpurified Transgenic Membrane Protein in Simulated Gastric Fluid.,1,0.04995431527533331,False,no UCD affiliation pattern matched
