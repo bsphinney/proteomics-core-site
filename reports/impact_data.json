@@ -1,24 +1,24 @@
 {
-  "generated": "2026-06-01",
+  "generated": "2026-07-01",
   "nih": {
     "total_grants": 46,
     "total_funding": 26628668,
     "unique_pis": 35,
     "institutes_count": 14,
-    "active_grants_count": 7,
-    "active_funding": 2503080
+    "active_grants_count": 5,
+    "active_funding": 1981893
   },
   "nsf": {
     "total_awards": 73,
     "total_funding": 34108343
   },
   "publications": {
-    "total": 165,
-    "grants_extracted": 299
+    "total": 166,
+    "grants_extracted": 300
   },
   "instrument_grant_publications": {
     "total": 70,
-    "total_citations": 2184
+    "total_citations": 2238
   },
   "revenue": {
     "total": 0,
