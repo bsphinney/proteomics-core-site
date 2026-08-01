@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-01",
+  "generated": "2026-08-01",
   "nih": {
     "total_grants": 46,
     "total_funding": 26628668,
@@ -10,11 +10,11 @@
   },
   "nsf": {
     "total_awards": 73,
-    "total_funding": 34108343
+    "total_funding": 34351348
   },
   "publications": {
-    "total": 166,
-    "grants_extracted": 300
+    "total": 168,
+    "grants_extracted": 305
   },
   "instrument_grant_publications": {
     "total": 70,
