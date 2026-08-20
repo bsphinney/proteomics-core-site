@@ -1,0 +1,738 @@
+<!-- UC Davis Proteomics Core Facility — Publications
+     Target path: /publications
+     Paste everything below into the SiteFarm "Full HTML" body field.
+
+     SELF-UPDATING: the list is driven by reports/publications.json, served over
+     raw.githubusercontent.com and regenerated monthly by .github/workflows/
+     publications.yml. Paste this page once; it stays current on its own.
+     A trimmed snapshot is embedded below as a no-JS / offline fallback, so the
+     page still renders a full list if the fetch fails. Regenerate the snapshot
+     with: python3 scripts/publications_sync.py
+
+     NOTE: this is the first design-system page to use inline JS. The "no JS"
+     rule in project_design_system_2026.md §10 forbids external JS libraries;
+     this uses none — vanilla, inline, no dependencies, degrades gracefully. -->
+
+<style>
+    /* ---------- Design tokens ---------- */
+    .pcf-pubs-wrapper {
+        --ucd-blue: #022851;
+        --ucd-blue-deep: #011832;
+        --ucd-gold: #FFBF00;
+        --ucd-gold-dark: #DAAA00;
+        --ucd-gold-ink: #8B6914;
+        --ucd-gold-soft: #FFE79A;
+        --ink: #14161F;
+        --ink-2: #3B3F4D;
+        --ink-3: #6B6F7E;
+        --surface: #FFFFFF;
+        --surface-warm: #F7F5EF;
+        --surface-cool: #F3F5F9;
+        --divider: #E6E4DE;
+        --radius-xl: 20px;
+        --radius-lg: 14px;
+        --radius-md: 10px;
+        --radius-sm: 6px;
+        --shadow-sm: 0 2px 8px rgba(2, 40, 81, 0.06);
+        --shadow-md: 0 12px 28px rgba(2, 40, 81, 0.09);
+        --shadow-lg: 0 24px 48px rgba(2, 40, 81, 0.14);
+        --ease: cubic-bezier(0.2, 0, 0, 1);
+        --t-fast: 180ms var(--ease);
+        --t-med: 280ms var(--ease);
+    }
+
+    /* ---------- Wrapper + typography ---------- */
+    .pcf-pubs-wrapper * { box-sizing: border-box; }
+    .pcf-pubs-wrapper {
+        font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: var(--ink);
+        line-height: 1.55;
+        width: 100%;
+        max-width: 100%;
+        letter-spacing: -0.005em;
+    }
+    .pcf-pubs-wrapper h1,
+    .pcf-pubs-wrapper h2,
+    .pcf-pubs-wrapper h3 {
+        color: var(--ucd-blue);
+        line-height: 1.1;
+        margin: 0;
+    }
+    .pcf-pubs-wrapper a { color: var(--ucd-blue); text-decoration: none; }
+    .pcf-pubs-wrapper a:hover { color: var(--ucd-gold-ink); text-decoration: underline; }
+
+    /* Focus: gold rings measure 1.5:1 on these surfaces and are effectively
+       invisible. Blue is 14.7:1 on white, 12.5:1 on the warm band. */
+    .pcf-pubs-wrapper a:focus-visible,
+    .pcf-pubs-wrapper .pcf-btn:focus-visible,
+    .pcf-pubs-wrapper input:focus-visible,
+    .pcf-pubs-wrapper select:focus-visible {
+        outline: 3px solid var(--ucd-blue);
+        outline-offset: 2px;
+        border-radius: var(--radius-sm);
+    }
+    .pcf-band--dark a:focus-visible,
+    .pcf-band--dark .pcf-btn:focus-visible { outline-color: var(--ucd-gold); }
+
+    .pcf-h-display {
+        font-size: clamp(2.2rem, 5.2vw, 4.25rem);
+        font-weight: 800;
+        letter-spacing: -0.032em;
+    }
+    .pcf-h-section {
+        font-size: clamp(1.75rem, 3vw, 2.5rem);
+        font-weight: 800;
+        letter-spacing: -0.022em;
+    }
+    .pcf-lead {
+        font-size: 1.1rem;
+        color: var(--ink-2);
+        max-width: 680px;
+        margin: 1rem 0 0;
+    }
+    .pcf-eyebrow {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        background: var(--ucd-gold);
+        color: var(--ucd-blue);
+        padding: 0.35rem 0.7rem;
+        border-radius: var(--radius-sm);
+        margin-bottom: 0.9rem;
+    }
+    .pcf-eyebrow--ghost {
+        background: transparent;
+        color: var(--ucd-gold-ink);
+        padding-left: 0;
+    }
+
+    /* ---------- Layout primitives ---------- */
+    .pcf-sec { max-width: 1200px; margin: 0 auto; padding: 5rem 1.25rem; }
+    .pcf-sec--tight { padding-top: 3rem; padding-bottom: 3rem; }
+    .pcf-band { padding: 5rem 1.25rem; }
+    .pcf-band--warm { background: var(--surface-warm); }
+    .pcf-band--cool { background: var(--surface-cool); }
+    .pcf-band--dark { background: var(--ucd-blue); color: #fff; }
+    .pcf-band--dark h2 { color: #fff; }
+    .pcf-band--dark .pcf-lead { color: rgba(255, 255, 255, 0.9); }
+    .pcf-band--dark .pcf-eyebrow--ghost { color: var(--ucd-gold); }
+    .pcf-band--dark a { color: var(--ucd-gold); font-weight: 700; }
+    .pcf-band-inner { max-width: 1200px; margin: 0 auto; }
+
+    /* ---------- At-a-glance bento ---------- */
+    .pcf-bento {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: minmax(120px, auto);
+        gap: 0.9rem;
+        margin-top: 2rem;
+    }
+    .pcf-tile {
+        background: var(--surface);
+        border-radius: var(--radius-lg);
+        padding: 1.5rem 1.5rem 1.4rem;
+        border: 1px solid var(--divider);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        grid-column: span 3;
+    }
+    .pcf-tile--hero {
+        grid-column: span 6;
+        grid-row: span 2;
+        background: linear-gradient(140deg, var(--ucd-gold) 0%, var(--ucd-gold-soft) 100%);
+        border-color: transparent;
+        justify-content: flex-end;
+    }
+    .pcf-tile--accent {
+        grid-column: span 6;
+        background: var(--ucd-blue);
+        border-color: transparent;
+    }
+    .pcf-tile--accent .pcf-tile-label { color: var(--ucd-gold); }
+    .pcf-tile--accent .pcf-tile-value,
+    .pcf-tile--accent .pcf-tile-sub { color: #fff; }
+    .pcf-tile-label {
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--ink-3);
+        margin-bottom: 0.6rem;
+    }
+    .pcf-tile--hero .pcf-tile-label { color: var(--ucd-blue); }
+    .pcf-tile-value {
+        font-size: 1.55rem;
+        font-weight: 800;
+        letter-spacing: -0.022em;
+        color: var(--ucd-blue);
+        line-height: 1.15;
+    }
+    .pcf-tile-mega {
+        font-size: clamp(3rem, 7vw, 5.5rem);
+        font-weight: 800;
+        letter-spacing: -0.04em;
+        color: var(--ucd-blue);
+        line-height: 1;
+    }
+    .pcf-tile-sub { font-size: 0.88rem; color: var(--ink-3); margin-top: 0.35rem; }
+    .pcf-tile--hero .pcf-tile-sub { color: rgba(2, 40, 81, 0.75); }
+
+    /* ---------- Filter controls ---------- */
+    .pcf-pub-controls {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.85rem;
+        align-items: flex-end;
+        margin-top: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid var(--divider);
+    }
+    .pcf-field { display: flex; flex-direction: column; gap: 0.35rem; }
+    .pcf-field label {
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--ink-3);
+    }
+    .pcf-pubs-wrapper .pcf-field input,
+    .pcf-pubs-wrapper .pcf-field select {
+        font-family: inherit;
+        font-size: 1.05rem;
+        color: var(--ink);
+        background: var(--surface);
+        padding: 0.7rem 0.9rem;
+        border: 1px solid var(--ink-3);
+        border-radius: var(--radius-md);
+        min-width: 220px;
+    }
+    .pcf-pubs-wrapper .pcf-field input:focus,
+    .pcf-pubs-wrapper .pcf-field select:focus {
+        border-color: var(--ucd-blue);
+    }
+    .pcf-pub-count {
+        margin-left: auto;
+        font-size: 0.95rem;
+        color: var(--ink-2);
+        padding-bottom: 0.7rem;
+    }
+    .pcf-pub-count strong { color: var(--ucd-blue); }
+
+    /* ---------- Publication list ---------- */
+    .pcf-pub-year {
+        font-size: 1.35rem;
+        font-weight: 800;
+        letter-spacing: -0.022em;
+        color: var(--ucd-blue);
+        margin: 2.5rem 0 0.25rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 3px solid var(--ucd-gold);
+    }
+    .pcf-pub-list { list-style: none; margin: 0; padding: 0; }
+    .pcf-pub {
+        padding: 1.35rem 0;
+        border-bottom: 1px solid var(--divider);
+    }
+    .pcf-pub-title {
+        font-size: 1.08rem;
+        font-weight: 700;
+        color: var(--ucd-blue);
+        letter-spacing: -0.012em;
+        line-height: 1.35;
+        margin: 0 0 0.4rem;
+    }
+    .pcf-pub-authors {
+        font-size: 0.97rem;
+        color: var(--ink-2);
+        margin: 0 0 0.35rem;
+    }
+    .pcf-pub-authors .pcf-me { font-weight: 800; color: var(--ink); }
+    .pcf-pub-meta { font-size: 0.9rem; color: var(--ink-3); }
+    .pcf-pub-journal { font-style: italic; color: var(--ink-2); }
+    .pcf-pub-cites {
+        display: inline-block;
+        margin-left: 0.65rem;
+        padding-left: 0.65rem;
+        border-left: 1px solid var(--divider);
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: var(--ucd-gold-ink);
+    }
+    .pcf-pub-method {
+        margin-top: 2.5rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--divider);
+        font-size: 0.88rem;
+        line-height: 1.6;
+        color: var(--ink-3);
+        max-width: 820px;
+    }
+    .pcf-pub-badge {
+        display: inline-block;
+        margin-left: 0.6rem;
+        vertical-align: middle;
+        font-size: 0.68rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--ucd-gold-ink);
+        background: var(--ucd-gold-soft);
+        border-radius: var(--radius-sm);
+        padding: 0.15rem 0.5rem;
+    }
+    .pcf-pub-status {
+        padding: 2.5rem 0;
+        font-size: 1.05rem;
+        color: var(--ink-2);
+    }
+
+    /* ---------- Buttons ---------- */
+    .pcf-btn-row { display: flex; flex-wrap: wrap; gap: 0.85rem; margin-top: 1.75rem; }
+    .pcf-btn {
+        display: inline-block;
+        font-size: 0.9rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        padding: 0.9rem 1.4rem;
+        border-radius: var(--radius-md);
+        text-decoration: none;
+    }
+    .pcf-btn-primary { background: var(--ucd-gold); color: var(--ucd-blue) !important; }
+    .pcf-btn-ghost { border: 2px solid rgba(255, 255, 255, 0.55); color: #fff !important; }
+    .pcf-pubs-wrapper .pcf-btn:hover { text-decoration: none; }
+    .pcf-pubs-wrapper .pcf-btn-ghost:hover { color: var(--ucd-blue) !important; background: #fff; }
+
+    /* ---------- Motion (respects reduced-motion) ---------- */
+    @media (prefers-reduced-motion: no-preference) {
+        .pcf-tile { transition: transform var(--t-med), box-shadow var(--t-med); }
+        .pcf-tile:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+        .pcf-btn { transition: transform var(--t-fast), box-shadow var(--t-fast); }
+        .pcf-btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+        .pcf-pubs-wrapper a { transition: color var(--t-fast); }
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 960px) {
+        .pcf-tile--hero { grid-column: span 12; grid-row: span 1; }
+        .pcf-tile--accent { grid-column: span 12; }
+        .pcf-tile { grid-column: span 6; }
+        .pcf-pub-count { margin-left: 0; width: 100%; padding-bottom: 0; }
+    }
+    @media (max-width: 600px) {
+        .pcf-sec, .pcf-band { padding: 3rem 1rem; }
+        .pcf-tile { grid-column: span 12; }
+        .pcf-pubs-wrapper .pcf-field input,
+        .pcf-pubs-wrapper .pcf-field select { min-width: 0; width: 100%; }
+        .pcf-field { width: 100%; }
+    }
+</style>
+
+<div class="pcf-pubs-wrapper">
+
+    <!-- INTRO -->
+    <section class="pcf-sec pcf-sec--tight">
+        <span class="pcf-eyebrow">Publications</span>
+        <h1 class="pcf-h-display">Research this facility <span style="color:var(--ucd-gold-ink)">helped produce</span></h1>
+        <p class="pcf-lead">
+            Two records. First, the peer-reviewed papers whose authors credit the
+            UC Davis Proteomics Core &mdash; work done by labs across campus and
+            beyond who sent us their samples. Second, the publication record of
+            Core Director Brett S. Phinney.
+        </p>
+
+        <div class="pcf-bento">
+            <div class="pcf-tile pcf-tile--hero">
+                <div class="pcf-tile-label">Papers crediting the core</div>
+                <div>
+                    <div class="pcf-tile-mega" id="pcf-ack-total">&mdash;</div>
+                    <div class="pcf-tile-sub" id="pcf-ack-range">Loading&hellip;</div>
+                </div>
+            </div>
+            <div class="pcf-tile pcf-tile--accent">
+                <div class="pcf-tile-label">Citations to that work</div>
+                <div>
+                    <div class="pcf-tile-value" id="pcf-ack-cites">&mdash;</div>
+                    <div class="pcf-tile-sub">NIH iCite, all years</div>
+                </div>
+            </div>
+            <div class="pcf-tile">
+                <div class="pcf-tile-label">In the last 5 years</div>
+                <div>
+                    <div class="pcf-tile-value" id="pcf-ack-recent5">&mdash;</div>
+                    <div class="pcf-tile-sub">papers crediting the core</div>
+                </div>
+            </div>
+            <div class="pcf-tile">
+                <div class="pcf-tile-label">Research breadth</div>
+                <div>
+                    <div class="pcf-tile-value" id="pcf-ack-journals">&mdash;</div>
+                    <div class="pcf-tile-sub">distinct journals</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACKNOWLEDGMENT LIST -->
+    <div class="pcf-band pcf-band--warm">
+        <div class="pcf-band-inner">
+            <span class="pcf-eyebrow pcf-eyebrow--ghost">Work we supported</span>
+            <h2 class="pcf-h-section">Papers that credit this core</h2>
+            <p class="pcf-lead">
+                Published work whose authors named the facility, one of our S10
+                instrument grants, or the Core Director in their acknowledgments.
+                If you are wondering whether we have handled your kind of sample,
+                search here.
+            </p>
+
+            <div class="pcf-pub-controls">
+                <div class="pcf-field">
+                    <label for="pcf-ack-search">Search</label>
+                    <input type="search" id="pcf-ack-search" placeholder="Organism, technique, journal&hellip;"
+                           autocomplete="off">
+                </div>
+                <div class="pcf-field">
+                    <label for="pcf-ack-year">Year</label>
+                    <select id="pcf-ack-year"><option value="">All years</option></select>
+                </div>
+                <p class="pcf-pub-count" id="pcf-ack-count" role="status" aria-live="polite"></p>
+            </div>
+
+            <noscript>
+                <p class="pcf-pub-status">
+                    This list is built in your browser and needs JavaScript enabled.
+                </p>
+            </noscript>
+            <div id="pcf-ack-results" aria-live="polite" aria-busy="true">
+                <p class="pcf-pub-status">Loading papers&hellip;</p>
+            </div>
+
+            <p class="pcf-pub-method" id="pcf-ack-method"></p>
+        </div>
+    </div>
+
+    <!-- DIRECTOR'S PUBLICATIONS -->
+    <div class="pcf-band pcf-band--cool">
+        <div class="pcf-band-inner">
+            <span class="pcf-eyebrow pcf-eyebrow--ghost">Core Director</span>
+            <h2 class="pcf-h-section">Publications by Brett S. Phinney</h2>
+            <p class="pcf-lead">
+                <span id="pcf-pub-summary">&mdash;</span> Spanning plant and microbial
+                biology, human milk, forensics, cardiac and neurodegenerative disease,
+                and method development for mass spectrometry itself.
+            </p>
+
+            <div class="pcf-pub-controls">
+                <div class="pcf-field">
+                    <label for="pcf-search">Search</label>
+                    <input type="search" id="pcf-search" placeholder="Title, journal, or co-author&hellip;"
+                           autocomplete="off">
+                </div>
+                <div class="pcf-field">
+                    <label for="pcf-year">Year</label>
+                    <select id="pcf-year"><option value="">All years</option></select>
+                </div>
+                <p class="pcf-pub-count" id="pcf-count" role="status" aria-live="polite"></p>
+            </div>
+
+            <div id="pcf-pub-results" aria-live="polite" aria-busy="true">
+                <p class="pcf-pub-status">Loading publications&hellip;</p>
+            </div>
+
+            <p class="pcf-pub-method">
+                Generated from his <a href="https://orcid.org/0000-0003-3870-3302">ORCID
+                record</a> (a permanent researcher identifier) fed by Crossref, Scopus,
+                and Web of Science. Data deposits, errata, and duplicate
+                preprint/published pairs are filtered out. Citation metrics on
+                <a href="https://scholar.google.com/citations?user=2p9wV0kAAAAJ">Google Scholar</a>.
+            </p>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="pcf-band pcf-band--dark">
+        <div class="pcf-band-inner">
+            <span class="pcf-eyebrow pcf-eyebrow--ghost">Work with us</span>
+            <h2 class="pcf-h-section">Bring us your project</h2>
+            <p class="pcf-lead">
+                The range above reflects what walks through the door &mdash; plants,
+                microbes, clinical samples, non-model organisms. If you are weighing a
+                proteomics experiment, talk to us before you collect samples; study
+                design is where most projects are won or lost.
+            </p>
+            <div class="pcf-btn-row">
+                <a class="pcf-btn pcf-btn-primary" href="/submissions">Submit samples</a>
+                <a class="pcf-btn pcf-btn-ghost" href="/prices">Prices</a>
+                <a class="pcf-btn pcf-btn-ghost" href="/contact/contact_us">Contact us</a>
+            </div>
+            <p class="pcf-lead" style="font-size:0.9rem;margin-top:1.75rem">
+                Publishing work we supported? Please use the wording on the
+                <a href="/instrument-grant-acknowledgments">instrument grant
+                acknowledgments</a> page &mdash; it is how these papers get counted.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Offline fallback snapshots. Regenerated by scripts/publications_sync.py and
+     scripts/acknowledgments_sync.py. Fields: title, journal, year, doi[, kind] -->
+<script type="application/json" id="pcf-pubs-fallback">[["A humanized engineered heart tissue platform for cardiotoxicity assessment","Stem Cell Reports","2026","10.1016/j.stemcr.2026.102856","article"],["The ubiquitin ligase CBL and Fas-associated factor 2 cooperate to regulate the innate immune response to M. tuberculosis","PLOS Pathogens","2026","10.1371/journal.ppat.1013974","article"],["Use of shotgun immunoproteomics for the development of protein vaccines against Edwardsiella piscicida","Fish & Shellfish Immunology","2026","10.1016/j.fsi.2025.110992","article"],["P2-HNF4\u03b1 alters linoleic acid metabolism and mitigates soybean oil-induced obesity: role for oxylipins","Journal of Lipid Research","2025","10.1016/j.jlr.2025.100932","article"],["Correlation of Plasma and Liver Tissue Proteomics for Plasma Biomarkers in Metabolic Dysfunction-Associated Steatotic Liver Disease","Journal of Proteome Research","2025","10.1021/acs.jproteome.5c00749","article"],["Acute in vivo proximity labeling for membrane targeted proteomics in neuronal circuits","bioRxiv","2025","10.64898/2025.12.04.691871","preprint"],["Specimen Inactivation Methods for Proteomics\u2500Comparisons of Irradiation, Chemical, and Heat Treatments on Downstream Serum Analyses","Journal of Proteome Research","2025","10.1021/acs.jproteome.5c00290","article"],["Development and validation of a streamlined workflow for proteomic analysis of proteins and post-translational modifications from dried blood","bioRxiv","2025","10.1101/2025.09.26.678912","preprint"],["ATG16L1 controls mammalian vacuolar proton ATPase","Journal of Cell Biology","2025","10.1083/jcb.202503166","article"],["Proteomic Signatures of SARS-CoV-2 Susceptibility in Mexican Free-tailed Bats and Their Application to Viral Surveillance","Integrative And Comparative Biology","2025","10.1093/icb/icaf148","article"],["Probe-dependent Proximity Profiling (ProPPr) Uncovers Similarities and Differences in Phospho-Tau-Associated Proteomes Between Tauopathies","Molecular Neurodegeneration","2025","10.1186/s13024-025-00817-0","article"],["Noncanonical roles of ATG5 and membrane atg8ylation in retromer assembly and function","eLife","2025","10.7554/elife.100928","article"],["ATG9A facilitates the closure of mammalian autophagosomes","Journal of Cell Biology","2025","10.1083/jcb.202404047","article"],["Calcium signaling from damaged lysosomes induces cytoprotective stress granules","The EMBO Journal","2024","10.1038/s44318-024-00292-1","article"],["Temperature\u2010dependent alterations in the proteome of the emergent fish pathogen Edwardsiella piscicida","Journal of Fish Diseases","2024","10.1111/jfd.14017","article"],["Hepatic Proteomic Changes Associated with Liver Injury Caused by Alcohol Consumption in Fpr2\u2212/\u2212 Mice","International Journal of Molecular Sciences","2024","10.3390/ijms25189807","article"],["Proteostasis perturbation of N-Myc leveraging HSP70 mediated protein turnover improves treatment of neuroendocrine prostate cancer","Nature Communications","2024","10.1038/s41467-024-50459-x","article"],["Liver Tissue Proteins Improve the Accuracy of Plasma Proteins as Biomarkers in Diagnosing Metabolic Dysfunction\u2010Associated Steatohepatitis","PROTEOMICS \u2013 Clinical Applications","2024","10.1002/prca.202300236","article"],["The balance between antiviral and antibacterial responses during M. tuberculosis infection is regulated by the ubiquitin ligase CBL","bioRxiv","2024","10.1101/2024.05.15.594178","preprint"],["Human Keratinocyte Responses to Woodsmoke Chemicals","Chemical Research in Toxicology","2024","10.1021/acs.chemrestox.3c00353","article"],["A mechanism that transduces lysosomal damage signals to stress granule formation for cell survival","bioRxiv","2024","10.1101/2024.03.29.587368","preprint"],["Outer membrane vesicles and the outer membrane protein OmpU govern Vibrio cholerae biofilm matrix assembly","mBio","2024","10.1128/mbio.03304-23","article"],["The role of ATG5 beyond Atg8ylation and autophagy","Autophagy","2023","10.1080/15548627.2023.2273703","article"],["Mitochondrial and Proteasome Dysfunction Occurs in the Hearts of Mice Treated with Triazine Herbicide Prometryn","International Journal of Molecular Sciences","2023","10.3390/ijms242015266","article"],["Extracellular vesicles from mouse trophoblast cells: Effects on neural progenitor cells and potential participants in the placenta\u2013brain axis","Biology of Reproduction","2023","10.1093/biolre/ioad146","article"],["Environmental pro-oxidants induce altered envelope protein profiles in human keratinocytes","Toxicological Sciences","2023","10.1093/toxsci/kfad103","article"],["Comparison of the broncoalveolar lavage fluid proteomics between foals and adult horses","PLOS ONE","2023","10.1371/journal.pone.0290778","article"],["Blood Proteome Profiling Reveals Biomarkers and Pathway Alterations in Fragile X PM at Risk for Developing FXTAS","International Journal of Molecular Sciences","2023","10.3390/ijms241713477","article"],["2019 Association of Biomolecular Resource Facilities Multi-Laboratory Data-Independent Acquisition Proteomics Study","Journal of Biomolecular Techniques : JBT","2023","10.7171/3fc1f5fe.9b78d780","article"],["ATG5 provides host protection acting as a switch in the atg8ylation cascade between autophagy and secretion","Developmental Cell","2023","10.1016/j.devcel.2023.03.014","article"],["Protein profiling of forehead epidermal corneocytes distinguishes frontal fibrosing from androgenetic alopecia","PLOS ONE","2023","10.1371/journal.pone.0283619","article"],["Cell derived matrices from bovine corneal endothelial cells as a model to study cellular dysfunction","Experimental Eye Research","2023","10.1016/j.exer.2022.109303","article"],["Identification of Novel Modifiers of Tau Aggregation and Pathology using a Proximity Proteomics Approach","Alzheimer's & Dementia","2022","10.1002/alz.065671","article"],["Membrane Atg8ylation, stress granule formation, and MTOR regulation during lysosomal damage","Autophagy","2022","10.1080/15548627.2022.2148900","article"],["Stress granules and mTOR are regulated by membrane atg8ylation during lysosomal damage","Journal of Cell Biology","2022","10.1083/jcb.202207091","article"],["De Novo Arginine Synthesis Is Required for Full Virulence of Xanthomonas arboricola pv. juglandis During Walnut Bacterial Blight Disease","Phytopathology\u00ae","2022","10.1094/phyto-07-21-0302-r","article"],["Interactomic analysis reveals a homeostatic role for the HIV restriction factor TRIM5\u03b1 in mitophagy","Cell Reports","2022","10.1016/j.celrep.2022.110797","article"],["Identification of Endogenous Peptides in Nasal Swab Transport Media used in MALDI-TOF-MS Based COVID-19 Screening","ACS Omega","2022","10.1021/acsomega.2c01864","article"],["Proximity proteomics of C9orf72 dipeptide repeat proteins identifies molecular chaperones as modifiers of poly-GA aggregation","Acta Neuropathologica Communications","2022","10.1186/s40478-022-01322-x","article"],["COMPARATIVE PERFORMANCE OF TWO AUTOMATED MACHINE LEARNING PLATFORMS FOR COVID-19 DETECTION BY MALDI-TOF-MS","medRxiv","2022","10.1101/2022.02.02.22270298","preprint"],["Metabolic Enzyme Alterations and Astrocyte Dysfunction in a Murine Model of Alexander Disease With Severe Reactive Gliosis","Molecular & Cellular Proteomics","2022","10.1016/j.mcpro.2021.100180","article"],["Mammalian hybrid pre-autophagosomal structure HyPAS generates autophagosomes","Cell","2021","10.1016/j.cell.2021.10.017","article"],["Elucidation of familial relationships using hair shaft proteomics","Forensic Science International: Genetics","2021","10.1016/j.fsigen.2021.102564","article"],["Alternative LC\u2013MS/MS Platforms and Data Acquisition Strategies for Proteomic Genotyping of Human Hair Shafts","Journal of Proteome Research","2021","10.1021/acs.jproteome.1c00209","article"],["A Secreted Chorismate Mutase from Xanthomonas arboricola pv. juglandis Attenuates Virulence and Walnut Blight Symptoms","International Journal of Molecular Sciences","2021","10.3390/ijms221910374","article"],["ATG9A protects the plasma membrane from programmed and incidental permeabilization","Nature Cell Biology","2021","10.1038/s41556-021-00706-w","article"],["AMELY deletion is not detected in systematically sampled reference populations: A Reply to \u0160tamfelj","Journal of Archaeological Science","2021","10.1016/j.jas.2021.105354","article"],["Quantitative label-free proteomics and biochemical analysis of Phaeodactylum tricornutum cultivation on dairy manure wastewater","Journal of Applied Phycology","2021","10.1007/s10811-021-02483-3","article"],["Genome-wide CRISPRi screening identifies OCIAD1 as a prohibitin client and regulatory determinant of mitochondrial Complex III assembly in human cells","eLife","2021","10.7554/elife.67624","article"],["Divergent and self-reactive immune responses in the CNS of COVID-19 patients with neurological symptoms","Cell Reports Medicine","2021","10.1016/j.xcrm.2021.100288","article"],["Novel application of automated machine learning with MALDI-TOF-MS for rapid high-throughput screening of COVID-19: a proof of concept","Scientific Reports","2021","10.1038/s41598-021-87463-w","article"],["Comparative Proteomic Analysis of Walnut (Juglans regia L.) Pellicle Tissues Reveals the Regulation of Nut Quality Attributes","Life","2020","10.3390/life10120314","article"],["Proteome Analysis of Walnut Bacterial Blight Disease","International Journal of Molecular Sciences","2020","10.3390/ijms21207453","article"],["Deep Learning Neural Network Prediction Method Improves Proteome Profiling of Vascular Sap of Grapevines during Pierce\u2019s Disease Development","Biology","2020","10.3390/biology9090261","article"],["Optimal processing for proteomic genotyping of single human hairs","Forensic Science International: Genetics","2020","10.1016/j.fsigen.2020.102314","article"],["Age-Related Changes in Hair Shaft Protein Profiling and Genetically Variant Peptides","Forensic Science International: Genetics","2020","10.1016/j.fsigen.2020.102309","article"],["A comparison of proteomic, genomic, and osteological methods of archaeological sex estimation","Scientific Reports","2020","10.1038/s41598-020-68550-w","article"],["MERIT, a cellular system coordinating lysosomal repair, removal and replacement","Autophagy","2020","10.1080/15548627.2020.1779451","article"],["N-terminal protein acetylation by NatB modulates the levels of Nmnats, the NAD+ biosynthetic enzymes in Saccharomyces cerevisiae","Journal of Biological Chemistry","2020","10.1074/jbc.ra119.011667","article"],["Gender-specific changes in energy metabolism and protein degradation as major pathways affected in livers of mice treated with ibuprofen","Scientific Reports","2020","10.1038/s41598-020-60053-y","article"],["Galectin-3 Coordinates a Cellular System for Lysosomal Repair and Removal","Developmental Cell","2020","10.1016/j.devcel.2019.10.025","article"],["Proteomic genotyping of fingermark donors with genetically variant peptides","Forensic Science International: Genetics","2019","10.1016/j.fsigen.2019.05.005","article"],["Proteome and metabolome analyses reveal differential responses in tomato -Verticillium dahliae-interactions","Journal of Proteomics","2019","10.1016/j.jprot.2019.103449","article"],["Comparison of protein expression levels and proteomically-inferred genotypes using human hair from different body sites","Forensic Science International: Genetics","2019","10.1016/j.fsigen.2019.03.009","article"],["Proteomic manifestations of genetic defects in autosomal recessive congenital ichthyosis","Journal of Proteomics","2019","10.1016/j.jprot.2019.04.007","article"],["Prioritization of metabolic genes as novel therapeutic targets in estrogen-receptor negative breast tumors using multi-omics data and text mining","Oncotarget","2019","10.18632/oncotarget.26995","article"],["AtTRAPPC11/ROG2: A Role for TRAPPs in Maintenance of the Plant Trans -Golgi Network/Early Endosome Organization and Function","The Plant Cell","2019","10.1105/tpc.19.00110","article"],["Human stratum corneum proteomics reveals cross\u2010linking of a broad spectrum of proteins in cornified envelopes","Experimental Dermatology","2019","10.1111/exd.13925","article"],["Sex estimation using sexually dimorphic amelogenin protein fragments in human enamel","Journal of Archaeological Science","2019","10.1016/j.jas.2018.08.011","article"],["Physiological profile of undifferentiated bovine blastocyst-derived trophoblasts","Biology Open","2019","10.1242/bio.037937","article"],["Cornification of nail keratinocytes requires autophagy for bulk degradation of intracellular proteins while sparing components of the cytoskeleton","Apoptosis","2018","10.1007/s10495-018-1505-4","article"],["Galectins control MTOR and AMPK in response to lysosomal damage to induce autophagy","Autophagy","2018","10.1080/15548627.2018.1505155","article"],["Corneocyte proteomics: Applications to skin biology and dermatology","Experimental Dermatology","2018","10.1111/exd.13756","article"],["Glaucomatous cell derived matrices differentially modulate non-glaucomatous trabecular meshwork cellular behavior","Acta Biomaterialia","2018","10.1016/j.actbio.2018.02.037","article"],["Galectins Control mTOR in Response to Endomembrane Damage","Molecular Cell","2018","10.1016/j.molcel.2018.03.009","article"],["A functional link between NAD+ homeostasis and N-terminal protein acetylation in Saccharomyces cerevisiae","Journal of Biological Chemistry","2018","10.1074/jbc.m117.807214","article"],["Profiling of proteins secreted in the bovine oviduct reveals diverse functions of this luminal microenvironment","PLOS ONE","2017","10.1371/journal.pone.0188105","article"],["Proteomes of Lactobacillus delbrueckii subsp. bulgaricus LBB.B5 Incubated in Milk at Optimal and Low Temperatures","mSystems","2017","10.1128/msystems.00027-17","article"],["Omega-6 and omega-3 oxylipins are implicated in soybean oil-induced obesity in mice","Scientific Reports","2017","10.1038/s41598-017-12624-9","article"],["Absolute Quantification of Human Milk Caseins and the Whey/Casein Ratio during the First Year of Lactation","Journal of Proteome Research","2017","10.1021/acs.jproteome.7b00486","article"],["Biochemical and biomechanical properties of the pacemaking sinoatrial node extracellular matrix are distinct from contractile left ventricular matrix","PLOS ONE","2017","10.1371/journal.pone.0185125","article"],["Proteomic profiling of Pachyonychia congenita plantar callus","Journal of Proteomics","2017","10.1016/j.jprot.2017.06.017","article"],["The Metalloprotease, Mpr1, Engages AnnexinA2 to Promote the Transcytosis of Fungal Cells across the Blood-Brain Barrier","Frontiers in Cellular and Infection Microbiology","2017","10.3389/fcimb.2017.00296","article"],["Proteomic analysis of hair shafts from monozygotic twins: Expression profiles and genetically variant peptides","PROTEOMICS","2017","10.1002/pmic.201600462","article"],["Abstract A14: Proteomic analysis of paired malignant and non-malignant tissues from patients with NSCLC adenocarcinoma identified changes in translation initiation factors potentially important in oncogenesis","Cancer Research","2017","10.1158/1538-7445.transcontrol16-a14","article"],["In vivo digestomics of milk proteins in human milk and infant formula using a suckling rat pup model","Peptides","2017","10.1016/j.peptides.2016.11.012","article"],["Integrated Metabolomics and Proteomics Highlight Altered Nicotinamide- and Polyamine Pathways in Lung Adenocarcinoma","Carcinogenesis","2017","10.1093/carcin/bgw205","article"],["ABRF Proteome Informatics Research Group (iPRG) 2015 Study: Detection of Differentially Abundant Proteins in Label-Free Quantitative LC\u2013MS/MS Experiments","Journal of Proteome Research","2017","10.1021/acs.jproteome.6b00881","article"],["Gram-negative bacterial molecules associate with Alzheimer disease pathology","Neurology","2016","10.1212/wnl.0000000000003391","article"],["A Cysteine-Rich Protein Kinase Associates with a Membrane Immune Complex and the Cysteine Residues Are Required for Cell Death","Plant Physiology","2016","10.1104/pp.16.01404","article"],["Proteomic profiling of lung adenocarcinoma indicates heightened DNA repair, antioxidant mechanisms and identifies LASP1 as a potential negative predictor of survival","Clinical Proteomics","2016","10.1186/s12014-016-9132-y","article"],["The Secreted Protease PrtA Controls Cell Growth, Biofilm Formation and Pathogenicity in Xylella fastidiosa","Scientific Reports","2016","10.1038/srep31098","article"],["Glycoproteomic Analysis of Malignant Ovarian Cancer Ascites Fluid Identifies Unusual Glycopeptides","Journal of Proteome Research","2016","10.1021/acs.jproteome.6b00548","article"],["Proteomic Analysis of Loricrin Knockout Mouse Epidermis","Journal of Proteome Research","2016","10.1021/acs.jproteome.6b00108","article"],["Using LC-MS Based Methods for Testing the Digestibility of a Nonpurified Transgenic Membrane Protein in Simulated Gastric Fluid","Journal of Agricultural and Food Chemistry","2016","10.1021/acs.jafc.6b01829","article"],["The 2012/2013 ABRF Proteomic Research Group Study: Assessing Longitudinal Intralaboratory Variability in Routine Peptide Liquid Chromatography Tandem Mass Spectrometry Analyses*","Molecular & Cellular Proteomics","2015","10.1074/mcp.o115.051888","article"],["Anopheles stephensi p38 MAPK signaling regulates innate immunity and bioenergetics during Plasmodium falciparum infection","Parasites & Vectors","2015","10.1186/s13071-015-1016-x","article"],["Lactobacillus casei Low-Temperature, Dairy-Associated Proteome Promotes Persistence in the Mammalian Digestive Tract","Journal of Proteome Research","2015","10.1021/acs.jproteome.5b00387","article"],["Dexamethasone Stiffens Trabecular Meshwork, Trabecular Meshwork Cells, and Matrix","Investigative Opthalmology & Visual Science","2015","10.1167/iovs.15-16739","article"],["Comparative Proteomics of Human and Macaque Milk Reveals Species-Specific Nutrition during Postnatal Development","Journal of Proteome Research","2015","10.1021/pr501243m","article"],["CaMKII Phosphorylation of Na V 1.5: Novel in Vitro Sites Identified by Mass Spectrometry and Reduced S516 Phosphorylation in Human Heart Failure","Journal of Proteome Research","2015","10.1021/acs.jproteome.5b00107","article"],["Gene expression profiling in pachyonychia congenita skin","Journal of Dermatological Science","2015","10.1016/j.jdermsci.2015.01.001","article"],["Transforming Growth Factor Beta 3 Modifies Mechanics and Composition of Extracellular Matrix Deposited by Human Trabecular Meshwork Cells","ACS Biomaterials Science & Engineering","2015","10.1021/ab500060r","article"],["The Human Colostrum Whey Proteome Is Altered in Gestational Diabetes Mellitus","Journal of Proteome Research","2014","10.1021/pr500818d","article"],["Human hair shaft proteomic profiling: individual differences, site specificity and cuticle analysis","PeerJ","2014","10.7717/peerj.506","article"],["Mitochondrial proteome remodeling in ischemic heart failure","Life Sciences","2014","10.1016/j.lfs.2014.02.004","article"],["Shotgun Proteomic Analysis Unveils Survival and Detoxification Strategies by Caulobacter crescentus during Exposure to Uranium, Chromium, and Cadmium","Journal of Proteome Research","2014","10.1021/pr400880s","article"],["Distinguishing Ichthyoses by Protein Profiling","PLoS ONE","2013","10.1371/journal.pone.0075355","article"],["Proteomic Analysis of Human Keratinocyte Response to 2,3,7,8-Tetrachlorodibenzo- p -Dioxin (TCDD) Exposure","Journal of Proteome Research","2013","10.1021/pr4006266","article"],["Cryptococcus neoformans Promotes Its Transmigration into the Central Nervous System by Inducing Molecular and Cellular Changes in Brain Endothelial Cells","Infection and Immunity","2013","10.1128/iai.00554-13","article"],["Sustained Activation of Akt Elicits Mitochondrial Dysfunction to Block Plasmodium falciparum Infection in the Mosquito Host","PLoS Pathogens","2013","10.1371/journal.ppat.1003180","article"],["Interlaboratory studies and initiatives developing standards for proteomics","PROTEOMICS","2013","10.1002/pmic.201200532","article"],["Differentiating Inbred Mouse Strains from Each Other and Those with Single Gene Mutations Using Hair Proteomics","PLoS ONE","2012","10.1371/journal.pone.0051956","article"],["Enhancing Peptide Ligand Binding to Vascular Endothelial Growth Factor by Covalent Bond Formation","Bioconjugate Chemistry","2012","10.1021/bc300114d","article"],["Quantitative Proteomics Reveals Dynamic Changes in the Plasma Membrane During Arabidopsis Immune Signaling","Molecular & Cellular Proteomics","2012","10.1074/mcp.m111.014555","article"],["Phosphorylation and Activation of the Plasma Membrane Na+/H+ Exchanger (NHE1) during Osmotic Cell Shrinkage","PLoS ONE","2011","10.1371/journal.pone.0029210","article"],["Proteomic Characterization of Specific Minor Proteins in the Human Milk Casein Fraction","Journal of Proteome Research","2011","10.1021/pr200660t","article"],["Label-free shotgun proteomics and metabolite analysis reveal a significant metabolic shift during citrus fruit development","Journal of Experimental Botany","2011","10.1093/jxb/err197","article"],["Proteomic Characterization of Human Milk Fat Globule Membrane Proteins during a 12 Month Lactation Period","Journal of Proteome Research","2011","10.1021/pr200149t","article"],["Proteomic Characterization of Human Milk Whey Proteins during a Twelve-Month Lactation Period","Journal of Proteome Research","2011","10.1021/pr101028k","article"],["REVEILLE8 and PSEUDO-REPONSE REGULATOR5 Form a Negative Feedback Loop within the Arabidopsis Circadian Clock","PLoS Genetics","2011","10.1371/journal.pgen.1001350","article"],["ABRF-PRG07: Advanced quantitative proteomics study","Journal of Biomolecular Techniques","2011","","article"],["A label-free differential quantitative mass spectrometry method for the characterization and identification of protein changes during citrus fruit development","Proteome Science","2010","10.1186/1477-5956-8-68","article"],["Proteomic Analysis of Human Nail Plate","Journal of Proteome Research","2010","10.1021/pr1009349","article"],["The Significance of Protein Maturation by Plastidic Type I Signal Peptidase 1 for Thylakoid Development in Arabidopsis Chloroplasts","Plant Physiology","2010","10.1104/pp.109.151977","article"],["A comparative study of in-gel digestions using microwave and pressure-accelerated technologies","Journal of Biomolecular Techniques","2010","","article"],["Reanalysis of Tyrannosaurus rex Mass Spectra","Journal of Proteome Research","2009","10.1021/pr900349r","article"],["Analysis of the Pumpkin Phloem Proteome Provides Insights into Angiosperm Sieve Tube Function","Molecular & Cellular Proteomics","2009","10.1074/mcp.m800420-mcp200","article"],["In vivo multiplex quantitative analysis of 3 forms of alpha melanocyte stimulating hormone in pituitary of prolyl endopeptidase deficient mice","Molecular Brain","2009","10.1186/1756-6606-2-14","article"],["Polygalacturonase causes lygus-like damage on plants: cloning and identification of western tarnished plant bug (Lygus hesperus) polygalacturonases secreted during feeding","Arthropod-Plant Interactions","2008","10.1007/s11829-008-9050-7","article"],["ABRF-PRG05: De novo peptide sequence determination","Journal of Biomolecular Techniques","2008","","article"],["Protein Changes in the Albedo of Citrus Fruits on Postharvesting Storage","Journal of Agricultural and Food Chemistry","2007","10.1021/jf071198a","article"],["Shotgun Cross-Linking Analysis for Studying Quaternary and Tertiary Protein Structures","Journal of Proteome Research","2007","10.1021/pr070234i","article"],["The Association of Biomolecular Resource Facilities Proteomics Research Group 2006 Study","Molecular & Cellular Proteomics","2007","10.1074/mcp.m700165-mcp200","article"],["Extracellular glycosylphosphatidylinositol-anchored mannoproteins and proteases of Cryptococcus neoformans","FEMS Yeast Research","2007","10.1111/j.1567-1364.2006.00198.x","article"],["The citrus fruit proteome: insights into citrus fruit metabolism","Planta","2007","10.1007/s00425-007-0545-8","article"],["FLOWERING LOCUS T Protein May Act as the Long-Distance Florigenic Signal in the Cucurbits","The Plant Cell","2007","10.1105/tpc.107.051920","article"],["An experimental strategy for quantitative analysis of the humoral immune response to prostate cancer antigens using natural protein microarrays","PROTEOMICS \u2013 Clinical Applications","2007","10.1002/prca.200600802","article"],["Determining the Overall Merit of Protein Identification Data Sets: rho- Diagrams and rho- Scores","Journal of Proteome Research","2007","10.1021/pr070025y","article"],["Protein Variations in Listeria monocytogenes Exposed to Sodium Lactate, Sodium Diacetate, and Their Combination","Journal of Food Protection","2007","10.4315/0362-028x-70.1.58","article"],["Global Analysis of Protein Palmitoylation in Yeast","Cell","2006","10.1016/j.cell.2006.03.042","article"],["Jasmonate-inducible plant enzymes degrade essential amino acids in the herbivore midgut","Proceedings of the National Academy of Sciences","2005","10.1073/pnas.0509026102","article"],["Interaction of Arabidopsis BRASSINOSTEROID\u2010INSENSITIVE 1 receptor kinase with a homolog of mammalian TGF\u2010 \u03b2 receptor interacting protein","The Plant Journal","2005","10.1111/j.1365-313x.2005.02448.x","article"],["Identification and Functional Analysis of in Vivo Phosphorylation Sites of the Arabidopsis BRASSINOSTEROID-INSENSITIVE1 Receptor Kinase","The Plant Cell","2005","10.1105/tpc.105.031393","article"],["Proteomic Characterization of A Triton-Insoluble Fraction from Chloroplasts Defines A Novel Group of Proteins Associated with Macromolecular Structures","Journal of Proteome Research","2005","10.1021/pr049791k","article"],["Defective glycosylation of calsequestrin in heart failure","Cardiovascular Research","2004","10.1016/j.cardiores.2004.04.001","article"],["Proteomic Study of the Arabidopsis t haliana Chloroplastic Envelope Membrane Utilizing Alternatives to Traditional Two-Dimensional Electrophoresis","Journal of Proteome Research","2003","10.1021/pr034025j","article"],["Identification of in Vivo Phosphorylation Sites of MLK3 by Mass Spectrometry and Phosphopeptide Mapping","Biochemistry","2002","10.1021/bi016075c","article"],["Proteomics of the plant Golgi apparatus","Proceedings 50th ASMS Conference on Mass Spectrometry and Allied Topics","2002","","conference"],["Alternative Reactivity of an \u03b1-Ketoglutarate-Dependent Iron(II) Oxygenase: Enzyme Self-Hydroxylation","Journal of the American Chemical Society","2001","10.1021/ja005879x","article"],["Sindbis Virus Glycoprotein E1 Is Divided into Two Discrete Domains at Amino Acid 129 by Disulfide Bridge Connections","Journal of Virology","2000","10.1128/jvi.74.19.9313-9316.2000","article"],["The Surface Conformation of Sindbis Virus Glycoproteins E1 and E2 at Neutral and Low pH, as Determined by Mass Spectrometry-Based Mapping","Journal of Virology","2000","10.1128/jvi.74.12.5667-5678.2000","article"]]</script>
+<script type="application/json" id="pcf-ack-fallback">[["Translational control of CAK and Cdk T-loop phosphorylation in response to growth in yeast","bioRxiv : the preprint server for biology","2026","10.64898/2026.01.28.702203"],["The ubiquitin ligase CBL and Fas-associated factor 2 cooperate to regulate the innate immune response to M. tuberculosis","PLoS pathogens","2026","10.1371/journal.ppat.1013974"],["Small heat shock protein HSPB8 interacts with a pre-fibrillar TDP43 low complexity domain species to delay fibril formation","Biophysical chemistry","2026","10.1016/j.bpc.2026.107590"],["Minimally Destructive Radiocarbon Dating of Bone","Rapid communications in mass spectrometry : RCM","2026","10.1002/rcm.70040"],["Chloroplast Stress Signals Orchestrate Epidermis-Specific Remodeling of Mitochondria and ER Under High Light","Advanced science (Weinheim, Baden-Wurttemberg, Germany)","2026","10.1002/advs.202514970"],["Vibrio cholerae biofilm matrix assembly and growth are shaped by a glutamate-specific TAXI/TRAP protein","Proceedings of the National Academy of Sciences of the United States of America","2025","10.1073/pnas.2504869122"],["Use of shotgun immunoproteomics for the development of protein vaccines against Edwardsiella piscicida","Fish & shellfish immunology","2025","10.1016/j.fsi.2025.110992"],["Trichodesmium metaproteomes reflect the differential influence of resource availability across ocean regions","The ISME journal","2025","10.1093/ismejo/wraf120"],["Temperature-dependent alterations in the proteome of the emergent fish pathogen Edwardsiella piscicida","Journal of fish diseases","2025","10.1111/jfd.14017"],["Specimen Inactivation Methods for Proteomics\u2500Comparisons of Irradiation, Chemical, and Heat Treatments on Downstream Serum Analyses","Journal of proteome research","2025","10.1021/acs.jproteome.5c00290"],["Small heat shock protein HSPB8 interacts with a pre-fibrillar TDP43 low complexity domain species to delay fibril formation","bioRxiv : the preprint server for biology","2025","10.1101/2025.01.28.635368"],["Proteomic Signatures of SARS-CoV-2 Susceptibility in Mexican Free-tailed Bats and Their Application to Viral Surveillance","Integrative and comparative biology","2025","10.1093/icb/icaf148"],["Probe-dependent Proximity Profiling (ProPPr) Uncovers Similarities and Differences in Phospho-Tau-Associated Proteomes Between Tauopathies","Molecular neurodegeneration","2025","10.1186/s13024-025-00817-0"],["PEX1(G843D) remains functional in peroxisome biogenesis but is rapidly degraded by the proteasome","The Journal of biological chemistry","2025","10.1016/j.jbc.2025.108467"],["PAK1 regulates oligodendroglial proliferation and repopulation in homeostatic and demyelinating brain","Cellular and molecular life sciences : CMLS","2025","10.1007/s00018-025-05728-3"],["Noncanonical roles of ATG5 and membrane atg8ylation in retromer assembly and function","eLife","2025","10.7554/elife.100928"],["Molecular interactions of Chd8 in mouse brain highlights a role in chromatin-associated RNA processing","bioRxiv : the preprint server for biology","2025","10.64898/2025.12.11.693549"],["MFRP is a molecular hub that organizes the apical membrane of RPE cells by engaging in interactions with specific proteins and lipids","Proceedings of the National Academy of Sciences of the United States of America","2025","10.1073/pnas.2425523122"],["Investigational New Drug-enabling studies to use genetically modified mesenchymal stromal cells in patients with critical limb ischemia","Stem cells translational medicine","2025","10.1093/stcltm/szae094"],["Hybrid Extracellular Vesicles With Combined Functional Properties From Mesenchymal Stem Cells and Astrocytes for Targeted Neurodegenerative Disease Applications","Journal of extracellular vesicles","2025","10.1002/jev2.70175"],["Extracellular matrix ligands modulate the endothelial progenitor cell secretome for enhanced angiogenesis","Acta biomaterialia","2025","10.1016/j.actbio.2025.02.028"],["Development and validation of a streamlined workflow for proteomic analysis of proteins and post-translational modifications from dried blood","bioRxiv : the preprint server for biology","2025","10.1101/2025.09.26.678912"],["Deletion of wheat alpha-gliadins from chromosome 6D improves gluten strength and reduces immunodominant celiac disease epitopes","TAG. Theoretical and applied genetics. Theoretische und angewandte Genetik","2025","10.1007/s00122-025-04882-3"],["Decellularized Extracellular Matrix Improves Mesenchymal Stromal Cell Spheroid Response to Chondrogenic Stimuli","Tissue engineering. Part A","2025","10.1089/ten.tea.2024.0267"],["Correlation of Plasma and Liver Tissue Proteomics for Plasma Biomarkers in Metabolic Dysfunction-Associated Steatotic Liver Disease","Journal of proteome research","2025","10.1021/acs.jproteome.5c00749"],["Context-dependent Interactors Regulate TDP-43 Dysfunction in ALS/FTLD","bioRxiv : the preprint server for biology","2025","10.1101/2025.04.07.646890"],["ATG9A facilitates the closure of mammalian autophagosomes","The Journal of cell biology","2025","10.1083/jcb.202404047"],["ATG16L1 controls mammalian vacuolar proton ATPase","The Journal of cell biology","2025","10.1083/jcb.202503166"],["A physiological microfluidic blood-brain-barrier model for in vitro study of nanoparticle trafficking and accumulation","bioRxiv : the preprint server for biology","2025","10.1101/2025.08.28.672885"],["A large-scale screening campaign of putative carbohydrate-active enzymes reveals a novel xylanase from anaerobic gut fungi","mBio","2025","10.1128/mbio.01007-25"],["A conserved chronobiological complex times C. elegans development","The EMBO journal","2025","10.1038/s44318-025-00585-z"],["The efficacy of an embryonic stem cell-based vaccine for lung cancer prevention depends on the undifferentiated state of the stem cells","Scientific reports","2024","10.1038/s41598-024-83932-0"],["The RPD3L deacetylation complex is required for facultative heterochromatin repression in Neurospora crassa","Proceedings of the National Academy of Sciences of the United States of America","2024","10.1073/pnas.2404770121"],["Semen proteome and transcriptome of the endangered black-footed ferret (Mustela nigripes) show association with the environment and fertility outcome","Scientific reports","2024","10.1038/s41598-024-57096-w"],["Reduction of ZFX levels decreases histone H4 acetylation and increases Pol2 pausing at target promoters","Nucleic acids research","2024","10.1093/nar/gkae372"],["Probe-dependent Proximity Profiling (ProPPr) Uncovers Similarities and Differences in Phospho-Tau-Associated Proteomes Between Tauopathies","bioRxiv : the preprint server for biology","2024","10.1101/2024.03.25.585597"],["Polyphosphate kinase regulates LPS structure and polymyxin resistance during starvation in E. coli","PLoS biology","2024","10.1371/journal.pbio.3002558"],["PEX1(G843D) remains functional in peroxisome biogenesis but is rapidly degraded by the proteasome","bioRxiv : the preprint server for biology","2024","10.1101/2024.12.10.627778"],["Noncanonical roles of ATG5 and membrane atg8ylation in retromer assembly and function","bioRxiv : the preprint server for biology","2024","10.1101/2024.07.10.602886"],["Liver Tissue Proteins Improve the Accuracy of Plasma Proteins as Biomarkers in Diagnosing Metabolic Dysfunction-Associated Steatohepatitis","Proteomics. Clinical applications","2024","10.1002/prca.202300236"],["Hepatic Proteomic Changes Associated with Liver Injury Caused by Alcohol Consumption in Fpr2(-)(/-) Mice","International journal of molecular sciences","2024","10.3390/ijms25189807"],["Extracellular vesicles from mouse trophoblast cells: Effects on neural progenitor cells and potential participants in the placenta-brain axis\u2020","Biology of reproduction","2024","10.1093/biolre/ioad146"],["Extracellular Vesicles from Highly Metastatic Osteosarcoma Cells Induce Pro-Tumorigenic Macrophage Phenotypes","Advanced biology","2024","10.1002/adbi.202300577"],["Engrailed-1 Promotes Pancreatic Cancer Metastasis","Advanced science (Weinheim, Baden-Wurttemberg, Germany)","2024","10.1002/advs.202308537"],["Effect of In Vitro Digestion on Bioactive Peptides Related to Immune and Gut Health in Intact Cow's Milk and Hydrolyzed Protein-Based Infant Formulas","Nutrients","2024","10.3390/nu16193268"],["Correction: Comparison of the broncoalveolar lavage fluid proteomics between foals and adult horses","PloS one","2024","10.1371/journal.pone.0306211"],["Control of OPC proliferation and repopulation by the intellectual disability gene PAK1 under homeostatic and demyelinating conditions","bioRxiv : the preprint server for biology","2024","10.1101/2024.04.26.591153"],["Combined analysis of secreted proteins and glycosylation identifies prognostic features in cholangiocarcinoma","Journal of cellular physiology","2024","10.1002/jcp.31147"],["Calcium signaling from damaged lysosomes induces cytoprotective stress granules","The EMBO journal","2024","10.1038/s44318-024-00292-1"],["Caenorhabditis elegans Dicer acts with the RIG-I-like helicase DRH-1 and RDE-4 to cleave dsRNA","eLife","2024","10.7554/elife.93979"],["C. elegans Dicer acts with the RIG-I-like helicase DRH-1 and RDE-4 to cleave dsRNA","bioRxiv : the preprint server for biology","2024","10.1101/2023.09.21.558868"],["Barley Grain Proteome Assessment Using Multi-Environment Trial Data and Machine Learning","Journal of agricultural and food chemistry","2024","10.1021/acs.jafc.4c07017"],["A phage-displayed disulfide constrained peptide discovery platform yields novel human plasma protein binders","PloS one","2024","10.1371/journal.pone.0299804"],["A conserved chronobiological complex times C. elegans development","bioRxiv : the preprint server for biology","2024","10.1101/2024.05.09.593322"],["The oxidoreductase activity of Rnf balances redox cofactors during fermentation of glucose to propionate in Prevotella","Scientific reports","2023","10.1038/s41598-023-43282-9"],["The 'omics of obesity in B-cell acute lymphoblastic leukemia","Journal of the National Cancer Institute. Monographs","2023","10.1093/jncimonographs/lgad014"],["Surveying the global landscape of post-transcriptional regulators","Nature structural & molecular biology","2023","10.1038/s41594-023-00999-5"],["Proteomics analysis reveals a role for E. coli polyphosphate kinase in membrane structure and polymyxin resistance during starvation","bioRxiv : the preprint server for biology","2023","10.1101/2023.07.06.546892"],["Protein profiling of forehead epidermal corneocytes distinguishes frontal fibrosing from androgenetic alopecia","PloS one","2023","10.1371/journal.pone.0283619"],["Production of high protein yeast using enzymatically liquefied almond hulls","PloS one","2023","10.1371/journal.pone.0293085"],["Miniprep assisted proteomics (MAP) for rapid proteomics sample preparation","Analytical methods : advancing methods and applications","2023","10.1039/d2ay01549h"],["Membrane Atg8ylation, stress granule formation, and MTOR regulation during lysosomal damage","Autophagy","2023","10.1080/15548627.2022.2148900"],["Iron-sulfur clusters are involved in post-translational arginylation","Nature communications","2023","10.1038/s41467-023-36158-z"],["In vivo protein turnover rates in varying oxygen tensions nominate MYBBP1A as a mediator of the hyperoxia response","Science advances","2023","10.1126/sciadv.adj4884"],["Engineering Cyborg Bacteria Through Intracellular Hydrogelation","Advanced science (Weinheim, Baden-Wurttemberg, Germany)","2023","10.1002/advs.202204175"],["Discovery of Novel Digital Biomarkers for Type 2 Diabetic Nephropathy Classification via Integration of Urinary Proteomics and Pathology","medRxiv : the preprint server for health sciences","2023","10.1101/2023.04.28.23289272"],["Comparison of the broncoalveolar lavage fluid proteomics between foals and adult horses","PloS one","2023","10.1371/journal.pone.0290778"],["Citrus flavanone metabolites significantly modulate global proteomic profile in pancreatic &#x3b2;-cells under high-glucose-induced metabolic stress","Biochimica et biophysica acta. Proteins and proteomics","2023","10.1016/j.bbapap.2023.140898"],["Cell derived matrices from bovine corneal endothelial cells as a model to study cellular dysfunction","Experimental eye research","2023","10.1016/j.exer.2022.109303"],["Blood Proteome Profiling Reveals Biomarkers and Pathway Alterations in Fragile X PM at Risk for Developing FXTAS","International journal of molecular sciences","2023","10.3390/ijms241713477"],["Ancestral protein reconstruction reveals evolutionary events governing variation in Dicer helicase function","eLife","2023","10.7554/elife.85120"],["ATG5 provides host protection acting as a switch in the atg8ylation cascade between autophagy and secretion","Developmental cell","2023","10.1016/j.devcel.2023.03.014"],["A Multipathway Phosphopeptide Standard for Rapid Phosphoproteomics Assay Development","Molecular & cellular proteomics : MCP","2023","10.1016/j.mcpro.2023.100639"],["2019 Association of Biomolecular Resource Facilities Multi-Laboratory Data-Independent Acquisition Proteomics Study","Journal of biomolecular techniques : JBT","2023","10.7171/3fc1f5fe.9b78d780"],["Witch Nails (Krt90whnl): A spontaneous mouse mutation affecting nail growth and development","PloS one","2022","10.1371/journal.pone.0277284"],["Tibolone Pre-Treatment Ameliorates the Dysregulation of Protein Translation and Transport Generated by Palmitic Acid-Induced Lipotoxicity in Human Astrocytes: A Label-Free MS-Based","International journal of molecular sciences","2022","10.3390/ijms23126454"],["The ACF chromatin-remodeling complex is essential for Polycomb repression","eLife","2022","10.7554/elife.77595"],["Structures of Tetrahymena's respiratory chain reveal the diversity of eukaryotic core metabolism","Science (New York, N.Y.)","2022","10.1126/science.abn7747"],["Stress granules and mTOR are regulated by membrane atg8ylation during lysosomal damage","The Journal of cell biology","2022","10.1083/jcb.202207091"],["Site-Specific Albumin-Selective Ligation to Human Serum Albumin under Physiological Conditions","Bioconjugate chemistry","2022","10.1021/acs.bioconjchem.2c00361"],["Proximity proteomics of C9orf72 dipeptide repeat proteins identifies molecular chaperones as modifiers of poly-GA aggregation","Acta neuropathologica communications","2022","10.1186/s40478-022-01322-x"],["Plant-based production and characterization of a promising Fc-fusion protein against microgravity-induced bone density loss","Frontiers in bioengineering and biotechnology","2022","10.3389/fbioe.2022.962292"],["Placental methylome reveals a 22q13.33 brain regulatory gene locus associated with autism","Genome biology","2022","10.1186/s13059-022-02613-1"],["New Insights into the Structure and Assembly of Bacteriophage P1","Viruses","2022","10.3390/v14040678"],["Multi-Omics Profiling Specifies Involvement of Alternative Ribosomal Proteins in Response to Zinc Limitation in Mycobacterium smegmatis","Frontiers in microbiology","2022","10.3389/fmicb.2022.811774"],["Methods to capture proteomic and metabolomic signatures from cerebrospinal fluid and serum of healthy individuals","Scientific reports","2022","10.1038/s41598-022-16598-1"],["Methionine oxidation activates pyruvate kinase M2 to promote pancreatic cancer metastasis","Molecular cell","2022","10.1016/j.molcel.2022.06.005"],["Metabolic Enzyme Alterations and Astrocyte Dysfunction in a Murine Model of Alexander Disease With Severe Reactive Gliosis","Molecular & cellular proteomics : MCP","2022","10.1016/j.mcpro.2021.100180"],["Meningococcal Detoxified Outer Membrane Vesicle Vaccines Enhance Gonococcal Clearance in a Murine Infection Model","The Journal of infectious diseases","2022","10.1093/infdis/jiab450"],["Medaka, Oryzias latipes, egg envelopes are created by ovarian-expressed ZP proteins and liver-expressed choriogenins","Zoological letters","2022","10.1186/s40851-022-00194-2"],["KSHV episome tethering sites on host chromosomes and regulation of latency-lytic switch by CHD4","Cell reports","2022","10.1016/j.celrep.2022.110788"],["Inducible degradation of dosage compensation protein DPY-27 facilitates isolation of Caenorhabditis elegans males for molecular and biochemical analyses","G3 (Bethesda, Md.)","2022","10.1093/g3journal/jkac085"],["In Vitro Demonstration of Human Lipoyl Synthase Catalytic Activity in the Presence of NFU1","ACS bio & med chem Au","2022","10.1021/acsbiomedchemau.2c00020"],["Identification of Endogenous Peptides in Nasal Swab Transport Media used in MALDI-TOF-MS Based COVID-19 Screening","ACS omega","2022","10.1021/acsomega.2c01864"],["Dermal thirdhand smoke exposure induces oxidative damage, initiates skin inflammatory markers, and adversely alters the human plasma proteome","EBioMedicine","2022","10.1016/j.ebiom.2022.104256"],["De Novo Arginine Synthesis Is Required for Full Virulence ofpv.During Walnut Bacterial Blight Disease","Phytopathology","2022","10.1094/phyto-07-21-0302-r"],["Ddp1 Cooperates with Ppx1 to Counter a Stress Response Initiated by Nonvacuolar Polyphosphate","mBio","2022","10.1128/mbio.00390-22"],["Characterization of the Growth and Morphology of a BSL-2 Coccidioides posadasii Strain That Persists in the Parasitic Life Cycle at Ambient CO(2)","Journal of fungi (Basel, Switzerland)","2022","10.3390/jof8050455"],["Characterization of LipS1 and LipS2 from Thermococcus kodakarensis: Proteins Annotated as Biotin Synthases, which Together Catalyze Formation of the Lipoyl Cofactor","ACS bio & med chem Au","2022","10.1021/acsbiomedchemau.2c00018"],["The modified mitochondrial outer membrane carrier MTCH2 links mitochondrial fusion to lipogenesis","The Journal of cell biology","2021","10.1083/jcb.202103122"],["The Landscape of Humoral Immunity in the CSF of COVID-19 Patients With Neuropsychiatric Involvement","Biological Psychiatry","2021","10.1016/j.biopsych.2021.02.713"],["SUMO is a pervasive regulator of meiosis","eLife","2021","10.7554/elife.57720"],["SUMO fosters assembly and functionality of the MutS\u03b3 complex to facilitate meiotic crossing over","Developmental cell","2021","10.1016/j.devcel.2021.06.012"],["Proximity Biotin Labeling Reveals Kaposi's Sarcoma-Associated Herpesvirus Interferon Regulatory Factor Networks","Journal of virology","2021","10.1128/jvi.02049-20"],["PARP1-mediated PARylation activity is essential for oligodendroglial differentiation and CNS myelination","Cell reports","2021","10.1016/j.celrep.2021.109695"],["Optimized protocol for the identification of lipid droplet proteomes using proximity labeling proteomics in cultured human cells","STAR protocols","2021","10.1016/j.xpro.2021.100579"],["Oncogene-regulated release of extracellular vesicles","Developmental cell","2021","10.1016/j.devcel.2021.05.014"],["MARCKS cooperates with NKAP to activate NF-kB signaling in smoke-related lung cancer","Theranostics","2021","10.7150/thno.53558"],["IonQuant Enables Accurate and Sensitive Label-Free Quantification With FDR-Controlled Match-Between-Runs","Molecular & cellular proteomics : MCP","2021","10.1016/j.mcpro.2021.100077"],["Genome-wide CRISPRi screening identifies OCIAD1 as a prohibitin client and regulatory determinant of mitochondrial Complex III assembly in human cells","eLife","2021","10.7554/elife.67624"],["Evidence for a nuclear role for Drosophila Dlg as a regulator of the NURF complex","Molecular biology of the cell","2021","10.1091/mbc.e21-04-0187"],["Elucidation of familial relationships using hair shaft proteomics","Forensic science international. Genetics","2021","10.1016/j.fsigen.2021.102564"],["Effects of Chlorpyrifos on Serine Hydrolase Activities, Lipid Mediators, and Immune Responses in Lungs of Neonatal and Adult Mice","Chemical research in toxicology","2021","10.1021/acs.chemrestox.0c00488"],["Dynamic post-transcriptional regulation by Mrn1 links cell wall homeostasis to mitochondrial structure and function","PLoS genetics","2021","10.1371/journal.pgen.1009521"],["Divergent and self-reactive immune responses in the CNS of COVID-19 patients with neurological symptoms","Cell reports. Medicine","2021","10.1016/j.xcrm.2021.100288"],["Discovery and characterization of a novel family of prokaryotic nanocompartments involved in sulfur metabolism","eLife","2021","10.7554/elife.59288"],["Bioengineered miR-124-3p prodrug selectively alters the proteome of human carcinoma cells to control multiple cellular components and lung metastasis in\u00a0vivo","Acta pharmaceutica Sinica. B","2021","10.1016/j.apsb.2021.07.027"],["Atomic structures of respiratory complex III(2), complex IV, and supercomplex III(2)-IV from vascular plants","eLife","2021","10.7554/elife.62047"],["Alternative LC-MS/MS Platforms and Data Acquisition Strategies for Proteomic Genotyping of Human Hair Shafts","Journal of proteome research","2021","10.1021/acs.jproteome.1c00209"],["ATG9A protects the plasma membrane from programmed and incidental permeabilization","Nature cell biology","2021","10.1038/s41556-021-00706-w"],["A conserved long noncoding RNA, GAPLINC, modulates the immune response during endotoxic shock","Proceedings of the National Academy of Sciences of the United States of America","2021","10.1073/pnas.2016648118"],["A cancer-unique glycan: de-N-acetyl polysialic acid (dPSA) linked to cell surface nucleolin depends on re-expression of the fetal polysialyltransferase ST8SIA2 gene","Journal of experimental & clinical cancer research : CR","2021","10.1186/s13046-021-02099-y"],["A Secreted Chorismate Mutase from Xanthomonas arboricola pv. juglandis Attenuates Virulence and Walnut Blight Symptoms","International journal of molecular sciences","2021","10.3390/ijms221910374"],["A New Pathway for Forming Acetate and Synthesizing ATP during Fermentation in Bacteria","Applied and environmental microbiology","2021","10.1128/aem.02959-20"],["Xylella fastidiosa subsp. pauca Strains Fb7 and 9a5c from Citrus Display Differential Behavior, Secretome, and Plant Virulence","International journal of molecular sciences","2020","10.3390/ijms21186769"],["Versatile 3' Functionalization of CRISPR Single Guide RNA","Chembiochem : a European journal of chemical biology","2020","10.1002/cbic.201900736"],["The Histone Chaperone FACT Induces Cas9 Multi-turnover Behavior and Modifies Genome Manipulation in Human Cells","Molecular cell","2020","10.1016/j.molcel.2020.06.014"],["Regulated Proteolysis of MutS\u03b3 Controls Meiotic Crossing Over","Molecular cell","2020","10.1016/j.molcel.2020.02.001"],["Proteome Analysis of Walnut Bacterial Blight Disease","International journal of molecular sciences","2020","10.3390/ijms21207453"],["Optimal processing for proteomic genotyping of single human hairs","Forensic science international. Genetics","2020","10.1016/j.fsigen.2020.102314"],["Metastasis of cholangiocarcinoma is promoted by extended high-mannose glycans","Proceedings of the National Academy of Sciences of the United States of America","2020","10.1073/pnas.1916498117"],["MERIT, a cellular system coordinating lysosomal repair, removal and replacement","Autophagy","2020","10.1080/15548627.2020.1779451"],["Inhibition of immune pathway-initiating hemolymph protease-14 by Manduca sexta serpin-12, a conserved mechanism for the regulation of melanization and Toll activation in insects","Insect biochemistry and molecular biology","2020","10.1016/j.ibmb.2019.103261"],["Identification of a PRC2 Accessory Subunit Required for Subtelomeric H3K27 Methylation in Neurospora crassa","Molecular and cellular biology","2020","10.1128/mcb.00003-20"],["Holistic engineering of cell-free systems through proteome-reprogramming synthetic circuits","Nature communications","2020","10.1038/s41467-020-16900-7"],["High-quality chromosome-scale assembly of the walnut (Juglans regia L.) reference genome","GigaScience","2020","10.1093/gigascience/giaa050"],["Gender-specific changes in energy metabolism and protein degradation as major pathways affected in livers of mice treated with ibuprofen","Scientific reports","2020","10.1038/s41598-020-60053-y"],["Galectin-3 Coordinates a Cellular System for Lysosomal Repair and Removal","Developmental cell","2020","10.1016/j.devcel.2019.10.025"],["Exploratory neuroimmune profiling identifies CNS-specific alterations in COVID-19 patients with neurological involvement","bioRxiv : the preprint server for biology","2020","10.1101/2020.09.11.293464"],["Disc-associated proteins mediate the unusual hyperstability of the ventral disc in Giardia lamblia","Journal of cell science","2020","10.1242/jcs.227355"],["Deep Learning Neural Network Prediction Method Improves Proteome Profiling of Vascular Sap of Grapevines during Pierce's Disease Development","Biology","2020","10.3390/biology9090261"],["Deducing signaling pathways from parallel actions of arsenite and antimonite in human epidermal keratinocytes","Scientific reports","2020","10.1038/s41598-020-59577-0"],["Comparative Proteomic Analysis of Walnut (Juglans regia L.) Pellicle Tissues Reveals the Regulation of Nut Quality Attributes","Life (Basel, Switzerland)","2020","10.3390/life10120314"],["Chloroplast Chaperonin-Mediated Targeting of a Thylakoid Membrane Protein","The Plant cell","2020","10.1105/tpc.20.00309"],["Age-Related Changes in Hair Shaft Protein Profiling and Genetically Variant Peptides","Forensic science international. Genetics","2020","10.1016/j.fsigen.2020.102309"],["Action of a minimal contractile bactericidal nanomachine","Nature","2020","10.1038/s41586-020-2186-z"],["Acknowledgement to Reviewers of Biomolecules in 2019","Biomolecules","2020","10.3390/biom10010145"],["miR-192-5p Silencing by Genetic Aberrations Is a Key Event in Hepatocellular Carcinomas with Cancer Stem Cell Features","Cancer research","2019","10.1158/0008-5472.can-18-1675"],["Transcriptional and Proteomic Choreography Under Phosphorus Deficiency and Re-supply in the N(2) Fixing Cyanobacterium Trichodesmium erythraeum","Frontiers in microbiology","2019","10.3389/fmicb.2019.00330"],["Tomato Dynamin Related Protein 2A Associates With LeEIX2 and Enhances PRR Mediated Defense by Modulating Receptor Trafficking","Frontiers in plant science","2019","10.3389/fpls.2019.00936"],["The A-type domain in Escherichia coli NfuA is required for regenerating the auxiliary [4Fe-4S] cluster in Escherichia coli lipoyl synthase","The Journal of biological chemistry","2019","10.1074/jbc.ra118.006171"],["Separating Golgi Proteins fromtoReveals Underlying Properties of Cisternal Localization","The Plant cell","2019","10.1105/tpc.19.00081"],["Ribonucleoprotein Capture by in Vivo Expression of a Designer Pentatricopeptide Repeat Protein in Arabidopsis","The Plant cell","2019","10.1105/tpc.19.00177"],["Rescue of Citrus sudden death-associated virus in Nicotiana benthamiana plants from cloned cDNA: insights into mechanisms of expression of the three capsid proteins","Molecular plant pathology","2019","10.1111/mpp.12780"],["Quantitative phosphoproteomic analysis reveals common regulatory mechanisms between effector- and PAMP-triggered immunity in plants","The New phytologist","2019","10.1111/nph.15523"],["Proximity RNA Labeling by APEX-Seq Reveals the Organization of Translation Initiation Complexes and Repressive RNA Granules","Molecular cell","2019","10.1016/j.molcel.2019.07.030"],["Proteomic manifestations of genetic defects in autosomal recessive congenital ichthyosis","Journal of proteomics","2019","10.1016/j.jprot.2019.04.007"],["Prioritization of metabolic genes as novel therapeutic targets in estrogen-receptor negative breast tumors using multi-omics data and text mining","Oncotarget","2019","10.18632/oncotarget.26995"],["Physiological profile of undifferentiated bovine blastocyst-derived trophoblasts","Biology open","2019","10.1242/bio.037937"],["Phosphorylation of the HCN channel auxiliary subunit TRIP8b is altered in an animal model of temporal lobe epilepsy and modulates channel function","The Journal of biological chemistry","2019","10.1074/jbc.ra119.010027"],["Peptidomic profiling of human milk with LC-MS/MS reveals pH-specific proteolysis of milk proteins","Food chemistry","2019","10.1016/j.foodchem.2018.09.051"],["Neuronal ER-plasma membrane junctions organized by Kv2-VAP pairing recruit Nir proteins and affect phosphoinositide homeostasis","The Journal of biological chemistry","2019","10.1074/jbc.ra119.007635"],["NIST Interlaboratory Study on Glycosylation Analysis of Monoclonal Antibodies: Comparison of Results from Diverse Analytical Methods","Molecular & cellular proteomics : MCP","2019","10.1074/mcp.ra119.001677"],["Methanogenesis marker protein 10 (Mmp10) from Methanosarcina acetivorans is a radical S-adenosylmethionine methylase that unexpectedly requires cobalamin","The Journal of biological chemistry","2019","10.1074/jbc.ra119.007609"],["Metaproteomics reveals potential mechanisms by which dietary resistant starch supplementation attenuates chronic kidney disease progression in rats","PloS one","2019","10.1371/journal.pone.0199274"],["Kv2.1 mediates spatial and functional coupling of L-type calcium channels and ryanodine receptors in mammalian neurons","eLife","2019","10.7554/elife.49953"],["Human stratum corneum proteomics reveals cross-linking of a broad spectrum of proteins in cornified envelopes","Experimental dermatology","2019","10.1111/exd.13925"],["Exosomes from GM-CSF expressing embryonic stem cells are an effective prophylactic vaccine for cancer prevention","Oncoimmunology","2019","10.1080/2162402x.2018.1561119"],["Effects of N-Glycosylation on the Structure, Function, and Stability of a Plant-Made Fc-Fusion Anthrax Decoy Protein","Frontiers in plant science","2019","10.3389/fpls.2019.00768"],["Development of Decreased-Gluten Wheat Enabled by Determination of the Genetic Basis of lys3a Barley","Plant physiology","2019","10.1104/pp.18.00771"],["Cornification of nail keratinocytes requires autophagy for bulk degradation of intracellular proteins while sparing components of the cytoskeleton","Apoptosis : an international journal on programmed cell death","2019","10.1007/s10495-018-1505-4"],["Comparison of protein expression levels and proteomically-inferred genotypes using human hair from different body sites","Forensic science international. Genetics","2019","10.1016/j.fsigen.2019.03.009"],["Cathepsin G Inhibition by Serpinb1 and Serpinb6 Prevents Programmed Necrosis in Neutrophils and Monocytes and Reduces GSDMD-Driven Inflammation","Cell reports","2019","10.1016/j.celrep.2019.05.065"],["Can You Deal with Sample and Experimental Diversity in a Proteomics Core While Being Nimble and Efficient? Answer= Not Really","Journal of Biomolecular Techniques : JBT","2019",""],["AtTRAPPC11/ROG2: A Role for TRAPPs in Maintenance of the Plant Trans-Golgi Network/Early Endosome Organization and Function","The Plant cell","2019","10.1105/tpc.19.00110"],["A practical method for efficient and optimal production of Seleno-methionine-labeled recombinant protein complexes in the insect cells","Protein science : a publication of the Protein Society","2019","10.1002/pro.3575"],["A Meningococcal Native Outer Membrane Vesicle Vaccine With Attenuated Endotoxin and Overexpressed Factor H Binding Protein Elicits Gonococcal Bactericidal Antibodies","The Journal of infectious diseases","2019","10.1093/infdis/jiy609"],["A Bump-Hole Approach for Directed RNA Editing","Cell chemical biology","2019","10.1016/j.chembiol.2018.10.025"],["Utilization of Host Polyamines in Alternatively Activated Macrophages Promotes Chronic Infection by Brucella abortus","Infection and immunity","2018","10.1128/iai.00458-17"],["The intracellular nucleotide-binding leucine-rich repeat receptor (SlNRC4a) enhances immune signalling elicited by extracellular perception","Plant, cell & environment","2018","10.1111/pce.13347"],["The Receptor-like Cytoplasmic Kinase BIK1 Localizes to the Nucleus and Regulates Defense Hormone Expression during Plant Innate Immunity","Cell host & microbe","2018","10.1016/j.chom.2018.03.010"],["The Human T-Cell Leukemia Virus Type 1 Basic Leucine Zipper Factor Attenuates Repair of Double-Stranded DNA Breaks via Nonhomologous End Joining","Journal of virology","2018","10.1128/jvi.00672-18"],["Mycobacteriophage Fruitloop gp52 inactivates Wag31 (DivIVA) to prevent heterotypic superinfection","Molecular microbiology","2018","10.1111/mmi.13946"],["Molecular Profiling of Pierce's Disease Outlines the Response Circuitry of Vitis vinifera to Xylella fastidiosa Infection","Frontiers in plant science","2018","10.3389/fpls.2018.00771"],["Microbiota and Pathogen Proteases Modulate Type III Secretion Activity in Enterohemorrhagic Escherichia coli","mBio","2018","10.1128/mbio.02204-18"],["Mechanisms to Evade the Phagocyte Respiratory Burst Arose by Convergent Evolution in Typhoidal Salmonella Serovars","Cell reports","2018","10.1016/j.celrep.2018.01.016"],["Lipopolysaccharide Associates with Amyloid Plaques, Neurons and Oligodendrocytes in Alzheimer's Disease Brain: A Review","Frontiers in aging neuroscience","2018","10.3389/fnagi.2018.00042"],["Identification of VAPA and VAPB as Kv2 Channel-Interacting Proteins Defining Endoplasmic Reticulum-Plasma Membrane Junctions in Mammalian Brain Neurons","The Journal of neuroscience : the official journal of the Society for Neuroscience","2018","10.1523/jneurosci.0893-18.2018"],["Glaucomatous cell derived matrices differentially modulate non-glaucomatous trabecular meshwork cellular behavior","Acta biomaterialia","2018","10.1016/j.actbio.2018.02.037"],["Galectins control MTOR and AMPK in response to lysosomal damage to induce autophagy","Autophagy","2018","10.1080/15548627.2018.1505155"],["Galectins Control mTOR in Response to Endomembrane Damage","Molecular cell","2018","10.1016/j.molcel.2018.03.009"],["ERBB3-Binding Protein 1 (EBP1) Is a Novel Developmental Pluripotency-Associated-4 (DPPA4) Cofactor in Human Pluripotent Cells","Stem cells (Dayton, Ohio)","2018","10.1002/stem.2776"],["Corneocyte proteomics: Applications to skin biology and dermatology","Experimental dermatology","2018","10.1111/exd.13756"],["An oxidation-resistant, recombinant alpha-1 antitrypsin produced in Nicotiana benthamiana","Free radical biology & medicine","2018","10.1016/j.freeradbiomed.2018.03.015"],["A functional link between NAD(+) homeostasis and N-terminal protein acetylation in Saccharomyces cerevisiae","The Journal of biological chemistry","2018","10.1074/jbc.m117.807214"],["A VCP inhibitor substrate trapping approach (VISTA) enables proteomic profiling of endogenous ERAD substrates","Molecular biology of the cell","2018","10.1091/mbc.e17-08-0514"],["A Proximity Labeling Strategy Provides Insights into the Composition and Dynamics of Lipid Droplet Proteomes","Developmental cell","2018","10.1016/j.devcel.2017.11.020"],["A Gene Regulatory Network for Cellular Reprogramming in Plant Regeneration","Plant & cell physiology","2018","10.1093/pcp/pcy013"],["ZIC2 Is Essential for Maintenance of Latency and Is a Target of an Immediate Early Protein during Kaposi's Sarcoma-Associated Herpesvirus Lytic Reactivation","Journal of virology","2017","10.1128/jvi.00980-17"],["Vitamin C-enriched gelatin supplementation before intermittent activity augments collagen synthesis","The American journal of clinical nutrition","2017","10.3945/ajcn.116.138594"],["Validation of a paper-disk approach to facilitate the sensory evaluation of bitterness in dairy protein hydrolysates from a newly developed food-grade fractionation system","Journal of sensory studies","2017","10.1111/joss.12266"],["The Nucleoporin Nup2 Contains a Meiotic-Autonomous Region that Promotes the Dynamic Chromosome Events of Meiosis","Genetics","2017","10.1534/genetics.116.194555"],["The Metalloprotease, Mpr1, Engages AnnexinA2 to Promote the Transcytosis of Fungal Cells across the Blood-Brain Barrier","Frontiers in cellular and infection microbiology","2017","10.3389/fcimb.2017.00296"],["Sterol transporters at membrane contact sites regulate TORC1 and TORC2 signaling","The Journal of cell biology","2017","10.1083/jcb.201610032"],["Redox-based reagents for chemoselective methionine bioconjugation","Science (New York, N.Y.)","2017","10.1126/science.aal3316"],["Reconstitution of human shelterin complexes reveals unexpected stoichiometry and dual pathways to enhance telomerase processivity","Nature communications","2017","10.1038/s41467-017-01313-w"],["Proteomic profiling of Pachyonychia congenita plantar callus","Journal of proteomics","2017","10.1016/j.jprot.2017.06.017"],["Proteomic analysis of hair shafts from monozygotic twins: Expression profiles and genetically variant peptides","Proteomics","2017","10.1002/pmic.201600462"],["Proteomes of Lactobacillus delbrueckii subsp. bulgaricus LBB.B5 Incubated in Milk at Optimal and Low Temperatures","mSystems","2017","10.1128/msystems.00027-17"],["Profiling of proteins secreted in the bovine oviduct reveals diverse functions of this luminal microenvironment","PloS one","2017","10.1371/journal.pone.0188105"],["Lipid disequilibrium disrupts ER proteostasis by impairing ERAD substrate glycan trimming and dislocation","Molecular biology of the cell","2017","10.1091/mbc.e16-07-0483"],["Investigating the Effect of Growth Phase on the Surface-Layer Associated Proteome of Lactobacillus acidophilus Using Quantitative Proteomics","Frontiers in microbiology","2017","10.3389/fmicb.2017.02174"],["Integrated Metabolomics and Proteomics Highlight Altered Nicotinamide- and Polyamine Pathways in Lung Adenocarcinoma","Carcinogenesis","2017","10.1093/carcin/bgw205"],["Global Analysis of Membrane-associated Protein Oligomerization Using Protein Correlation Profiling","Molecular & cellular proteomics : MCP","2017","10.1074/mcp.ra117.000276"],["Feathermoss and epiphytic Nostoc cooperate differently: expanding the spectrum of plant-cyanobacteria symbiosis","The ISME journal","2017","10.1038/ismej.2017.134"],["Deletion of Lipoteichoic Acid Synthase Impacts Expression of Genes Encoding Cell Surface Proteins in Lactobacillus acidophilus","Frontiers in microbiology","2017","10.3389/fmicb.2017.00553"],["Chemoproteomic Profiling of Acetanilide Herbicides Reveals Their Role in Inhibiting Fatty Acid Oxidation","ACS chemical biology","2017","10.1021/acschembio.6b01001"],["Biochemical and biomechanical properties of the pacemaking sinoatrial node extracellular matrix are distinct from contractile left ventricular matrix","PloS one","2017","10.1371/journal.pone.0185125"],["BciD Is a Radical S-Adenosyl-l-methionine (SAM) Enzyme That Completes Bacteriochlorophyllide e Biosynthesis by Oxidizing a Methyl Group into a Formyl Group at C-7","The Journal of biological chemistry","2017","10.1074/jbc.m116.767665"],["Antigenicity of Bovine Pericardium Determined by a Novel Immunoproteomic Approach","Scientific reports","2017","10.1038/s41598-017-02719-8"],["Absolute Quantification of Human Milk Caseins and the Whey/Casein Ratio during the First Year of Lactation","Journal of proteome research","2017","10.1021/acs.jproteome.7b00486"],["A Modified Hydroxyproline Assay Based on Hydrochloric Acid in Ehrlich's Solution Accurately Measures Tissue Collagen Content","Tissue engineering. Part C, Methods","2017","10.1089/ten.tec.2017.0018"],["The Secreted Protease PrtA Controls Cell Growth, Biofilm Formation and Pathogenicity in Xylella fastidiosa","Scientific reports","2016","10.1038/srep31098"],["Small-Molecule Probes Reveal Esterases with Persistent Activity in Dormant and Reactivating Mycobacterium tuberculosis","ACS infectious diseases","2016","10.1021/acsinfecdis.6b00135"],["Proteomic profiling of maize opaque endosperm mutants reveals selective accumulation of lysine-enriched proteins","Journal of experimental botany","2016","10.1093/jxb/erv532"],["Proteomic profiling of lung adenocarcinoma indicates heightened DNA repair, antioxidant mechanisms and identifies LASP1 as a potential negative predictor of survival","Clinical proteomics","2016","10.1186/s12014-016-9132-y"],["Peptidomic analysis reveals proteolytic activity of kefir microorganisms on bovine milk proteins","Food chemistry","2016","10.1016/j.foodchem.2015.10.116"],["Parallel responses of human epidermal keratinocytes to inorganic SbIII and AsIII","Environmental chemistry (Collingwood, Vic.)","2016","10.1071/en16019"],["In vivo digestomics of milk proteins in human milk and infant formula using a suckling rat pup model","Peptides","2016","10.1016/j.peptides.2016.11.012"],["In vitro Characterization of Phenylacetate Decarboxylase, a Novel Enzyme Catalyzing Toluene Biosynthesis in an Anaerobic Microbial Community","Scientific reports","2016","10.1038/srep31362"],["Identification of VPS13C as a Galectin-12-Binding Protein That Regulates Galectin-12 Protein Stability and Adipogenesis","PloS one","2016","10.1371/journal.pone.0153534"],["Gram-negative bacterial molecules associate with Alzheimer disease pathology","Neurology","2016","10.1212/wnl.0000000000003391"],["Glycoproteomic Analysis of Malignant Ovarian Cancer Ascites Fluid Identifies Unusual Glycopeptides","Journal of proteome research","2016","10.1021/acs.jproteome.6b00548"],["F-Type Bacteriocins of Listeria monocytogenes: a New Class of Phage Tail-Like Structures Reveals Broad Parallel Coevolution between Tailed Bacteriophages and High-Molecular-Weight","Journal of bacteriology","2016","10.1128/jb.00489-16"],["Evidence that ferritin is associated with light production in the mucus of the marine worm Chaetopterus","Scientific reports","2016","10.1038/srep36854"],["Demonstration of Protein-Based Human Identification Using the Hair Shaft Proteome","PloS one","2016","10.1371/journal.pone.0160653"],["Cyanobacterial reuse of extracellular organic carbon in microbial mats","The ISME journal","2016","10.1038/ismej.2015.180"],["Corrigendum: The Type II Secreted Lipase/Esterase LesA is a Key Virulence Factor Required for Xylella fastidiosa Pathogenesis in Grapevines","Scientific reports","2016","10.1038/srep21575"],["Conserved S-Layer-Associated Proteins Revealed by Exoproteomic Survey of S-Layer-Forming Lactobacilli","Applied and environmental microbiology","2016","10.1128/aem.01968-15"],["Antibody-independent identification of bovine milk-derived peptides in breast-milk","Food & function","2016","10.1039/c6fo00731g"],["A Cysteine-Rich Protein Kinase Associates with a Membrane Immune Complex and the Cysteine Residues Are Required for Cell Death","Plant physiology","2016","10.1104/pp.16.01404"],["Transforming Growth Factor Beta 3 Modifies Mechanics and Composition of Extracellular Matrix Deposited by Human Trabecular Meshwork Cells","ACS biomaterials science & engineering","2015","10.1021/ab500060r"],["The human colostrum whey proteome is altered in gestational diabetes mellitus","Journal of proteome research","2015","10.1021/pr500818d"],["The 2012/2013 ABRF Proteomic Research Group Study: Assessing Longitudinal Intralaboratory Variability in Routine Peptide Liquid Chromatography Tandem Mass Spectrometry Analyses","Molecular & cellular proteomics : MCP","2015","10.1074/mcp.o115.051888"],["Re-examination of Dietary Amino Acid Sensing Reveals a GCN2-Independent Mechanism","Cell reports","2015","10.1016/j.celrep.2015.09.055"],["Protein synthesis. Rqc2p and 60S ribosomal subunits mediate mRNA-independent elongation of nascent chains","Science (New York, N.Y.)","2015","10.1126/science.1259724"],["Protein phosphorylation during Plasmodium berghei gametogenesis","Experimental parasitology","2015","10.1016/j.exppara.2015.05.010"],["PRMT4-mediated arginine methylation negatively regulates retinoblastoma tumor suppressor protein and promotes E2F-1 dissociation","Molecular and cellular biology","2015","10.1128/mcb.00945-14"],["Mapping Proteome-Wide Targets of Environmental Chemicals Using Reactivity-Based Chemoproteomic Platforms","Chemistry & biology","2015","10.1016/j.chembiol.2015.09.008"],["MICOS coordinates with respiratory complexes and lipids to establish mitochondrial inner membrane architecture","eLife","2015","10.7554/elife.07739"],["Ltc1 is an ER-localized sterol transporter and a component of ER-mitochondria and ER-vacuole contacts","The Journal of cell biology","2015","10.1083/jcb.201502033"],["Lactobacillus casei Low-Temperature, Dairy-Associated Proteome Promotes Persistence in the Mammalian Digestive Tract","Journal of proteome research","2015","10.1021/acs.jproteome.5b00387"],["Interferon-\u03b3 regulates cellular metabolism and mRNA translation to potentiate macrophage activation","Nature immunology","2015","10.1038/ni.3205"],["Gene expression profiling in pachyonychia congenita skin","Journal of dermatological science","2015","10.1016/j.jdermsci.2015.01.001"],["Dual targeting of therapeutics to endothelial cells: collaborative enhancement of delivery and effect","FASEB journal : official publication of the Federation of American Societies for Experimental Biology","2015","10.1096/fj.15-271213"],["Dexamethasone Stiffens Trabecular Meshwork, Trabecular Meshwork Cells, and Matrix","Investigative ophthalmology & visual science","2015","10.1167/iovs.15-16739"],["Comparative genomics of Cluster O mycobacteriophages","PloS one","2015","10.1371/journal.pone.0118725"],["CaMKII Phosphorylation of Na(V)1.5: Novel in Vitro Sites Identified by Mass Spectrometry and Reduced S516 Phosphorylation in Human Heart Failure","Journal of proteome research","2015","10.1021/acs.jproteome.5b00107"],["Anopheles stephensi p38 MAPK signaling regulates innate immunity and bioenergetics during Plasmodium falciparum infection","Parasites & vectors","2015","10.1186/s13071-015-1016-x"],["An Integrated Platform for Isolation, Processing, and Mass Spectrometry-based Proteomic Profiling of Rare Cells in Whole Blood","Molecular & cellular proteomics : MCP","2015","10.1074/mcp.m114.045724"],["A lettuce (Lactuca sativa) homolog of human Nogo-B receptor interacts with cis-prenyltransferase and is necessary for natural rubber biosynthesis","The Journal of biological chemistry","2015","10.1074/jbc.m114.616920"],["Structural and functional modularity of the orange carotenoid protein: distinct roles for the N- and C-terminal domains in cyanobacterial photoprotection","The Plant cell","2014","10.1105/tpc.113.118588"],["Regulation of Yersinia protein kinase A (YpkA) kinase activity by multisite autophosphorylation and identification of an N-terminal substrate-binding","The Journal of biological chemistry","2014","10.1074/jbc.m114.601153"],["Reciprocal changes in phosphorylation and methylation of mammalian brain sodium channels in response to seizures","The Journal of biological chemistry","2014","10.1074/jbc.m114.562785"],["Proteolytic processing and activation of Clostridium perfringens epsilon toxin by caprine small intestinal contents","mBio","2014","10.1128/mbio.01994-14"],["Mitochondrial proteome remodeling in ischemic heart failure","Life sciences","2014","10.1016/j.lfs.2014.02.004"],["Manduca sexta proprophenoloxidase activating proteinase-3 (PAP3) stimulates melanization by activating proPAP3, proSPHs, and proPOs","Insect biochemistry and molecular biology","2014","10.1016/j.ibmb.2014.04.005"],["Human hair shaft proteomic profiling: individual differences, site specificity and cuticle analysis","PeerJ","2014","10.7717/peerj.506"],["Genomics and proteomics of mycobacteriophage patience, an accidental tourist in the Mycobacterium neighborhood","mBio","2014","10.1128/mbio.02145-14"],["Expression and characterization of an epoxide hydrolase from Anopheles gambiae with high activity on epoxy fatty acids","Insect biochemistry and molecular biology","2014","10.1016/j.ibmb.2014.08.004"],["Evolutionary origin and diversification of epidermal barrier proteins in amniotes","Molecular biology and evolution","2014","10.1093/molbev/msu251"],["Covalent modification of a ten-residue cationic antimicrobial peptide with levofloxacin","Frontiers in chemistry","2014","10.3389/fchem.2014.00071"],["Cancer-relevant splicing factor CAPER\u03b1 engages the essential splicing factor SF3b155 in a specific ternary complex","The Journal of biological chemistry","2014","10.1074/jbc.m114.558825"],["The Pseudomonas syringae effector HopQ1 promotes bacterial virulence and interacts with tomato 14-3-3 proteins in a phosphorylation-dependent manner","Plant physiology","2013","10.1104/pp.112.211748"],["The 2012/2013 PRG Study: Assessing Longitudinal Variability in Routine Peptide LC-MS/MS Analysis","Journal of Biomolecular Techniques : JBT","2013",""],["Sustained activation of Akt elicits mitochondrial dysfunction to block Plasmodium falciparum infection in the mosquito host","PLoS pathogens","2013","10.1371/journal.ppat.1003180"],["Resilin-Based Hybrid Hydrogels for Cardiovascular Tissue Engineering","Macromolecules","2013","10.1002/macp.201200412"],["Research resource: identification of novel coregulators specific for thyroid hormone receptor-\u03b22","Molecular endocrinology (Baltimore, Md.)","2013","10.1210/me.2012-1117"],["Proteomic analysis of human keratinocyte response to 2,3,7,8-tetrachlorodibenzo-p-dioxin (TCDD) exposure","Journal of proteome research","2013","10.1021/pr4006266"],["PPAR\u03b3-mediated increase in glucose availability sustains chronic Brucella abortus infection in alternatively activated macrophages","Cell host & microbe","2013","10.1016/j.chom.2013.07.009"],["Myc binds the pluripotency factor Utf1 through the basic-helix-loop-helix leucine zipper domain","Biochemical and biophysical research communications","2013","10.1016/j.bbrc.2013.04.100"],["Interlaboratory studies and initiatives developing standards for proteomics","Proteomics","2013","10.1002/pmic.201200532"],["Identification of extracellular surface-layer associated proteins in Lactobacillus acidophilus NCFM","Microbiology (Reading, England)","2013","10.1099/mic.0.070755-0"],["Engineering agatoxin, a cystine-knot peptide from spider venom, as a molecular probe for in vivo tumor imaging","PloS one","2013","10.1371/journal.pone.0060498"],["Endoplasmic reticulum-associated mitochondria-cortex tether functions in the distribution and inheritance of mitochondria","Proceedings of the National Academy of Sciences of the United States of America","2013","10.1073/pnas.1215232110"],["Domain requirements of the JIL-1 tandem kinase for histone H3 serine 10 phosphorylation and chromatin remodeling in vivo","The Journal of biological chemistry","2013","10.1074/jbc.m113.464271"],["Distinguishing ichthyoses by protein profiling","PloS one","2013","10.1371/journal.pone.0075355"],["Cryptococcus neoformans promotes its transmigration into the central nervous system by inducing molecular and cellular changes in brain endothelial cells","Infection and immunity","2013","10.1128/iai.00554-13"],["Comparative Proteomic Study of Mouse Liver Exposed to Differing Gravitational Environments","Journal of Biomolecular Techniques : JBT","2013",""],["Chicken corneocyte cross-linked proteome","Journal of proteome research","2013","10.1021/pr301036k"],["Characterization of proprotein convertase subtilisin/kexin type 9 (PCSK9) trafficking reveals a novel lysosomal targeting mechanism via amyloid precursor-like protein 2 (APLP2)","The Journal of biological chemistry","2013","10.1074/jbc.m113.453373"],["Cardiac myocyte exosomes: stability, HSP60, and proteomics","American journal of physiology. Heart and circulatory physiology","2013","10.1152/ajpheart.00835.2012"],["ABRF-sPRG 2013 Study: Development and Characterization of a Proteomics Normalization Standard Consisting of 1000 Stable Isotope Labeled Peptides and a Qualitative Stability Study o","Journal of Biomolecular Techniques : JBT","2013",""],["A Prader-Willi locus lncRNA cloud modulates diurnal genes and energy expenditure","Human molecular genetics","2013","10.1093/hmg/ddt281"],["","Journal of Biomolecular Techniques : JBT","2013",""],["","Journal of Biomolecular Techniques : JBT","2013",""],["The spatial architecture of protein function and adaptation","Nature","2012","10.1038/nature11500"],["The 2012 PRG study: Assessing Longitudinal Variability in Routine Peptide LC-MS/MS Analysis","Journal of Biomolecular Techniques : JBT","2012",""],["The 2012 PRG Study: Assessing Longitudinal Variability in Routine Peptide LC-MS/MS Analysis","Journal of Biomolecular Techniques : JBT","2012",""],["System response of metabolic networks in Chlamydomonas reinhardtii to total available ammonium","Molecular & cellular proteomics : MCP","2012","10.1074/mcp.m111.016733"],["Phosphorylation of distinct sites in MeCP2 modifies cofactor associations and the dynamics of transcriptional regulation","Molecular and cellular biology","2012","10.1128/mcb.06728-11"],["Novel high-molecular-weight, R-type bacteriocins of Clostridium difficile","Journal of bacteriology","2012","10.1128/jb.01272-12"],["Long-term faithful recapitulation of transglutaminase 1-deficient lamellar ichthyosis in a skin-humanized mouse model, and insights from proteomic studies","The Journal of investigative dermatology","2012","10.1038/jid.2012.65"],["Ligation of the fibrin-binding domain by \u03b2-strand addition is sufficient for expansion of soluble fibronectin","The Journal of biological chemistry","2012","10.1074/jbc.m111.294041"],["Identification of a target cell permissive factor required for contact-dependent growth inhibition (CDI)","Genes & development","2012","10.1101/gad.182345.111"],["Enhancing peptide ligand binding to vascular endothelial growth factor by covalent bond formation","Bioconjugate chemistry","2012","10.1021/bc300114d"],["Differentiating inbred mouse strains from each other and those with single gene mutations using hair proteomics","PloS one","2012","10.1371/journal.pone.0051956"],["Development of high amylose wheat through TILLING","BMC plant biology","2012","10.1186/1471-2229-12-69"],["A Comparative Study of Peptide Storage Conditions Over an Extended Time Frame","Journal of Biomolecular Techniques : JBT","2012",""],["REVEILLE8 and PSEUDO-REPONSE REGULATOR5 form a negative feedback loop within the Arabidopsis circadian clock","PLoS genetics","2011","10.1371/journal.pgen.1001350"],["Proteomic analysis of hair shaft and nail plate","Journal of cosmetic science","2011",""],["Pirh2 E3 ubiquitin ligase monoubiquitinates DNA polymerase eta to suppress translesion DNA synthesis","Molecular and cellular biology","2011","10.1128/mcb.05808-11"],["Phosphorylation and activation of the plasma membrane Na+/H+ exchanger (NHE1) during osmotic cell shrinkage","PloS one","2011","10.1371/journal.pone.0029210"],["Label-free shotgun proteomics and metabolite analysis reveal a significant metabolic shift during citrus fruit development","Journal of experimental botany","2011","10.1093/jxb/err197"],["Deletion of the RluD pseudouridine synthase promotes SsrA peptide tagging of ribosomal protein S7","Molecular microbiology","2011","10.1111/j.1365-2958.2010.07467.x"],["Biochemical purification of native immune protein complexes","Methods in molecular biology (Clifton, N.J.)","2011","10.1007/978-1-61737-998-7_4"],["Apolipoprotein-induced conversion of phosphatidylcholine bilayer vesicles into nanodisks","Biochimica et biophysica acta","2011","10.1016/j.bbamem.2010.11.020"],["ABRF-PRG07: advanced quantitative proteomics study","Journal of biomolecular techniques : JBT","2011",""],["Tomato chocolate spot virus, a member of a new torradovirus species that causes a necrosis-associated disease of tomato in Guatemala","Archives of virology","2010","10.1007/s00705-010-0653-9"],["The significance of protein maturation by plastidic type I signal peptidase 1 for thylakoid development in Arabidopsis chloroplasts","Plant physiology","2010","10.1104/pp.109.151977"],["Synthesis of statistical copolymers containing multiple functional peptides for nucleic Acid delivery","Biomacromolecules","2010","10.1021/bm100806h"],["Proteomic analysis of protein-protein interactions within the Cysteine Sulfinate Desulfinase Fe-S cluster biogenesis system","Journal of proteome research","2010","10.1021/pr1006087"],["Proteomic analysis of human nail plate","Journal of proteome research","2010","10.1021/pr1009349"],["Multisite phosphorylation of voltage-gated sodium channel alpha subunits from rat brain","Journal of proteome research","2010","10.1021/pr901171q"],["Kinetic mechanism of the Rtt109-Vps75 histone acetyltransferase-chaperone complex","Biochemistry","2010","10.1021/bi100381y"],["Distinct regions of human eIF3 are sufficient for binding to the HCV IRES and the 40S ribosomal subunit","Journal of molecular biology","2010","10.1016/j.jmb.2010.07.054"],["A label-free differential quantitative mass spectrometry method for the characterization and identification of protein changes during citrus fruit development","Proteome science","2010","10.1186/1477-5956-8-68"],["A comparative study of in-gel digestions using microwave and pressure-accelerated technologies","Journal of biomolecular techniques : JBT","2010",""],["A Comparative Study of In-Gel Digestions Using Microwave or Pressure Accelerated Technologies","Journal of Biomolecular Techniques : JBT","2010",""],["Reanalysis of Tyrannosaurus rex Mass Spectra","Journal of proteome research","2009","10.1021/pr900349r"],["Maternal influence of prolyl endopeptidase on fat mass of adult progeny","International journal of obesity (2005)","2009","10.1038/ijo.2009.129"],["Mapping protein-protein interactions by localized oxidation: consequences of the reach of hydroxyl radical","Biochemistry","2009","10.1021/bi900273j"],["In vivo multiplex quantitative analysis of 3 forms of alpha melanocyte stimulating hormone in pituitary of prolyl endopeptidase deficient mice","Molecular brain","2009","10.1186/1756-6606-2-14"],["Frataxin deficiency induces Schwann cell inflammation and death","Biochimica et biophysica acta","2009","10.1016/j.bbadis.2009.07.011"],["Demonstration of the interaction of transforming growth factor beta 2 and type X collagen using a modified tandem affinity purification tag","Journal of chromatography. B, Analytical technologies in the biomedical and life sciences","2008","10.1016/j.jchromb.2008.10.016"],["ABRF-PRG05: de novo peptide sequence determination","Journal of biomolecular techniques : JBT","2008",""],["Shotgun cross-linking analysis for studying quaternary and tertiary protein structures","Journal of proteome research","2007","10.1021/pr070234i"],["Global analysis of protein palmitoylation in yeast","Cell","2006","10.1016/j.cell.2006.03.042"],["NUCLEIC ACIDS RESEARCH GROUP","Journal of Biomolecular Techniques : JBT","2005",""],["Jasmonate-inducible plant enzymes degrade essential amino acids in the herbivore midgut","Proceedings of the National Academy of Sciences of the United States of America","2005","10.1073/pnas.0509026102"],["Identification and functional analysis of in vivo phosphorylation sites of the Arabidopsis BRASSINOSTEROID-INSENSITIVE1 receptor kinase","The Plant cell","2005","10.1105/tpc.105.031393"],["Research Group/Committee Reports","Journal of Biomolecular Techniques : JBT","2004",""],["RESEARCH GROUP COMMITTEE REPORTS","Journal of Biomolecular Techniques : JBT","2004",""]]</script>
+
+<script>
+(function () {
+    "use strict";
+
+    var RAW = "https://raw.githubusercontent.com/bsphinney/proteomics-core-site/main/reports/";
+    var ME = "phinney";
+    var MONTHS = ["January", "February", "March", "April", "May", "June",
+                  "July", "August", "September", "October", "November", "December"];
+
+    function el(id) { return document.getElementById(id); }
+
+    function esc(s) {
+        return String(s == null ? "" : s)
+            .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;");
+    }
+
+    // esc() neutralises markup but not a javascript:/data: URL in an href.
+    function safeUrl(u) {
+        return /^https?:\/\//i.test(u || "") ? u : "";
+    }
+
+    function readFallback(id) {
+        var node = el(id);
+        if (!node) { return []; }
+        try {
+            return (JSON.parse(node.textContent) || []).map(function (row) {
+                return {
+                    title: row[0], journal: row[1], year: row[2], doi: row[3],
+                    kind: row[4] || "article",
+                    url: row[3] ? "https://doi.org/" + encodeURIComponent(row[3]) : "",
+                    authors: []
+                };
+            });
+        } catch (e) { return []; }
+    }
+
+    function yearOptions(select, list) {
+        var seen = {}, years = [];
+        list.forEach(function (p) {
+            if (p.year && !seen[p.year]) { seen[p.year] = 1; years.push(String(p.year)); }
+        });
+        years.sort().reverse().forEach(function (y) {
+            var o = document.createElement("option");
+            o.value = y; o.textContent = y;
+            select.appendChild(o);
+        });
+    }
+
+    function authorHtml(authors) {
+        if (!authors || !authors.length) { return ""; }
+        function mark(a) {
+            return a.toLowerCase().indexOf(ME) > -1
+                ? '<span class="pcf-me">' + esc(a) + "</span>" : esc(a);
+        }
+        if (authors.length <= 12) {
+            return '<p class="pcf-pub-authors">' + authors.map(mark).join(", ") + "</p>";
+        }
+        // Truncating at 12 dropped the Director from consortium papers where he
+        // sits at position 13-25 — exactly the middle authorship that signals
+        // core involvement. Always surface him, with his position.
+        var shown = authors.slice(0, 12).map(mark);
+        var rest = authors.slice(12);
+        var meIdx = -1;
+        rest.forEach(function (a, i) {
+            if (meIdx < 0 && a.toLowerCase().indexOf(ME) > -1) { meIdx = i; }
+        });
+        if (meIdx > -1) {
+            shown.push("&hellip;");
+            shown.push(mark(rest[meIdx]) + " (author " + (13 + meIdx) + " of " + authors.length + ")");
+            var after = rest.length - meIdx - 1;
+            if (after > 0) { shown.push("&hellip; (+" + after + " more)"); }
+        } else {
+            shown.push("&hellip; (+" + rest.length + " more)");
+        }
+        return '<p class="pcf-pub-authors">' + shown.join(", ") + "</p>";
+    }
+
+    // One renderer drives both lists; they differ only in which fields exist.
+    function makeList(cfg) {
+        var results = el(cfg.results), search = el(cfg.search),
+            year = el(cfg.year), count = el(cfg.count);
+        if (!results) { return null; }
+        var items = [];
+
+        function render() {
+            results.setAttribute("aria-busy", "false");
+            var q = (search.value || "").trim().toLowerCase();
+            var yr = year.value;
+
+            var shown = items.filter(function (p) {
+                if (yr && String(p.year) !== yr) { return false; }
+                if (!q) { return true; }
+                var hay = (p.title + " " + p.journal + " " +
+                           (p.authors || []).join(" ")).toLowerCase();
+                return hay.indexOf(q) > -1;
+            });
+
+            count.innerHTML = "<strong>" + shown.length + "</strong> of " +
+                              items.length + " " + cfg.noun;
+
+            if (!shown.length) {
+                results.innerHTML = '<p class="pcf-pub-status">Nothing matches that search.</p>';
+                return;
+            }
+
+            var html = [], lastYear = null;
+            shown.forEach(function (p) {
+                if (String(p.year) !== lastYear) {
+                    if (lastYear !== null) { html.push("</ul>"); }
+                    html.push('<h3 class="pcf-pub-year">' + esc(p.year || "Undated") + "</h3>");
+                    html.push('<ul class="pcf-pub-list" role="list">');
+                    lastYear = String(p.year);
+                }
+                var url = safeUrl(p.url) ||
+                    (p.doi ? "https://doi.org/" + encodeURIComponent(p.doi) : "") ||
+                    (p.pmid ? "https://pubmed.ncbi.nlm.nih.gov/" +
+                              encodeURIComponent(p.pmid) + "/" : "");
+                var title = url
+                    ? '<a href="' + esc(url) + '">' + esc(p.title) + "</a>"
+                    : esc(p.title);
+                var badge = "";
+                if (p.kind === "preprint") {
+                    badge = '<span class="pcf-pub-badge">Preprint &middot; not peer reviewed</span>';
+                } else if (p.kind === "conference") {
+                    badge = '<span class="pcf-pub-badge">Conference paper</span>';
+                }
+                html.push('<li class="pcf-pub">');
+                html.push('<p class="pcf-pub-title">' + title + badge + "</p>");
+                html.push(authorHtml(p.authors));
+                var meta = '<span class="pcf-pub-journal">' + esc(p.journal || "") + "</span>";
+                if (p.citations) {
+                    meta += '<span class="pcf-pub-cites">' + p.citations +
+                            (p.citations === 1 ? " citation" : " citations") + "</span>";
+                }
+                html.push('<p class="pcf-pub-meta">' + meta + "</p>");
+                html.push("</li>");
+            });
+            html.push("</ul>");
+            results.innerHTML = html.join("");
+        }
+
+        return {
+            start: function (list) {
+                items = list;
+                yearOptions(year, items);
+                render();
+                var timer = null;
+                search.addEventListener("input", function () {
+                    if (timer) { clearTimeout(timer); }
+                    timer = setTimeout(render, 200);
+                });
+                year.addEventListener("change", render);
+            }
+        };
+    }
+
+    function load(file, fallbackId, onData) {
+        var fallback = readFallback(fallbackId);
+        // Without this, a stalled connection never rejects and the page sits on
+        // "Loading…" forever instead of falling back.
+        var ctrl = typeof AbortController !== "undefined" ? new AbortController() : null;
+        var timeout = setTimeout(function () { if (ctrl) { ctrl.abort(); } }, 8000);
+        var opts = { cache: "no-cache" };
+        if (ctrl) { opts.signal = ctrl.signal; }
+        fetch(RAW + file, opts)
+            .then(function (r) {
+                if (!r.ok) { throw new Error("HTTP " + r.status); }
+                return r.json();
+            })
+            .then(function (data) { clearTimeout(timeout); onData(data, false); })
+            .catch(function () {
+                clearTimeout(timeout);
+                if (fallback.length) { onData({ fallback: fallback }, true); }
+                else { onData(null, true); }
+            });
+    }
+
+    // ---------- Acknowledgment papers ----------
+    var ackList = makeList({
+        results: "pcf-ack-results", search: "pcf-ack-search",
+        year: "pcf-ack-year", count: "pcf-ack-count", noun: "papers"
+    });
+
+    load("acknowledgments.json", "pcf-ack-fallback", function (data, offline) {
+        if (!data) {
+            el("pcf-ack-results").innerHTML =
+                '<p class="pcf-pub-status">This list could not be loaded right now.</p>';
+            return;
+        }
+        var papers = offline ? data.fallback : data.papers;
+        ackList.start(papers);
+
+        if (!offline) {
+            el("pcf-ack-total").textContent = data.count;
+            el("pcf-ack-range").textContent = data.first_year + "\u2013" + data.last_year;
+            el("pcf-ack-cites").textContent = Number(data.total_citations).toLocaleString();
+            el("pcf-ack-recent5").textContent = data.last_5_years;
+            el("pcf-ack-journals").textContent = data.distinct_journals;
+            el("pcf-ack-method").textContent = "How this list is built: " + data.method;
+        } else {
+            // Offline snapshot carries no citation counts, so derive what we can
+            // and leave the citations tile dashed rather than showing a wrong zero.
+            var years = papers.map(function (p) { return parseInt(p.year, 10); })
+                              .filter(function (y) { return y > 1900; });
+            var maxY = years.length ? Math.max.apply(null, years) : 0;
+            var journals = {};
+            papers.forEach(function (p) {
+                if (p.journal) { journals[p.journal.toLowerCase()] = 1; }
+            });
+            el("pcf-ack-total").textContent = papers.length;
+            el("pcf-ack-range").textContent = years.length
+                ? Math.min.apply(null, years) + "\u2013" + maxY : "";
+            el("pcf-ack-cites").textContent = "\u2014";
+            el("pcf-ack-recent5").textContent =
+                years.filter(function (y) { return y > maxY - 5; }).length;
+            el("pcf-ack-journals").textContent = Object.keys(journals).length;
+        }
+    });
+
+    // ---------- Director's publications ----------
+    var pubList = makeList({
+        results: "pcf-pub-results", search: "pcf-search",
+        year: "pcf-year", count: "pcf-count", noun: "publications"
+    });
+
+    load("publications.json", "pcf-pubs-fallback", function (data, offline) {
+        if (!data) {
+            el("pcf-pub-results").innerHTML =
+                '<p class="pcf-pub-status">This list could not be loaded. The full record is on ' +
+                '<a href="https://orcid.org/0000-0003-3870-3302">ORCID</a>.</p>';
+            return;
+        }
+        var pubs = offline ? data.fallback : data.publications;
+        pubList.start(pubs);
+
+        var articles = pubs.filter(function (p) { return (p.kind || "article") === "article"; });
+        var years = articles.map(function (p) { return parseInt(p.year, 10); })
+                            .filter(function (y) { return y > 1900; });
+        var newest = articles[0];
+        var when = "";
+        if (newest) {
+            when = newest.month
+                ? MONTHS[parseInt(newest.month, 10) - 1] + " " + newest.year
+                : String(newest.year);
+        }
+        el("pcf-pub-summary").textContent =
+            articles.length + " peer-reviewed publications" +
+            (years.length ? ", " + Math.min.apply(null, years) + "\u2013" +
+                            Math.max.apply(null, years) : "") +
+            (when ? ". Most recent: " + when + "." : ".");
+    });
+})();
+</script>

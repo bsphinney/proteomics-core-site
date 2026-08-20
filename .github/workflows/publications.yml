@@ -1,0 +1,49 @@
+name: Publications Sync
+
+on:
+  schedule:
+    # 1st of every month at 7am UTC (an hour after the impact report)
+    - cron: '0 7 1 * *'
+  workflow_dispatch: # Allow manual triggers
+
+permissions:
+  contents: write
+
+jobs:
+  sync-publications:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Sync publications from ORCID
+        run: python scripts/publications_sync.py
+        # Pulls ORCID -> gap-checks against PubMed -> enriches via Crossref.
+        # The Crossref cache in reports/audit/raw/ is committed, so subsequent
+        # runs only fetch DOIs that are actually new.
+
+      - name: Consolidate core acknowledgment papers
+        run: python scripts/acknowledgments_sync.py
+
+      - name: Commit updated publications
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reports/publications.json reports/orcid_gaps.md \
+                  reports/orcid_misattributions.md \
+                  reports/acknowledgments.json reports/acknowledgments_review.md \
+                  reports/linkedin_publications_to_add.md \
+                  reports/audit/raw/publications_master.json \
+                  reports/audit/raw/crossref_cache.json \
+                  pages/publications.html
+          git diff --staged --quiet || git commit -m "Update publications $(date +%Y-%m-%d)"
+          git push
