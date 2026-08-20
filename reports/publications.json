@@ -2,21 +2,126 @@
  "generated": "2026-08-20",
  "orcid": "0000-0003-3870-3302",
  "orcid_url": "https://orcid.org/0000-0003-3870-3302",
- "count": 152,
+ "count": 186,
  "counts": {
-  "peer_reviewed": 146,
-  "preprints": 5,
+  "peer_reviewed": 177,
+  "preprints": 8,
   "conference": 1,
   "excluded_datasets": 7,
-  "excluded_errata": 2,
+  "excluded_errata": 3,
   "excluded_abstracts": 8,
-  "duplicates_collapsed": 16,
+  "duplicates_collapsed": 19,
   "excluded_misattributed": 2
  },
- "first_year": 2000,
+ "first_year": 1996,
  "last_year": 2026,
- "active_years": 27,
+ "active_years": 28,
+ "people": [
+  {
+   "name": "Brett S. Phinney",
+   "role": "Core Director",
+   "orcid": "0000-0003-3870-3302",
+   "count": 146
+  },
+  {
+   "name": "Gabriela Grigorean",
+   "role": "Associate Director",
+   "orcid": "0000-0001-5693-0846",
+   "count": 31
+  },
+  {
+   "name": "Michelle Salemi",
+   "role": "Staff Scientist",
+   "orcid": null,
+   "count": 72
+  }
+ ],
  "publications": [
+  {
+   "title": "Hypoxia rescues complex 1-associated disease caused by proteostatic defects",
+   "journal": "Nature Metabolism",
+   "year": "2026",
+   "month": "7",
+   "doi": "10.1038/s42255-026-01566-0",
+   "url": "https://doi.org/10.1038/s42255-026-01566-0",
+   "authors": [
+    "Ankur Garg",
+    "Brandon R. Desousa",
+    "Raju Roy",
+    "Amy Flis",
+    "Skyler Y. Blume",
+    "Yohei Abe",
+    "Arthur A. Melo",
+    "Ryan R. Cupo",
+    "Gabriela Grigorean",
+    "Daniel R. Southworth",
+    "James Shorter",
+    "Isha H. Jain"
+   ],
+   "pmid": "42420651",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 2,
+   "people": [
+    "Gabriela Grigorean"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Serum proteome of the Egyptian rousette bat (Rousettus aegyptiacus) reveals signatures of immunity, proteostasis, and metabolism",
+   "journal": "Scientific Reports",
+   "year": "2026",
+   "month": "4",
+   "doi": "10.1038/s41598-026-46577-9",
+   "url": "https://doi.org/10.1038/s41598-026-46577-9",
+   "authors": [
+    "Brooke N. Genovese",
+    "Nistara Randhawa",
+    "Benjamin A. Neely",
+    "Gabriela Grigorean",
+    "Amy J. Schuh",
+    "Brian R. Amman",
+    "Jessica A. Elbert",
+    "Simon J. Anthony",
+    "Jonna A. K. Mazet",
+    "Jonathan S. Towner",
+    "Brian H. Bird"
+   ],
+   "pmid": "41942604",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 0,
+   "people": [
+    "Gabriela Grigorean"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Ro5\u20104864, a ligand of the mitochondrial translocator protein, protects against heart failure in mice via regulation of the p62\u2010Keap1\u2010Nrf2 axis",
+   "journal": "The Journal of Physiology",
+   "year": "2026",
+   "month": "4",
+   "doi": "10.1113/jp288457",
+   "url": "https://doi.org/10.1113/jp288457",
+   "authors": [
+    "Daphne A. Diloretto",
+    "Phung N. Thai",
+    "Gabriela Grigorean",
+    "Veneese J. Brown",
+    "Tjien Dwyer",
+    "Nipavan Chiamvimonvat",
+    "Elena N. Dedkova",
+    "Saul Schaefer"
+   ],
+   "pmid": "41935019",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 1,
+   "people": [
+    "Gabriela Grigorean"
+   ],
+   "kind": "article"
+  },
   {
    "title": "A humanized engineered heart tissue platform for cardiotoxicity assessment",
    "journal": "Stem Cell Reports",
@@ -50,6 +155,11 @@
    "pmid": "41861817",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 0,
+   "people": [
+    "Brett S. Phinney",
+    "Gabriela Grigorean"
+   ],
    "kind": "article"
   },
   {
@@ -71,7 +181,71 @@
    "pmid": "41843626",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 0,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
+  },
+  {
+   "title": "Preservation of proteomic and genomic genotypes in skeletal material from forensically treated cadavers",
+   "journal": "Forensic Science International: Genetics",
+   "year": "2026",
+   "month": "2",
+   "doi": "10.1016/j.fsigen.2025.103384",
+   "url": "https://doi.org/10.1016/j.fsigen.2025.103384",
+   "authors": [
+    "Glendon Parker",
+    "Michelle Harrel",
+    "Jennifer Snedeker",
+    "Michelle Salemi",
+    "Trevor Borja",
+    "Rachel Houston"
+   ],
+   "pmid": "41202527",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 0,
+   "people": [
+    "Michelle Salemi"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Metabolic Perturbation Exacerbates Sinoatrial Node Dysfunction in Heart Failure",
+   "journal": "bioRxiv",
+   "year": "2026",
+   "month": "2",
+   "doi": "10.64898/2026.02.06.704519",
+   "url": "https://doi.org/10.64898/2026.02.06.704519",
+   "authors": [
+    "Lu Ren",
+    "Yu Liu",
+    "Hao Zhang",
+    "Daphne A. Diloretto",
+    "Yang Zheng",
+    "Arianne Caudal",
+    "Mengjie Xie",
+    "Wenshu Zeng",
+    "Ryan L. Woltz",
+    "Hye Sook Shin",
+    "Richard Q. Ngo",
+    "Guy A. Perkins",
+    "Gabriela Grigorean",
+    "Ebenezer N. Yamoah",
+    "Joseph C. Wu",
+    "Nipavan Chiamvimonvat",
+    "Phung N. Thai"
+   ],
+   "pmid": "41726965",
+   "type": "posted-content",
+   "has_preprint": [],
+   "citations": 0,
+   "people": [
+    "Gabriela Grigorean"
+   ],
+   "kind": "preprint"
   },
   {
    "title": "Use of shotgun immunoproteomics for the development of protein vaccines against Edwardsiella piscicida",
@@ -100,6 +274,11 @@
    "pmid": "41213346",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 1,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -123,7 +302,49 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 1,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
+  },
+  {
+   "title": "Molecular interactions of Chd8 in mouse brain highlights a role in chromatin-associated RNA processing",
+   "journal": "bioRxiv",
+   "year": "2025",
+   "month": "12",
+   "doi": "10.64898/2025.12.11.693549",
+   "url": "https://doi.org/10.64898/2025.12.11.693549",
+   "authors": [
+    "Emily Smith",
+    "Cesar P. Canales",
+    "Mathew W. Kenaston",
+    "Nicolas Seban",
+    "Ayanna A. Wade",
+    "Ethan Fenton",
+    "Cory Ardekani",
+    "Stephanie Lozano",
+    "Nickolas C. Chu",
+    "Daniela Perla",
+    "Ksenia Medvedeva",
+    "Kaitlyn McCafferty",
+    "Yingjing Guo",
+    "Aspen Kopley-Smith",
+    "Abigail Ignasiak",
+    "Dylann Cullinane",
+    "Karol Cichewicz",
+    "Gabriela Grigorean",
+    "Priya S. Shah",
+    "Alex S. Nord"
+   ],
+   "pmid": "41427283",
+   "type": "posted-content",
+   "has_preprint": [],
+   "citations": 0,
+   "people": [
+    "Gabriela Grigorean"
+   ],
+   "kind": "preprint"
   },
   {
    "title": "Correlation of Plasma and Liver Tissue Proteomics for Plasma Biomarkers in Metabolic Dysfunction-Associated Steatotic Liver Disease",
@@ -141,6 +362,10 @@
    "pmid": "41454884",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 0,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -169,6 +394,11 @@
    "pmid": "42427653",
    "type": "posted-content",
    "has_preprint": [],
+   "citations": 0,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "preprint"
   },
   {
@@ -192,6 +422,11 @@
    "pmid": "40969138",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 1,
+   "people": [
+    "Brett S. Phinney",
+    "Gabriela Grigorean"
+   ],
    "kind": "article"
   },
   {
@@ -215,6 +450,10 @@
    "pmid": "41040385",
    "type": "posted-content",
    "has_preprint": [],
+   "citations": 3,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "preprint"
   },
   {
@@ -242,6 +481,11 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 4,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -269,7 +513,141 @@
    "pmid": "40815262",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 4,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
+  },
+  {
+   "title": "Multiomics Profiling of Extracellular Vesicles Supports Their Involvement in Endothelial Senescence\u2010Associated Vascular Dysfunction",
+   "journal": "Journal of Extracellular Biology",
+   "year": "2025",
+   "month": "7",
+   "doi": "10.1002/jex2.70078",
+   "url": "https://doi.org/10.1002/jex2.70078",
+   "authors": [
+    "Ryan E. Hogans",
+    "Yun Lin",
+    "Gabriela Grigorean",
+    "Ana Cristina Grodzki",
+    "Rachel R. Mizenko",
+    "Anne Knowlton",
+    "Randy P. Carney",
+    "Angie Gelli",
+    "Pamela J. Lein"
+   ],
+   "pmid": "40755907",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 1,
+   "people": [
+    "Gabriela Grigorean"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "MFRP is a molecular hub that organizes the apical membrane of RPE cells by engaging in interactions with specific proteins and lipids",
+   "journal": "Proceedings of the National Academy of Sciences",
+   "year": "2025",
+   "month": "4",
+   "doi": "10.1073/pnas.2425523122",
+   "url": "https://doi.org/10.1073/pnas.2425523122",
+   "authors": [
+    "Aleksander Tworak",
+    "Roman Smidak",
+    "Carolline Rodrigues Menezes",
+    "Samuel W. Du",
+    "Susie Suh",
+    "Elliot H. Choi",
+    "Sanae S. Imanishi",
+    "Zhiqian Dong",
+    "Dominik Lewandowski",
+    "Kristen E. Fong",
+    "Gabriela Grigorean",
+    "Antonio F. M. Pinto",
+    "Qianlan Xu",
+    "Dorota Skowronska-Krawczyk",
+    "Seth Blackshaw",
+    "Yoshikazu Imanishi",
+    "Krzysztof Palczewski"
+   ],
+   "pmid": "40249779",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 4,
+   "people": [
+    "Gabriela Grigorean"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Deletion of wheat alpha-gliadins from chromosome 6D improves gluten strength and reduces immunodominant celiac disease epitopes",
+   "journal": "Theoretical and Applied Genetics",
+   "year": "2025",
+   "month": "4",
+   "doi": "10.1007/s00122-025-04882-3",
+   "url": "https://doi.org/10.1007/s00122-025-04882-3",
+   "authors": [
+    "Maria G. Rottersman",
+    "Wenjun Zhang",
+    "Junli Zhang",
+    "Gabriela Grigorean",
+    "German Burguener",
+    "Claudia Carter",
+    "Teng Vang",
+    "Joshua Hegarty",
+    "Xiaoqin Zhang",
+    "Sean Finnie",
+    "Jorge Dubcovsky"
+   ],
+   "pmid": "40198388",
+   "type": "journal-article",
+   "has_preprint": [
+    "10.1101/2024.07.19.604379"
+   ],
+   "citations": 4,
+   "people": [
+    "Gabriela Grigorean"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Context-dependent Interactors Regulate TDP-43 Dysfunction in ALS/FTLD",
+   "journal": "bioRxiv",
+   "year": "2025",
+   "month": "4",
+   "doi": "10.1101/2025.04.07.646890",
+   "url": "https://doi.org/10.1101/2025.04.07.646890",
+   "authors": [
+    "Longxin Xie",
+    "Yuehua Zhu",
+    "Bryan T. Hurtle",
+    "Matthew Wright",
+    "John L. Robinson",
+    "Jocelyn C. Mauna",
+    "Emily E. Brown",
+    "Marilyn Ngo",
+    "Cristian A. Bergmann",
+    "Jiazhen Xu",
+    "Jessica Merjane",
+    "Amanda M. Gleixner",
+    "Gabriela Grigorean",
+    "Feilin Liu",
+    "Wilfried Rossoll",
+    "Edward B. Lee",
+    "Evangelos Kiskinis",
+    "Maria Chikina",
+    "Christopher J Donnelly"
+   ],
+   "pmid": "40291645",
+   "type": "posted-content",
+   "has_preprint": [],
+   "citations": 11,
+   "people": [
+    "Gabriela Grigorean"
+   ],
+   "kind": "preprint"
   },
   {
    "title": "Probe-dependent Proximity Profiling (ProPPr) Uncovers Similarities and Differences in Phospho-Tau-Associated Proteomes Between Tauopathies",
@@ -299,6 +677,11 @@
    "has_preprint": [
     "10.1101/2024.03.25.585597"
    ],
+   "citations": 12,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -326,6 +709,11 @@
    "type": "journal-article",
    "has_preprint": [
     "10.1101/2024.07.10.602886"
+   ],
+   "citations": 4,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
    ],
    "kind": "article"
   },
@@ -357,6 +745,74 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 20,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Genome-guided isolation of the hyperthermophilic aerobe Fervidibacter sacchari reveals conserved polysaccharide metabolism in the Armatimonadota",
+   "journal": "Nature Communications",
+   "year": "2024",
+   "month": "11",
+   "doi": "10.1038/s41467-024-53784-3",
+   "url": "https://doi.org/10.1038/s41467-024-53784-3",
+   "authors": [
+    "Nancy O. Nou",
+    "Jonathan K. Covington",
+    "Dengxun Lai",
+    "Xavier Mayali",
+    "Cale O. Seymour",
+    "Juliet Johnston",
+    "Jian-Yu Jiao",
+    "Steffen Buessecker",
+    "Damon Mosier",
+    "Alise R. Muok",
+    "Nicole Torosian",
+    "Allison M. Cook",
+    "Ariane Briegel",
+    "Tanja Woyke",
+    "Emiley Eloe-Fadrosh",
+    "Nicole Shapiro",
+    "Scott G. Bryan",
+    "Savannah Sleezer",
+    "Joshua Dimapilis",
+    "Cristina Gonzalez",
+    "Lizett Gonzalez",
+    "Marlene Noriega",
+    "Matthias Hess",
+    "Ross P. Carlson",
+    "Lan Liu",
+    "Meng-Meng Li",
+    "Zheng-Han Lian",
+    "Siqi Zhu",
+    "Fan Liu",
+    "Xian Sun",
+    "Beile Gao",
+    "Ritesh Mewalal",
+    "Miranda Harmon-Smith",
+    "Ian K. Blaby",
+    "Jan-Fang Cheng",
+    "Peter K. Weber",
+    "Gabriela Grigorean",
+    "Wen-Jun Li",
+    "Anne E. Dekas",
+    "Jennifer Pett-Ridge",
+    "Jeremy A. Dodsworth",
+    "Marike Palmer",
+    "Brian P. Hedlund"
+   ],
+   "pmid": "39496591",
+   "type": "journal-article",
+   "has_preprint": [
+    "10.21203/rs.3.rs-3760178/v1"
+   ],
+   "citations": 12,
+   "people": [
+    "Gabriela Grigorean"
+   ],
    "kind": "article"
   },
   {
@@ -385,9 +841,37 @@
     "Douglas J Perkins",
     "Jingyue Jia"
    ],
-   "pmid": "",
+   "pmid": "39533058",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 29,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Barley Grain Proteome Assessment Using Multi-Environment Trial Data and Machine Learning",
+   "journal": "Journal of Agricultural and Food Chemistry",
+   "year": "2024",
+   "month": "11",
+   "doi": "10.1021/acs.jafc.4c07017",
+   "url": "https://doi.org/10.1021/acs.jafc.4c07017",
+   "authors": [
+    "Maany Ramanan",
+    "Harmonie Bettenhausen",
+    "Gabriela Grigorean",
+    "Christine Diepenbrock",
+    "Glen Patrick Fox"
+   ],
+   "pmid": "39536264",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 6,
+   "people": [
+    "Gabriela Grigorean"
+   ],
    "kind": "article"
   },
   {
@@ -410,6 +894,11 @@
    "pmid": "39304982",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 6,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -433,6 +922,34 @@
    "pmid": "39337294",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 2,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Effect of In Vitro Digestion on Bioactive Peptides Related to Immune and Gut Health in Intact Cow\u2019s Milk and Hydrolyzed Protein-Based Infant Formulas",
+   "journal": "Nutrients",
+   "year": "2024",
+   "month": "9",
+   "doi": "10.3390/nu16193268",
+   "url": "https://doi.org/10.3390/nu16193268",
+   "authors": [
+    "Gabriela Grigorean",
+    "Xiaogu Du",
+    "Russell Kuhfeld",
+    "Elisabeth M. Haberl",
+    "Bo L\u00f6nnerdal"
+   ],
+   "pmid": "39408235",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 8,
+   "people": [
+    "Gabriela Grigorean"
+   ],
    "kind": "article"
   },
   {
@@ -465,9 +982,14 @@
     "Jason E. Gestwicki",
     "Chengfei Liu"
    ],
-   "pmid": "",
+   "pmid": "39103353",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 10,
+   "people": [
+    "Brett S. Phinney",
+    "Gabriela Grigorean"
+   ],
    "kind": "article"
   },
   {
@@ -486,6 +1008,11 @@
    "pmid": "39073724",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 9,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -506,6 +1033,11 @@
    "pmid": "38798543",
    "type": "posted-content",
    "has_preprint": [],
+   "citations": 3,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "preprint"
   },
   {
@@ -527,6 +1059,11 @@
    "pmid": "38598786",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 0,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -547,9 +1084,14 @@
     "Brett Phinney",
     "Jingyue Jia"
    ],
-   "pmid": "",
+   "pmid": "38617306",
    "type": "posted-content",
    "has_preprint": [],
+   "citations": 3,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "preprint"
   },
   {
@@ -576,6 +1118,10 @@
    "pmid": "38206049",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 44,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -602,6 +1148,65 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 9,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Effect of pH and protein composition on proteolysis of goat milk proteins by pepsin and pancreatin",
+   "journal": "Food Research International",
+   "year": "2023",
+   "month": "11",
+   "doi": "10.1016/j.foodres.2023.113294",
+   "url": "https://doi.org/10.1016/j.foodres.2023.113294",
+   "authors": [
+    "Kasper Hettinga",
+    "Linette Pellis",
+    "Wolf Rombouts",
+    "Xiaogu Du",
+    "Gabriela Grigorean",
+    "Bo L\u00f6nnerdal"
+   ],
+   "pmid": "37803606",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 13,
+   "people": [
+    "Gabriela Grigorean"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Multi-Omic, Histopathologic, and Clinicopathologic Effects of Once-Weekly Oral Rapamycin in a Naturally Occurring Feline Model of Hypertrophic Cardiomyopathy: A Pilot Study",
+   "journal": "Animals",
+   "year": "2023",
+   "month": "10",
+   "doi": "10.3390/ani13203184",
+   "url": "https://doi.org/10.3390/ani13203184",
+   "authors": [
+    "Victor N. Rivas",
+    "Joanna L. Kaplan",
+    "Susan A. Kennedy",
+    "Stuart Fitzgerald",
+    "Amanda E. Crofton",
+    "Aisling Farrell",
+    "Louise Grubb",
+    "Carina E. Jauregui",
+    "Gabriela Grigorean",
+    "Eunju Choi",
+    "Samantha P. Harris",
+    "Joshua A. Stern"
+   ],
+   "pmid": "37893908",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 11,
+   "people": [
+    "Gabriela Grigorean"
+   ],
    "kind": "article"
   },
   {
@@ -620,6 +1225,11 @@
    "pmid": "37894945",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 4,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -643,6 +1253,11 @@
    "pmid": "37883444",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 22,
+   "people": [
+    "Brett S. Phinney",
+    "Gabriela Grigorean"
+   ],
    "kind": "article"
   },
   {
@@ -663,6 +1278,11 @@
    "pmid": "37788135",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 1,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -684,6 +1304,32 @@
    "pmid": "37669266",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 1,
+   "people": [
+    "Brett S. Phinney"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Characterization of the extracellular vesicles, ultrastructural morphology, and intercellular interactions of multiple clinical isolates of the brain-eating amoeba, Naegleria fowleri",
+   "journal": "Frontiers in Microbiology",
+   "year": "2023",
+   "month": "9",
+   "doi": "10.3389/fmicb.2023.1264348",
+   "url": "https://doi.org/10.3389/fmicb.2023.1264348",
+   "authors": [
+    "A. Cassiopeia Russell",
+    "Peter Bush",
+    "Gabriela Grigorean",
+    "Dennis E. Kyle"
+   ],
+   "pmid": "37808283",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 16,
+   "people": [
+    "Gabriela Grigorean"
+   ],
    "kind": "article"
   },
   {
@@ -707,6 +1353,11 @@
    "pmid": "37686279",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 4,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -733,8 +1384,80 @@
    "pmid": "37435391",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 0,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article",
    "preprint_doi": "10.1101/2020.11.20.391300"
+  },
+  {
+   "title": "The \u2018omics of obesity in B-cell acute lymphoblastic leukemia",
+   "journal": "JNCI Monographs",
+   "year": "2023",
+   "month": "5",
+   "doi": "10.1093/jncimonographs/lgad014",
+   "url": "https://doi.org/10.1093/jncimonographs/lgad014",
+   "authors": [
+    "Delaney K Geitgey",
+    "Miyoung Lee",
+    "Kirsten A Cottrill",
+    "Maya Jaffe",
+    "William Pilcher",
+    "Swati Bhasin",
+    "Jessica Randall",
+    "Anthony J Ross",
+    "Michelle Salemi",
+    "Marisol Castillo-Castrejon",
+    "Matthew B Kilgore",
+    "Ayjha C Brown",
+    "Jeremy M Boss",
+    "Rich Johnston",
+    "Anne M Fitzpatrick",
+    "Melissa L Kemp",
+    "Robert English",
+    "Eric Weaver",
+    "Pritha Bagchi",
+    "Ryan Walsh",
+    "Christopher D Scharer",
+    "Manoj Bhasin",
+    "Joshua D Chandler",
+    "Karmella A Haynes",
+    "Elizabeth A Wellberg",
+    "Curtis J Henry"
+   ],
+   "pmid": "37139973",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 10,
+   "people": [
+    "Michelle Salemi"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Citrus flavanone metabolites significantly modulate global proteomic profile in pancreatic \u03b2-cells under high-glucose-induced metabolic stress",
+   "journal": "Biochimica et Biophysica Acta (BBA) - Proteins and Proteomics",
+   "year": "2023",
+   "month": "5",
+   "doi": "10.1016/j.bbapap.2023.140898",
+   "url": "https://doi.org/10.1016/j.bbapap.2023.140898",
+   "authors": [
+    "Layanne Nascimento Fraga",
+    "Dragan Milenkovic",
+    "Sara Lima Anacleto",
+    "Michelle Salemi",
+    "Franco Maria Lajolo",
+    "Neuza Mariko Aymoto Hassimotto"
+   ],
+   "pmid": "36731758",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 8,
+   "people": [
+    "Michelle Salemi"
+   ],
+   "kind": "article"
   },
   {
    "title": "ATG5 provides host protection acting as a switch in the atg8ylation cascade between autophagy and secretion",
@@ -760,6 +1483,11 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 54,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -781,6 +1509,11 @@
    "pmid": "37000833",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 2,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -805,6 +1538,11 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 8,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -834,6 +1572,11 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 0,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -861,6 +1604,34 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 31,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Dermal thirdhand smoke exposure induces oxidative damage, initiates skin inflammatory markers, and adversely alters the human plasma proteome",
+   "journal": "eBioMedicine",
+   "year": "2022",
+   "month": "10",
+   "doi": "10.1016/j.ebiom.2022.104256",
+   "url": "https://doi.org/10.1016/j.ebiom.2022.104256",
+   "authors": [
+    "Shane Sakamaki-Ching",
+    "Suzaynn Schick",
+    "Gabriela Grigorean",
+    "Jun Li",
+    "Prue Talbot"
+   ],
+   "pmid": "36137411",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 20,
+   "people": [
+    "Gabriela Grigorean"
+   ],
    "kind": "article"
   },
   {
@@ -885,9 +1656,14 @@
     "Terje Johansen",
     "Vojo Deretic"
    ],
-   "pmid": "",
+   "pmid": "36179369",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 102,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -910,6 +1686,48 @@
    "pmid": "34941365",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 9,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "KSHV episome tethering sites on host chromosomes and regulation of latency-lytic switch by CHD4",
+   "journal": "Cell Reports",
+   "year": "2022",
+   "month": "5",
+   "doi": "10.1016/j.celrep.2022.110788",
+   "url": "https://doi.org/10.1016/j.celrep.2022.110788",
+   "authors": [
+    "Ashish Kumar",
+    "Yuanzhi Lyu",
+    "Yuichi Yanagihashi",
+    "Chanikarn Chantarasrivong",
+    "Vladimir Majerciak",
+    "Michelle Salemi",
+    "Kang-Hsin Wang",
+    "Tomoki Inagaki",
+    "Frank Chuang",
+    "Ryan R. Davis",
+    "Clifford G. Tepper",
+    "Kazushi Nakano",
+    "Chie Izumiya",
+    "Michiko Shimoda",
+    "Ken-ichi Nakajima",
+    "Alexander Merleev",
+    "Zhi-Ming Zheng",
+    "Mel Campbell",
+    "Yoshihiro Izumiya"
+   ],
+   "pmid": "35545047",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 49,
+   "people": [
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -928,10 +1746,15 @@
     "Brett Phinney",
     "Michael A. Mandell"
    ],
-   "pmid": "",
+   "pmid": "35545034",
    "type": "journal-article",
    "has_preprint": [
     "10.1101/2021.08.20.457143"
+   ],
+   "citations": 19,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
    ],
    "kind": "article"
   },
@@ -954,6 +1777,12 @@
    "pmid": "35600141",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 5,
+   "people": [
+    "Brett S. Phinney",
+    "Gabriela Grigorean",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -979,6 +1808,11 @@
    "pmid": "35164882",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 47,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1002,6 +1836,11 @@
    "pmid": "",
    "type": "posted-content",
    "has_preprint": [],
+   "citations": 3,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "preprint"
   },
   {
@@ -1026,6 +1865,10 @@
    "pmid": "34808356",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 15,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -1059,9 +1902,14 @@
     "Eeva-Liisa Eskelinen",
     "Vojo Deretic"
    ],
-   "pmid": "",
+   "pmid": "34741801",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 98,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1086,6 +1934,11 @@
    "pmid": "34315035",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 9,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1108,6 +1961,11 @@
    "type": "journal-article",
    "has_preprint": [
     "10.1101/2021.03.15.435505"
+   ],
+   "citations": 9,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
    ],
    "kind": "article"
   },
@@ -1132,6 +1990,11 @@
    "pmid": "34638715",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 6,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1170,6 +2033,11 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 91,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1195,6 +2063,11 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 18,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1215,6 +2088,11 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 15,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1241,6 +2119,11 @@
    "type": "journal-article",
    "has_preprint": [
     "10.1101/2021.02.16.431450"
+   ],
+   "citations": 43,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
    ],
    "kind": "article"
   },
@@ -1304,6 +2187,41 @@
    "has_preprint": [
     "10.1101/2020.09.11.293464"
    ],
+   "citations": 151,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Proximity Biotin Labeling Reveals Kaposi\u2019s Sarcoma-Associated Herpesvirus Interferon Regulatory Factor Networks",
+   "journal": "Journal of Virology",
+   "year": "2021",
+   "month": "4",
+   "doi": "10.1128/jvi.02049-20",
+   "url": "https://doi.org/10.1128/jvi.02049-20",
+   "authors": [
+    "Ashish Kumar",
+    "Michelle Salemi",
+    "Resham Bhullar",
+    "Sara Guevara-Plunkett",
+    "Yuanzhi Lyu",
+    "Kang-Hsin Wang",
+    "Chie Izumiya",
+    "Mel Campbell",
+    "Ken-ichi Nakajima",
+    "Yoshihiro Izumiya"
+   ],
+   "pmid": "33597212",
+   "type": "journal-article",
+   "has_preprint": [
+    "10.1101/2020.10.16.343483"
+   ],
+   "citations": 13,
+   "people": [
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1323,10 +2241,15 @@
     "Michelle R. Salemi",
     "Hooman H. Rashidi"
    ],
-   "pmid": "",
+   "pmid": "33859233",
    "type": "journal-article",
    "has_preprint": [
     "10.21203/rs.3.rs-141397/v1"
+   ],
+   "citations": 68,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
    ],
    "kind": "article"
   },
@@ -1350,6 +2273,11 @@
    "pmid": "33261033",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 15,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1371,6 +2299,10 @@
    "pmid": "33050347",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 20,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -1396,6 +2328,11 @@
    "has_preprint": [
     "10.1101/2020.07.18.210153"
    ],
+   "citations": 3,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1416,6 +2353,11 @@
    "pmid": "32505640",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 31,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1441,6 +2383,11 @@
    "pmid": "32485593",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 20,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1472,6 +2419,11 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 87,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1501,6 +2453,11 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 36,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1525,6 +2482,40 @@
    "has_preprint": [
     "10.1101/814327"
    ],
+   "citations": 9,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Glycopeptide Biomarkers in Serum Haptoglobin for Hepatocellular Carcinoma Detection in Patients with Nonalcoholic Steatohepatitis",
+   "journal": "Journal of Proteome Research",
+   "year": "2020",
+   "month": "5",
+   "doi": "10.1021/acs.jproteome.0c00270",
+   "url": "https://doi.org/10.1021/acs.jproteome.0c00270",
+   "authors": [
+    "Jianhui Zhu",
+    "Junfeng Huang",
+    "Jie Zhang",
+    "Zhengwei Chen",
+    "Yu Lin",
+    "Gabriela Grigorean",
+    "Lingjun Li",
+    "Suyu Liu",
+    "Amit G. Singal",
+    "Neehar D. Parikh",
+    "David M. Lubman"
+   ],
+   "pmid": "32412768",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 54,
+   "people": [
+    "Gabriela Grigorean"
+   ],
    "kind": "article"
   },
   {
@@ -1545,6 +2536,11 @@
    "pmid": "32099006",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 30,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1574,6 +2570,11 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 431,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1593,9 +2594,14 @@
     "Robert Rice",
     "Glendon Parker"
    ],
-   "pmid": "",
+   "pmid": "31212206",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 23,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1621,6 +2627,11 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 41,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1643,6 +2654,11 @@
    "pmid": "30939338",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 23,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1664,6 +2680,11 @@
    "pmid": "30978464",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 11,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1686,6 +2707,10 @@
    "type": "journal-article",
    "has_preprint": [
     "10.1101/515403"
+   ],
+   "citations": 15,
+   "people": [
+    "Brett S. Phinney"
    ],
    "kind": "article"
   },
@@ -1711,6 +2736,11 @@
    "pmid": "31175171",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 31,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1731,6 +2761,11 @@
    "pmid": "30916809",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 43,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1757,6 +2792,11 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 128,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1781,6 +2821,10 @@
    "pmid": "30952696",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 23,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -1806,6 +2850,10 @@
    "pmid": "30552537",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 23,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -1833,6 +2881,11 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 132,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1855,6 +2908,11 @@
    "pmid": "30033667",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 15,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1880,6 +2938,11 @@
    "pmid": "29524673",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 99,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1907,6 +2970,11 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 281,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1926,6 +2994,11 @@
    "pmid": "29317496",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 22,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1944,6 +3017,10 @@
    "pmid": "29155854",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 55,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -1964,6 +3041,11 @@
    "pmid": "28951887",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 11,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -1990,6 +3072,11 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 69,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -2010,6 +3097,10 @@
    "pmid": "28925267",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 100,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2033,6 +3124,10 @@
    "pmid": "28934329",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 39,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2053,6 +3148,11 @@
    "pmid": "28648685",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 12,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -2071,6 +3171,11 @@
    "pmid": "28713781",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 45,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -2093,6 +3198,11 @@
    "pmid": "28544375",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 27,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -2112,6 +3222,10 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 0,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2130,6 +3244,10 @@
    "pmid": "27979737",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 37,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2155,6 +3273,11 @@
    "pmid": "28049629",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 31,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -2183,6 +3306,10 @@
    "pmid": "27990823",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 46,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2203,6 +3330,10 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 472,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2226,6 +3357,10 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 138,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2251,6 +3386,10 @@
    "pmid": "27799870",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 39,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2279,6 +3418,10 @@
    "pmid": "27492542",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 48,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2300,6 +3443,11 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 33,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -2321,6 +3469,11 @@
    "pmid": "27418529",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 25,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -2341,6 +3494,10 @@
    "pmid": "27255301",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 2,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2369,6 +3526,38 @@
    "pmid": "26435129",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 15,
+   "people": [
+    "Brett S. Phinney"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "A monoclonal antibody specific for prophase phosphorylation of histone deacetylase 1: a readout for early mitotic cells",
+   "journal": "mAbs",
+   "year": "2015",
+   "month": "10",
+   "doi": "10.1080/19420862.2015.1098795",
+   "url": "https://doi.org/10.1080/19420862.2015.1098795",
+   "authors": [
+    "Chiara V. Segr\u00e9",
+    "Silvia Senese",
+    "Sara Loponte",
+    "Stefano Santaguida",
+    "Paolo Soffientini",
+    "Gabriela Grigorean",
+    "Mario Cinquanta",
+    "Giuseppe Ossolengo",
+    "Christian Seiser",
+    "Susanna Chiocca"
+   ],
+   "pmid": "26467746",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 2,
+   "people": [
+    "Gabriela Grigorean"
+   ],
    "kind": "article"
   },
   {
@@ -2397,6 +3586,10 @@
    "pmid": "26283222",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 22,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2416,6 +3609,10 @@
    "pmid": "26148687",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 21,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2437,6 +3634,10 @@
    "pmid": "26193921",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 171,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2459,6 +3660,10 @@
    "pmid": "25757574",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 62,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2479,6 +3684,10 @@
    "pmid": "25815641",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 38,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2509,6 +3718,10 @@
    "pmid": "25656049",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 38,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2530,6 +3743,10 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 33,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2552,6 +3769,10 @@
    "pmid": "25338220",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 40,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2576,6 +3797,10 @@
    "pmid": "25165623",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 60,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2596,6 +3821,10 @@
    "pmid": "24548633",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 42,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2616,6 +3845,11 @@
    "pmid": "24555639",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 61,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -2638,6 +3872,10 @@
    "pmid": "24130705",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 31,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2659,6 +3897,10 @@
    "pmid": "23991859",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 16,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2677,6 +3919,10 @@
    "pmid": "23774597",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 73,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2706,6 +3952,10 @@
    "pmid": "23468624",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 59,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2732,6 +3982,10 @@
    "pmid": "23319436",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 28,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2753,6 +4007,10 @@
    "pmid": "23251662",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 26,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2779,6 +4037,10 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 16,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2798,6 +4060,10 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 88,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2816,6 +4082,10 @@
    "pmid": "22216214",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 15,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2834,6 +4104,31 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 33,
+   "people": [
+    "Brett S. Phinney"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Electron Induced Dissociation of Singly Deprotonated Peptides",
+   "journal": "Journal of the American Society for Mass Spectrometry",
+   "year": "2011",
+   "month": "9",
+   "doi": "10.1007/s13361-011-0233-6",
+   "url": "https://doi.org/10.1007/s13361-011-0233-6",
+   "authors": [
+    "Anastasia Kalli",
+    "Gabriela Grigorean",
+    "Kristina H\u00e5kansson"
+   ],
+   "pmid": "21952776",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 24,
+   "people": [
+    "Gabriela Grigorean"
+   ],
    "kind": "article"
   },
   {
@@ -2857,6 +4152,10 @@
    "pmid": "21841177",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 109,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2875,6 +4174,10 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 131,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2893,6 +4196,10 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 141,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2915,6 +4222,11 @@
    "pmid": "21483796",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 238,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -2928,6 +4240,10 @@
    "pmid": "21455478",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 0,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2950,6 +4266,10 @@
    "pmid": "21162737",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 47,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -2968,6 +4288,36 @@
    "pmid": "20939611",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 50,
+   "people": [
+    "Brett S. Phinney"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Structural Analysis of the RZZ Complex Reveals Common Ancestry with Multisubunit Vesicle Tethering Machinery",
+   "journal": "Structure",
+   "year": "2010",
+   "month": "5",
+   "doi": "10.1016/j.str.2010.02.014",
+   "url": "https://doi.org/10.1016/j.str.2010.02.014",
+   "authors": [
+    "Filiz \u00c7ivril",
+    "Annemarie Wehenkel",
+    "Federico M. Giorgi",
+    "Stefano Santaguida",
+    "Andrea Di Fonzo",
+    "Gabriela Grigorean",
+    "Francesca D. Ciccarelli",
+    "Andrea Musacchio"
+   ],
+   "pmid": "20462495",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 72,
+   "people": [
+    "Gabriela Grigorean"
+   ],
    "kind": "article"
   },
   {
@@ -2987,6 +4337,10 @@
    "pmid": "20097790",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 44,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -3000,6 +4354,10 @@
    "pmid": "20808644",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 0,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -3017,6 +4375,10 @@
    "pmid": "19603827",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 58,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -3036,6 +4398,10 @@
    "pmid": "18936055",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 178,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -3056,6 +4422,10 @@
    "pmid": "19490636",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 20,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -3080,6 +4450,11 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 29,
+   "people": [
+    "Brett S. Phinney",
+    "Michelle Salemi"
+   ],
    "kind": "article"
   },
   {
@@ -3093,6 +4468,10 @@
    "pmid": "19137115",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 0,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -3112,6 +4491,10 @@
    "pmid": "17910511",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 33,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -3130,6 +4513,10 @@
    "pmid": "17854217",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 53,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -3153,6 +4540,10 @@
    "pmid": "17513294",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 94,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -3172,6 +4563,10 @@
    "pmid": "17233760",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 75,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -3192,6 +4587,10 @@
    "pmid": "17541628",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 99,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -3218,6 +4617,10 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 400,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -3244,6 +4647,10 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 3,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -3261,6 +4668,10 @@
    "pmid": "17397212",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 11,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -3279,6 +4690,10 @@
    "pmid": "17265861",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 8,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -3302,6 +4717,27 @@
    "pmid": "16751107",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 495,
+   "people": [
+    "Brett S. Phinney"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Peptide sequencing by anion-electron reactions in Fourier transform ion cyclotron resonance mass spectrometry",
+   "journal": "ABSTRACTS OF PAPERS OF THE AMERICAN CHEMICAL SOCIETY",
+   "year": "2006",
+   "month": "",
+   "doi": "",
+   "url": "",
+   "authors": [],
+   "pmid": "",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 0,
+   "people": [
+    "Gabriela Grigorean"
+   ],
    "kind": "article"
   },
   {
@@ -3321,6 +4757,10 @@
    "pmid": "16357201",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 292,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -3341,6 +4781,10 @@
    "pmid": "",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 59,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -3365,6 +4809,10 @@
    "pmid": "15894717",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 335,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -3381,6 +4829,35 @@
    "pmid": "15822927",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 36,
+   "people": [
+    "Brett S. Phinney"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Identification and Verification of Novel Rodent Postsynaptic Density Proteins",
+   "journal": "Molecular & Cellular Proteomics",
+   "year": "2004",
+   "month": "9",
+   "doi": "10.1074/mcp.m400045-mcp200",
+   "url": "https://doi.org/10.1074/mcp.m400045-mcp200",
+   "authors": [
+    "Bryen A. Jordan",
+    "Brian D. Fernholz",
+    "Muriel Boussac",
+    "Chongfeng Xu",
+    "Gabriela Grigorean",
+    "Edward B. Ziff",
+    "Thomas A. Neubert"
+   ],
+   "pmid": "15169875",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 266,
+   "people": [
+    "Gabriela Grigorean"
+   ],
    "kind": "article"
   },
   {
@@ -3396,6 +4873,31 @@
    "pmid": "15249184",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 46,
+   "people": [
+    "Brett S. Phinney"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Chiral analyses of peptides by ion/molecule reactions",
+   "journal": "International Journal of Mass Spectrometry",
+   "year": "2004",
+   "month": "5",
+   "doi": "10.1016/j.ijms.2004.02.023",
+   "url": "https://doi.org/10.1016/j.ijms.2004.02.023",
+   "authors": [
+    "Gabriela Grigorean",
+    "Xin Cong",
+    "Carlito B Lebrilla"
+   ],
+   "pmid": "",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 29,
+   "people": [
+    "Gabriela Grigorean"
+   ],
    "kind": "article"
   },
   {
@@ -3417,6 +4919,31 @@
    "pmid": "12938931",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 216,
+   "people": [
+    "Brett S. Phinney"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Enantioselective gas-phase ion\u2013molecule reactions in a quadrupole ion trap",
+   "journal": "International Journal of Mass Spectrometry",
+   "year": "2002",
+   "month": "8",
+   "doi": "10.1016/s1387-3806(02)00558-4",
+   "url": "https://doi.org/10.1016/s1387-3806(02)00558-4",
+   "authors": [
+    "Gabriela Grigorean",
+    "Scott Gronert",
+    "Carlito B. Lebrilla"
+   ],
+   "pmid": "",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 30,
+   "people": [
+    "Gabriela Grigorean"
+   ],
    "kind": "article"
   },
   {
@@ -3435,6 +4962,10 @@
    "pmid": "11969422",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 32,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "article"
   },
   {
@@ -3448,6 +4979,10 @@
    "pmid": "",
    "type": "conference-paper",
    "has_preprint": [],
+   "citations": 0,
+   "people": [
+    "Brett S. Phinney"
+   ],
    "kind": "conference"
   },
   {
@@ -3468,6 +5003,52 @@
    "pmid": "11457355",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 84,
+   "people": [
+    "Brett S. Phinney"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Enantiomeric Analysis of Pharmaceutical Compounds by Ion/Molecule Reactions",
+   "journal": "Analytical Chemistry",
+   "year": "2001",
+   "month": "3",
+   "doi": "10.1021/ac001135q",
+   "url": "https://doi.org/10.1021/ac001135q",
+   "authors": [
+    "Gabriela Grigorean",
+    "Carlito B. Lebrilla"
+   ],
+   "pmid": "11338580",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 93,
+   "people": [
+    "Gabriela Grigorean"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Chiral recognition in gas-phase cyclodextrin: Amino acid complexes\u2014Is the three point interaction still valid in the gas phase?",
+   "journal": "Journal of the American Society for Mass Spectrometry",
+   "year": "2001",
+   "month": "3",
+   "doi": "10.1016/s1044-0305(00)00220-8",
+   "url": "https://doi.org/10.1016/s1044-0305(00)00220-8",
+   "authors": [
+    "Seonghee Ahn",
+    "Javier Ramirez",
+    "Gabriela Grigorean",
+    "Carlito B. Lebrilla"
+   ],
+   "pmid": "11281603",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 88,
+   "people": [
+    "Gabriela Grigorean"
+   ],
    "kind": "article"
   },
   {
@@ -3484,6 +5065,54 @@
    "pmid": "10982379",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 8,
+   "people": [
+    "Brett S. Phinney"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "A Mass Spectrometry Method for the Determination of Enantiomeric Excess in Mixtures of d , l -Amino Acids",
+   "journal": "Analytical Chemistry",
+   "year": "2000",
+   "month": "8",
+   "doi": "10.1021/ac000061f",
+   "url": "https://doi.org/10.1021/ac000061f",
+   "authors": [
+    "Gabriela Grigorean",
+    "Javier Ramirez",
+    "Seong He Ahn",
+    "Carlito B. Lebrilla"
+   ],
+   "pmid": "11008760",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 105,
+   "people": [
+    "Gabriela Grigorean"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Evidence for the Formation of Gas-Phase Inclusion Complexes with Cyclodextrins and Amino Acids",
+   "journal": "Journal of the American Chemical Society",
+   "year": "2000",
+   "month": "7",
+   "doi": "10.1021/ja000717m",
+   "url": "https://doi.org/10.1021/ja000717m",
+   "authors": [
+    "Javier Ramirez",
+    "Seonghee Ahn",
+    "Gabriela Grigorean",
+    "Carlito B. Lebrilla"
+   ],
+   "pmid": "",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 105,
+   "people": [
+    "Gabriela Grigorean"
+   ],
    "kind": "article"
   },
   {
@@ -3501,6 +5130,31 @@
    "pmid": "10823875",
    "type": "journal-article",
    "has_preprint": [],
+   "citations": 25,
+   "people": [
+    "Brett S. Phinney"
+   ],
+   "kind": "article"
+  },
+  {
+   "title": "Studies of exchangeable protons in the matrix-assisted laser desorption/ionization process",
+   "journal": "European Journal of Mass Spectrometry",
+   "year": "1996",
+   "month": "",
+   "doi": "10.1255/ejms.64",
+   "url": "https://doi.org/10.1255/ejms.64",
+   "authors": [
+    "Gabriela Grigorean",
+    "Robert Carey",
+    "I. Amster"
+   ],
+   "pmid": "",
+   "type": "journal-article",
+   "has_preprint": [],
+   "citations": 12,
+   "people": [
+    "Gabriela Grigorean"
+   ],
    "kind": "article"
   }
  ]

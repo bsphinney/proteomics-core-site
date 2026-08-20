@@ -9,6 +9,9 @@
    "Scopus - Elsevier"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "41213346",
   "month": "1",
   "authors": [
@@ -29,7 +32,8 @@
    "Esteban Soto"
   ],
   "url": "https://doi.org/10.1016/j.fsi.2025.110992",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 1
  },
  {
   "doi": "10.1083/jcb.202503166",
@@ -42,6 +46,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "9",
   "authors": [
    "Thabata L.A. Duque",
@@ -59,7 +66,8 @@
    "Vojo Deretic"
   ],
   "url": "https://doi.org/10.1083/jcb.202503166",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 4
  },
  {
   "doi": "10.1083/jcb.202404047",
@@ -73,6 +81,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "1",
   "authors": [
    "Ruheena Javed",
@@ -93,7 +104,8 @@
    "Vojo Deretic"
   ],
   "url": "https://doi.org/10.1083/jcb.202404047",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 20
  },
  {
   "doi": "10.64898/2025.12.04.691871",
@@ -105,6 +117,9 @@
    "Scopus - Elsevier"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "42427653",
   "month": "12",
   "authors": [
@@ -124,7 +139,8 @@
    "Christina K. Kim"
   ],
   "url": "https://doi.org/10.64898/2025.12.04.691871",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 0
  },
  {
   "doi": "10.1101/2025.09.26.678912",
@@ -136,6 +152,9 @@
    "Scopus - Elsevier"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "41040385",
   "month": "9",
   "authors": [
@@ -150,7 +169,8 @@
    "Timothy J. McMahon"
   ],
   "url": "https://doi.org/10.1101/2025.09.26.678912",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 3
  },
  {
   "doi": "10.7554/elife.100928",
@@ -162,6 +182,9 @@
    "Scopus - Elsevier"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "1",
   "authors": [
    "Masroor Ahmad Paddar",
@@ -180,7 +203,8 @@
   "url": "https://doi.org/10.7554/elife.100928",
   "has_preprint": [
    "10.1101/2024.07.10.602886"
-  ]
+  ],
+  "citations": 4
  },
  {
   "doi": "10.1016/j.jlr.2025.100932",
@@ -192,6 +216,9 @@
    "Scopus - Elsevier"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "12",
   "authors": [
    "Poonamjot Deol",
@@ -205,7 +232,8 @@
    "Frances M. Sladek"
   ],
   "url": "https://doi.org/10.1016/j.jlr.2025.100932",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 1
  },
  {
   "doi": "10.1186/s13024-025-00817-0",
@@ -218,6 +246,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "40082954",
   "month": "3",
   "authors": [
@@ -239,7 +270,8 @@
   "url": "https://doi.org/10.1186/s13024-025-00817-0",
   "has_preprint": [
    "10.1101/2024.03.25.585597"
-  ]
+  ],
+  "citations": 12
  },
  {
   "doi": "10.1093/icb/icaf148",
@@ -252,6 +284,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "40815262",
   "month": "8",
   "authors": [
@@ -270,7 +305,8 @@
    "Jeffrey S Hall"
   ],
   "url": "https://doi.org/10.1093/icb/icaf148",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 4
  },
  {
   "doi": "10.1021/acs.jproteome.5c00290",
@@ -283,6 +319,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "40969138",
   "month": "9",
   "authors": [
@@ -297,7 +336,8 @@
    "Brian H. Bird"
   ],
   "url": "https://doi.org/10.1021/acs.jproteome.5c00290",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 1
  },
  {
   "doi": "10.1111/jfd.14017",
@@ -311,6 +351,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "39304982",
   "month": "9",
   "authors": [
@@ -324,7 +367,8 @@
    "Esteban Soto"
   ],
   "url": "https://doi.org/10.1111/jfd.14017",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 6
  },
  {
   "doi": "10.3390/ijms25189807",
@@ -338,6 +382,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "39337294",
   "month": "9",
   "authors": [
@@ -352,7 +399,8 @@
    "Irina A. Kirpich"
   ],
   "url": "https://doi.org/10.3390/ijms25189807",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 2
  },
  {
   "doi": "10.1101/2024.03.29.587368",
@@ -365,6 +413,10 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
+  "pmid": "38617306",
   "month": "3",
   "authors": [
    "Jacob Duran",
@@ -378,7 +430,8 @@
    "Jingyue Jia"
   ],
   "url": "https://doi.org/10.1101/2024.03.29.587368",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 3
  },
  {
   "doi": "10.1038/s44318-024-00292-1",
@@ -392,6 +445,10 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
+  "pmid": "39533058",
   "month": "11",
   "authors": [
    "Jacob Duran",
@@ -413,7 +470,8 @@
    "Jingyue Jia"
   ],
   "url": "https://doi.org/10.1038/s44318-024-00292-1",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 29
  },
  {
   "doi": "10.1371/journal.pone.0306211",
@@ -426,6 +484,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "38905290",
   "month": "6",
   "authors": [
@@ -438,7 +499,8 @@
    "Macarena G. Sanz"
   ],
   "url": "https://doi.org/10.1371/journal.pone.0306211",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 0
  },
  {
   "doi": "10.1021/acs.chemrestox.3c00353",
@@ -452,6 +514,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "38598786",
   "month": "4",
   "authors": [
@@ -464,7 +529,8 @@
    "Robert H. Rice"
   ],
   "url": "https://doi.org/10.1021/acs.chemrestox.3c00353",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 0
  },
  {
   "doi": "10.1002/prca.202300236",
@@ -478,6 +544,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "39073724",
   "month": "7",
   "authors": [
@@ -487,7 +556,8 @@
    "Arthur J. McCullough"
   ],
   "url": "https://doi.org/10.1002/prca.202300236",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 9
  },
  {
   "doi": "",
@@ -500,6 +570,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "authors": [],
   "url": "",
   "month": ""
@@ -516,6 +589,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "7",
   "authors": [
    "Masroor Ahmad Paddar",
@@ -532,7 +608,8 @@
    "Vojo Deretic"
   ],
   "url": "https://doi.org/10.1101/2024.07.10.602886",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 0
  },
  {
   "doi": "10.7554/elife.100928",
@@ -544,6 +621,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "39773872",
   "month": "1",
   "authors": [
@@ -563,7 +643,8 @@
   "url": "https://doi.org/10.7554/elife.100928",
   "has_preprint": [
    "10.1101/2024.07.10.602886"
-  ]
+  ],
+  "citations": 4
  },
  {
   "doi": "10.1128/mbio.03304-23",
@@ -576,6 +657,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "38206049",
   "month": "2",
   "authors": [
@@ -593,7 +677,8 @@
    "Fitnat H. Yildiz"
   ],
   "url": "https://doi.org/10.1128/mbio.03304-23",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 44
  },
  {
   "doi": "10.1101/2024.03.25.585597",
@@ -607,6 +692,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "38585836",
   "month": "3",
   "authors": [
@@ -624,7 +712,8 @@
    "Wilfried Rossoll"
   ],
   "url": "https://doi.org/10.1101/2024.03.25.585597",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 0
  },
  {
   "doi": "10.1038/s41467-024-50459-x",
@@ -637,6 +726,10 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
+  "pmid": "39103353",
   "month": "8",
   "authors": [
    "Pengfei Xu",
@@ -662,7 +755,8 @@
    "Chengfei Liu"
   ],
   "url": "https://doi.org/10.1038/s41467-024-50459-x",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 10
  },
  {
   "doi": "10.1101/2024.05.15.594178",
@@ -676,6 +770,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "38798543",
   "month": "5",
   "authors": [
@@ -687,7 +784,8 @@
    "Bennett H. Penn"
   ],
   "url": "https://doi.org/10.1101/2024.05.15.594178",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 3
  },
  {
   "doi": "10.1093/biolre/ioad146",
@@ -702,6 +800,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "37883444",
   "month": "10",
   "authors": [
@@ -716,7 +817,8 @@
    "Cheryl S Rosenfeld"
   ],
   "url": "https://doi.org/10.1093/biolre/ioad146",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 22
  },
  {
   "doi": "10.1080/15548627.2023.2273703",
@@ -731,6 +833,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "11",
   "authors": [
    "Fulong Wang",
@@ -747,7 +852,8 @@
    "Vojo Deretic"
   ],
   "url": "https://doi.org/10.1080/15548627.2023.2273703",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 9
  },
  {
   "doi": "10.1093/toxsci/kfad103",
@@ -762,6 +868,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "37788135",
   "month": "10",
   "authors": [
@@ -773,7 +882,8 @@
    "Robert H Rice"
   ],
   "url": "https://doi.org/10.1093/toxsci/kfad103",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 1
  },
  {
   "doi": "10.7171/3fc1f5fe.9b78d780",
@@ -785,6 +895,9 @@
    "Scopus - Elsevier"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "37435391",
   "month": "6",
   "authors": [
@@ -802,7 +915,8 @@
    "Benjamin A. Neely"
   ],
   "url": "https://doi.org/10.7171/3fc1f5fe.9b78d780",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 0
  },
  {
   "doi": "10.1016/j.devcel.2023.03.014",
@@ -815,6 +929,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "5",
   "authors": [
    "Fulong Wang",
@@ -831,7 +948,8 @@
    "Vojo Deretic"
   ],
   "url": "https://doi.org/10.1016/j.devcel.2023.03.014",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 54
  },
  {
   "doi": "10.3390/ijms241713477",
@@ -845,6 +963,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "37686279",
   "month": "8",
   "authors": [
@@ -859,7 +980,8 @@
    "Flora Tassone"
   ],
   "url": "https://doi.org/10.3390/ijms241713477",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 4
  },
  {
   "doi": "10.1016/j.exer.2022.109303",
@@ -872,6 +994,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "1",
   "authors": [
    "Iman Jalilian",
@@ -886,7 +1011,8 @@
    "VijayKrishna Raghunathan"
   ],
   "url": "https://doi.org/10.1016/j.exer.2022.109303",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 8
  },
  {
   "doi": "10.1371/journal.pone.0290778",
@@ -899,6 +1025,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "37669266",
   "month": "9",
   "authors": [
@@ -911,7 +1040,8 @@
    "Macarena G. Sanz"
   ],
   "url": "https://doi.org/10.1371/journal.pone.0290778",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 1
  },
  {
   "doi": "10.1080/15548627.2022.2148900",
@@ -924,6 +1054,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "11",
   "authors": [
    "Jingyue Jia",
@@ -941,7 +1074,8 @@
    "Vojo Deretic"
   ],
   "url": "https://doi.org/10.1080/15548627.2022.2148900",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 31
  },
  {
   "doi": "10.3390/ijms242015266",
@@ -955,6 +1089,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "37894945",
   "month": "10",
   "authors": [
@@ -964,7 +1101,8 @@
    "Aldrin V. Gomes"
   ],
   "url": "https://doi.org/10.3390/ijms242015266",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 4
  },
  {
   "doi": "",
@@ -977,6 +1115,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "authors": [],
   "url": "",
   "month": ""
@@ -993,6 +1134,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "37000833",
   "month": "3",
   "authors": [
@@ -1005,7 +1149,8 @@
    "Robert H. Rice"
   ],
   "url": "https://doi.org/10.1371/journal.pone.0283619",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 2
  },
  {
   "doi": "10.1002/alz.065671",
@@ -1017,6 +1162,9 @@
    "Brett Phinney"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "12",
   "authors": [
    "Jannifer H Lee",
@@ -1036,7 +1184,8 @@
    "Wilfried Rossoll"
   ],
   "url": "https://doi.org/10.1002/alz.065671",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 0
  },
  {
   "doi": "10.1186/s40478-022-01322-x",
@@ -1050,6 +1199,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "35164882",
   "month": "2",
   "authors": [
@@ -1066,7 +1218,8 @@
    "Wilfried Rossoll"
   ],
   "url": "https://doi.org/10.1186/s40478-022-01322-x",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 47
  },
  {
   "doi": "10.1101/2022.02.02.22270298",
@@ -1081,6 +1234,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "2",
   "authors": [
    "Hooman H. Rashidi",
@@ -1094,7 +1250,8 @@
    "Nam K. Tran"
   ],
   "url": "https://doi.org/10.1101/2022.02.02.22270298",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 3
  },
  {
   "doi": "10.1094/phyto-07-21-0302-r",
@@ -1108,6 +1265,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "34941365",
   "month": "7",
   "authors": [
@@ -1121,7 +1281,8 @@
    "Abhaya M. Dandekar"
   ],
   "url": "https://doi.org/10.1094/phyto-07-21-0302-r",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 9
  },
  {
   "doi": "10.1021/acsomega.2c01864",
@@ -1135,6 +1296,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "35600141",
   "month": "5",
   "authors": [
@@ -1147,7 +1311,8 @@
    "Nam K. Tran"
   ],
   "url": "https://doi.org/10.1021/acsomega.2c01864",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 5
  },
  {
   "doi": "10.1016/j.celrep.2022.110797",
@@ -1161,6 +1326,10 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
+  "pmid": "35545034",
   "month": "5",
   "authors": [
    "Bhaskar Saha",
@@ -1174,7 +1343,8 @@
   "url": "https://doi.org/10.1016/j.celrep.2022.110797",
   "has_preprint": [
    "10.1101/2021.08.20.457143"
-  ]
+  ],
+  "citations": 19
  },
  {
   "doi": "10.1083/jcb.202207091",
@@ -1187,6 +1357,10 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
+  "pmid": "36179369",
   "month": "9",
   "authors": [
    "Jingyue Jia",
@@ -1204,7 +1378,8 @@
    "Vojo Deretic"
   ],
   "url": "https://doi.org/10.1083/jcb.202207091",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 102
  },
  {
   "doi": "10.1016/j.mcpro.2021.100180",
@@ -1219,6 +1394,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "34808356",
   "month": "1",
   "authors": [
@@ -1234,7 +1412,8 @@
    "Michelle L. Olsen"
   ],
   "url": "https://doi.org/10.1016/j.mcpro.2021.100180",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 15
  },
  {
   "doi": "10.1038/s41556-021-00706-w",
@@ -1248,6 +1427,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "7",
   "authors": [
    "Aurore Claude-Taupin",
@@ -1276,7 +1458,8 @@
    "Vojo Deretic"
   ],
   "url": "https://doi.org/10.1038/s41556-021-00706-w",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 91
  },
  {
   "doi": "10.1016/j.jas.2021.105354",
@@ -1291,6 +1474,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "6",
   "authors": [
    "Glendon J. Parker",
@@ -1306,7 +1492,8 @@
    "Brett Phinney"
   ],
   "url": "https://doi.org/10.1016/j.jas.2021.105354",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 18
  },
  {
   "doi": "10.1038/s41598-021-87463-w",
@@ -1320,6 +1507,10 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
+  "pmid": "33859233",
   "month": "4",
   "authors": [
    "Nam K. Tran",
@@ -1334,7 +1525,8 @@
   "url": "https://doi.org/10.1038/s41598-021-87463-w",
   "has_preprint": [
    "10.21203/rs.3.rs-141397/v1"
-  ]
+  ],
+  "citations": 68
  },
  {
   "doi": "10.3390/ijms221910374",
@@ -1348,6 +1540,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "34638715",
   "month": "9",
   "authors": [
@@ -1362,7 +1557,8 @@
    "Abhaya M. Dandekar"
   ],
   "url": "https://doi.org/10.3390/ijms221910374",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 6
  },
  {
   "doi": "10.1021/acs.jproteome.1c00209",
@@ -1377,6 +1573,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "34491751",
   "month": "9",
   "authors": [
@@ -1391,7 +1590,8 @@
   "url": "https://doi.org/10.1021/acs.jproteome.1c00209",
   "has_preprint": [
    "10.1101/2021.03.15.435505"
-  ]
+  ],
+  "citations": 9
  },
  {
   "doi": "10.1016/j.xcrm.2021.100288",
@@ -1405,6 +1605,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "33969321",
   "month": "5",
   "authors": [
@@ -1458,7 +1661,8 @@
   "url": "https://doi.org/10.1016/j.xcrm.2021.100288",
   "has_preprint": [
    "10.1101/2020.09.11.293464"
-  ]
+  ],
+  "citations": 151
  },
  {
   "doi": "10.1016/j.fsigen.2021.102564",
@@ -1471,6 +1675,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "34315035",
   "month": "9",
   "authors": [
@@ -1486,7 +1693,8 @@
    "Robert H. Rice"
   ],
   "url": "https://doi.org/10.1016/j.fsigen.2021.102564",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 9
  },
  {
   "doi": "10.7554/elife.67624",
@@ -1500,6 +1708,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "34034859",
   "month": "5",
   "authors": [
@@ -1518,7 +1729,8 @@
   "url": "https://doi.org/10.7554/elife.67624",
   "has_preprint": [
    "10.1101/2021.02.16.431450"
-  ]
+  ],
+  "citations": 43
  },
  {
   "doi": "10.1101/2021.02.16.431450",
@@ -1530,6 +1742,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "2",
   "authors": [
    "Maxence Le Vasseur",
@@ -1545,7 +1760,8 @@
    "Jodi Nunnari"
   ],
   "url": "https://doi.org/10.1101/2021.02.16.431450",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 0
  },
  {
   "doi": "10.1101/2021.08.20.457143",
@@ -1558,6 +1774,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "8",
   "authors": [
    "Bhaskar Saha",
@@ -1568,7 +1787,8 @@
    "Michael A Mandell"
   ],
   "url": "https://doi.org/10.1101/2021.08.20.457143",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 0
  },
  {
   "doi": "10.1016/j.cell.2021.10.017",
@@ -1582,6 +1802,10 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
+  "pmid": "34741801",
   "month": "11",
   "authors": [
    "Suresh Kumar",
@@ -1608,7 +1832,8 @@
    "Vojo Deretic"
   ],
   "url": "https://doi.org/10.1016/j.cell.2021.10.017",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 98
  },
  {
   "doi": "10.1007/s10811-021-02483-3",
@@ -1622,6 +1847,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "5",
   "authors": [
    "Andrew R. Burch",
@@ -1632,7 +1860,8 @@
    "Annaliese K. Franz"
   ],
   "url": "https://doi.org/10.1007/s10811-021-02483-3",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 15
  },
  {
   "doi": "10.1101/2020.11.20.391300",
@@ -1645,6 +1874,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "11",
   "authors": [
    "Benjamin A. Neely",
@@ -1661,7 +1893,8 @@
    "Joanna Kirkpatrick"
   ],
   "url": "https://doi.org/10.1101/2020.11.20.391300",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 5
  },
  {
   "doi": "10.1038/s41598-020-68550-w",
@@ -1675,6 +1908,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "7",
   "authors": [
    "Tammy Buonasera",
@@ -1696,7 +1932,8 @@
    "Glendon Parker"
   ],
   "url": "https://doi.org/10.1038/s41598-020-68550-w",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 87
  },
  {
   "doi": "10.1016/j.fsigen.2020.102309",
@@ -1710,6 +1947,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "32485593",
   "month": "7",
   "authors": [
@@ -1726,7 +1966,8 @@
    "Robert H. Rice"
   ],
   "url": "https://doi.org/10.1016/j.fsigen.2020.102309",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 20
  },
  {
   "doi": "10.3390/life10120314",
@@ -1741,6 +1982,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "33261033",
   "month": "11",
   "authors": [
@@ -1754,7 +1998,8 @@
    "Abhaya M. Dandekar"
   ],
   "url": "https://doi.org/10.3390/life10120314",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 15
  },
  {
   "doi": "10.3390/biology9090261",
@@ -1770,6 +2015,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "32882865",
   "month": "9",
   "authors": [
@@ -1786,7 +2034,8 @@
   "url": "https://doi.org/10.3390/biology9090261",
   "has_preprint": [
    "10.1101/2020.07.18.210153"
-  ]
+  ],
+  "citations": 3
  },
  {
   "doi": "10.1016/j.devcel.2019.10.025",
@@ -1800,6 +2049,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "1",
   "authors": [
    "Jingyue Jia",
@@ -1819,7 +2071,8 @@
    "Vojo Deretic"
   ],
   "url": "https://doi.org/10.1016/j.devcel.2019.10.025",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 431
  },
  {
   "doi": "10.1038/s41598-020-60053-y",
@@ -1833,6 +2086,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "32099006",
   "month": "2",
   "authors": [
@@ -1844,7 +2100,8 @@
    "Aldrin V. Gomes"
   ],
   "url": "https://doi.org/10.1038/s41598-020-60053-y",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 30
  },
  {
   "doi": "10.1080/15548627.2020.1779451",
@@ -1858,6 +2115,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "6",
   "authors": [
    "Jingyue Jia",
@@ -1877,7 +2137,8 @@
    "Vojo Deretic"
   ],
   "url": "https://doi.org/10.1080/15548627.2020.1779451",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 36
  },
  {
   "doi": "10.1074/jbc.ra119.011667",
@@ -1891,6 +2152,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "5",
   "authors": [
    "Trevor Croft",
@@ -1905,7 +2169,8 @@
   "url": "https://doi.org/10.1074/jbc.ra119.011667",
   "has_preprint": [
    "10.1101/814327"
-  ]
+  ],
+  "citations": 9
  },
  {
   "doi": "10.1016/j.fsigen.2020.102314",
@@ -1919,6 +2184,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "32505640",
   "month": "7",
   "authors": [
@@ -1930,7 +2198,8 @@
    "Glendon J. Parker"
   ],
   "url": "https://doi.org/10.1016/j.fsigen.2020.102314",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 31
  },
  {
   "doi": "10.3390/ijms21207453",
@@ -1945,6 +2214,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "33050347",
   "month": "10",
   "authors": [
@@ -1957,7 +2229,8 @@
    "Abhaya M. Dandekar"
   ],
   "url": "https://doi.org/10.3390/ijms21207453",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 20
  },
  {
   "doi": "10.1105/tpc.19.00110",
@@ -1972,6 +2245,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "31175171",
   "month": "6",
   "authors": [
@@ -1987,7 +2263,8 @@
    "Georgia Drakakaki"
   ],
   "url": "https://doi.org/10.1105/tpc.19.00110",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 31
  },
  {
   "doi": "10.1016/j.fsigen.2019.03.009",
@@ -2001,6 +2278,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "30939338",
   "month": "7",
   "authors": [
@@ -2014,7 +2294,8 @@
    "Glendon J. Parker"
   ],
   "url": "https://doi.org/10.1016/j.fsigen.2019.03.009",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 23
  },
  {
   "doi": "10.1007/s10495-018-1505-4",
@@ -2028,6 +2309,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "30552537",
   "month": "12",
   "authors": [
@@ -2044,7 +2328,8 @@
    "Leopold Eckhart"
   ],
   "url": "https://doi.org/10.1007/s10495-018-1505-4",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 23
  },
  {
   "doi": "10.1080/15548627.2018.1505155",
@@ -2058,6 +2343,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "11",
   "authors": [
    "Jingyue Jia",
@@ -2075,7 +2363,8 @@
    "Vojo Deretic"
   ],
   "url": "https://doi.org/10.1080/15548627.2018.1505155",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 132
  },
  {
   "doi": "10.1111/exd.13925",
@@ -2089,6 +2378,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "30916809",
   "month": "5",
   "authors": [
@@ -2100,7 +2392,8 @@
    "Robert H. Rice"
   ],
   "url": "https://doi.org/10.1111/exd.13925",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 43
  },
  {
   "doi": "10.1242/bio.037937",
@@ -2114,6 +2407,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "30952696",
   "month": "1",
   "authors": [
@@ -2129,7 +2425,8 @@
    "Vimal Selvaraj"
   ],
   "url": "https://doi.org/10.1242/bio.037937",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 23
  },
  {
   "doi": "10.18632/oncotarget.26995",
@@ -2142,6 +2439,9 @@
    "Scopus - Elsevier"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "31231467",
   "month": "6",
   "authors": [
@@ -2156,7 +2456,8 @@
   "url": "https://doi.org/10.18632/oncotarget.26995",
   "has_preprint": [
    "10.1101/515403"
-  ]
+  ],
+  "citations": 15
  },
  {
   "doi": "10.1016/j.jprot.2019.103449",
@@ -2170,6 +2471,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "9",
   "authors": [
    "Xiaoping Hu",
@@ -2185,7 +2489,8 @@
    "Krishna V. Subbarao"
   ],
   "url": "https://doi.org/10.1016/j.jprot.2019.103449",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 41
  },
  {
   "doi": "10.1016/j.fsigen.2019.05.005",
@@ -2199,6 +2504,10 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
+  "pmid": "31212206",
   "month": "9",
   "authors": [
    "Trevor Borja",
@@ -2211,7 +2520,8 @@
    "Glendon Parker"
   ],
   "url": "https://doi.org/10.1016/j.fsigen.2019.05.005",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 23
  },
  {
   "doi": "10.1016/j.jprot.2019.04.007",
@@ -2225,6 +2535,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "30978464",
   "month": "6",
   "authors": [
@@ -2237,7 +2550,8 @@
    "Robert H. Rice"
   ],
   "url": "https://doi.org/10.1016/j.jprot.2019.04.007",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 11
  },
  {
   "doi": "",
@@ -2250,6 +2564,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "authors": [],
   "url": "",
   "month": ""
@@ -2266,6 +2583,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "1",
   "authors": [
    "Glendon J. Parker",
@@ -2282,7 +2602,8 @@
    "Brett S. Phinney"
   ],
   "url": "https://doi.org/10.1016/j.jas.2018.08.011",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 128
  },
  {
   "doi": "10.1074/jbc.m117.807214",
@@ -2296,6 +2617,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "29317496",
   "month": "2",
   "authors": [
@@ -2306,7 +2630,8 @@
    "Su-Ju Lin"
   ],
   "url": "https://doi.org/10.1074/jbc.m117.807214",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 22
  },
  {
   "doi": "",
@@ -2319,6 +2644,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "authors": [],
   "url": "",
   "month": ""
@@ -2335,6 +2663,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "30033667",
   "month": "8",
   "authors": [
@@ -2348,7 +2679,8 @@
    "John P. Sundberg"
   ],
   "url": "https://doi.org/10.1111/exd.13756",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 15
  },
  {
   "doi": "10.1016/j.molcel.2018.03.009",
@@ -2363,6 +2695,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "4",
   "authors": [
    "Jingyue Jia",
@@ -2380,7 +2715,8 @@
    "Vojo Deretic"
   ],
   "url": "https://doi.org/10.1016/j.molcel.2018.03.009",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 281
  },
  {
   "doi": "10.1016/j.actbio.2018.02.037",
@@ -2394,6 +2730,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "29524673",
   "month": "4",
   "authors": [
@@ -2410,7 +2749,8 @@
    "Janice Vranka"
   ],
   "url": "https://doi.org/10.1016/j.actbio.2018.02.037",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 99
  },
  {
   "doi": "10.3389/fimmu.2018.01857",
@@ -2423,6 +2763,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "9",
   "authors": [
    "Brandon B. Phinney",
@@ -2434,7 +2777,8 @@
    "Ellen J. Beswick"
   ],
   "url": "https://doi.org/10.3389/fimmu.2018.01857",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 32
  },
  {
   "doi": "10.1016/j.peptides.2016.11.012",
@@ -2449,6 +2793,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "27979737",
   "month": "2",
   "authors": [
@@ -2458,7 +2805,8 @@
    "Bo L\u00f6nnerdal"
   ],
   "url": "https://doi.org/10.1016/j.peptides.2016.11.012",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 37
  },
  {
   "doi": "10.1104/pp.16.01404",
@@ -2473,6 +2821,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "11",
   "authors": [
    "Koste A. Yadeta",
@@ -2486,7 +2837,8 @@
    "Gitta Coaker"
   ],
   "url": "https://doi.org/10.1104/pp.16.01404",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 138
  },
  {
   "doi": "10.1021/acs.jproteome.6b00881",
@@ -2501,6 +2853,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "27990823",
   "month": "1",
   "authors": [
@@ -2520,7 +2875,8 @@
    "Olga Vitek"
   ],
   "url": "https://doi.org/10.1021/acs.jproteome.6b00881",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 46
  },
  {
   "doi": "10.1021/acs.jproteome.7b00486",
@@ -2535,6 +2891,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "28925267",
   "month": "10",
   "authors": [
@@ -2546,7 +2905,8 @@
    "Bo L\u00f6nnerdal"
   ],
   "url": "https://doi.org/10.1021/acs.jproteome.7b00486",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 100
  },
  {
   "doi": "10.1371/journal.pone.0185125",
@@ -2560,6 +2920,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "28934329",
   "month": "9",
   "authors": [
@@ -2574,7 +2937,8 @@
    "Deborah K. Lieu"
   ],
   "url": "https://doi.org/10.1371/journal.pone.0185125",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 39
  },
  {
   "doi": "10.1093/carcin/bgw205",
@@ -2589,6 +2953,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "28049629",
   "month": "1",
   "authors": [
@@ -2605,7 +2972,8 @@
    "Suzanne Miyamoto"
   ],
   "url": "https://doi.org/10.1093/carcin/bgw205",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 31
  },
  {
   "doi": "",
@@ -2617,6 +2985,9 @@
    "ResearcherID"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "authors": [],
   "url": "",
   "month": ""
@@ -2633,6 +3004,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "10",
   "authors": [
    "Poonamjot Deol",
@@ -2649,7 +3023,8 @@
    "Frances M. Sladek"
   ],
   "url": "https://doi.org/10.1038/s41598-017-12624-9",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 69
  },
  {
   "doi": "10.1371/journal.pone.0188105",
@@ -2663,6 +3038,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "29155854",
   "month": "11",
   "authors": [
@@ -2672,7 +3050,8 @@
    "Vimal Selvaraj"
   ],
   "url": "https://doi.org/10.1371/journal.pone.0188105",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 55
  },
  {
   "doi": "10.1128/msystems.00027-17",
@@ -2685,6 +3064,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "28951887",
   "month": "10",
   "authors": [
@@ -2696,7 +3078,8 @@
    "Maria L. Marco"
   ],
   "url": "https://doi.org/10.1128/msystems.00027-17",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 11
  },
  {
   "doi": "10.1002/pmic.201600462",
@@ -2711,6 +3094,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "28544375",
   "month": "6",
   "authors": [
@@ -2724,7 +3110,8 @@
    "Robert H. Rice"
   ],
   "url": "https://doi.org/10.1002/pmic.201600462",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 27
  },
  {
   "doi": "10.1158/1538-7445.transcontrol16-a14",
@@ -2738,6 +3125,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "3",
   "authors": [
    "Suzanne Miyamoto",
@@ -2747,7 +3137,8 @@
    "Harvey Pass"
   ],
   "url": "https://doi.org/10.1158/1538-7445.transcontrol16-a14",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 0
  },
  {
   "doi": "10.1016/j.jprot.2017.06.017",
@@ -2762,6 +3153,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "28648685",
   "month": "8",
   "authors": [
@@ -2773,7 +3167,8 @@
    "Brett S. Phinney"
   ],
   "url": "https://doi.org/10.1016/j.jprot.2017.06.017",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 12
  },
  {
   "doi": "10.3389/fcimb.2017.00296",
@@ -2788,6 +3183,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "28713781",
   "month": "6",
   "authors": [
@@ -2797,7 +3195,8 @@
    "Angie Gelli"
   ],
   "url": "https://doi.org/10.3389/fcimb.2017.00296",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 45
  },
  {
   "doi": "",
@@ -2809,6 +3208,9 @@
    "ResearcherID"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "authors": [],
   "url": "",
   "month": ""
@@ -2823,6 +3225,9 @@
    "ResearcherID"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "authors": [],
   "url": "",
   "month": ""
@@ -2840,6 +3245,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "8",
   "authors": [
    "Suzanne Miyamoto",
@@ -2851,7 +3259,8 @@
    "Gary S. Leiserowitz"
   ],
   "url": "https://doi.org/10.1021/acs.jproteome.6b00548",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 33
  },
  {
   "doi": "10.1212/wnl.0000000000003391",
@@ -2866,6 +3275,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "11",
   "authors": [
    "Xinhua Zhan",
@@ -2876,7 +3288,8 @@
    "Frank R. Sharp"
   ],
   "url": "https://doi.org/10.1212/wnl.0000000000003391",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 472
  },
  {
   "doi": "",
@@ -2889,6 +3302,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "authors": [],
   "url": "",
   "month": ""
@@ -2903,6 +3319,9 @@
    "ResearcherID"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "authors": [],
   "url": "https://doi.org/10.6084/m9.figshare.c.3605420_d1",
   "month": ""
@@ -2921,6 +3340,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "27418529",
   "month": "7",
   "authors": [
@@ -2933,7 +3355,8 @@
    "Dennis R. Roop"
   ],
   "url": "https://doi.org/10.1021/acs.jproteome.6b00108",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 25
  },
  {
   "doi": "10.6019/pxd003532",
@@ -2945,10 +3368,14 @@
    "ResearcherID"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "",
   "authors": [],
   "url": "https://doi.org/10.6019/pxd003532",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 0
  },
  {
   "doi": "10.1186/s12014-016-9132-y",
@@ -2963,6 +3390,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "27799870",
   "month": "10",
   "authors": [
@@ -2979,7 +3409,8 @@
    "Suzanne Miyamoto"
   ],
   "url": "https://doi.org/10.1186/s12014-016-9132-y",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 39
  },
  {
   "doi": "10.1002/jts.22085",
@@ -2993,6 +3424,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "3",
   "authors": [
    "Jennifer E.C. Lee",
@@ -3001,7 +3435,8 @@
    "Mark A. Zamorski"
   ],
   "url": "https://doi.org/10.1002/jts.22085",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 21
  },
  {
   "doi": "10.1038/srep31098",
@@ -3016,6 +3451,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "27492542",
   "month": "8",
   "authors": [
@@ -3035,7 +3473,8 @@
    "Abhaya M. Dandekar"
   ],
   "url": "https://doi.org/10.1038/srep31098",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 48
  },
  {
   "doi": "10.1021/acs.jafc.6b01829",
@@ -3050,6 +3489,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "27255301",
   "month": "6",
   "authors": [
@@ -3061,7 +3503,8 @@
    "Daniel Facciotti"
   ],
   "url": "https://doi.org/10.1021/acs.jafc.6b01829",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 2
  },
  {
   "doi": "10.1021/acs.jproteome.5b00387",
@@ -3077,6 +3520,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "26148687",
   "month": "7",
   "authors": [
@@ -3087,7 +3533,8 @@
    "Maria L. Marco"
   ],
   "url": "https://doi.org/10.1021/acs.jproteome.5b00387",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 21
  },
  {
   "doi": "10.1186/s13071-015-1016-x",
@@ -3102,6 +3549,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "26283222",
   "month": "8",
   "authors": [
@@ -3121,7 +3571,8 @@
    "Shirley Luckhart"
   ],
   "url": "https://doi.org/10.1186/s13071-015-1016-x",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 22
  },
  {
   "doi": "10.1021/acs.jproteome.5b00107",
@@ -3136,6 +3587,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "25815641",
   "month": "4",
   "authors": [
@@ -3147,7 +3601,8 @@
    "Donald M. Bers"
   ],
   "url": "https://doi.org/10.1021/acs.jproteome.5b00107",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 38
  },
  {
   "doi": "10.1021/pr501243m",
@@ -3163,6 +3618,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "25757574",
   "month": "4",
   "authors": [
@@ -3176,7 +3634,8 @@
    "Danielle G. Lemay"
   ],
   "url": "https://doi.org/10.1021/pr501243m",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 62
  },
  {
   "doi": "10.1167/iovs.15-16739",
@@ -3191,6 +3650,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "26193921",
   "month": "7",
   "authors": [
@@ -3203,7 +3665,8 @@
    "Paul Russell"
   ],
   "url": "https://doi.org/10.1167/iovs.15-16739",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 171
  },
  {
   "doi": "",
@@ -3217,6 +3680,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "authors": [],
   "url": "",
   "month": ""
@@ -3234,6 +3700,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "25656049",
   "month": "3",
   "authors": [
@@ -3255,7 +3724,8 @@
    "Roger L. Kaspar"
   ],
   "url": "https://doi.org/10.1016/j.jdermsci.2015.01.001",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 38
  },
  {
   "doi": "10.1074/mcp.o115.051888",
@@ -3270,6 +3740,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "26435129",
   "month": "12",
   "authors": [
@@ -3289,7 +3762,8 @@
    "DavidL. Tabb"
   ],
   "url": "https://doi.org/10.1074/mcp.o115.051888",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 15
  },
  {
   "doi": "10.1021/pr500818d",
@@ -3304,6 +3778,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "25338220",
   "month": "12",
   "authors": [
@@ -3317,7 +3794,8 @@
    "Jennifer T. Smilowitz"
   ],
   "url": "https://doi.org/10.1021/pr500818d",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 40
  },
  {
   "doi": "10.1021/ab500060r",
@@ -3332,6 +3810,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "1",
   "authors": [
    "Vijay Krishna Raghunathan",
@@ -3343,7 +3824,8 @@
    "Paul Russell"
   ],
   "url": "https://doi.org/10.1021/ab500060r",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 33
  },
  {
   "doi": "",
@@ -3355,6 +3837,9 @@
    "ResearcherID"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "authors": [],
   "url": "",
   "month": ""
@@ -3369,6 +3854,9 @@
    "ResearcherID"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "authors": [],
   "url": "",
   "month": ""
@@ -3383,6 +3871,9 @@
    "ResearcherID"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "authors": [],
   "url": "",
   "month": ""
@@ -3400,6 +3891,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "25165623",
   "month": "8",
   "authors": [
@@ -3415,7 +3909,8 @@
    "Robert H. Rice"
   ],
   "url": "https://doi.org/10.7717/peerj.506",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 60
  },
  {
   "doi": "10.1016/j.lfs.2014.02.004",
@@ -3430,6 +3925,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "24548633",
   "month": "4",
   "authors": [
@@ -3441,7 +3939,8 @@
    "Anne A. Knowlton"
   ],
   "url": "https://doi.org/10.1016/j.lfs.2014.02.004",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 42
  },
  {
   "doi": "10.1021/pr400880s",
@@ -3457,6 +3956,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "24555639",
   "month": "3",
   "authors": [
@@ -3468,7 +3970,8 @@
    "Yongqin Jiao"
   ],
   "url": "https://doi.org/10.1021/pr400880s",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 61
  },
  {
   "doi": "10.1128/iai.00554-13",
@@ -3483,6 +3986,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "23774597",
   "month": "9",
   "authors": [
@@ -3492,7 +3998,8 @@
    "Angie Gelli"
   ],
   "url": "https://doi.org/10.1128/iai.00554-13",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 73
  },
  {
   "doi": "10.1371/journal.pone.0075355",
@@ -3507,6 +4014,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "24130705",
   "month": "10",
   "authors": [
@@ -3520,7 +4030,8 @@
    "Robert Gruber"
   ],
   "url": "https://doi.org/10.1371/journal.pone.0075355",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 31
  },
  {
   "doi": "10.1002/pmic.201200532",
@@ -3535,6 +4046,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "23319436",
   "month": "2",
   "authors": [
@@ -3552,7 +4066,8 @@
    "Susan T. Weintraub"
   ],
   "url": "https://doi.org/10.1002/pmic.201200532",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 28
  },
  {
   "doi": "10.1021/pr4006266",
@@ -3567,6 +4082,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "23991859",
   "month": "9",
   "authors": [
@@ -3579,7 +4097,8 @@
    "Bin Zhao"
   ],
   "url": "https://doi.org/10.1021/pr4006266",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 16
  },
  {
   "doi": "10.1371/journal.ppat.1003180",
@@ -3594,6 +4113,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "23468624",
   "month": "2",
   "authors": [
@@ -3614,7 +4136,8 @@
    "Michael Riehle"
   ],
   "url": "https://doi.org/10.1371/journal.ppat.1003180",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 59
  },
  {
   "doi": "10.1371/journal.pone.0051956",
@@ -3629,6 +4152,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "23251662",
   "month": "12",
   "authors": [
@@ -3641,7 +4167,8 @@
    "John P. Sundberg"
   ],
   "url": "https://doi.org/10.1371/journal.pone.0051956",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 26
  },
  {
   "doi": "10.1021/bc300114d",
@@ -3656,6 +4183,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "5",
   "authors": [
    "Bernadette V. Marquez",
@@ -3672,7 +4202,8 @@
    "Claude F. Meares"
   ],
   "url": "https://doi.org/10.1021/bc300114d",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 16
  },
  {
   "doi": "10.1074/mcp.m111.014555",
@@ -3687,6 +4218,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "4",
   "authors": [
    "James Mitch Elmore",
@@ -3696,7 +4230,8 @@
    "Gitta Coaker"
   ],
   "url": "https://doi.org/10.1074/mcp.m111.014555",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 88
  },
  {
   "doi": "",
@@ -3710,6 +4245,9 @@
    "Scopus - Elsevier"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "21455478",
   "authors": [],
   "url": "",
@@ -3728,6 +4266,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "21841177",
   "month": "8",
   "authors": [
@@ -3742,7 +4283,8 @@
    "Eduardo Blumwald"
   ],
   "url": "https://doi.org/10.1093/jxb/err197",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 109
  },
  {
   "doi": "10.1371/journal.pone.0029210",
@@ -3757,6 +4299,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "22216214",
   "month": "12",
   "authors": [
@@ -3766,7 +4311,8 @@
    "Peter M. Cala"
   ],
   "url": "https://doi.org/10.1371/journal.pone.0029210",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 15
  },
  {
   "doi": "10.1021/pr200149t",
@@ -3781,6 +4327,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "6",
   "authors": [
    "Yalin Liao",
@@ -3789,7 +4338,8 @@
    "Bo L\u00f6nnerdal"
   ],
   "url": "https://doi.org/10.1021/pr200149t",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 131
  },
  {
   "doi": "10.1021/pr101028k",
@@ -3804,6 +4354,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "4",
   "authors": [
    "Yalin Liao",
@@ -3812,7 +4365,8 @@
    "Bo Lo\u0308nnerdal"
   ],
   "url": "https://doi.org/10.1021/pr101028k",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 141
  },
  {
   "doi": "10.1021/pr200660t",
@@ -3827,6 +4381,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "11",
   "authors": [
    "Yalin Liao",
@@ -3835,7 +4392,8 @@
    "Bo L\u00f6nnerdal"
   ],
   "url": "https://doi.org/10.1021/pr200660t",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 33
  },
  {
   "doi": "",
@@ -3847,6 +4405,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "authors": [],
   "url": "",
   "month": ""
@@ -3864,6 +4425,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "21483796",
   "month": "3",
   "authors": [
@@ -3877,7 +4441,8 @@
    "Stacey L. Harmer"
   ],
   "url": "https://doi.org/10.1371/journal.pgen.1001350",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 238
  },
  {
   "doi": "",
@@ -3891,6 +4456,9 @@
    "Scopus - Elsevier"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "20808644",
   "authors": [],
   "url": "",
@@ -3909,6 +4477,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "21162737",
   "month": "12",
   "authors": [
@@ -3922,7 +4493,8 @@
    "Eduardo Blumwald"
   ],
   "url": "https://doi.org/10.1186/1477-5956-8-68",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 47
  },
  {
   "doi": "10.1021/pr1009349",
@@ -3937,6 +4509,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "20939611",
   "month": "11",
   "authors": [
@@ -3946,7 +4521,8 @@
    "Brett S. Phinney"
   ],
   "url": "https://doi.org/10.1021/pr1009349",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 50
  },
  {
   "doi": "10.1104/pp.109.151977",
@@ -3961,6 +4537,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "20097790",
   "month": "1",
   "authors": [
@@ -3971,7 +4550,8 @@
    "Kentaro Inoue"
   ],
   "url": "https://doi.org/10.1104/pp.109.151977",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 44
  },
  {
   "doi": "",
@@ -3983,6 +4563,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "authors": [],
   "url": "",
   "month": ""
@@ -3997,6 +4580,9 @@
    "Web of Science"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "authors": [],
   "url": "",
   "month": ""
@@ -4014,6 +4600,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "19490636",
   "month": "",
   "authors": [
@@ -4025,7 +4614,8 @@
    "Craig H Warden"
   ],
   "url": "https://doi.org/10.1186/1756-6606-2-14",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 20
  },
  {
   "doi": "10.1074/mcp.m800420-mcp200",
@@ -4038,6 +4628,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "18936055",
   "month": "2",
   "authors": [
@@ -4048,7 +4641,8 @@
    "William J. Lucas"
   ],
   "url": "https://doi.org/10.1074/mcp.m800420-mcp200",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 178
  },
  {
   "doi": "10.1021/pr900349r",
@@ -4063,6 +4657,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "19603827",
   "month": "7",
   "authors": [
@@ -4071,7 +4668,8 @@
    "David Goldberg"
   ],
   "url": "https://doi.org/10.1021/pr900349r",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 58
  },
  {
   "doi": "",
@@ -4085,6 +4683,9 @@
    "Scopus - Elsevier"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "19137115",
   "authors": [],
   "url": "",
@@ -4103,6 +4704,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "11",
   "authors": [
    "Maria de la Paz Celorio-Mancera",
@@ -4117,7 +4721,8 @@
    "John M. Labavitch"
   ],
   "url": "https://doi.org/10.1007/s11829-008-9050-7",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 29
  },
  {
   "doi": "10.1021/pr070025y",
@@ -4132,6 +4737,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "17397212",
   "month": "3",
   "authors": [
@@ -4140,7 +4748,8 @@
    "Ronald C. Beavis"
   ],
   "url": "https://doi.org/10.1021/pr070025y",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 11
  },
  {
   "doi": "10.1111/j.1567-1364.2006.00198.x",
@@ -4155,6 +4764,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "17233760",
   "month": "6",
   "authors": [
@@ -4165,7 +4777,8 @@
    "Angie Gelli"
   ],
   "url": "https://doi.org/10.1111/j.1567-1364.2006.00198.x",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 75
  },
  {
   "doi": "10.1105/tpc.107.051920",
@@ -4180,6 +4793,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "5",
   "authors": [
    "Ming-Kuem Lin",
@@ -4196,7 +4812,8 @@
    "William J. Lucas"
   ],
   "url": "https://doi.org/10.1105/tpc.107.051920",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 400
  },
  {
   "doi": "10.1002/prca.200600802",
@@ -4211,6 +4828,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "5",
   "authors": [
    "Sara Forrester",
@@ -4227,7 +4847,8 @@
    "Brian B. Haab"
   ],
   "url": "https://doi.org/10.1002/prca.200600802",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 3
  },
  {
   "doi": "10.1021/jf071198a",
@@ -4242,6 +4863,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "17910511",
   "month": "10",
   "authors": [
@@ -4252,7 +4876,8 @@
    "Manuel Tal\u00f3n"
   ],
   "url": "https://doi.org/10.1021/jf071198a",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 33
  },
  {
   "doi": "10.4315/0362-028x-70.1.58",
@@ -4267,6 +4892,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "17265861",
   "month": "1",
   "authors": [
@@ -4276,7 +4904,8 @@
    "Leora A. Shelef"
   ],
   "url": "https://doi.org/10.4315/0362-028x-70.1.58",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 8
  },
  {
   "doi": "10.1021/pr070234i",
@@ -4291,6 +4920,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "17854217",
   "month": "9",
   "authors": [
@@ -4300,7 +4932,8 @@
    "Brett S. Phinney"
   ],
   "url": "https://doi.org/10.1021/pr070234i",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 53
  },
  {
   "doi": "10.1074/mcp.m700165-mcp200",
@@ -4315,6 +4948,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "17513294",
   "month": "8",
   "authors": [
@@ -4329,7 +4965,8 @@
    "Nathan A. Yates"
   ],
   "url": "https://doi.org/10.1074/mcp.m700165-mcp200",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 94
  },
  {
   "doi": "10.1007/s00425-007-0545-8",
@@ -4344,6 +4981,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "17541628",
   "month": "5",
   "authors": [
@@ -4355,7 +4995,8 @@
    "E. Blumwald"
   ],
   "url": "https://doi.org/10.1007/s00425-007-0545-8",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 99
  },
  {
   "doi": "10.1016/j.cell.2006.03.042",
@@ -4370,6 +5011,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "16751107",
   "month": "6",
   "authors": [
@@ -4384,7 +5028,8 @@
    "Nicholas G. Davis"
   ],
   "url": "https://doi.org/10.1016/j.cell.2006.03.042",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 495
  },
  {
   "doi": "10.1105/tpc.105.031393",
@@ -4399,6 +5044,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "15894717",
   "month": "5",
   "authors": [
@@ -4414,7 +5062,8 @@
    "Steven D. Clouse"
   ],
   "url": "https://doi.org/10.1105/tpc.105.031393",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 335
  },
  {
   "doi": "10.1111/j.1365-313x.2005.02448.x",
@@ -4429,6 +5078,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "6",
   "authors": [
    "Hashimul Ehsan",
@@ -4439,7 +5091,8 @@
    "Steven D. Clouse"
   ],
   "url": "https://doi.org/10.1111/j.1365-313x.2005.02448.x",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 59
  },
  {
   "doi": "10.1073/pnas.0509026102",
@@ -4454,6 +5107,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "16357201",
   "month": "12",
   "authors": [
@@ -4464,7 +5120,8 @@
    "Gregg A. Howe"
   ],
   "url": "https://doi.org/10.1073/pnas.0509026102",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 292
  },
  {
   "doi": "",
@@ -4477,6 +5134,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "authors": [],
   "url": "",
   "month": ""
@@ -4494,6 +5154,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "15822927",
   "month": "3",
   "authors": [
@@ -4501,7 +5164,8 @@
    "Jay J. Thelen"
   ],
   "url": "https://doi.org/10.1021/pr049791k",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 36
  },
  {
   "doi": "10.1016/j.cardiores.2004.04.001",
@@ -4516,13 +5180,17 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "15249184",
   "month": "8",
   "authors": [
    "A KIARASH"
   ],
   "url": "https://doi.org/10.1016/j.cardiores.2004.04.001",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 46
  },
  {
   "doi": "",
@@ -4535,6 +5203,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "authors": [],
   "url": "",
   "month": ""
@@ -4550,6 +5221,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "authors": [],
   "url": "",
   "month": ""
@@ -4567,6 +5241,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "12938931",
   "month": "6",
   "authors": [
@@ -4579,7 +5256,8 @@
    "Brett S. Phinney"
   ],
   "url": "https://doi.org/10.1021/pr034025j",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 216
  },
  {
   "doi": "10.1021/bi016075c",
@@ -4594,6 +5272,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "11969422",
   "month": "4",
   "authors": [
@@ -4603,7 +5284,8 @@
    "Kathleen A. Gallo"
   ],
   "url": "https://doi.org/10.1021/bi016075c",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 32
  },
  {
   "doi": "",
@@ -4617,6 +5299,9 @@
    "Scopus - Elsevier"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "authors": [],
   "url": "",
   "month": ""
@@ -4634,6 +5319,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "10982379",
   "month": "10",
   "authors": [
@@ -4641,7 +5329,8 @@
    "Dennis T. Brown"
   ],
   "url": "https://doi.org/10.1128/jvi.74.19.9313-9316.2000",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 8
  },
  {
   "doi": "10.1128/jvi.74.12.5667-5678.2000",
@@ -4656,6 +5345,9 @@
    "Web of Science Researcher Profile Sync"
   ],
   "in_orcid": true,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "pmid": "10823875",
   "month": "6",
   "authors": [
@@ -4664,7 +5356,8 @@
    "Dennis T. Brown"
   ],
   "url": "https://doi.org/10.1128/jvi.74.12.5667-5678.2000",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 25
  },
  {
   "doi": "10.1016/j.stemcr.2026.102856",
@@ -4677,6 +5370,9 @@
    "PubMed"
   ],
   "in_orcid": false,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "4",
   "authors": [
    "Yao-Hui Sun",
@@ -4702,7 +5398,8 @@
    "Nipavan Chiamvimonvat"
   ],
   "url": "https://doi.org/10.1016/j.stemcr.2026.102856",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 0
  },
  {
   "doi": "10.1371/journal.ppat.1013974",
@@ -4715,6 +5412,9 @@
    "PubMed"
   ],
   "in_orcid": false,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "3",
   "authors": [
    "Tina Truong",
@@ -4726,7 +5426,8 @@
    "Bennett H. Penn"
   ],
   "url": "https://doi.org/10.1371/journal.ppat.1013974",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 0
  },
  {
   "doi": "10.1021/acs.jproteome.5c00749",
@@ -4739,6 +5440,9 @@
    "PubMed"
   ],
   "in_orcid": false,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "12",
   "authors": [
    "Achuthan Sourianarayanane",
@@ -4747,7 +5451,8 @@
    "Brett S Phinney"
   ],
   "url": "https://doi.org/10.1021/acs.jproteome.5c00749",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 0
  },
  {
   "doi": "10.1101/2020.09.11.293464",
@@ -4760,6 +5465,9 @@
    "PubMed"
   ],
   "in_orcid": false,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "9",
   "authors": [
    "Eric Song",
@@ -4804,7 +5512,8 @@
    "Shelli F. Farhadian"
   ],
   "url": "https://doi.org/10.1101/2020.09.11.293464",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 13
  },
  {
   "doi": "10.1021/ja005879x",
@@ -4817,6 +5526,9 @@
    "PubMed"
   ],
   "in_orcid": false,
+  "people": [
+   "Brett S. Phinney"
+  ],
   "month": "5",
   "authors": [
    "Aimin Liu",
@@ -4827,6 +5539,1123 @@
    "Robert P. Hausinger"
   ],
   "url": "https://doi.org/10.1021/ja005879x",
-  "has_preprint": []
+  "has_preprint": [],
+  "citations": 84
+ },
+ {
+  "doi": "10.1038/s42255-026-01566-0",
+  "title": "Hypoxia rescues complex 1-associated disease caused by proteostatic defects",
+  "year": "2026",
+  "journal": "Nature Metabolism",
+  "type": "journal-article",
+  "sources": [
+   "Crossref",
+   "Gabriela Grigorean"
+  ],
+  "in_orcid": true,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "pmid": "42420651",
+  "month": "7",
+  "authors": [
+   "Ankur Garg",
+   "Brandon R. Desousa",
+   "Raju Roy",
+   "Amy Flis",
+   "Skyler Y. Blume",
+   "Yohei Abe",
+   "Arthur A. Melo",
+   "Ryan R. Cupo",
+   "Gabriela Grigorean",
+   "Daniel R. Southworth",
+   "James Shorter",
+   "Isha H. Jain"
+  ],
+  "url": "https://doi.org/10.1038/s42255-026-01566-0",
+  "has_preprint": [],
+  "citations": 2
+ },
+ {
+  "doi": "10.1113/jp288457",
+  "title": "Ro5\u20104864, a ligand of the mitochondrial translocator protein, protects against heart failure in mice via regulation of the p62\u2010Keap1\u2010Nrf2 axis",
+  "year": "2026",
+  "journal": "The Journal of Physiology",
+  "type": "journal-article",
+  "sources": [
+   "Gabriela Grigorean"
+  ],
+  "in_orcid": true,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "pmid": "41935019",
+  "month": "4",
+  "authors": [
+   "Daphne A. Diloretto",
+   "Phung N. Thai",
+   "Gabriela Grigorean",
+   "Veneese J. Brown",
+   "Tjien Dwyer",
+   "Nipavan Chiamvimonvat",
+   "Elena N. Dedkova",
+   "Saul Schaefer"
+  ],
+  "url": "https://doi.org/10.1113/jp288457",
+  "has_preprint": [],
+  "citations": 1
+ },
+ {
+  "doi": "10.1038/s41598-026-46577-9",
+  "title": "Serum proteome of the Egyptian rousette bat (Rousettus aegyptiacus) reveals signatures of immunity, proteostasis, and metabolism",
+  "year": "2026",
+  "journal": "Scientific Reports",
+  "type": "journal-article",
+  "sources": [
+   "Gabriela Grigorean"
+  ],
+  "in_orcid": true,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "pmid": "41942604",
+  "month": "4",
+  "authors": [
+   "Brooke N. Genovese",
+   "Nistara Randhawa",
+   "Benjamin A. Neely",
+   "Gabriela Grigorean",
+   "Amy J. Schuh",
+   "Brian R. Amman",
+   "Jessica A. Elbert",
+   "Simon J. Anthony",
+   "Jonna A. K. Mazet",
+   "Jonathan S. Towner",
+   "Brian H. Bird"
+  ],
+  "url": "https://doi.org/10.1038/s41598-026-46577-9",
+  "has_preprint": [],
+  "citations": 0
+ },
+ {
+  "doi": "10.1007/s00122-025-04882-3",
+  "title": "Deletion of wheat alpha-gliadins from chromosome 6D improves gluten strength and reduces immunodominant celiac disease epitopes",
+  "year": "2025",
+  "journal": "Theoretical and Applied Genetics",
+  "type": "journal-article",
+  "sources": [
+   "Gabriela Grigorean"
+  ],
+  "in_orcid": true,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "pmid": "40198388",
+  "month": "4",
+  "authors": [
+   "Maria G. Rottersman",
+   "Wenjun Zhang",
+   "Junli Zhang",
+   "Gabriela Grigorean",
+   "German Burguener",
+   "Claudia Carter",
+   "Teng Vang",
+   "Joshua Hegarty",
+   "Xiaoqin Zhang",
+   "Sean Finnie",
+   "Jorge Dubcovsky"
+  ],
+  "url": "https://doi.org/10.1007/s00122-025-04882-3",
+  "has_preprint": [
+   "10.1101/2024.07.19.604379"
+  ],
+  "citations": 4
+ },
+ {
+  "doi": "10.1038/s41467-025-59415-9",
+  "title": "Author Correction: Genome-guided isolation of the hyperthermophilic aerobe Fervidibacter sacchari reveals conserved polysaccharide metabolism in the Armatimonadota",
+  "year": "2025",
+  "journal": "Nature Communications",
+  "type": "journal-article",
+  "sources": [
+   "Gabriela Grigorean"
+  ],
+  "in_orcid": true,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "pmid": "40301321",
+  "month": "4",
+  "authors": [
+   "Nancy O. Nou",
+   "Jonathan K. Covington",
+   "Dengxun Lai",
+   "Xavier Mayali",
+   "Cale O. Seymour",
+   "Juliet Johnston",
+   "Jian-Yu Jiao",
+   "Steffen Buessecker",
+   "Damon Mosier",
+   "Alise R. Muok",
+   "Nicole Torosian",
+   "Allison M. Cook",
+   "Ariane Briegel",
+   "Tanja Woyke",
+   "Emiley Eloe-Fadrosh",
+   "Nicole Shapiro",
+   "Scott G. Bryan",
+   "Savannah Sleezer",
+   "Joshua Dimapilis",
+   "Cristina Gonzalez",
+   "Lizett Gonzalez",
+   "Marlene Noriega",
+   "Matthias Hess",
+   "Ross P. Carlson",
+   "Lan Liu",
+   "Meng-Meng Li",
+   "Zheng-Han Lian",
+   "Siqi Zhu",
+   "Fan Liu",
+   "Xian Sun",
+   "Beile Gao",
+   "Ritesh Mewalal",
+   "Miranda Harmon-Smith",
+   "Ian K. Blaby",
+   "Jan-Fang Cheng",
+   "Peter K. Weber",
+   "Gabriela Grigorean",
+   "Wen-Jun Li",
+   "Anne E. Dekas",
+   "Jennifer Pett-Ridge",
+   "Jeremy A. Dodsworth",
+   "Marike Palmer",
+   "Brian P. Hedlund"
+  ],
+  "url": "https://doi.org/10.1038/s41467-025-59415-9",
+  "has_preprint": [],
+  "citations": 1
+ },
+ {
+  "doi": "10.1073/pnas.2425523122",
+  "title": "MFRP is a molecular hub that organizes the apical membrane of RPE cells by engaging in interactions with specific proteins and lipids",
+  "year": "2025",
+  "journal": "Proceedings of the National Academy of Sciences",
+  "type": "journal-article",
+  "sources": [
+   "Gabriela Grigorean"
+  ],
+  "in_orcid": true,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "pmid": "40249779",
+  "month": "4",
+  "authors": [
+   "Aleksander Tworak",
+   "Roman Smidak",
+   "Carolline Rodrigues Menezes",
+   "Samuel W. Du",
+   "Susie Suh",
+   "Elliot H. Choi",
+   "Sanae S. Imanishi",
+   "Zhiqian Dong",
+   "Dominik Lewandowski",
+   "Kristen E. Fong",
+   "Gabriela Grigorean",
+   "Antonio F. M. Pinto",
+   "Qianlan Xu",
+   "Dorota Skowronska-Krawczyk",
+   "Seth Blackshaw",
+   "Yoshikazu Imanishi",
+   "Krzysztof Palczewski"
+  ],
+  "url": "https://doi.org/10.1073/pnas.2425523122",
+  "has_preprint": [],
+  "citations": 4
+ },
+ {
+  "doi": "10.1002/jex2.70078",
+  "title": "Multiomics Profiling of Extracellular Vesicles Supports Their Involvement in Endothelial Senescence\u2010Associated Vascular Dysfunction",
+  "year": "2025",
+  "journal": "Journal of Extracellular Biology",
+  "type": "journal-article",
+  "sources": [
+   "Gabriela Grigorean"
+  ],
+  "in_orcid": true,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "pmid": "40755907",
+  "month": "7",
+  "authors": [
+   "Ryan E. Hogans",
+   "Yun Lin",
+   "Gabriela Grigorean",
+   "Ana Cristina Grodzki",
+   "Rachel R. Mizenko",
+   "Anne Knowlton",
+   "Randy P. Carney",
+   "Angie Gelli",
+   "Pamela J. Lein"
+  ],
+  "url": "https://doi.org/10.1002/jex2.70078",
+  "has_preprint": [],
+  "citations": 1
+ },
+ {
+  "doi": "10.3390/nu16193268",
+  "title": "Effect of In Vitro Digestion on Bioactive Peptides Related to Immune and Gut Health in Intact Cow\u2019s Milk and Hydrolyzed Protein-Based Infant Formulas",
+  "year": "2024",
+  "journal": "Nutrients",
+  "type": "journal-article",
+  "sources": [
+   "Crossref",
+   "Gabriela Grigorean",
+   "Multidisciplinary Digital Publishing Institute"
+  ],
+  "in_orcid": true,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "pmid": "39408235",
+  "month": "9",
+  "authors": [
+   "Gabriela Grigorean",
+   "Xiaogu Du",
+   "Russell Kuhfeld",
+   "Elisabeth M. Haberl",
+   "Bo L\u00f6nnerdal"
+  ],
+  "url": "https://doi.org/10.3390/nu16193268",
+  "has_preprint": [],
+  "citations": 8
+ },
+ {
+  "doi": "10.1021/acs.jafc.4c07017",
+  "title": "Barley Grain Proteome Assessment Using Multi-Environment Trial Data and Machine Learning",
+  "year": "2024",
+  "journal": "Journal of Agricultural and Food Chemistry",
+  "type": "journal-article",
+  "sources": [
+   "Gabriela Grigorean"
+  ],
+  "in_orcid": true,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "pmid": "39536264",
+  "month": "11",
+  "authors": [
+   "Maany Ramanan",
+   "Harmonie Bettenhausen",
+   "Gabriela Grigorean",
+   "Christine Diepenbrock",
+   "Glen Patrick Fox"
+  ],
+  "url": "https://doi.org/10.1021/acs.jafc.4c07017",
+  "has_preprint": [],
+  "citations": 6
+ },
+ {
+  "doi": "10.1038/s41467-024-53784-3",
+  "title": "Genome-guided isolation of the hyperthermophilic aerobe Fervidibacter sacchari reveals conserved polysaccharide metabolism in the Armatimonadota",
+  "year": "2024",
+  "journal": "Nature Communications",
+  "type": "journal-article",
+  "sources": [
+   "Gabriela Grigorean"
+  ],
+  "in_orcid": true,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "pmid": "39496591",
+  "month": "11",
+  "authors": [
+   "Nancy O. Nou",
+   "Jonathan K. Covington",
+   "Dengxun Lai",
+   "Xavier Mayali",
+   "Cale O. Seymour",
+   "Juliet Johnston",
+   "Jian-Yu Jiao",
+   "Steffen Buessecker",
+   "Damon Mosier",
+   "Alise R. Muok",
+   "Nicole Torosian",
+   "Allison M. Cook",
+   "Ariane Briegel",
+   "Tanja Woyke",
+   "Emiley Eloe-Fadrosh",
+   "Nicole Shapiro",
+   "Scott G. Bryan",
+   "Savannah Sleezer",
+   "Joshua Dimapilis",
+   "Cristina Gonzalez",
+   "Lizett Gonzalez",
+   "Marlene Noriega",
+   "Matthias Hess",
+   "Ross P. Carlson",
+   "Lan Liu",
+   "Meng-Meng Li",
+   "Zheng-Han Lian",
+   "Siqi Zhu",
+   "Fan Liu",
+   "Xian Sun",
+   "Beile Gao",
+   "Ritesh Mewalal",
+   "Miranda Harmon-Smith",
+   "Ian K. Blaby",
+   "Jan-Fang Cheng",
+   "Peter K. Weber",
+   "Gabriela Grigorean",
+   "Wen-Jun Li",
+   "Anne E. Dekas",
+   "Jennifer Pett-Ridge",
+   "Jeremy A. Dodsworth",
+   "Marike Palmer",
+   "Brian P. Hedlund"
+  ],
+  "url": "https://doi.org/10.1038/s41467-024-53784-3",
+  "has_preprint": [
+   "10.21203/rs.3.rs-3760178/v1"
+  ],
+  "citations": 12
+ },
+ {
+  "doi": "10.3390/ani13203184",
+  "title": "Multi-Omic, Histopathologic, and Clinicopathologic Effects of Once-Weekly Oral Rapamycin in a Naturally Occurring Feline Model of Hypertrophic Cardiomyopathy: A Pilot Study",
+  "year": "2023",
+  "journal": "Animals",
+  "type": "journal-article",
+  "sources": [
+   "Crossref",
+   "Gabriela Grigorean",
+   "Multidisciplinary Digital Publishing Institute"
+  ],
+  "in_orcid": true,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "pmid": "37893908",
+  "month": "10",
+  "authors": [
+   "Victor N. Rivas",
+   "Joanna L. Kaplan",
+   "Susan A. Kennedy",
+   "Stuart Fitzgerald",
+   "Amanda E. Crofton",
+   "Aisling Farrell",
+   "Louise Grubb",
+   "Carina E. Jauregui",
+   "Gabriela Grigorean",
+   "Eunju Choi",
+   "Samantha P. Harris",
+   "Joshua A. Stern"
+  ],
+  "url": "https://doi.org/10.3390/ani13203184",
+  "has_preprint": [],
+  "citations": 11
+ },
+ {
+  "doi": "10.3389/fmicb.2023.1264348",
+  "title": "Characterization of the extracellular vesicles, ultrastructural morphology, and intercellular interactions of multiple clinical isolates of the brain-eating amoeba, Naegleria fowleri",
+  "year": "2023",
+  "journal": "Frontiers in Microbiology",
+  "type": "journal-article",
+  "sources": [
+   "Gabriela Grigorean"
+  ],
+  "in_orcid": true,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "pmid": "37808283",
+  "month": "9",
+  "authors": [
+   "A. Cassiopeia Russell",
+   "Peter Bush",
+   "Gabriela Grigorean",
+   "Dennis E. Kyle"
+  ],
+  "url": "https://doi.org/10.3389/fmicb.2023.1264348",
+  "has_preprint": [],
+  "citations": 16
+ },
+ {
+  "doi": "10.1016/j.foodres.2023.113294",
+  "title": "Effect of pH and protein composition on proteolysis of goat milk proteins by pepsin and pancreatin",
+  "year": "2023",
+  "journal": "Food Research International",
+  "type": "journal-article",
+  "sources": [
+   "Gabriela Grigorean"
+  ],
+  "in_orcid": true,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "pmid": "37803606",
+  "month": "11",
+  "authors": [
+   "Kasper Hettinga",
+   "Linette Pellis",
+   "Wolf Rombouts",
+   "Xiaogu Du",
+   "Gabriela Grigorean",
+   "Bo L\u00f6nnerdal"
+  ],
+  "url": "https://doi.org/10.1016/j.foodres.2023.113294",
+  "has_preprint": [],
+  "citations": 13
+ },
+ {
+  "doi": "10.1016/j.ebiom.2022.104256",
+  "title": "Dermal thirdhand smoke exposure induces oxidative damage, initiates skin inflammatory markers, and adversely alters the human plasma proteome",
+  "year": "2022",
+  "journal": "eBioMedicine",
+  "type": "journal-article",
+  "sources": [
+   "Gabriela Grigorean"
+  ],
+  "in_orcid": true,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "pmid": "36137411",
+  "month": "10",
+  "authors": [
+   "Shane Sakamaki-Ching",
+   "Suzaynn Schick",
+   "Gabriela Grigorean",
+   "Jun Li",
+   "Prue Talbot"
+  ],
+  "url": "https://doi.org/10.1016/j.ebiom.2022.104256",
+  "has_preprint": [],
+  "citations": 20
+ },
+ {
+  "doi": "10.1021/acs.jproteome.0c00270",
+  "title": "Glycopeptide Biomarkers in Serum Haptoglobin for Hepatocellular Carcinoma Detection in Patients with Nonalcoholic Steatohepatitis",
+  "year": "2020",
+  "journal": "Journal of Proteome Research",
+  "type": "journal-article",
+  "sources": [
+   "Gabriela Grigorean"
+  ],
+  "in_orcid": true,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "pmid": "32412768",
+  "month": "5",
+  "authors": [
+   "Jianhui Zhu",
+   "Junfeng Huang",
+   "Jie Zhang",
+   "Zhengwei Chen",
+   "Yu Lin",
+   "Gabriela Grigorean",
+   "Lingjun Li",
+   "Suyu Liu",
+   "Amit G. Singal",
+   "Neehar D. Parikh",
+   "David M. Lubman"
+  ],
+  "url": "https://doi.org/10.1021/acs.jproteome.0c00270",
+  "has_preprint": [],
+  "citations": 54
+ },
+ {
+  "doi": "10.1080/19420862.2015.1098795",
+  "title": "A monoclonal antibody specific for prophase phosphorylation of histone deacetylase 1: a readout for early mitotic cells",
+  "year": "2015",
+  "journal": "mAbs",
+  "type": "journal-article",
+  "sources": [
+   "Gabriela Grigorean"
+  ],
+  "in_orcid": true,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "pmid": "26467746",
+  "month": "10",
+  "authors": [
+   "Chiara V. Segr\u00e9",
+   "Silvia Senese",
+   "Sara Loponte",
+   "Stefano Santaguida",
+   "Paolo Soffientini",
+   "Gabriela Grigorean",
+   "Mario Cinquanta",
+   "Giuseppe Ossolengo",
+   "Christian Seiser",
+   "Susanna Chiocca"
+  ],
+  "url": "https://doi.org/10.1080/19420862.2015.1098795",
+  "has_preprint": [],
+  "citations": 2
+ },
+ {
+  "doi": "10.1007/s13361-011-0233-6",
+  "title": "Electron Induced Dissociation of Singly Deprotonated Peptides",
+  "year": "2011",
+  "journal": "Journal of the American Society for Mass Spectrometry",
+  "type": "journal-article",
+  "sources": [
+   "Crossref Metadata Search",
+   "Gabriela Grigorean"
+  ],
+  "in_orcid": true,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "pmid": "21952776",
+  "month": "9",
+  "authors": [
+   "Anastasia Kalli",
+   "Gabriela Grigorean",
+   "Kristina H\u00e5kansson"
+  ],
+  "url": "https://doi.org/10.1007/s13361-011-0233-6",
+  "has_preprint": [],
+  "citations": 24
+ },
+ {
+  "doi": "10.1016/j.str.2010.02.014",
+  "title": "Structural Analysis of the RZZ Complex Reveals Common Ancestry with Multisubunit Vesicle Tethering Machinery",
+  "year": "2010",
+  "journal": "Structure",
+  "type": "journal-article",
+  "sources": [
+   "Crossref Metadata Search",
+   "Gabriela Grigorean"
+  ],
+  "in_orcid": true,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "pmid": "20462495",
+  "month": "5",
+  "authors": [
+   "Filiz \u00c7ivril",
+   "Annemarie Wehenkel",
+   "Federico M. Giorgi",
+   "Stefano Santaguida",
+   "Andrea Di Fonzo",
+   "Gabriela Grigorean",
+   "Francesca D. Ciccarelli",
+   "Andrea Musacchio"
+  ],
+  "url": "https://doi.org/10.1016/j.str.2010.02.014",
+  "has_preprint": [],
+  "citations": 72
+ },
+ {
+  "doi": "",
+  "title": "Peptide sequencing by anion-electron reactions in Fourier transform ion cyclotron resonance mass spectrometry",
+  "year": "2006",
+  "journal": "ABSTRACTS OF PAPERS OF THE AMERICAN CHEMICAL SOCIETY",
+  "type": "journal-article",
+  "sources": [
+   "Gabriela Grigorean"
+  ],
+  "in_orcid": true,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "authors": [],
+  "url": "",
+  "month": ""
+ },
+ {
+  "doi": "10.1016/j.ijms.2004.02.023",
+  "title": "Chiral analyses of peptides by ion/molecule reactions",
+  "year": "2004",
+  "journal": "International Journal of Mass Spectrometry",
+  "type": "journal-article",
+  "sources": [
+   "Crossref Metadata Search"
+  ],
+  "in_orcid": true,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "month": "5",
+  "authors": [
+   "Gabriela Grigorean",
+   "Xin Cong",
+   "Carlito B Lebrilla"
+  ],
+  "url": "https://doi.org/10.1016/j.ijms.2004.02.023",
+  "has_preprint": [],
+  "citations": 29
+ },
+ {
+  "doi": "10.1016/s1387-3806(02)00558-4",
+  "title": "Enantioselective gas-phase ion\u2013molecule reactions in a quadrupole ion trap",
+  "year": "2002",
+  "journal": "International Journal of Mass Spectrometry",
+  "type": "journal-article",
+  "sources": [
+   "Crossref Metadata Search"
+  ],
+  "in_orcid": true,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "month": "8",
+  "authors": [
+   "Gabriela Grigorean",
+   "Scott Gronert",
+   "Carlito B. Lebrilla"
+  ],
+  "url": "https://doi.org/10.1016/s1387-3806(02)00558-4",
+  "has_preprint": [],
+  "citations": 30
+ },
+ {
+  "doi": "10.1021/ac001135q",
+  "title": "Enantiomeric Analysis of Pharmaceutical Compounds by Ion/Molecule Reactions",
+  "year": "2001",
+  "journal": "Analytical Chemistry",
+  "type": "journal-article",
+  "sources": [
+   "Crossref Metadata Search"
+  ],
+  "in_orcid": true,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "pmid": "11338580",
+  "month": "3",
+  "authors": [
+   "Gabriela Grigorean",
+   "Carlito B. Lebrilla"
+  ],
+  "url": "https://doi.org/10.1021/ac001135q",
+  "has_preprint": [],
+  "citations": 93
+ },
+ {
+  "doi": "10.1021/ja000717m",
+  "title": "Evidence for the Formation of Gas-Phase Inclusion Complexes with Cyclodextrins and Amino Acids",
+  "year": "2000",
+  "journal": "Journal of the American Chemical Society",
+  "type": "journal-article",
+  "sources": [
+   "Crossref Metadata Search"
+  ],
+  "in_orcid": true,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "month": "7",
+  "authors": [
+   "Javier Ramirez",
+   "Seonghee Ahn",
+   "Gabriela Grigorean",
+   "Carlito B. Lebrilla"
+  ],
+  "url": "https://doi.org/10.1021/ja000717m",
+  "has_preprint": [],
+  "citations": 105
+ },
+ {
+  "doi": "10.1255/ejms.64",
+  "title": "Studies of exchangeable protons in the matrix-assisted laser desorption/ionization process",
+  "year": "1996",
+  "journal": "European Journal of Mass Spectrometry",
+  "type": "journal-article",
+  "sources": [
+   "Crossref Metadata Search"
+  ],
+  "in_orcid": true,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "month": "",
+  "authors": [
+   "Gabriela Grigorean",
+   "Robert Carey",
+   "I. Amster"
+  ],
+  "url": "https://doi.org/10.1255/ejms.64",
+  "has_preprint": [],
+  "citations": 12
+ },
+ {
+  "doi": "10.64898/2026.02.06.704519",
+  "pmid": "41726965",
+  "title": "Metabolic Perturbation Exacerbates Sinoatrial Node Dysfunction in Heart Failure",
+  "year": "2026",
+  "journal": "bioRxiv",
+  "type": "posted-content",
+  "sources": [
+   "PubMed"
+  ],
+  "in_orcid": false,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "month": "2",
+  "authors": [
+   "Lu Ren",
+   "Yu Liu",
+   "Hao Zhang",
+   "Daphne A. Diloretto",
+   "Yang Zheng",
+   "Arianne Caudal",
+   "Mengjie Xie",
+   "Wenshu Zeng",
+   "Ryan L. Woltz",
+   "Hye Sook Shin",
+   "Richard Q. Ngo",
+   "Guy A. Perkins",
+   "Gabriela Grigorean",
+   "Ebenezer N. Yamoah",
+   "Joseph C. Wu",
+   "Nipavan Chiamvimonvat",
+   "Phung N. Thai"
+  ],
+  "url": "https://doi.org/10.64898/2026.02.06.704519",
+  "has_preprint": [],
+  "citations": 0
+ },
+ {
+  "doi": "10.64898/2025.12.11.693549",
+  "pmid": "41427283",
+  "title": "Molecular interactions of Chd8 in mouse brain highlights a role in chromatin-associated RNA processing",
+  "year": "2025",
+  "journal": "bioRxiv",
+  "type": "posted-content",
+  "sources": [
+   "PubMed"
+  ],
+  "in_orcid": false,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "month": "12",
+  "authors": [
+   "Emily Smith",
+   "Cesar P. Canales",
+   "Mathew W. Kenaston",
+   "Nicolas Seban",
+   "Ayanna A. Wade",
+   "Ethan Fenton",
+   "Cory Ardekani",
+   "Stephanie Lozano",
+   "Nickolas C. Chu",
+   "Daniela Perla",
+   "Ksenia Medvedeva",
+   "Kaitlyn McCafferty",
+   "Yingjing Guo",
+   "Aspen Kopley-Smith",
+   "Abigail Ignasiak",
+   "Dylann Cullinane",
+   "Karol Cichewicz",
+   "Gabriela Grigorean",
+   "Priya S. Shah",
+   "Alex S. Nord"
+  ],
+  "url": "https://doi.org/10.64898/2025.12.11.693549",
+  "has_preprint": [],
+  "citations": 0
+ },
+ {
+  "doi": "10.1101/2025.04.07.646890",
+  "pmid": "40291645",
+  "title": "Context-dependent Interactors Regulate TDP-43 Dysfunction in ALS/FTLD",
+  "year": "2025",
+  "journal": "bioRxiv",
+  "type": "posted-content",
+  "sources": [
+   "PubMed"
+  ],
+  "in_orcid": false,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "month": "4",
+  "authors": [
+   "Longxin Xie",
+   "Yuehua Zhu",
+   "Bryan T. Hurtle",
+   "Matthew Wright",
+   "John L. Robinson",
+   "Jocelyn C. Mauna",
+   "Emily E. Brown",
+   "Marilyn Ngo",
+   "Cristian A. Bergmann",
+   "Jiazhen Xu",
+   "Jessica Merjane",
+   "Amanda M. Gleixner",
+   "Gabriela Grigorean",
+   "Feilin Liu",
+   "Wilfried Rossoll",
+   "Edward B. Lee",
+   "Evangelos Kiskinis",
+   "Maria Chikina",
+   "Christopher J Donnelly"
+  ],
+  "url": "https://doi.org/10.1101/2025.04.07.646890",
+  "has_preprint": [],
+  "citations": 11
+ },
+ {
+  "doi": "10.1074/mcp.m400045-mcp200",
+  "pmid": "15169875",
+  "title": "Identification and Verification of Novel Rodent Postsynaptic Density Proteins",
+  "year": "2004",
+  "journal": "Molecular & Cellular Proteomics",
+  "type": "journal-article",
+  "sources": [
+   "PubMed"
+  ],
+  "in_orcid": false,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "month": "9",
+  "authors": [
+   "Bryen A. Jordan",
+   "Brian D. Fernholz",
+   "Muriel Boussac",
+   "Chongfeng Xu",
+   "Gabriela Grigorean",
+   "Edward B. Ziff",
+   "Thomas A. Neubert"
+  ],
+  "url": "https://doi.org/10.1074/mcp.m400045-mcp200",
+  "has_preprint": [],
+  "citations": 266
+ },
+ {
+  "doi": "10.1016/s1044-0305(00)00220-8",
+  "pmid": "11281603",
+  "title": "Chiral recognition in gas-phase cyclodextrin: Amino acid complexes\u2014Is the three point interaction still valid in the gas phase?",
+  "year": "2001",
+  "journal": "Journal of the American Society for Mass Spectrometry",
+  "type": "journal-article",
+  "sources": [
+   "PubMed"
+  ],
+  "in_orcid": false,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "month": "3",
+  "authors": [
+   "Seonghee Ahn",
+   "Javier Ramirez",
+   "Gabriela Grigorean",
+   "Carlito B. Lebrilla"
+  ],
+  "url": "https://doi.org/10.1016/s1044-0305(00)00220-8",
+  "has_preprint": [],
+  "citations": 88
+ },
+ {
+  "doi": "10.1021/ac000061f",
+  "pmid": "11008760",
+  "title": "A Mass Spectrometry Method for the Determination of Enantiomeric Excess in Mixtures of d , l -Amino Acids",
+  "year": "2000",
+  "journal": "Analytical Chemistry",
+  "type": "journal-article",
+  "sources": [
+   "PubMed"
+  ],
+  "in_orcid": false,
+  "people": [
+   "Gabriela Grigorean"
+  ],
+  "month": "8",
+  "authors": [
+   "Gabriela Grigorean",
+   "Javier Ramirez",
+   "Seong He Ahn",
+   "Carlito B. Lebrilla"
+  ],
+  "url": "https://doi.org/10.1021/ac000061f",
+  "has_preprint": [],
+  "citations": 105
+ },
+ {
+  "doi": "10.1016/j.fsigen.2025.103384",
+  "pmid": "41202527",
+  "title": "Preservation of proteomic and genomic genotypes in skeletal material from forensically treated cadavers",
+  "year": "2026",
+  "journal": "Forensic Science International: Genetics",
+  "type": "journal-article",
+  "sources": [
+   "PubMed"
+  ],
+  "in_orcid": false,
+  "people": [
+   "Michelle Salemi"
+  ],
+  "month": "2",
+  "authors": [
+   "Glendon Parker",
+   "Michelle Harrel",
+   "Jennifer Snedeker",
+   "Michelle Salemi",
+   "Trevor Borja",
+   "Rachel Houston"
+  ],
+  "url": "https://doi.org/10.1016/j.fsigen.2025.103384",
+  "has_preprint": [],
+  "citations": 0
+ },
+ {
+  "doi": "10.1093/jncimonographs/lgad014",
+  "pmid": "37139973",
+  "title": "The \u2018omics of obesity in B-cell acute lymphoblastic leukemia",
+  "year": "2023",
+  "journal": "JNCI Monographs",
+  "type": "journal-article",
+  "sources": [
+   "PubMed"
+  ],
+  "in_orcid": false,
+  "people": [
+   "Michelle Salemi"
+  ],
+  "month": "5",
+  "authors": [
+   "Delaney K Geitgey",
+   "Miyoung Lee",
+   "Kirsten A Cottrill",
+   "Maya Jaffe",
+   "William Pilcher",
+   "Swati Bhasin",
+   "Jessica Randall",
+   "Anthony J Ross",
+   "Michelle Salemi",
+   "Marisol Castillo-Castrejon",
+   "Matthew B Kilgore",
+   "Ayjha C Brown",
+   "Jeremy M Boss",
+   "Rich Johnston",
+   "Anne M Fitzpatrick",
+   "Melissa L Kemp",
+   "Robert English",
+   "Eric Weaver",
+   "Pritha Bagchi",
+   "Ryan Walsh",
+   "Christopher D Scharer",
+   "Manoj Bhasin",
+   "Joshua D Chandler",
+   "Karmella A Haynes",
+   "Elizabeth A Wellberg",
+   "Curtis J Henry"
+  ],
+  "url": "https://doi.org/10.1093/jncimonographs/lgad014",
+  "has_preprint": [],
+  "citations": 10
+ },
+ {
+  "doi": "10.1016/j.bbapap.2023.140898",
+  "pmid": "36731758",
+  "title": "Citrus flavanone metabolites significantly modulate global proteomic profile in pancreatic \u03b2-cells under high-glucose-induced metabolic stress",
+  "year": "2023",
+  "journal": "Biochimica et Biophysica Acta (BBA) - Proteins and Proteomics",
+  "type": "journal-article",
+  "sources": [
+   "PubMed"
+  ],
+  "in_orcid": false,
+  "people": [
+   "Michelle Salemi"
+  ],
+  "month": "5",
+  "authors": [
+   "Layanne Nascimento Fraga",
+   "Dragan Milenkovic",
+   "Sara Lima Anacleto",
+   "Michelle Salemi",
+   "Franco Maria Lajolo",
+   "Neuza Mariko Aymoto Hassimotto"
+  ],
+  "url": "https://doi.org/10.1016/j.bbapap.2023.140898",
+  "has_preprint": [],
+  "citations": 8
+ },
+ {
+  "doi": "10.1016/j.celrep.2022.110788",
+  "pmid": "35545047",
+  "title": "KSHV episome tethering sites on host chromosomes and regulation of latency-lytic switch by CHD4",
+  "year": "2022",
+  "journal": "Cell Reports",
+  "type": "journal-article",
+  "sources": [
+   "PubMed"
+  ],
+  "in_orcid": false,
+  "people": [
+   "Michelle Salemi"
+  ],
+  "month": "5",
+  "authors": [
+   "Ashish Kumar",
+   "Yuanzhi Lyu",
+   "Yuichi Yanagihashi",
+   "Chanikarn Chantarasrivong",
+   "Vladimir Majerciak",
+   "Michelle Salemi",
+   "Kang-Hsin Wang",
+   "Tomoki Inagaki",
+   "Frank Chuang",
+   "Ryan R. Davis",
+   "Clifford G. Tepper",
+   "Kazushi Nakano",
+   "Chie Izumiya",
+   "Michiko Shimoda",
+   "Ken-ichi Nakajima",
+   "Alexander Merleev",
+   "Zhi-Ming Zheng",
+   "Mel Campbell",
+   "Yoshihiro Izumiya"
+  ],
+  "url": "https://doi.org/10.1016/j.celrep.2022.110788",
+  "has_preprint": [],
+  "citations": 49
+ },
+ {
+  "doi": "10.1128/jvi.02049-20",
+  "pmid": "33597212",
+  "title": "Proximity Biotin Labeling Reveals Kaposi\u2019s Sarcoma-Associated Herpesvirus Interferon Regulatory Factor Networks",
+  "year": "2021",
+  "journal": "Journal of Virology",
+  "type": "journal-article",
+  "sources": [
+   "PubMed"
+  ],
+  "in_orcid": false,
+  "people": [
+   "Michelle Salemi"
+  ],
+  "month": "4",
+  "authors": [
+   "Ashish Kumar",
+   "Michelle Salemi",
+   "Resham Bhullar",
+   "Sara Guevara-Plunkett",
+   "Yuanzhi Lyu",
+   "Kang-Hsin Wang",
+   "Chie Izumiya",
+   "Mel Campbell",
+   "Ken-ichi Nakajima",
+   "Yoshihiro Izumiya"
+  ],
+  "url": "https://doi.org/10.1128/jvi.02049-20",
+  "has_preprint": [
+   "10.1101/2020.10.16.343483"
+  ],
+  "citations": 13
  }
 ]

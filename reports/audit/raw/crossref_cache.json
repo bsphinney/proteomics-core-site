@@ -23,6 +23,7 @@
   ],
   "url": "https://doi.org/10.1016/j.fsi.2025.110992",
   "type": "journal-article",
+  "citations": 1,
   "institution": [],
   "has_preprint": []
  },
@@ -48,6 +49,7 @@
   ],
   "url": "https://doi.org/10.1083/jcb.202503166",
   "type": "journal-article",
+  "citations": 4,
   "institution": [],
   "has_preprint": []
  },
@@ -76,6 +78,7 @@
   ],
   "url": "https://doi.org/10.1083/jcb.202404047",
   "type": "journal-article",
+  "citations": 20,
   "institution": [],
   "has_preprint": []
  },
@@ -102,6 +105,7 @@
   ],
   "url": "https://doi.org/10.64898/2025.12.04.691871",
   "type": "posted-content",
+  "citations": 0,
   "institution": [
    "bioRxiv"
   ],
@@ -125,6 +129,7 @@
   ],
   "url": "https://doi.org/10.1101/2025.09.26.678912",
   "type": "posted-content",
+  "citations": 3,
   "institution": [
    "bioRxiv"
   ],
@@ -151,6 +156,7 @@
   ],
   "url": "https://doi.org/10.7554/elife.100928",
   "type": "journal-article",
+  "citations": 4,
   "institution": [],
   "has_preprint": [
    "10.1101/2024.07.10.602886"
@@ -174,6 +180,7 @@
   ],
   "url": "https://doi.org/10.1016/j.jlr.2025.100932",
   "type": "journal-article",
+  "citations": 1,
   "institution": [],
   "has_preprint": []
  },
@@ -200,6 +207,7 @@
   ],
   "url": "https://doi.org/10.1186/s13024-025-00817-0",
   "type": "journal-article",
+  "citations": 12,
   "institution": [],
   "has_preprint": [
    "10.1101/2024.03.25.585597"
@@ -227,6 +235,7 @@
   ],
   "url": "https://doi.org/10.1093/icb/icaf148",
   "type": "journal-article",
+  "citations": 4,
   "institution": [],
   "has_preprint": []
  },
@@ -248,6 +257,7 @@
   ],
   "url": "https://doi.org/10.1021/acs.jproteome.5c00290",
   "type": "journal-article",
+  "citations": 1,
   "institution": [],
   "has_preprint": []
  },
@@ -268,6 +278,7 @@
   ],
   "url": "https://doi.org/10.1111/jfd.14017",
   "type": "journal-article",
+  "citations": 6,
   "institution": [],
   "has_preprint": []
  },
@@ -289,6 +300,7 @@
   ],
   "url": "https://doi.org/10.3390/ijms25189807",
   "type": "journal-article",
+  "citations": 2,
   "institution": [],
   "has_preprint": []
  },
@@ -310,6 +322,7 @@
   ],
   "url": "https://doi.org/10.1101/2024.03.29.587368",
   "type": "posted-content",
+  "citations": 3,
   "institution": [
    "bioRxiv"
   ],
@@ -341,6 +354,7 @@
   ],
   "url": "https://doi.org/10.1038/s44318-024-00292-1",
   "type": "journal-article",
+  "citations": 29,
   "institution": [],
   "has_preprint": []
  },
@@ -360,6 +374,7 @@
   ],
   "url": "https://doi.org/10.1371/journal.pone.0306211",
   "type": "journal-article",
+  "citations": 0,
   "institution": [],
   "has_preprint": []
  },
@@ -379,6 +394,7 @@
   ],
   "url": "https://doi.org/10.1021/acs.chemrestox.3c00353",
   "type": "journal-article",
+  "citations": 0,
   "institution": [],
   "has_preprint": []
  },
@@ -395,6 +411,7 @@
   ],
   "url": "https://doi.org/10.1002/prca.202300236",
   "type": "journal-article",
+  "citations": 9,
   "institution": [],
   "has_preprint": []
  },
@@ -419,6 +436,7 @@
   ],
   "url": "https://doi.org/10.1101/2024.07.10.602886",
   "type": "posted-content",
+  "citations": 0,
   "institution": [
    "bioRxiv"
   ],
@@ -445,6 +463,7 @@
   ],
   "url": "https://doi.org/10.1128/mbio.03304-23",
   "type": "journal-article",
+  "citations": 44,
   "institution": [],
   "has_preprint": []
  },
@@ -469,6 +488,7 @@
   ],
   "url": "https://doi.org/10.1101/2024.03.25.585597",
   "type": "posted-content",
+  "citations": 0,
   "institution": [
    "bioRxiv"
   ],
@@ -504,6 +524,7 @@
   ],
   "url": "https://doi.org/10.1038/s41467-024-50459-x",
   "type": "journal-article",
+  "citations": 10,
   "institution": [],
   "has_preprint": []
  },
@@ -522,6 +543,7 @@
   ],
   "url": "https://doi.org/10.1101/2024.05.15.594178",
   "type": "posted-content",
+  "citations": 3,
   "institution": [
    "bioRxiv"
   ],
@@ -545,6 +567,7 @@
   ],
   "url": "https://doi.org/10.1093/biolre/ioad146",
   "type": "journal-article",
+  "citations": 22,
   "institution": [],
   "has_preprint": []
  },
@@ -569,6 +592,7 @@
   ],
   "url": "https://doi.org/10.1080/15548627.2023.2273703",
   "type": "journal-article",
+  "citations": 9,
   "institution": [],
   "has_preprint": []
  },
@@ -587,6 +611,7 @@
   ],
   "url": "https://doi.org/10.1093/toxsci/kfad103",
   "type": "journal-article",
+  "citations": 1,
   "institution": [],
   "has_preprint": []
  },
@@ -611,6 +636,7 @@
   ],
   "url": "https://doi.org/10.7171/3fc1f5fe.9b78d780",
   "type": "journal-article",
+  "citations": 0,
   "institution": [],
   "has_preprint": []
  },
@@ -635,6 +661,7 @@
   ],
   "url": "https://doi.org/10.1016/j.devcel.2023.03.014",
   "type": "journal-article",
+  "citations": 54,
   "institution": [],
   "has_preprint": []
  },
@@ -656,6 +683,7 @@
   ],
   "url": "https://doi.org/10.3390/ijms241713477",
   "type": "journal-article",
+  "citations": 4,
   "institution": [],
   "has_preprint": []
  },
@@ -678,6 +706,7 @@
   ],
   "url": "https://doi.org/10.1016/j.exer.2022.109303",
   "type": "journal-article",
+  "citations": 8,
   "institution": [],
   "has_preprint": []
  },
@@ -697,6 +726,7 @@
   ],
   "url": "https://doi.org/10.1371/journal.pone.0290778",
   "type": "journal-article",
+  "citations": 1,
   "institution": [],
   "has_preprint": []
  },
@@ -722,6 +752,7 @@
   ],
   "url": "https://doi.org/10.1080/15548627.2022.2148900",
   "type": "journal-article",
+  "citations": 31,
   "institution": [],
   "has_preprint": []
  },
@@ -738,6 +769,7 @@
   ],
   "url": "https://doi.org/10.3390/ijms242015266",
   "type": "journal-article",
+  "citations": 4,
   "institution": [],
   "has_preprint": []
  },
@@ -757,6 +789,7 @@
   ],
   "url": "https://doi.org/10.1371/journal.pone.0283619",
   "type": "journal-article",
+  "citations": 2,
   "institution": [],
   "has_preprint": []
  },
@@ -784,6 +817,7 @@
   ],
   "url": "https://doi.org/10.1002/alz.065671",
   "type": "journal-article",
+  "citations": 0,
   "institution": [],
   "has_preprint": []
  },
@@ -807,6 +841,7 @@
   ],
   "url": "https://doi.org/10.1186/s40478-022-01322-x",
   "type": "journal-article",
+  "citations": 47,
   "institution": [],
   "has_preprint": []
  },
@@ -828,6 +863,7 @@
   ],
   "url": "https://doi.org/10.1101/2022.02.02.22270298",
   "type": "posted-content",
+  "citations": 3,
   "institution": [
    "medRxiv"
   ],
@@ -850,6 +886,7 @@
   ],
   "url": "https://doi.org/10.1094/phyto-07-21-0302-r",
   "type": "journal-article",
+  "citations": 9,
   "institution": [],
   "has_preprint": []
  },
@@ -869,6 +906,7 @@
   ],
   "url": "https://doi.org/10.1021/acsomega.2c01864",
   "type": "journal-article",
+  "citations": 5,
   "institution": [],
   "has_preprint": []
  },
@@ -888,6 +926,7 @@
   ],
   "url": "https://doi.org/10.1016/j.celrep.2022.110797",
   "type": "journal-article",
+  "citations": 19,
   "institution": [],
   "has_preprint": [
    "10.1101/2021.08.20.457143"
@@ -915,6 +954,7 @@
   ],
   "url": "https://doi.org/10.1083/jcb.202207091",
   "type": "journal-article",
+  "citations": 102,
   "institution": [],
   "has_preprint": []
  },
@@ -937,6 +977,7 @@
   ],
   "url": "https://doi.org/10.1016/j.mcpro.2021.100180",
   "type": "journal-article",
+  "citations": 15,
   "institution": [],
   "has_preprint": []
  },
@@ -973,6 +1014,7 @@
   ],
   "url": "https://doi.org/10.1038/s41556-021-00706-w",
   "type": "journal-article",
+  "citations": 91,
   "institution": [],
   "has_preprint": []
  },
@@ -996,6 +1038,7 @@
   ],
   "url": "https://doi.org/10.1016/j.jas.2021.105354",
   "type": "journal-article",
+  "citations": 18,
   "institution": [],
   "has_preprint": []
  },
@@ -1016,6 +1059,7 @@
   ],
   "url": "https://doi.org/10.1038/s41598-021-87463-w",
   "type": "journal-article",
+  "citations": 68,
   "institution": [],
   "has_preprint": [
    "10.21203/rs.3.rs-141397/v1"
@@ -1039,6 +1083,7 @@
   ],
   "url": "https://doi.org/10.3390/ijms221910374",
   "type": "journal-article",
+  "citations": 6,
   "institution": [],
   "has_preprint": []
  },
@@ -1058,6 +1103,7 @@
   ],
   "url": "https://doi.org/10.1021/acs.jproteome.1c00209",
   "type": "journal-article",
+  "citations": 9,
   "institution": [],
   "has_preprint": [
    "10.1101/2021.03.15.435505"
@@ -1118,6 +1164,7 @@
   ],
   "url": "https://doi.org/10.1016/j.xcrm.2021.100288",
   "type": "journal-article",
+  "citations": 151,
   "institution": [],
   "has_preprint": [
    "10.1101/2020.09.11.293464"
@@ -1142,6 +1189,7 @@
   ],
   "url": "https://doi.org/10.1016/j.fsigen.2021.102564",
   "type": "journal-article",
+  "citations": 9,
   "institution": [],
   "has_preprint": []
  },
@@ -1165,6 +1213,7 @@
   ],
   "url": "https://doi.org/10.7554/elife.67624",
   "type": "journal-article",
+  "citations": 43,
   "institution": [],
   "has_preprint": [
    "10.1101/2021.02.16.431450"
@@ -1190,6 +1239,7 @@
   ],
   "url": "https://doi.org/10.1101/2021.02.16.431450",
   "type": "posted-content",
+  "citations": 0,
   "institution": [
    "bioRxiv"
   ],
@@ -1210,6 +1260,7 @@
   ],
   "url": "https://doi.org/10.1101/2021.08.20.457143",
   "type": "posted-content",
+  "citations": 0,
   "institution": [
    "bioRxiv"
   ],
@@ -1246,6 +1297,7 @@
   ],
   "url": "https://doi.org/10.1016/j.cell.2021.10.017",
   "type": "journal-article",
+  "citations": 98,
   "institution": [],
   "has_preprint": []
  },
@@ -1264,6 +1316,7 @@
   ],
   "url": "https://doi.org/10.1007/s10811-021-02483-3",
   "type": "journal-article",
+  "citations": 15,
   "institution": [],
   "has_preprint": []
  },
@@ -1288,6 +1341,7 @@
   ],
   "url": "https://doi.org/10.1101/2020.11.20.391300",
   "type": "posted-content",
+  "citations": 5,
   "institution": [
    "bioRxiv"
   ],
@@ -1319,6 +1373,7 @@
   ],
   "url": "https://doi.org/10.1038/s41598-020-68550-w",
   "type": "journal-article",
+  "citations": 87,
   "institution": [],
   "has_preprint": []
  },
@@ -1342,6 +1397,7 @@
   ],
   "url": "https://doi.org/10.1016/j.fsigen.2020.102309",
   "type": "journal-article",
+  "citations": 20,
   "institution": [],
   "has_preprint": []
  },
@@ -1362,6 +1418,7 @@
   ],
   "url": "https://doi.org/10.3390/life10120314",
   "type": "journal-article",
+  "citations": 15,
   "institution": [],
   "has_preprint": []
  },
@@ -1383,6 +1440,7 @@
   ],
   "url": "https://doi.org/10.3390/biology9090261",
   "type": "journal-article",
+  "citations": 3,
   "institution": [],
   "has_preprint": [
    "10.1101/2020.07.18.210153"
@@ -1412,6 +1470,7 @@
   ],
   "url": "https://doi.org/10.1016/j.devcel.2019.10.025",
   "type": "journal-article",
+  "citations": 431,
   "institution": [],
   "has_preprint": []
  },
@@ -1430,6 +1489,7 @@
   ],
   "url": "https://doi.org/10.1038/s41598-020-60053-y",
   "type": "journal-article",
+  "citations": 30,
   "institution": [],
   "has_preprint": []
  },
@@ -1457,6 +1517,7 @@
   ],
   "url": "https://doi.org/10.1080/15548627.2020.1779451",
   "type": "journal-article",
+  "citations": 36,
   "institution": [],
   "has_preprint": []
  },
@@ -1477,6 +1538,7 @@
   ],
   "url": "https://doi.org/10.1074/jbc.ra119.011667",
   "type": "journal-article",
+  "citations": 9,
   "institution": [],
   "has_preprint": [
    "10.1101/814327"
@@ -1497,6 +1559,7 @@
   ],
   "url": "https://doi.org/10.1016/j.fsigen.2020.102314",
   "type": "journal-article",
+  "citations": 31,
   "institution": [],
   "has_preprint": []
  },
@@ -1516,6 +1579,7 @@
   ],
   "url": "https://doi.org/10.3390/ijms21207453",
   "type": "journal-article",
+  "citations": 20,
   "institution": [],
   "has_preprint": []
  },
@@ -1538,6 +1602,7 @@
   ],
   "url": "https://doi.org/10.1105/tpc.19.00110",
   "type": "journal-article",
+  "citations": 31,
   "institution": [],
   "has_preprint": []
  },
@@ -1558,6 +1623,7 @@
   ],
   "url": "https://doi.org/10.1016/j.fsigen.2019.03.009",
   "type": "journal-article",
+  "citations": 23,
   "institution": [],
   "has_preprint": []
  },
@@ -1581,6 +1647,7 @@
   ],
   "url": "https://doi.org/10.1007/s10495-018-1505-4",
   "type": "journal-article",
+  "citations": 23,
   "institution": [],
   "has_preprint": []
  },
@@ -1606,6 +1673,7 @@
   ],
   "url": "https://doi.org/10.1080/15548627.2018.1505155",
   "type": "journal-article",
+  "citations": 132,
   "institution": [],
   "has_preprint": []
  },
@@ -1624,6 +1692,7 @@
   ],
   "url": "https://doi.org/10.1111/exd.13925",
   "type": "journal-article",
+  "citations": 43,
   "institution": [],
   "has_preprint": []
  },
@@ -1646,6 +1715,7 @@
   ],
   "url": "https://doi.org/10.1242/bio.037937",
   "type": "journal-article",
+  "citations": 23,
   "institution": [],
   "has_preprint": []
  },
@@ -1665,6 +1735,7 @@
   ],
   "url": "https://doi.org/10.18632/oncotarget.26995",
   "type": "journal-article",
+  "citations": 15,
   "institution": [],
   "has_preprint": [
    "10.1101/515403"
@@ -1690,6 +1761,7 @@
   ],
   "url": "https://doi.org/10.1016/j.jprot.2019.103449",
   "type": "journal-article",
+  "citations": 41,
   "institution": [],
   "has_preprint": []
  },
@@ -1710,6 +1782,7 @@
   ],
   "url": "https://doi.org/10.1016/j.fsigen.2019.05.005",
   "type": "journal-article",
+  "citations": 23,
   "institution": [],
   "has_preprint": []
  },
@@ -1729,6 +1802,7 @@
   ],
   "url": "https://doi.org/10.1016/j.jprot.2019.04.007",
   "type": "journal-article",
+  "citations": 11,
   "institution": [],
   "has_preprint": []
  },
@@ -1753,6 +1827,7 @@
   ],
   "url": "https://doi.org/10.1016/j.jas.2018.08.011",
   "type": "journal-article",
+  "citations": 128,
   "institution": [],
   "has_preprint": []
  },
@@ -1770,6 +1845,7 @@
   ],
   "url": "https://doi.org/10.1074/jbc.m117.807214",
   "type": "journal-article",
+  "citations": 22,
   "institution": [],
   "has_preprint": []
  },
@@ -1790,6 +1866,7 @@
   ],
   "url": "https://doi.org/10.1111/exd.13756",
   "type": "journal-article",
+  "citations": 15,
   "institution": [],
   "has_preprint": []
  },
@@ -1815,6 +1892,7 @@
   ],
   "url": "https://doi.org/10.1016/j.molcel.2018.03.009",
   "type": "journal-article",
+  "citations": 281,
   "institution": [],
   "has_preprint": []
  },
@@ -1838,6 +1916,7 @@
   ],
   "url": "https://doi.org/10.1016/j.actbio.2018.02.037",
   "type": "journal-article",
+  "citations": 99,
   "institution": [],
   "has_preprint": []
  },
@@ -1857,6 +1936,7 @@
   ],
   "url": "https://doi.org/10.3389/fimmu.2018.01857",
   "type": "journal-article",
+  "citations": 32,
   "institution": [],
   "has_preprint": []
  },
@@ -1873,6 +1953,7 @@
   ],
   "url": "https://doi.org/10.1016/j.peptides.2016.11.012",
   "type": "journal-article",
+  "citations": 37,
   "institution": [],
   "has_preprint": []
  },
@@ -1894,6 +1975,7 @@
   ],
   "url": "https://doi.org/10.1104/pp.16.01404",
   "type": "journal-article",
+  "citations": 138,
   "institution": [],
   "has_preprint": []
  },
@@ -1920,6 +2002,7 @@
   ],
   "url": "https://doi.org/10.1021/acs.jproteome.6b00881",
   "type": "journal-article",
+  "citations": 46,
   "institution": [],
   "has_preprint": []
  },
@@ -1938,6 +2021,7 @@
   ],
   "url": "https://doi.org/10.1021/acs.jproteome.7b00486",
   "type": "journal-article",
+  "citations": 100,
   "institution": [],
   "has_preprint": []
  },
@@ -1959,6 +2043,7 @@
   ],
   "url": "https://doi.org/10.1371/journal.pone.0185125",
   "type": "journal-article",
+  "citations": 39,
   "institution": [],
   "has_preprint": []
  },
@@ -1982,6 +2067,7 @@
   ],
   "url": "https://doi.org/10.1093/carcin/bgw205",
   "type": "journal-article",
+  "citations": 31,
   "institution": [],
   "has_preprint": []
  },
@@ -2006,6 +2092,7 @@
   ],
   "url": "https://doi.org/10.1038/s41598-017-12624-9",
   "type": "journal-article",
+  "citations": 69,
   "institution": [],
   "has_preprint": []
  },
@@ -2022,6 +2109,7 @@
   ],
   "url": "https://doi.org/10.1371/journal.pone.0188105",
   "type": "journal-article",
+  "citations": 55,
   "institution": [],
   "has_preprint": []
  },
@@ -2040,6 +2128,7 @@
   ],
   "url": "https://doi.org/10.1128/msystems.00027-17",
   "type": "journal-article",
+  "citations": 11,
   "institution": [],
   "has_preprint": []
  },
@@ -2060,6 +2149,7 @@
   ],
   "url": "https://doi.org/10.1002/pmic.201600462",
   "type": "journal-article",
+  "citations": 27,
   "institution": [],
   "has_preprint": []
  },
@@ -2077,6 +2167,7 @@
   ],
   "url": "https://doi.org/10.1158/1538-7445.transcontrol16-a14",
   "type": "journal-article",
+  "citations": 0,
   "institution": [],
   "has_preprint": []
  },
@@ -2095,6 +2186,7 @@
   ],
   "url": "https://doi.org/10.1016/j.jprot.2017.06.017",
   "type": "journal-article",
+  "citations": 12,
   "institution": [],
   "has_preprint": []
  },
@@ -2111,6 +2203,7 @@
   ],
   "url": "https://doi.org/10.3389/fcimb.2017.00296",
   "type": "journal-article",
+  "citations": 45,
   "institution": [],
   "has_preprint": []
  },
@@ -2130,6 +2223,7 @@
   ],
   "url": "https://doi.org/10.1021/acs.jproteome.6b00548",
   "type": "journal-article",
+  "citations": 33,
   "institution": [],
   "has_preprint": []
  },
@@ -2148,6 +2242,7 @@
   ],
   "url": "https://doi.org/10.1212/wnl.0000000000003391",
   "type": "journal-article",
+  "citations": 472,
   "institution": [],
   "has_preprint": []
  },
@@ -2170,6 +2265,7 @@
   ],
   "url": "https://doi.org/10.1021/acs.jproteome.6b00108",
   "type": "journal-article",
+  "citations": 25,
   "institution": [],
   "has_preprint": []
  },
@@ -2181,6 +2277,7 @@
   "authors": [],
   "url": "https://doi.org/10.6019/pxd003532",
   "type": null,
+  "citations": 0,
   "institution": [],
   "has_preprint": []
  },
@@ -2204,6 +2301,7 @@
   ],
   "url": "https://doi.org/10.1186/s12014-016-9132-y",
   "type": "journal-article",
+  "citations": 39,
   "institution": [],
   "has_preprint": []
  },
@@ -2220,6 +2318,7 @@
   ],
   "url": "https://doi.org/10.1002/jts.22085",
   "type": "journal-article",
+  "citations": 21,
   "institution": [],
   "has_preprint": []
  },
@@ -2246,6 +2345,7 @@
   ],
   "url": "https://doi.org/10.1038/srep31098",
   "type": "journal-article",
+  "citations": 48,
   "institution": [],
   "has_preprint": []
  },
@@ -2264,6 +2364,7 @@
   ],
   "url": "https://doi.org/10.1021/acs.jafc.6b01829",
   "type": "journal-article",
+  "citations": 2,
   "institution": [],
   "has_preprint": []
  },
@@ -2281,6 +2382,7 @@
   ],
   "url": "https://doi.org/10.1021/acs.jproteome.5b00387",
   "type": "journal-article",
+  "citations": 21,
   "institution": [],
   "has_preprint": []
  },
@@ -2307,6 +2409,7 @@
   ],
   "url": "https://doi.org/10.1186/s13071-015-1016-x",
   "type": "journal-article",
+  "citations": 22,
   "institution": [],
   "has_preprint": []
  },
@@ -2325,6 +2428,7 @@
   ],
   "url": "https://doi.org/10.1021/acs.jproteome.5b00107",
   "type": "journal-article",
+  "citations": 38,
   "institution": [],
   "has_preprint": []
  },
@@ -2345,6 +2449,7 @@
   ],
   "url": "https://doi.org/10.1021/pr501243m",
   "type": "journal-article",
+  "citations": 62,
   "institution": [],
   "has_preprint": []
  },
@@ -2364,6 +2469,7 @@
   ],
   "url": "https://doi.org/10.1167/iovs.15-16739",
   "type": "journal-article",
+  "citations": 171,
   "institution": [],
   "has_preprint": []
  },
@@ -2392,6 +2498,7 @@
   ],
   "url": "https://doi.org/10.1016/j.jdermsci.2015.01.001",
   "type": "journal-article",
+  "citations": 38,
   "institution": [],
   "has_preprint": []
  },
@@ -2418,6 +2525,7 @@
   ],
   "url": "https://doi.org/10.1074/mcp.o115.051888",
   "type": "journal-article",
+  "citations": 15,
   "institution": [],
   "has_preprint": []
  },
@@ -2438,6 +2546,7 @@
   ],
   "url": "https://doi.org/10.1021/pr500818d",
   "type": "journal-article",
+  "citations": 40,
   "institution": [],
   "has_preprint": []
  },
@@ -2457,6 +2566,7 @@
   ],
   "url": "https://doi.org/10.1021/ab500060r",
   "type": "journal-article",
+  "citations": 33,
   "institution": [],
   "has_preprint": []
  },
@@ -2479,6 +2589,7 @@
   ],
   "url": "https://doi.org/10.7717/peerj.506",
   "type": "journal-article",
+  "citations": 60,
   "institution": [],
   "has_preprint": []
  },
@@ -2497,6 +2608,7 @@
   ],
   "url": "https://doi.org/10.1016/j.lfs.2014.02.004",
   "type": "journal-article",
+  "citations": 42,
   "institution": [],
   "has_preprint": []
  },
@@ -2515,6 +2627,7 @@
   ],
   "url": "https://doi.org/10.1021/pr400880s",
   "type": "journal-article",
+  "citations": 61,
   "institution": [],
   "has_preprint": []
  },
@@ -2531,6 +2644,7 @@
   ],
   "url": "https://doi.org/10.1128/iai.00554-13",
   "type": "journal-article",
+  "citations": 73,
   "institution": [],
   "has_preprint": []
  },
@@ -2551,6 +2665,7 @@
   ],
   "url": "https://doi.org/10.1371/journal.pone.0075355",
   "type": "journal-article",
+  "citations": 31,
   "institution": [],
   "has_preprint": []
  },
@@ -2575,6 +2690,7 @@
   ],
   "url": "https://doi.org/10.1002/pmic.201200532",
   "type": "journal-article",
+  "citations": 28,
   "institution": [],
   "has_preprint": []
  },
@@ -2594,6 +2710,7 @@
   ],
   "url": "https://doi.org/10.1021/pr4006266",
   "type": "journal-article",
+  "citations": 16,
   "institution": [],
   "has_preprint": []
  },
@@ -2621,6 +2738,7 @@
   ],
   "url": "https://doi.org/10.1371/journal.ppat.1003180",
   "type": "journal-article",
+  "citations": 59,
   "institution": [],
   "has_preprint": []
  },
@@ -2640,6 +2758,7 @@
   ],
   "url": "https://doi.org/10.1371/journal.pone.0051956",
   "type": "journal-article",
+  "citations": 26,
   "institution": [],
   "has_preprint": []
  },
@@ -2664,6 +2783,7 @@
   ],
   "url": "https://doi.org/10.1021/bc300114d",
   "type": "journal-article",
+  "citations": 16,
   "institution": [],
   "has_preprint": []
  },
@@ -2681,6 +2801,7 @@
   ],
   "url": "https://doi.org/10.1074/mcp.m111.014555",
   "type": "journal-article",
+  "citations": 88,
   "institution": [],
   "has_preprint": []
  },
@@ -2702,6 +2823,7 @@
   ],
   "url": "https://doi.org/10.1093/jxb/err197",
   "type": "journal-article",
+  "citations": 109,
   "institution": [],
   "has_preprint": []
  },
@@ -2718,6 +2840,7 @@
   ],
   "url": "https://doi.org/10.1371/journal.pone.0029210",
   "type": "journal-article",
+  "citations": 15,
   "institution": [],
   "has_preprint": []
  },
@@ -2734,6 +2857,7 @@
   ],
   "url": "https://doi.org/10.1021/pr200149t",
   "type": "journal-article",
+  "citations": 131,
   "institution": [],
   "has_preprint": []
  },
@@ -2750,6 +2874,7 @@
   ],
   "url": "https://doi.org/10.1021/pr101028k",
   "type": "journal-article",
+  "citations": 141,
   "institution": [],
   "has_preprint": []
  },
@@ -2766,6 +2891,7 @@
   ],
   "url": "https://doi.org/10.1021/pr200660t",
   "type": "journal-article",
+  "citations": 33,
   "institution": [],
   "has_preprint": []
  },
@@ -2786,6 +2912,7 @@
   ],
   "url": "https://doi.org/10.1371/journal.pgen.1001350",
   "type": "journal-article",
+  "citations": 238,
   "institution": [],
   "has_preprint": []
  },
@@ -2806,6 +2933,7 @@
   ],
   "url": "https://doi.org/10.1186/1477-5956-8-68",
   "type": "journal-article",
+  "citations": 47,
   "institution": [],
   "has_preprint": []
  },
@@ -2822,6 +2950,7 @@
   ],
   "url": "https://doi.org/10.1021/pr1009349",
   "type": "journal-article",
+  "citations": 50,
   "institution": [],
   "has_preprint": []
  },
@@ -2839,6 +2968,7 @@
   ],
   "url": "https://doi.org/10.1104/pp.109.151977",
   "type": "journal-article",
+  "citations": 44,
   "institution": [],
   "has_preprint": []
  },
@@ -2857,6 +2987,7 @@
   ],
   "url": "https://doi.org/10.1186/1756-6606-2-14",
   "type": "journal-article",
+  "citations": 20,
   "institution": [],
   "has_preprint": []
  },
@@ -2874,6 +3005,7 @@
   ],
   "url": "https://doi.org/10.1074/mcp.m800420-mcp200",
   "type": "journal-article",
+  "citations": 178,
   "institution": [],
   "has_preprint": []
  },
@@ -2889,6 +3021,7 @@
   ],
   "url": "https://doi.org/10.1021/pr900349r",
   "type": "journal-article",
+  "citations": 58,
   "institution": [],
   "has_preprint": []
  },
@@ -2911,6 +3044,7 @@
   ],
   "url": "https://doi.org/10.1007/s11829-008-9050-7",
   "type": "journal-article",
+  "citations": 29,
   "institution": [],
   "has_preprint": []
  },
@@ -2926,6 +3060,7 @@
   ],
   "url": "https://doi.org/10.1021/pr070025y",
   "type": "journal-article",
+  "citations": 11,
   "institution": [],
   "has_preprint": []
  },
@@ -2943,6 +3078,7 @@
   ],
   "url": "https://doi.org/10.1111/j.1567-1364.2006.00198.x",
   "type": "journal-article",
+  "citations": 75,
   "institution": [],
   "has_preprint": []
  },
@@ -2967,6 +3103,7 @@
   ],
   "url": "https://doi.org/10.1105/tpc.107.051920",
   "type": "journal-article",
+  "citations": 400,
   "institution": [],
   "has_preprint": []
  },
@@ -2991,6 +3128,7 @@
   ],
   "url": "https://doi.org/10.1002/prca.200600802",
   "type": "journal-article",
+  "citations": 3,
   "institution": [],
   "has_preprint": []
  },
@@ -3008,6 +3146,7 @@
   ],
   "url": "https://doi.org/10.1021/jf071198a",
   "type": "journal-article",
+  "citations": 33,
   "institution": [],
   "has_preprint": []
  },
@@ -3024,6 +3163,7 @@
   ],
   "url": "https://doi.org/10.4315/0362-028x-70.1.58",
   "type": "journal-article",
+  "citations": 8,
   "institution": [],
   "has_preprint": []
  },
@@ -3040,6 +3180,7 @@
   ],
   "url": "https://doi.org/10.1021/pr070234i",
   "type": "journal-article",
+  "citations": 53,
   "institution": [],
   "has_preprint": []
  },
@@ -3061,6 +3202,7 @@
   ],
   "url": "https://doi.org/10.1074/mcp.m700165-mcp200",
   "type": "journal-article",
+  "citations": 94,
   "institution": [],
   "has_preprint": []
  },
@@ -3079,6 +3221,7 @@
   ],
   "url": "https://doi.org/10.1007/s00425-007-0545-8",
   "type": "journal-article",
+  "citations": 99,
   "institution": [],
   "has_preprint": []
  },
@@ -3100,6 +3243,7 @@
   ],
   "url": "https://doi.org/10.1016/j.cell.2006.03.042",
   "type": "journal-article",
+  "citations": 495,
   "institution": [],
   "has_preprint": []
  },
@@ -3122,6 +3266,7 @@
   ],
   "url": "https://doi.org/10.1105/tpc.105.031393",
   "type": "journal-article",
+  "citations": 335,
   "institution": [],
   "has_preprint": []
  },
@@ -3140,6 +3285,7 @@
   ],
   "url": "https://doi.org/10.1111/j.1365-313x.2005.02448.x",
   "type": "journal-article",
+  "citations": 59,
   "institution": [],
   "has_preprint": []
  },
@@ -3157,6 +3303,7 @@
   ],
   "url": "https://doi.org/10.1073/pnas.0509026102",
   "type": "journal-article",
+  "citations": 292,
   "institution": [],
   "has_preprint": []
  },
@@ -3171,6 +3318,7 @@
   ],
   "url": "https://doi.org/10.1021/pr049791k",
   "type": "journal-article",
+  "citations": 36,
   "institution": [],
   "has_preprint": []
  },
@@ -3184,6 +3332,7 @@
   ],
   "url": "https://doi.org/10.1016/j.cardiores.2004.04.001",
   "type": "journal-article",
+  "citations": 46,
   "institution": [],
   "has_preprint": []
  },
@@ -3203,6 +3352,7 @@
   ],
   "url": "https://doi.org/10.1021/pr034025j",
   "type": "journal-article",
+  "citations": 216,
   "institution": [],
   "has_preprint": []
  },
@@ -3219,6 +3369,7 @@
   ],
   "url": "https://doi.org/10.1021/bi016075c",
   "type": "journal-article",
+  "citations": 32,
   "institution": [],
   "has_preprint": []
  },
@@ -3233,6 +3384,7 @@
   ],
   "url": "https://doi.org/10.1128/jvi.74.19.9313-9316.2000",
   "type": "journal-article",
+  "citations": 8,
   "institution": [],
   "has_preprint": []
  },
@@ -3248,6 +3400,7 @@
   ],
   "url": "https://doi.org/10.1128/jvi.74.12.5667-5678.2000",
   "type": "journal-article",
+  "citations": 25,
   "institution": [],
   "has_preprint": []
  },
@@ -3281,6 +3434,7 @@
   ],
   "url": "https://doi.org/10.1016/j.stemcr.2026.102856",
   "type": "journal-article",
+  "citations": 0,
   "institution": [],
   "has_preprint": []
  },
@@ -3300,6 +3454,7 @@
   ],
   "url": "https://doi.org/10.1371/journal.ppat.1013974",
   "type": "journal-article",
+  "citations": 0,
   "institution": [],
   "has_preprint": []
  },
@@ -3316,6 +3471,7 @@
   ],
   "url": "https://doi.org/10.1021/acs.jproteome.5c00749",
   "type": "journal-article",
+  "citations": 0,
   "institution": [],
   "has_preprint": []
  },
@@ -3368,6 +3524,7 @@
   ],
   "url": "https://doi.org/10.1101/2020.09.11.293464",
   "type": "posted-content",
+  "citations": 13,
   "institution": [
    "bioRxiv"
   ],
@@ -3388,7 +3545,838 @@
   ],
   "url": "https://doi.org/10.1021/ja005879x",
   "type": "journal-article",
+  "citations": 84,
   "institution": [],
   "has_preprint": []
+ },
+ "10.1038/s42255-026-01566-0": {
+  "title": "Hypoxia rescues complex 1-associated disease caused by proteostatic defects",
+  "journal": "Nature Metabolism",
+  "year": "2026",
+  "month": "7",
+  "authors": [
+   "Ankur Garg",
+   "Brandon R. Desousa",
+   "Raju Roy",
+   "Amy Flis",
+   "Skyler Y. Blume",
+   "Yohei Abe",
+   "Arthur A. Melo",
+   "Ryan R. Cupo",
+   "Gabriela Grigorean",
+   "Daniel R. Southworth",
+   "James Shorter",
+   "Isha H. Jain"
+  ],
+  "url": "https://doi.org/10.1038/s42255-026-01566-0",
+  "type": "journal-article",
+  "citations": 2,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1113/jp288457": {
+  "title": "Ro5\u20104864, a ligand of the mitochondrial translocator protein, protects against heart failure in mice via regulation of the p62\u2010Keap1\u2010Nrf2 axis",
+  "journal": "The Journal of Physiology",
+  "year": "2026",
+  "month": "4",
+  "authors": [
+   "Daphne A. Diloretto",
+   "Phung N. Thai",
+   "Gabriela Grigorean",
+   "Veneese J. Brown",
+   "Tjien Dwyer",
+   "Nipavan Chiamvimonvat",
+   "Elena N. Dedkova",
+   "Saul Schaefer"
+  ],
+  "url": "https://doi.org/10.1113/jp288457",
+  "type": "journal-article",
+  "citations": 1,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1038/s41598-026-46577-9": {
+  "title": "Serum proteome of the Egyptian rousette bat (Rousettus aegyptiacus) reveals signatures of immunity, proteostasis, and metabolism",
+  "journal": "Scientific Reports",
+  "year": "2026",
+  "month": "4",
+  "authors": [
+   "Brooke N. Genovese",
+   "Nistara Randhawa",
+   "Benjamin A. Neely",
+   "Gabriela Grigorean",
+   "Amy J. Schuh",
+   "Brian R. Amman",
+   "Jessica A. Elbert",
+   "Simon J. Anthony",
+   "Jonna A. K. Mazet",
+   "Jonathan S. Towner",
+   "Brian H. Bird"
+  ],
+  "url": "https://doi.org/10.1038/s41598-026-46577-9",
+  "type": "journal-article",
+  "citations": 0,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1007/s00122-025-04882-3": {
+  "title": "Deletion of wheat alpha-gliadins from chromosome 6D improves gluten strength and reduces immunodominant celiac disease epitopes",
+  "journal": "Theoretical and Applied Genetics",
+  "year": "2025",
+  "month": "4",
+  "authors": [
+   "Maria G. Rottersman",
+   "Wenjun Zhang",
+   "Junli Zhang",
+   "Gabriela Grigorean",
+   "German Burguener",
+   "Claudia Carter",
+   "Teng Vang",
+   "Joshua Hegarty",
+   "Xiaoqin Zhang",
+   "Sean Finnie",
+   "Jorge Dubcovsky"
+  ],
+  "url": "https://doi.org/10.1007/s00122-025-04882-3",
+  "type": "journal-article",
+  "citations": 4,
+  "institution": [],
+  "has_preprint": [
+   "10.1101/2024.07.19.604379"
+  ]
+ },
+ "10.1038/s41467-025-59415-9": {
+  "title": "Author Correction: Genome-guided isolation of the hyperthermophilic aerobe Fervidibacter sacchari reveals conserved polysaccharide metabolism in the Armatimonadota",
+  "journal": "Nature Communications",
+  "year": "2025",
+  "month": "4",
+  "authors": [
+   "Nancy O. Nou",
+   "Jonathan K. Covington",
+   "Dengxun Lai",
+   "Xavier Mayali",
+   "Cale O. Seymour",
+   "Juliet Johnston",
+   "Jian-Yu Jiao",
+   "Steffen Buessecker",
+   "Damon Mosier",
+   "Alise R. Muok",
+   "Nicole Torosian",
+   "Allison M. Cook",
+   "Ariane Briegel",
+   "Tanja Woyke",
+   "Emiley Eloe-Fadrosh",
+   "Nicole Shapiro",
+   "Scott G. Bryan",
+   "Savannah Sleezer",
+   "Joshua Dimapilis",
+   "Cristina Gonzalez",
+   "Lizett Gonzalez",
+   "Marlene Noriega",
+   "Matthias Hess",
+   "Ross P. Carlson",
+   "Lan Liu",
+   "Meng-Meng Li",
+   "Zheng-Han Lian",
+   "Siqi Zhu",
+   "Fan Liu",
+   "Xian Sun",
+   "Beile Gao",
+   "Ritesh Mewalal",
+   "Miranda Harmon-Smith",
+   "Ian K. Blaby",
+   "Jan-Fang Cheng",
+   "Peter K. Weber",
+   "Gabriela Grigorean",
+   "Wen-Jun Li",
+   "Anne E. Dekas",
+   "Jennifer Pett-Ridge",
+   "Jeremy A. Dodsworth",
+   "Marike Palmer",
+   "Brian P. Hedlund"
+  ],
+  "url": "https://doi.org/10.1038/s41467-025-59415-9",
+  "type": "journal-article",
+  "citations": 1,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1073/pnas.2425523122": {
+  "title": "MFRP is a molecular hub that organizes the apical membrane of RPE cells by engaging in interactions with specific proteins and lipids",
+  "journal": "Proceedings of the National Academy of Sciences",
+  "year": "2025",
+  "month": "4",
+  "authors": [
+   "Aleksander Tworak",
+   "Roman Smidak",
+   "Carolline Rodrigues Menezes",
+   "Samuel W. Du",
+   "Susie Suh",
+   "Elliot H. Choi",
+   "Sanae S. Imanishi",
+   "Zhiqian Dong",
+   "Dominik Lewandowski",
+   "Kristen E. Fong",
+   "Gabriela Grigorean",
+   "Antonio F. M. Pinto",
+   "Qianlan Xu",
+   "Dorota Skowronska-Krawczyk",
+   "Seth Blackshaw",
+   "Yoshikazu Imanishi",
+   "Krzysztof Palczewski"
+  ],
+  "url": "https://doi.org/10.1073/pnas.2425523122",
+  "type": "journal-article",
+  "citations": 4,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1002/jex2.70078": {
+  "title": "Multiomics Profiling of Extracellular Vesicles Supports Their Involvement in Endothelial Senescence\u2010Associated Vascular Dysfunction",
+  "journal": "Journal of Extracellular Biology",
+  "year": "2025",
+  "month": "7",
+  "authors": [
+   "Ryan E. Hogans",
+   "Yun Lin",
+   "Gabriela Grigorean",
+   "Ana Cristina Grodzki",
+   "Rachel R. Mizenko",
+   "Anne Knowlton",
+   "Randy P. Carney",
+   "Angie Gelli",
+   "Pamela J. Lein"
+  ],
+  "url": "https://doi.org/10.1002/jex2.70078",
+  "type": "journal-article",
+  "citations": 1,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.3390/nu16193268": {
+  "title": "Effect of In Vitro Digestion on Bioactive Peptides Related to Immune and Gut Health in Intact Cow\u2019s Milk and Hydrolyzed Protein-Based Infant Formulas",
+  "journal": "Nutrients",
+  "year": "2024",
+  "month": "9",
+  "authors": [
+   "Gabriela Grigorean",
+   "Xiaogu Du",
+   "Russell Kuhfeld",
+   "Elisabeth M. Haberl",
+   "Bo L\u00f6nnerdal"
+  ],
+  "url": "https://doi.org/10.3390/nu16193268",
+  "type": "journal-article",
+  "citations": 8,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1021/acs.jafc.4c07017": {
+  "title": "Barley Grain Proteome Assessment Using Multi-Environment Trial Data and Machine Learning",
+  "journal": "Journal of Agricultural and Food Chemistry",
+  "year": "2024",
+  "month": "11",
+  "authors": [
+   "Maany Ramanan",
+   "Harmonie Bettenhausen",
+   "Gabriela Grigorean",
+   "Christine Diepenbrock",
+   "Glen Patrick Fox"
+  ],
+  "url": "https://doi.org/10.1021/acs.jafc.4c07017",
+  "type": "journal-article",
+  "citations": 6,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1038/s41467-024-53784-3": {
+  "title": "Genome-guided isolation of the hyperthermophilic aerobe Fervidibacter sacchari reveals conserved polysaccharide metabolism in the Armatimonadota",
+  "journal": "Nature Communications",
+  "year": "2024",
+  "month": "11",
+  "authors": [
+   "Nancy O. Nou",
+   "Jonathan K. Covington",
+   "Dengxun Lai",
+   "Xavier Mayali",
+   "Cale O. Seymour",
+   "Juliet Johnston",
+   "Jian-Yu Jiao",
+   "Steffen Buessecker",
+   "Damon Mosier",
+   "Alise R. Muok",
+   "Nicole Torosian",
+   "Allison M. Cook",
+   "Ariane Briegel",
+   "Tanja Woyke",
+   "Emiley Eloe-Fadrosh",
+   "Nicole Shapiro",
+   "Scott G. Bryan",
+   "Savannah Sleezer",
+   "Joshua Dimapilis",
+   "Cristina Gonzalez",
+   "Lizett Gonzalez",
+   "Marlene Noriega",
+   "Matthias Hess",
+   "Ross P. Carlson",
+   "Lan Liu",
+   "Meng-Meng Li",
+   "Zheng-Han Lian",
+   "Siqi Zhu",
+   "Fan Liu",
+   "Xian Sun",
+   "Beile Gao",
+   "Ritesh Mewalal",
+   "Miranda Harmon-Smith",
+   "Ian K. Blaby",
+   "Jan-Fang Cheng",
+   "Peter K. Weber",
+   "Gabriela Grigorean",
+   "Wen-Jun Li",
+   "Anne E. Dekas",
+   "Jennifer Pett-Ridge",
+   "Jeremy A. Dodsworth",
+   "Marike Palmer",
+   "Brian P. Hedlund"
+  ],
+  "url": "https://doi.org/10.1038/s41467-024-53784-3",
+  "type": "journal-article",
+  "citations": 12,
+  "institution": [],
+  "has_preprint": [
+   "10.21203/rs.3.rs-3760178/v1"
+  ]
+ },
+ "10.3390/ani13203184": {
+  "title": "Multi-Omic, Histopathologic, and Clinicopathologic Effects of Once-Weekly Oral Rapamycin in a Naturally Occurring Feline Model of Hypertrophic Cardiomyopathy: A Pilot Study",
+  "journal": "Animals",
+  "year": "2023",
+  "month": "10",
+  "authors": [
+   "Victor N. Rivas",
+   "Joanna L. Kaplan",
+   "Susan A. Kennedy",
+   "Stuart Fitzgerald",
+   "Amanda E. Crofton",
+   "Aisling Farrell",
+   "Louise Grubb",
+   "Carina E. Jauregui",
+   "Gabriela Grigorean",
+   "Eunju Choi",
+   "Samantha P. Harris",
+   "Joshua A. Stern"
+  ],
+  "url": "https://doi.org/10.3390/ani13203184",
+  "type": "journal-article",
+  "citations": 11,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.3389/fmicb.2023.1264348": {
+  "title": "Characterization of the extracellular vesicles, ultrastructural morphology, and intercellular interactions of multiple clinical isolates of the brain-eating amoeba, Naegleria fowleri",
+  "journal": "Frontiers in Microbiology",
+  "year": "2023",
+  "month": "9",
+  "authors": [
+   "A. Cassiopeia Russell",
+   "Peter Bush",
+   "Gabriela Grigorean",
+   "Dennis E. Kyle"
+  ],
+  "url": "https://doi.org/10.3389/fmicb.2023.1264348",
+  "type": "journal-article",
+  "citations": 16,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1016/j.foodres.2023.113294": {
+  "title": "Effect of pH and protein composition on proteolysis of goat milk proteins by pepsin and pancreatin",
+  "journal": "Food Research International",
+  "year": "2023",
+  "month": "11",
+  "authors": [
+   "Kasper Hettinga",
+   "Linette Pellis",
+   "Wolf Rombouts",
+   "Xiaogu Du",
+   "Gabriela Grigorean",
+   "Bo L\u00f6nnerdal"
+  ],
+  "url": "https://doi.org/10.1016/j.foodres.2023.113294",
+  "type": "journal-article",
+  "citations": 13,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1016/j.ebiom.2022.104256": {
+  "title": "Dermal thirdhand smoke exposure induces oxidative damage, initiates skin inflammatory markers, and adversely alters the human plasma proteome",
+  "journal": "eBioMedicine",
+  "year": "2022",
+  "month": "10",
+  "authors": [
+   "Shane Sakamaki-Ching",
+   "Suzaynn Schick",
+   "Gabriela Grigorean",
+   "Jun Li",
+   "Prue Talbot"
+  ],
+  "url": "https://doi.org/10.1016/j.ebiom.2022.104256",
+  "type": "journal-article",
+  "citations": 20,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1021/acs.jproteome.0c00270": {
+  "title": "Glycopeptide Biomarkers in Serum Haptoglobin for Hepatocellular Carcinoma Detection in Patients with Nonalcoholic Steatohepatitis",
+  "journal": "Journal of Proteome Research",
+  "year": "2020",
+  "month": "5",
+  "authors": [
+   "Jianhui Zhu",
+   "Junfeng Huang",
+   "Jie Zhang",
+   "Zhengwei Chen",
+   "Yu Lin",
+   "Gabriela Grigorean",
+   "Lingjun Li",
+   "Suyu Liu",
+   "Amit G. Singal",
+   "Neehar D. Parikh",
+   "David M. Lubman"
+  ],
+  "url": "https://doi.org/10.1021/acs.jproteome.0c00270",
+  "type": "journal-article",
+  "citations": 54,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1080/19420862.2015.1098795": {
+  "title": "A monoclonal antibody specific for prophase phosphorylation of histone deacetylase 1: a readout for early mitotic cells",
+  "journal": "mAbs",
+  "year": "2015",
+  "month": "10",
+  "authors": [
+   "Chiara V. Segr\u00e9",
+   "Silvia Senese",
+   "Sara Loponte",
+   "Stefano Santaguida",
+   "Paolo Soffientini",
+   "Gabriela Grigorean",
+   "Mario Cinquanta",
+   "Giuseppe Ossolengo",
+   "Christian Seiser",
+   "Susanna Chiocca"
+  ],
+  "url": "https://doi.org/10.1080/19420862.2015.1098795",
+  "type": "journal-article",
+  "citations": 2,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1007/s13361-011-0233-6": {
+  "title": "Electron Induced Dissociation of Singly Deprotonated Peptides",
+  "journal": "Journal of the American Society for Mass Spectrometry",
+  "year": "2011",
+  "month": "9",
+  "authors": [
+   "Anastasia Kalli",
+   "Gabriela Grigorean",
+   "Kristina H\u00e5kansson"
+  ],
+  "url": "https://doi.org/10.1007/s13361-011-0233-6",
+  "type": "journal-article",
+  "citations": 24,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1016/j.str.2010.02.014": {
+  "title": "Structural Analysis of the RZZ Complex Reveals Common Ancestry with Multisubunit Vesicle Tethering Machinery",
+  "journal": "Structure",
+  "year": "2010",
+  "month": "5",
+  "authors": [
+   "Filiz \u00c7ivril",
+   "Annemarie Wehenkel",
+   "Federico M. Giorgi",
+   "Stefano Santaguida",
+   "Andrea Di Fonzo",
+   "Gabriela Grigorean",
+   "Francesca D. Ciccarelli",
+   "Andrea Musacchio"
+  ],
+  "url": "https://doi.org/10.1016/j.str.2010.02.014",
+  "type": "journal-article",
+  "citations": 72,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1016/j.ijms.2004.02.023": {
+  "title": "Chiral analyses of peptides by ion/molecule reactions",
+  "journal": "International Journal of Mass Spectrometry",
+  "year": "2004",
+  "month": "5",
+  "authors": [
+   "Gabriela Grigorean",
+   "Xin Cong",
+   "Carlito B Lebrilla"
+  ],
+  "url": "https://doi.org/10.1016/j.ijms.2004.02.023",
+  "type": "journal-article",
+  "citations": 29,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1016/s1387-3806(02)00558-4": {
+  "title": "Enantioselective gas-phase ion\u2013molecule reactions in a quadrupole ion trap",
+  "journal": "International Journal of Mass Spectrometry",
+  "year": "2002",
+  "month": "8",
+  "authors": [
+   "Gabriela Grigorean",
+   "Scott Gronert",
+   "Carlito B. Lebrilla"
+  ],
+  "url": "https://doi.org/10.1016/s1387-3806(02)00558-4",
+  "type": "journal-article",
+  "citations": 30,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1021/ac001135q": {
+  "title": "Enantiomeric Analysis of Pharmaceutical Compounds by Ion/Molecule Reactions",
+  "journal": "Analytical Chemistry",
+  "year": "2001",
+  "month": "3",
+  "authors": [
+   "Gabriela Grigorean",
+   "Carlito B. Lebrilla"
+  ],
+  "url": "https://doi.org/10.1021/ac001135q",
+  "type": "journal-article",
+  "citations": 93,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1021/ja000717m": {
+  "title": "Evidence for the Formation of Gas-Phase Inclusion Complexes with Cyclodextrins and Amino Acids",
+  "journal": "Journal of the American Chemical Society",
+  "year": "2000",
+  "month": "7",
+  "authors": [
+   "Javier Ramirez",
+   "Seonghee Ahn",
+   "Gabriela Grigorean",
+   "Carlito B. Lebrilla"
+  ],
+  "url": "https://doi.org/10.1021/ja000717m",
+  "type": "journal-article",
+  "citations": 105,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1255/ejms.64": {
+  "title": "Studies of exchangeable protons in the matrix-assisted laser desorption/ionization process",
+  "journal": "European Journal of Mass Spectrometry",
+  "year": "1996",
+  "month": "",
+  "authors": [
+   "Gabriela Grigorean",
+   "Robert Carey",
+   "I. Amster"
+  ],
+  "url": "https://doi.org/10.1255/ejms.64",
+  "type": "journal-article",
+  "citations": 12,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.64898/2026.02.06.704519": {
+  "title": "Metabolic Perturbation Exacerbates Sinoatrial Node Dysfunction in Heart Failure",
+  "journal": "",
+  "year": "2026",
+  "month": "2",
+  "authors": [
+   "Lu Ren",
+   "Yu Liu",
+   "Hao Zhang",
+   "Daphne A. Diloretto",
+   "Yang Zheng",
+   "Arianne Caudal",
+   "Mengjie Xie",
+   "Wenshu Zeng",
+   "Ryan L. Woltz",
+   "Hye Sook Shin",
+   "Richard Q. Ngo",
+   "Guy A. Perkins",
+   "Gabriela Grigorean",
+   "Ebenezer N. Yamoah",
+   "Joseph C. Wu",
+   "Nipavan Chiamvimonvat",
+   "Phung N. Thai"
+  ],
+  "url": "https://doi.org/10.64898/2026.02.06.704519",
+  "type": "posted-content",
+  "citations": 0,
+  "institution": [
+   "bioRxiv"
+  ],
+  "has_preprint": []
+ },
+ "10.64898/2025.12.11.693549": {
+  "title": "Molecular interactions of Chd8 in mouse brain highlights a role in chromatin-associated RNA processing",
+  "journal": "",
+  "year": "2025",
+  "month": "12",
+  "authors": [
+   "Emily Smith",
+   "Cesar P. Canales",
+   "Mathew W. Kenaston",
+   "Nicolas Seban",
+   "Ayanna A. Wade",
+   "Ethan Fenton",
+   "Cory Ardekani",
+   "Stephanie Lozano",
+   "Nickolas C. Chu",
+   "Daniela Perla",
+   "Ksenia Medvedeva",
+   "Kaitlyn McCafferty",
+   "Yingjing Guo",
+   "Aspen Kopley-Smith",
+   "Abigail Ignasiak",
+   "Dylann Cullinane",
+   "Karol Cichewicz",
+   "Gabriela Grigorean",
+   "Priya S. Shah",
+   "Alex S. Nord"
+  ],
+  "url": "https://doi.org/10.64898/2025.12.11.693549",
+  "type": "posted-content",
+  "citations": 0,
+  "institution": [
+   "bioRxiv"
+  ],
+  "has_preprint": []
+ },
+ "10.1101/2025.04.07.646890": {
+  "title": "Context-dependent Interactors Regulate TDP-43 Dysfunction in ALS/FTLD",
+  "journal": "",
+  "year": "2025",
+  "month": "4",
+  "authors": [
+   "Longxin Xie",
+   "Yuehua Zhu",
+   "Bryan T. Hurtle",
+   "Matthew Wright",
+   "John L. Robinson",
+   "Jocelyn C. Mauna",
+   "Emily E. Brown",
+   "Marilyn Ngo",
+   "Cristian A. Bergmann",
+   "Jiazhen Xu",
+   "Jessica Merjane",
+   "Amanda M. Gleixner",
+   "Gabriela Grigorean",
+   "Feilin Liu",
+   "Wilfried Rossoll",
+   "Edward B. Lee",
+   "Evangelos Kiskinis",
+   "Maria Chikina",
+   "Christopher J Donnelly"
+  ],
+  "url": "https://doi.org/10.1101/2025.04.07.646890",
+  "type": "posted-content",
+  "citations": 11,
+  "institution": [
+   "bioRxiv"
+  ],
+  "has_preprint": []
+ },
+ "10.1074/mcp.m400045-mcp200": {
+  "title": "Identification and Verification of Novel Rodent Postsynaptic Density Proteins",
+  "journal": "Molecular & Cellular Proteomics",
+  "year": "2004",
+  "month": "9",
+  "authors": [
+   "Bryen A. Jordan",
+   "Brian D. Fernholz",
+   "Muriel Boussac",
+   "Chongfeng Xu",
+   "Gabriela Grigorean",
+   "Edward B. Ziff",
+   "Thomas A. Neubert"
+  ],
+  "url": "https://doi.org/10.1074/mcp.m400045-mcp200",
+  "type": "journal-article",
+  "citations": 266,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1016/s1044-0305(00)00220-8": {
+  "title": "Chiral recognition in gas-phase cyclodextrin: Amino acid complexes\u2014Is the three point interaction still valid in the gas phase?",
+  "journal": "Journal of the American Society for Mass Spectrometry",
+  "year": "2001",
+  "month": "3",
+  "authors": [
+   "Seonghee Ahn",
+   "Javier Ramirez",
+   "Gabriela Grigorean",
+   "Carlito B. Lebrilla"
+  ],
+  "url": "https://doi.org/10.1016/s1044-0305(00)00220-8",
+  "type": "journal-article",
+  "citations": 88,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1021/ac000061f": {
+  "title": "A Mass Spectrometry Method for the Determination of Enantiomeric Excess in Mixtures of d , l -Amino Acids",
+  "journal": "Analytical Chemistry",
+  "year": "2000",
+  "month": "8",
+  "authors": [
+   "Gabriela Grigorean",
+   "Javier Ramirez",
+   "Seong He Ahn",
+   "Carlito B. Lebrilla"
+  ],
+  "url": "https://doi.org/10.1021/ac000061f",
+  "type": "journal-article",
+  "citations": 105,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1016/j.fsigen.2025.103384": {
+  "title": "Preservation of proteomic and genomic genotypes in skeletal material from forensically treated cadavers",
+  "journal": "Forensic Science International: Genetics",
+  "year": "2026",
+  "month": "2",
+  "authors": [
+   "Glendon Parker",
+   "Michelle Harrel",
+   "Jennifer Snedeker",
+   "Michelle Salemi",
+   "Trevor Borja",
+   "Rachel Houston"
+  ],
+  "url": "https://doi.org/10.1016/j.fsigen.2025.103384",
+  "type": "journal-article",
+  "citations": 0,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1093/jncimonographs/lgad014": {
+  "title": "The \u2018omics of obesity in B-cell acute lymphoblastic leukemia",
+  "journal": "JNCI Monographs",
+  "year": "2023",
+  "month": "5",
+  "authors": [
+   "Delaney K Geitgey",
+   "Miyoung Lee",
+   "Kirsten A Cottrill",
+   "Maya Jaffe",
+   "William Pilcher",
+   "Swati Bhasin",
+   "Jessica Randall",
+   "Anthony J Ross",
+   "Michelle Salemi",
+   "Marisol Castillo-Castrejon",
+   "Matthew B Kilgore",
+   "Ayjha C Brown",
+   "Jeremy M Boss",
+   "Rich Johnston",
+   "Anne M Fitzpatrick",
+   "Melissa L Kemp",
+   "Robert English",
+   "Eric Weaver",
+   "Pritha Bagchi",
+   "Ryan Walsh",
+   "Christopher D Scharer",
+   "Manoj Bhasin",
+   "Joshua D Chandler",
+   "Karmella A Haynes",
+   "Elizabeth A Wellberg",
+   "Curtis J Henry"
+  ],
+  "url": "https://doi.org/10.1093/jncimonographs/lgad014",
+  "type": "journal-article",
+  "citations": 10,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1016/j.bbapap.2023.140898": {
+  "title": "Citrus flavanone metabolites significantly modulate global proteomic profile in pancreatic \u03b2-cells under high-glucose-induced metabolic stress",
+  "journal": "Biochimica et Biophysica Acta (BBA) - Proteins and Proteomics",
+  "year": "2023",
+  "month": "5",
+  "authors": [
+   "Layanne Nascimento Fraga",
+   "Dragan Milenkovic",
+   "Sara Lima Anacleto",
+   "Michelle Salemi",
+   "Franco Maria Lajolo",
+   "Neuza Mariko Aymoto Hassimotto"
+  ],
+  "url": "https://doi.org/10.1016/j.bbapap.2023.140898",
+  "type": "journal-article",
+  "citations": 8,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1016/j.celrep.2022.110788": {
+  "title": "KSHV episome tethering sites on host chromosomes and regulation of latency-lytic switch by CHD4",
+  "journal": "Cell Reports",
+  "year": "2022",
+  "month": "5",
+  "authors": [
+   "Ashish Kumar",
+   "Yuanzhi Lyu",
+   "Yuichi Yanagihashi",
+   "Chanikarn Chantarasrivong",
+   "Vladimir Majerciak",
+   "Michelle Salemi",
+   "Kang-Hsin Wang",
+   "Tomoki Inagaki",
+   "Frank Chuang",
+   "Ryan R. Davis",
+   "Clifford G. Tepper",
+   "Kazushi Nakano",
+   "Chie Izumiya",
+   "Michiko Shimoda",
+   "Ken-ichi Nakajima",
+   "Alexander Merleev",
+   "Zhi-Ming Zheng",
+   "Mel Campbell",
+   "Yoshihiro Izumiya"
+  ],
+  "url": "https://doi.org/10.1016/j.celrep.2022.110788",
+  "type": "journal-article",
+  "citations": 49,
+  "institution": [],
+  "has_preprint": []
+ },
+ "10.1128/jvi.02049-20": {
+  "title": "Proximity Biotin Labeling Reveals Kaposi\u2019s Sarcoma-Associated Herpesvirus Interferon Regulatory Factor Networks",
+  "journal": "Journal of Virology",
+  "year": "2021",
+  "month": "4",
+  "authors": [
+   "Ashish Kumar",
+   "Michelle Salemi",
+   "Resham Bhullar",
+   "Sara Guevara-Plunkett",
+   "Yuanzhi Lyu",
+   "Kang-Hsin Wang",
+   "Chie Izumiya",
+   "Mel Campbell",
+   "Ken-ichi Nakajima",
+   "Yoshihiro Izumiya"
+  ],
+  "url": "https://doi.org/10.1128/jvi.02049-20",
+  "type": "journal-article",
+  "citations": 13,
+  "institution": [],
+  "has_preprint": [
+   "10.1101/2020.10.16.343483"
+  ]
  }
 }

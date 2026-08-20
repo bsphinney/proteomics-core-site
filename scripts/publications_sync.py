@@ -44,6 +44,41 @@ PRIVATE = BASE / "private_data"
 ORCID_ID = "0000-0003-3870-3302"          # Brett S. Phinney
 PUBMED_AUTHOR = "Phinney BS[Author]"
 
+# Core personnel whose publications appear on the site.
+#
+# ORCID is preferred where the record is actually populated. Two staff have an
+# ORCID that is empty or near-empty, so PubMed is the only usable source for
+# them -- with the query constrained by co-authorship or UC Davis affiliation,
+# because "Salemi M" alone returns 501 records from unrelated researchers.
+#
+# John Schulze and Lauren Dixon have no publication record under any query
+# tried (their PubMed hits resolve to a Cleveland Clinic hepatologist and two
+# psychiatry researchers respectively), so they are deliberately absent.
+PEOPLE = [
+    {
+        "name": "Brett S. Phinney",
+        "role": "Core Director",
+        "orcid": "0000-0003-3870-3302",
+        "pubmed": "Phinney BS[Author]",
+        "match": ["phinney"],
+    },
+    {
+        "name": "Gabriela Grigorean",
+        "role": "Associate Director",
+        "orcid": "0000-0001-5693-0846",
+        "pubmed": "Grigorean G[Author]",
+        "match": ["grigorean"],
+    },
+    {
+        "name": "Michelle Salemi",
+        "role": "Staff Scientist",
+        "orcid": None,   # ORCID 0000-0003-3990-7964 exists but holds 0 works
+        "pubmed": ('(Salemi M[Author] AND Phinney BS[Author]) OR '
+                   '(Salemi M[Author] AND "University of California, Davis"[Affiliation])'),
+        "match": ["salemi"],
+    },
+]
+
 ORCID_PUB = "https://pub.orcid.org/v3.0"
 EUTILS = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 CROSSREF = "https://api.crossref.org/works"
@@ -205,8 +240,8 @@ def fetch_orcid(orcid_id):
 
 # -------------------- PubMed gap check --------------------
 
-def fetch_pubmed(author_term):
-    print(f"[pubmed] searching {author_term}", flush=True)
+def fetch_pubmed(author_term, label=None):
+    print(f"[pubmed] searching {label or author_term}", flush=True)
     r = requests.get(f"{EUTILS}/esearch.fcgi",
                      params={**EUTILS_PARAMS, "db": "pubmed", "term": author_term,
                              "retmax": 1000, "retmode": "json"}, timeout=30)
@@ -277,6 +312,7 @@ def enrich_crossref(works, cache, limit=None):
                     ],
                     "url": m.get("URL", ""),
                     "type": m.get("type", ""),
+                    "citations": m.get("is-referenced-by-count", 0),
                     "institution": [
                         i.get("name", "") for i in (m.get("institution") or [])
                         if i.get("name")
@@ -312,6 +348,7 @@ def enrich_crossref(works, cache, limit=None):
             w["url"] = c.get("url", "")
             w["type"] = c.get("type") or w["type"]
             w["has_preprint"] = c.get("has_preprint", [])
+            w["citations"] = c.get("citations", 0)
         else:
             w.setdefault("authors", [])
             w.setdefault("url", f"https://doi.org/{w['doi']}" if w["doi"] else "")
@@ -407,6 +444,9 @@ def write_linkedin_report(to_add, baseline_path, total):
             "",
         ]
     lines += [
+        "Ordered by citation count &mdash; if you only add the first ten, "
+        "those are the ten that matter most.",
+        "",
         "Add each at "
         "<https://www.linkedin.com/in/brett-phinney-4776257/details/publications/> → **+**",
         "The headings below map 1:1 onto LinkedIn's form fields.",
@@ -429,6 +469,8 @@ def write_linkedin_report(to_add, baseline_path, total):
         au = author_line(w)
         if au:
             lines.append(f"- **Authors:** {au}")
+        if w.get("citations"):
+            lines.append(f"- Citations: {w['citations']}")
         if w.get("pmid"):
             lines.append(f"- PMID: {w['pmid']}")
         lines += ["", "---", ""]
@@ -589,6 +631,9 @@ def collapse_versions(pubs):
         for other in items[1:]:
             if other["kind"] == "preprint" and other["doi"]:
                 winner["preprint_doi"] = other["doi"]
+            for who in other.get("people") or []:
+                if who not in (winner.get("people") or []):
+                    winner.setdefault("people", []).append(who)
         collapsed += len(items) - 1
         merged.append(winner)
     return merged, collapsed
@@ -611,10 +656,13 @@ def write_web_feed(master, orcid_id):
             "pmid": w.get("pmid", ""),
             "type": w.get("type", ""),
             "has_preprint": w.get("has_preprint", []),
+            "citations": w.get("citations", 0),
+            "people": w.get("people", []),
         }
         rec["kind"] = classify(rec)
         pubs.append(rec)
 
+    pubs = tag_people(pubs)
     pubs, collapsed = collapse_versions(pubs)
     pubs.sort(key=lambda x: (str(x["year"]), str(x["month"]).zfill(2), x["title"]),
               reverse=True)
@@ -658,10 +706,22 @@ def write_web_feed(master, orcid_id):
         "first_year": years[0] if years else "",
         "last_year": years[-1] if years else "",
         "active_years": len(years),
+        "people": [
+            {
+                "name": person["name"],
+                "role": person["role"],
+                "orcid": person["orcid"],
+                "count": sum(1 for p in listed
+                             if p["kind"] == "article" and person["name"] in (p.get("people") or [])),
+            }
+            for person in PEOPLE
+        ],
         "publications": listed,
     }
     (REPORTS / "publications.json").write_text(json.dumps(payload, indent=1))
 
+    for person in payload["people"]:
+        print(f"[people] {person['name']}: {person['count']} peer-reviewed in feed")
     c = payload["counts"]
     print(f"[feed] {c['peer_reviewed']} peer-reviewed articles, "
           f"{c['preprints']} preprints, {c['conference']} conference")
@@ -683,7 +743,8 @@ def inject_page_fallback(payload):
     if not page.exists():
         print("[page] pages/publications.html not found — skipping fallback injection")
         return
-    trimmed = [[p["title"], p["journal"], p["year"], p["doi"], p["kind"]]
+    trimmed = [[p["title"], p["journal"], p["year"], p["doi"], p["kind"],
+                p.get("people", [])]
                for p in payload["publications"]]
     blob = json.dumps(trimmed, separators=(",", ":"))
     text = page.read_text()
@@ -697,10 +758,46 @@ def inject_page_fallback(payload):
           f"({len(blob)//1024} KB) into pages/publications.html")
 
 
+def gather_people(skip_pubmed=False):
+    """Collect works for every person in PEOPLE, tagging each with who wrote it."""
+    pool = []
+    for person in PEOPLE:
+        got = []
+        if person["orcid"]:
+            got += fetch_orcid(person["orcid"])
+        if person["pubmed"] and not skip_pubmed:
+            got += fetch_pubmed(person["pubmed"], label=person["name"])
+        for w in got:
+            w["people"] = [person["name"]]
+        print(f"[people] {person['name']}: {len(got)} raw records", flush=True)
+        pool += got
+    return pool
+
+
+def tag_people(pubs):
+    """Attribute each merged publication to the staff in its author list.
+
+    Falls back to whoever the record was collected under when Crossref gave no
+    author list, which happens for ~15% of records.
+    """
+    for pub in pubs:
+        authors = " ; ".join(pub.get("authors") or []).lower()
+        found = []
+        for person in PEOPLE:
+            if any(m in authors for m in person["match"]):
+                found.append(person["name"])
+        if found:
+            pub["people"] = found
+        # else: keep the collection-time attribution already on the record
+    return pubs
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--orcid", default=ORCID_ID)
+    ap.add_argument("--director-only", action="store_true",
+                    help="only the Core Director, skipping other core personnel")
     ap.add_argument("--skip-pubmed", action="store_true",
                     help="skip the PubMed gap check")
     ap.add_argument("--skip-crossref", action="store_true",
@@ -711,9 +808,35 @@ def main():
                     help="only report publications from this year onward")
     args = ap.parse_args()
 
-    orcid_works = fetch_orcid(args.orcid)
-    pubmed_works = [] if args.skip_pubmed else fetch_pubmed(PUBMED_AUTHOR)
-    master, gaps = merge(orcid_works, pubmed_works)
+    if args.director_only:
+        orcid_works = fetch_orcid(args.orcid)
+        pubmed_works = [] if args.skip_pubmed else fetch_pubmed(PUBMED_AUTHOR)
+        for w in orcid_works + pubmed_works:
+            w["people"] = ["Brett S. Phinney"]
+        master, gaps = merge(orcid_works, pubmed_works)
+    else:
+        # The Director's own ORCID/PubMed legs still drive the gap report; the
+        # other staff only add publications, they are not gap-checked.
+        director_orcid = fetch_orcid(args.orcid)
+        director_pubmed = [] if args.skip_pubmed else fetch_pubmed(PUBMED_AUTHOR)
+        for w in director_orcid + director_pubmed:
+            w["people"] = ["Brett S. Phinney"]
+        master, gaps = merge(director_orcid, director_pubmed)
+
+        others = []
+        for person in PEOPLE:
+            if person["orcid"] == args.orcid:
+                continue
+            got = []
+            if person["orcid"]:
+                got += fetch_orcid(person["orcid"])
+            if person["pubmed"] and not args.skip_pubmed:
+                got += fetch_pubmed(person["pubmed"], label=person["name"])
+            for w in got:
+                w["people"] = [person["name"]]
+            print(f"[people] {person['name']}: {len(got)} raw records", flush=True)
+            others += got
+        master, _ = merge(master, others)
 
     cache = load_cache()
     master = enrich_crossref(master, cache, limit=0 if args.skip_crossref else None)
@@ -732,7 +855,10 @@ def main():
     if args.since:
         to_add = [w for w in to_add if str(w.get("year", "0")).isdigit()
                   and int(w["year"]) >= args.since]
-    to_add.sort(key=lambda w: (str(w.get("year", "")), w["title"]), reverse=True)
+    # Sorted by citation count, not date: if Brett only ever adds the top of this
+    # file, it should be the papers that carry the most weight.
+    to_add.sort(key=lambda w: (w.get("citations", 0), str(w.get("year", ""))),
+                reverse=True)
 
     write_linkedin_report(to_add, baseline_path, len(candidates))
     write_gaps_report(gaps)
